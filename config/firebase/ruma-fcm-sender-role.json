@@ -1,0 +1,6 @@
+{
+  "title": "Ruma FCM Sender",
+  "description": "Kirim pengingat Ruma melalui FCM HTTP v1; tanpa izin topic, IAM, atau pengelolaan akun.",
+  "stage": "GA",
+  "includedPermissions": ["cloudmessaging.messages.create"]
+}

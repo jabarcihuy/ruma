@@ -1,0 +1,21 @@
+Resolving dependencies...
+Downloading packages...
+  material_color_utilities 0.13.0 (0.13.1 available)
+  test_api 0.7.12 (0.7.15 available)
+  vector_graphics 1.2.3 (1.2.4 available)
+  xml 7.0.1 (7.1.0 available)
+Got dependencies!
+4 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+00:00 +0: loading /home/ael/DATA/project on linux/mobileapp/ruma/test/savings_test.dart
+00:00 +0: goal names, targets and optional real dates are validated
+00:00 +1: movements require positive integer rupiah, known type, past WIB date
+00:00 +2: IDs and optimistic versions reject malformed mutation requests
+00:00 +3: deposit allocates available money without changing recorded balance
+00:00 +4: withdrawal returns money to available without becoming income
+00:00 +5: deposit and withdrawal cannot overspend their source, exact source allowed
+00:00 +6: negative available is visible and blocks new deposits but permits withdrawal
+00:00 +7: target progress caps at 100 while preserving overfunded balance
+00:00 +8: reconciliation rejects forged totals, missing/duplicate/orphan history
+00:00 +9: goal edits do not reallocate savings and retry keys change with request
+00:00 +10: All tests passed!

@@ -1,0 +1,11 @@
+{
+  "apk": "output/apk/ruma-notifications-candidate.apk",
+  "target": "lib/main.dart",
+  "abi": "x86_64",
+  "mode": "debug",
+  "bytes": 102297157,
+  "sha256": "d6de76acf8282d10851d5a55b6934f5859c16b5fba1102e92044ba7380d56832",
+  "exactServerSecretMatches": 0,
+  "privateFileEntries": [],
+  "installedAsNormal": false
+}

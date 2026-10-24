@@ -1,0 +1,14 @@
+Resolving dependencies...
+Downloading packages...
+  material_color_utilities 0.13.0 (0.13.1 available)
+  test_api 0.7.12 (0.7.15 available)
+  vector_graphics 1.2.3 (1.2.4 available)
+  xml 7.0.1 (7.1.0 available)
+Got dependencies!
+4 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Analyzing final_stages_ai_diagnostic_test.dart...               
+
+warning • Unused import: 'package:cloud_firestore/cloud_firestore.dart'. Try removing the import directive • integration_test/final_stages_ai_diagnostic_test.dart:4:8 • unused_import
+
+1 issue found. (ran in 3.0s)

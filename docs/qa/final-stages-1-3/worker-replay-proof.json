@@ -1,0 +1,11 @@
+{
+  "httpStatus": 200,
+  "type": "clarification",
+  "reason": "incomplete_draft",
+  "items": 0,
+  "providerRequests": 0,
+  "usesCapturedRealProviderResponse": true,
+  "liveFirebase": false,
+  "liveWorker": false,
+  "passed": true
+}

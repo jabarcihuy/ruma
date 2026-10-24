@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-18",
+  "kind": "planning-document-validation-only",
+  "documentsChecked": 11,
+  "screensMapped": 71,
+  "mergedContextsMapped": 10,
+  "plannedPageTypes": 27,
+  "internalLinksChecked": 36,
+  "fixtureMoneyScenariosValidated": 3,
+  "fixtureAgendaChecks": [
+    "duration",
+    "allowed window",
+    "no overlap"
+  ],
+  "acceptanceScenariosSpecified": 51,
+  "runtimeGatesSpecified": 5,
+  "runtimeTestsRun": false,
+  "appCodeCreated": false,
+  "servicesProvisioned": false,
+  "deployed": false,
+  "newPdfCreated": false,
+  "pending": [
+    "public project configuration",
+    "rotated provider secret and server credential setup",
+    "exact model tool-calling check",
+    "Workers Free CPU feasibility for proxy and reminders",
+    "executable Rules and batch checks",
+    "Android configuration and device tests"
+  ],
+  "documentSha256": {
+    "README.md": "2e00797bbe3a345b2491e3e5275554ccda689e7dda99fa73944c7181b3502f7b",
+    "docs/PRD.md": "b442049ca1a7d60964553f20a4a5f615021b5b6b43c50c62d15b52d698e94a61",
+    "docs/ARCHITECTURE.md": "5f9e937a98b4d644b052d7d08ae86372f553614f03c1dab24e04f21b7f729267",
+    "docs/FIREBASE-DATA.md": "dcd6693dd87d7118f0c4651b096f8ecb9c70c4d79610b9a2446972a0cd136368",
+    "docs/AGENT-PROXY.md": "242b7273ec98fd17f469987ac1fe24feb6302391afb2ee56f7cf1d808cddebd7",
+    "docs/NOTIFICATIONS.md": "08142ccde6a654b131e336c25d47c995bd6555deb26ecec0be1844e01e7744d2",
+    "docs/SCREEN-MAP.md": "681690d6b83b49b026aadaa81ebfa2cb4a3ef011cd49c3d9e89ae784cb939ee3",
+    "docs/ACCEPTANCE.md": "c8a47e7660f583e8345dbb32ee0884449c8f60dd8aecf27a6e267d49015ffcc0",
+    "docs/BUILD-PLAN.md": "61324144bedc46ed9a9a30b4fb90042633eb0ec082684a75a53a651397338ebf",
+    "project-context.json": "867c37b5554f127c84af95e2aafbbcaf7a5b20c4f8be6044cf4ab931214e404f",
+    "docs/qa/demo-fixture.json": "0b0c8b6223b2619e9d94260f650a8332bc141133253f171cb077fba79b828c5f"
+  }
+}

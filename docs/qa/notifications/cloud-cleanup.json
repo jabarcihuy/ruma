@@ -1,0 +1,15 @@
+{
+  "project": "mobile-app-3479f",
+  "fixtureUids": [
+    "j14KgPGnLdMBObscRzqLCRlcqkl1"
+  ],
+  "deleted": [
+    "users/j14KgPGnLdMBObscRzqLCRlcqkl1/agenda/Sa6oyRwqBEeOun8IuorZ",
+    "users/j14KgPGnLdMBObscRzqLCRlcqkl1/state/core",
+    "users/j14KgPGnLdMBObscRzqLCRlcqkl1/operations/2m1ErUBlUltdd58jDeqe",
+    "users/j14KgPGnLdMBObscRzqLCRlcqkl1/reminders/Sa6oyRwqBEeOun8IuorZ",
+    "users/j14KgPGnLdMBObscRzqLCRlcqkl1/notifications/Sa6oyRwqBEeOun8IuorZ_1"
+  ],
+  "verifiedEmpty": true,
+  "modelCalls": 0
+}

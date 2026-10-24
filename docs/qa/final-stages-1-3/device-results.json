@@ -1,0 +1,24 @@
+{
+  "project": "demo-ruma",
+  "modelCalls": 0,
+  "fcmSends": 0,
+  "productionWrites": 0,
+  "cases": [
+    "profile and preferences persist per UID",
+    "weekly create, conflict, stable move/undo, future edit and future cancellation",
+    "Android schedules local snooze and cancels it after occurrence change",
+    "personal default, mixed draft approval, financial aggregate and restored receipt do not duplicate",
+    "agent edits and undoes exact recurring occurrence without changing money",
+    "native forms update preferences and stale editor cannot overwrite newer revision",
+    "weekly form, explicit scope and visible snooze action work natively",
+    "second UID cannot read old profile or inherit preferences"
+  ],
+  "screens": [
+    "01-profile",
+    "02-profile-form",
+    "03-personal-preferences",
+    "04-weekly-form",
+    "05-weekly-scope"
+  ],
+  "passed": true
+}

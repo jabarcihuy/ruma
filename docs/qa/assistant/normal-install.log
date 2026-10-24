@@ -1,0 +1,10 @@
+Performing Streamed Install
+Success
+Starting: Intent { cmp=id.ruma.app/.MainActivity }
+Status: ok
+LaunchState: COLD
+Activity: id.ruma.app/.MainActivity
+TotalTime: 2153
+WaitTime: 2166
+Complete
+  mCurrentFocus=Window{252131 u0 id.ruma.app/id.ruma.app.MainActivity}

@@ -1,0 +1,23 @@
+{
+  "project": "mobile-app-3479f",
+  "suite": "assistant_cloud_test",
+  "fixtureUids": [
+    "oDHM5ZQ2Mbbg3l753wNR5fGGIdx1",
+    "YHsaSx2fgEhmezZlj02hKpiqxm03"
+  ],
+  "authFixturesDeleted": [
+    "oDHM5ZQ2Mbbg3l753wNR5fGGIdx1",
+    "YHsaSx2fgEhmezZlj02hKpiqxm03"
+  ],
+  "modelCalls": 1,
+  "passed": true,
+  "cases": [
+    "one real model call",
+    "no writes before approval",
+    "combined commit",
+    "stable retry",
+    "exact balance",
+    "unauthenticated denial",
+    "other UID denial"
+  ]
+}

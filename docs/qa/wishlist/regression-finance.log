@@ -1,0 +1,40 @@
+✔ expense initializes negative balance and exact monthly/category totals (614.827411ms)
+✔ income and retry are atomic and do not double count (99.006433ms)
+✔ edit amount, category, type and month reverses old contribution (169.87247ms)
+[2026-10-21T17:38:11.328Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x8441e5d8 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'delete' @ L424
+[2026-10-21T17:38:11.336Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x8441e5d9 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'update' @ L424
+✔ soft delete reverses totals, tombstone and receipts remain immutable (189.670818ms)
+✔ budget alone initializes core and changing it never changes money (145.217013ms)
+✔ category budget cannot exceed total or exist without a total (120.402516ms)
+✔ valid shape, real past dates, integer amount and category/type enforced (236.852961ms)
+✔ forged lifetime balances and agenda revision rejected with rollback (119.287113ms)
+✔ forged period totals/category sums/budgets rejected (159.979653ms)
+[2026-10-21T17:38:12.204Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x8441e668 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+evaluation error at L364:33 for 'create' @ L364, false for 'create' @ L424, evaluation error at L364:33 for 'update' @ L364, false for 'update' @ L424, Null value error. for 'create' @ L364, false for 'create' @ L424
+[2026-10-21T17:38:12.212Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x8441e669 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+evaluation error at L388:33 for 'create' @ L388, false for 'create' @ L424, evaluation error at L388:33 for 'update' @ L388, false for 'update' @ L424, false for 'create' @ L388, false for 'create' @ L424
+✔ standalone core/month writes and receipt mismatch rejected (93.029829ms)
+✔ owner read permitted; other account and unauthenticated data inaccessible (124.751621ms)
+✔ concurrent submissions either serialize or reject without partial data; stable retry reconciles totals (123.582141ms)
+✔ stale version cannot overwrite newer transaction (100.073939ms)
+✔ budget operation cannot alter income, expenses or category totals (73.359602ms)
+[2026-10-21T17:38:12.662Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x8441e69c error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L424, false for 'update' @ L424
+[2026-10-21T17:38:12.678Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x8441e69e error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L332, false for 'create' @ L424, false for 'update' @ L332, false for 'update' @ L424
+[2026-10-21T17:38:12.689Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x8441e69f error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L322, false for 'create' @ L424, false for 'update' @ L322, false for 'update' @ L424
+[2026-10-21T17:38:12.700Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x8441e6a0 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L424, false for 'update' @ L424
+✔ server counters, reminders, devices and chat remain closed (68.853269ms)
+✔ omitting either affected month rejects cross-month edits atomically (122.883549ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 16
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2830.722474

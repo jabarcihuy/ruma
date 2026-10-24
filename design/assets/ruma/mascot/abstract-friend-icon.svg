@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 128 128" fill="none">
+<title>Ruma — ikon Teman Abstrak</title>
+<path id="body-crest" d="M22 94C12 88 10 77 13 64C16 49 27 39 40 31C43 24 43 14 51 8C60 0 79 0 93 5C106 10 108 16 97 21C88 26 83 30 85 35C103 42 114 57 116 76C118 94 111 109 97 116C85 124 47 124 32 115C27 110 25 102 22 94Z" fill="#CF4924"/>
+<path id="cream-face" d="M33 53C45 42 73 37 89 45C103 53 107 74 100 87C92 101 59 104 40 95C24 87 20 65 33 53Z" fill="#FFF6EA"/>
+<ellipse id="left-eye" cx="48" cy="72" rx="5.5" ry="7" transform="rotate(-12 48 72)" fill="#20241F"/>
+<ellipse id="right-eye" cx="82" cy="66" rx="5.5" ry="7" transform="rotate(-12 82 66)" fill="#20241F"/>
+<path id="smile" d="M58 87C64 92 76 89 81 82" stroke="#20241F" stroke-width="4.8" stroke-linecap="round"/>
+</svg>

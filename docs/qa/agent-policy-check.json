@@ -1,0 +1,145 @@
+{
+  "date": "2026-10-19",
+  "model": "glm-5.3-flash",
+  "scope": "Direct synthetic provider + shared output guard; not full app/Worker",
+  "databaseWrites": 0,
+  "modelRequests": 5,
+  "cases": [
+    {
+      "input": "Besok mau beli buku 50 ribu.",
+      "expected": "clarification",
+      "passed": true,
+      "httpStatus": 200,
+      "responseModel": "glm-5.3-flash",
+      "modelToolCalled": false,
+      "modelText": "Mau kujadwalkan sebagai agenda \"beli buku 50 ribu\" untuk besok (2026-10-19), atau cukup dicatat sebagai rencana saja?",
+      "result": {
+        "type": "clarification",
+        "reason": "transaction_status",
+        "content": "Uangnya sudah masuk/keluar atau masih rencana?",
+        "items": []
+      },
+      "latencyMs": 23283
+    },
+    {
+      "input": "Besok mau beli buku 50 ribu.",
+      "expected": "clarification",
+      "passed": true,
+      "httpStatus": 200,
+      "responseModel": "glm-5.3-flash",
+      "modelToolCalled": false,
+      "modelText": "Itu masih rencana ya. Mau kujadikan agenda untuk besok?",
+      "result": {
+        "type": "clarification",
+        "reason": "transaction_status",
+        "content": "Uangnya sudah masuk/keluar atau masih rencana?",
+        "items": []
+      },
+      "latencyMs": 5027
+    },
+    {
+      "input": "Mau beli buku 50 ribu, tapi uangnya belum keluar.",
+      "expected": "clarification",
+      "passed": true,
+      "httpStatus": 200,
+      "responseModel": "glm-5.3-flash",
+      "modelToolCalled": false,
+      "modelText": "Itu masih rencana ya. Mau saya jadikan agenda pengingat beli buku 50 ribu? Kalau iya, boleh sebutkan tanggalnya (misalnya besok), atau saya biarkan tanpa jadwal.",
+      "result": {
+        "type": "clarification",
+        "reason": "transaction_status",
+        "content": "Uangnya sudah masuk/keluar atau masih rencana?",
+        "items": []
+      },
+      "latencyMs": 4161
+    },
+    {
+      "input": "Besok revisi laporan satu jam dan baca jurnal 30 menit. Tadi makan 18 ribu dan cetak laporan 15 ribu.",
+      "expected": "draft_proposal",
+      "passed": true,
+      "httpStatus": 200,
+      "responseModel": "glm-5.3-flash",
+      "modelToolCalled": true,
+      "modelText": "",
+      "result": {
+        "type": "draft_proposal",
+        "content": "Draf siap ditinjau. Data belum disimpan.",
+        "items": [
+          {
+            "action": "create_agenda",
+            "amountRupiah": null,
+            "categoryId": null,
+            "durationMinutes": 60,
+            "localDate": "2026-10-19",
+            "sourceQuote": "Besok revisi laporan satu jam",
+            "title": "Revisi laporan",
+            "transactionStatus": null,
+            "transactionType": null
+          },
+          {
+            "action": "create_agenda",
+            "amountRupiah": null,
+            "categoryId": null,
+            "durationMinutes": 30,
+            "localDate": "2026-10-19",
+            "sourceQuote": "baca jurnal 30 menit",
+            "title": "Baca jurnal",
+            "transactionStatus": null,
+            "transactionType": null
+          },
+          {
+            "action": "create_transaction",
+            "amountRupiah": 18000,
+            "categoryId": "food",
+            "durationMinutes": null,
+            "localDate": "2026-10-18",
+            "sourceQuote": "Tadi makan 18 ribu",
+            "title": "Makan",
+            "transactionStatus": "actual",
+            "transactionType": "expense"
+          },
+          {
+            "action": "create_transaction",
+            "amountRupiah": 15000,
+            "categoryId": "other",
+            "durationMinutes": null,
+            "localDate": "2026-10-18",
+            "sourceQuote": "cetak laporan 15 ribu",
+            "title": "Cetak laporan",
+            "transactionStatus": "actual",
+            "transactionType": "expense"
+          }
+        ]
+      },
+      "latencyMs": 7477
+    },
+    {
+      "input": "Tadi beli buku 50 ribu.",
+      "expected": "draft_proposal",
+      "passed": true,
+      "httpStatus": 200,
+      "responseModel": "glm-5.3-flash",
+      "modelToolCalled": true,
+      "modelText": "",
+      "result": {
+        "type": "draft_proposal",
+        "content": "Draf siap ditinjau. Data belum disimpan.",
+        "items": [
+          {
+            "action": "create_transaction",
+            "amountRupiah": 50000,
+            "categoryId": "other",
+            "durationMinutes": null,
+            "localDate": "2026-10-18",
+            "sourceQuote": "Tadi beli buku 50 ribu.",
+            "title": "Beli buku",
+            "transactionStatus": "actual",
+            "transactionType": "expense"
+          }
+        ]
+      },
+      "latencyMs": 6650
+    }
+  ],
+  "overallPassed": true
+}

@@ -1,0 +1,49 @@
+✖ captured real partial output cannot silently discard the agenda sentence (44.029202ms)
+✖ unverified provider payload asks for clarification, never exposes saved claims or retries (2.427543ms)
+✔ fully covered statements, greetings and rupiah punctuation retain combined draft (5.405776ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 1
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 200.951993
+
+✖ failing tests:
+
+test at backend/tests/incomplete-draft.test.mjs:14:1
+✖ captured real partial output cannot silently discard the agenda sentence (44.029202ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'draft_proposal'
+  - 'clarification'
+  
+      at TestContext.<anonymous> (file:///home/ael/DATA/project%20on%20linux/mobileapp/ruma/backend/tests/incomplete-draft.test.mjs:15:88)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'draft_proposal',
+    expected: 'clarification',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at backend/tests/incomplete-draft.test.mjs:17:1
+✖ unverified provider payload asks for clarification, never exposes saved claims or retries (2.427543ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  502 !== 200
+  
+      at TestContext.<anonymous> (file:///home/ael/DATA/project%20on%20linux/mobileapp/ruma/backend/tests/incomplete-draft.test.mjs:19:58)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 502,
+    expected: 200,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

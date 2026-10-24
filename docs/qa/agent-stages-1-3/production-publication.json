@@ -1,0 +1,23 @@
+{
+  "project": "mobile-app-3479f",
+  "approvedByUser": true,
+  "authorization": "Publish tested Worker and exact-restore Rules; maximum 4 real model calls with synthetic accounts/data and exact fixture cleanup",
+  "rulesPublished": true,
+  "rulesHashMatchesCandidate": true,
+  "workerPublishing": false,
+  "modelCallsStarted": 0,
+  "timestampUtc": "2026-10-20T12:34:36.354628+00:00",
+  "workerPublished": true,
+  "workerVersion": "f0bc9c39",
+  "workerPreviousVersion": "c6bedf81",
+  "modelTestStatus": "passed",
+  "publicationVia": "existing browser dashboard sessions; no new CLI credentials",
+  "modelCalls": 4,
+  "cloudTestSeconds": 65,
+  "syntheticAuthAccountsDeleted": 2,
+  "syntheticDocumentsDeleted": 10,
+  "fixtureCollectionsVerifiedEmpty": true,
+  "normalApkReinstalledAndColdLaunched": true,
+  "screenSettingRestored": 1,
+  "completedAtWib": "2026-10-20T19:37:43.140329+07:00"
+}

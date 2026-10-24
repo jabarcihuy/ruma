@@ -1,0 +1,21 @@
+{
+  "fixtureUid": "x6peUeYuRYWyUQo49ewtXvR1aK53",
+  "jobs": [
+    {
+      "status": "cancelled",
+      "generation": 3,
+      "attempts": 0,
+      "occurrenceDate": "2026-10-21",
+      "enabled": false
+    }
+  ],
+  "inbox": [
+    {
+      "generation": 1,
+      "sourceVersion": 1,
+      "occurrenceDate": "2026-10-21"
+    }
+  ],
+  "sdkReceived": true,
+  "globalPushJobsReservedToday": 1
+}

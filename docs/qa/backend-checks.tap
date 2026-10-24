@@ -1,0 +1,142 @@
+TAP version 13
+# Subtest: future plan cannot become an expense even if model labels it actual today
+ok 1 - future plan cannot become an expense even if model labels it actual today
+  ---
+  duration_ms: 2.317876
+  type: 'test'
+  ...
+# Subtest: actual expense is reviewable, never reported as saved
+ok 2 - actual expense is reviewable, never reported as saved
+  ---
+  duration_ms: 0.529336
+  type: 'test'
+  ...
+# Subtest: free model text cannot make a persistence claim
+ok 3 - free model text cannot make a persistence claim
+  ---
+  duration_ms: 0.242797
+  type: 'test'
+  ...
+# Subtest: reject invalid money, impossible dates, forged evidence and extra authority
+ok 4 - reject invalid money, impossible dates, forged evidence and extra authority
+  ---
+  duration_ms: 1.478789
+  type: 'test'
+  ...
+# Subtest: verify signature, expiry, project, subject and auth time; cache certificate
+ok 5 - verify signature, expiry, project, subject and auth time; cache certificate
+  ---
+  duration_ms: 128.073332
+  type: 'test'
+  ...
+# [2026-10-18T17:52:11.137Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x389bcbaa error. Code: 7 Message: 7 PERMISSION_DENIED: 
+# false for 'create' @ L57, false for 'create' @ L125, false for 'update' @ L125
+# Subtest: owner can read; another UID and unauthenticated clients cannot
+ok 6 - owner can read; another UID and unauthenticated clients cannot
+  ---
+  duration_ms: 420.242584
+  type: 'test'
+  ...
+# Subtest: combined batch is atomic and retry does not duplicate money
+ok 7 - combined batch is atomic and retry does not duplicate money
+  ---
+  duration_ms: 214.865139
+  type: 'test'
+  ...
+# Subtest: one invalid item rolls back every document and aggregate
+ok 8 - one invalid item rolls back every document and aggregate
+  ---
+  duration_ms: 147.982797
+  type: 'test'
+  ...
+# Subtest: future financial dates are rejected by Rules even if client bypasses agent
+ok 9 - future financial dates are rejected by Rules even if client bypasses agent
+  ---
+  duration_ms: 123.159382
+  type: 'test'
+  ...
+# Subtest: max 3 agenda + 3 transactions + 3 reminders and aggregates fit Rules checks
+ok 10 - max 3 agenda + 3 transactions + 3 reminders and aggregates fit Rules checks
+  ---
+  duration_ms: 190.243535
+  type: 'test'
+  ...
+# Subtest: client cannot fabricate dispatch or point reminders at absent source
+ok 11 - client cannot fabricate dispatch or point reminders at absent source
+  ---
+  duration_ms: 222.737705
+  type: 'test'
+  ...
+# [2026-10-18T17:52:12.121Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x389bcbd0 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+# false for 'create' @ L125, false for 'update' @ L125
+# Subtest: quota server documents are inaccessible even to logged-in owners
+ok 12 - quota server documents are inaccessible even to logged-in owners
+  ---
+  duration_ms: 82.720392
+  type: 'test'
+  ...
+# [2026-10-18T17:52:12.202Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x389bcbd2 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+# evaluation error at L122:26 for 'update' @ L122, false for 'update' @ L125, false for 'update' @ L122, false for 'update' @ L125
+# [2026-10-18T17:52:12.223Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x389bcbd3 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+# false for 'create' @ L125, evaluation error at L122:26 for 'update' @ L122, false for 'update' @ L125, false for 'create' @ L125
+# Subtest: inbox content cannot be forged; owner can mark own notification read
+ok 13 - inbox content cannot be forged; owner can mark own notification read
+  ---
+  duration_ms: 101.629836
+  type: 'test'
+  ...
+# [2026-10-18T17:52:12.295Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x389bcbd5 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+# false for 'create' @ L125, false for 'update' @ L125
+# [2026-10-18T17:52:12.316Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x389bcbd6 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+# evaluation error at L62:26 for 'create' @ L62, false for 'create' @ L125, false for 'update' @ L125, false for 'create' @ L62, false for 'create' @ L125
+# Subtest: unsupported paths and standalone financial writes stay denied
+ok 14 - unsupported paths and standalone financial writes stay denied
+  ---
+  duration_ms: 92.805369
+  type: 'test'
+  ...
+# Subtest: requests without auth or with forged auth do not reach provider
+ok 15 - requests without auth or with forged auth do not reach provider
+  ---
+  duration_ms: 41.113537
+  type: 'test'
+  ...
+# Subtest: reject client-selected model/URL/UID, system messages, stale time and oversized body
+ok 16 - reject client-selected model/URL/UID, system messages, stale time and oversized body
+  ---
+  duration_ms: 2.219114
+  type: 'test'
+  ...
+# Subtest: quota rejection fails closed and never reaches model
+ok 17 - quota rejection fails closed and never reaches model
+  ---
+  duration_ms: 1.058975
+  type: 'test'
+  ...
+# Subtest: fixed provider/model/system and no storage claim in client response
+ok 18 - fixed provider/model/system and no storage claim in client response
+  ---
+  duration_ms: 22.243234
+  type: 'test'
+  ...
+# Subtest: provider failures are bounded, mapped and never retried automatically
+ok 19 - provider failures are bounded, mapped and never retried automatically
+  ---
+  duration_ms: 4.747534
+  type: 'test'
+  ...
+# Subtest: unconfigured global quota cannot enable an unmetered proxy
+ok 20 - unconfigured global quota cannot enable an unmetered proxy
+  ---
+  duration_ms: 1.280554
+  type: 'test'
+  ...
+1..20
+# tests 20
+# suites 0
+# pass 20
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1910.94555

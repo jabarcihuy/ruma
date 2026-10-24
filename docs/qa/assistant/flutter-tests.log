@@ -1,0 +1,33 @@
+Resolving dependencies...
+Downloading packages...
+  material_color_utilities 0.13.0 (0.13.1 available)
+  test_api 0.7.12 (0.7.15 available)
+  xml 7.0.1 (7.1.0 available)
+Got dependencies!
+3 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+00:00 +0: loading /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart
+00:00 +0: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: validation does not trim passwords and login failures do not expose account existence
+00:00 +1: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:00 +2: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:00 +3: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:00 +4: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:00 +5: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:00 +6: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:00 +7: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:00 +8: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:00 +9: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:00 +10: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:00 +11: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:00 +12: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:00 +13: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:00 +14: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:00 +15: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:01 +16: /home/ael/DATA/project on linux/mobileapp/ruma/test/agenda_test.dart: agenda form keeps validation and actions reachable at 320px and text 200%
+00:01 +17: /home/ael/DATA/project on linux/mobileapp/ruma/test/finance_test.dart: transaction form retains invalid and failed input; unchanged retry keeps ID
+00:01 +18: /home/ael/DATA/project on linux/mobileapp/ruma/test/finance_test.dart: transaction form retains invalid and failed input; unchanged retry keeps ID
+00:02 +19: /home/ael/DATA/project on linux/mobileapp/ruma/test/finance_test.dart: transaction form retains invalid and failed input; unchanged retry keeps ID
+00:02 +20: /home/ael/DATA/project on linux/mobileapp/ruma/test/assistant_test.dart: review at 320px and 200% text supports remove, restore and editing without saving
+00:02 +21: /home/ael/DATA/project on linux/mobileapp/ruma/test/assistant_render_test.dart: render assistant and approved review with local Manrope assets
+00:02 +22: /home/ael/DATA/project on linux/mobileapp/ruma/test/assistant_render_test.dart: render assistant and approved review with local Manrope assets
+00:02 +23: All tests passed!

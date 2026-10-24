@@ -1,0 +1,61 @@
+{
+  "completedAt": "2026-10-22T07:03:52.157913+00:00",
+  "stage": "production wishlist and signed Android release",
+  "project": "mobile-app-3479f",
+  "rules": {
+    "project": "mobile-app-3479f",
+    "publishedAt": "2026-10-22T06:55:10.543Z",
+    "rulesSha256": "0217e0247e06a58a9332b1e782bb008c3fc4472784b2437e1db59701f380ee6b",
+    "exactReadbackAfterReload": true,
+    "previousRulesMatched": true,
+    "changes": [
+      "optional savings goal iconId enum"
+    ],
+    "iamChanged": false,
+    "billingChanged": false
+  },
+  "apk": {
+    "path": "output/apk/ruma-0.1.0-release.apk",
+    "version": "0.1.0+1",
+    "package": "id.ruma.app",
+    "bytes": 62302774,
+    "sha256": "420395562bc501829a5e9c5ef56abfb299e43faf94be70d8516cddd7dc394aed",
+    "buildMode": "release",
+    "debuggable": false,
+    "signedWith": "ruma-release",
+    "certificateSha256": "3f4af245b0c9f64f415442a32d4c5341386337ad5015803355dba1a809879ae8",
+    "abis": [
+      "armeabi-v7a",
+      "arm64-v8a",
+      "x86_64"
+    ],
+    "minSdk": 24,
+    "targetSdk": 36,
+    "signingVerificationPassed": true,
+    "privateSigningFilesBundled": false
+  },
+  "verification": {
+    "priorFlutterTests": 78,
+    "priorRulesTests": 64,
+    "productionSdkCaseGroups": 5,
+    "syntheticAuthAccountsDeleted": 2,
+    "fixtureDocumentsDeleted": 21,
+    "fixturesVerifiedEmpty": true,
+    "nativeReleaseInstalled": true,
+    "installedHashMatches": true,
+    "coldLaunchStatus": "ok",
+    "firebaseInitialized": true,
+    "runtimeFatalExceptionFound": false,
+    "releaseScreenshot": "release-welcome.png",
+    "scopeLimit": "SDK production smoke used debug test harness. Exact delivered release APK was installed and cold-launched; full signed-release feature walkthrough was not run."
+  },
+  "aiCalls": 0,
+  "fcmCalls": 0,
+  "phoneModified": false,
+  "buildIssueResolved": "First --no-pub build used stale integration_test registrant. Rebuild with normal pub/tooling regeneration succeeded.",
+  "warnings": [
+    "Firebase plugins emit future Kotlin Gradle Plugin migration notice; current build succeeded.",
+    "Initial VM uninstall returned DELETE_FAILED_INTERNAL_ERROR; install succeeded and installed APK hash matched exact delivered release."
+  ],
+  "r8Mapping": "output/apk/ruma-0.1.0-r8-mapping.txt"
+}

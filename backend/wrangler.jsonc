@@ -1,0 +1,27 @@
+{
+  "name": "ruma-api",
+  "main": "src/worker.mjs",
+  "compatibility_date": "2026-10-18",
+  "account_id": "bf3e1e100ad681d46a58461be813c151",
+  "workers_dev": true,
+  "minify": true,
+  "keep_names": false,
+  "vars": {
+    "FIREBASE_PROJECT_ID": "mobile-app-3479f",
+    "AI_GLOBAL_DAILY_LIMIT": "10",
+    "NOTIFICATIONS_ENABLED": "true"
+  },
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1,
+    "logs": {
+      "enabled": true,
+      "invocation_logs": true
+    }
+  },
+  "triggers": {
+    "crons": [
+      "* * * * *"
+    ]
+  }
+}

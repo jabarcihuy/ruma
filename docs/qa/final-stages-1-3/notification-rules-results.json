@@ -1,0 +1,10 @@
+{
+  "project": "demo-ruma",
+  "productionWrites": 0,
+  "cases": [
+    "config-and-boundary",
+    "device-inbox-isolation",
+    "atomic-source-update",
+    "invalid-config"
+  ]
+}

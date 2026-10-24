@@ -1,0 +1,16 @@
+{
+  "apk": "output/apk/ruma-assistant-memory-candidate.apk",
+  "sha256": "2f6a960462bca6083ab5f986b0cc07bd97b72550e68b7db723a166db2c48c585",
+  "install": "Success",
+  "coldLaunch": "Status: ok",
+  "normalEntryPoint": "lib/main.dart",
+  "mode": "debug",
+  "abi": "x86_64",
+  "foreground": "mCurrentFocus=Window{f3d3dc4 u0 id.ruma.app/id.ruma.app.MainActivity}",
+  "stayOnRestored": "1",
+  "adbReverseList": "",
+  "candidateInstalledAsNormal": true,
+  "physicalPhoneUpdated": false,
+  "releaseBuild": false,
+  "avdLeftOpen": true
+}

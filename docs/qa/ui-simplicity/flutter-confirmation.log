@@ -1,0 +1,81 @@
+00:00 +0: loading /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart
+00:00 +0: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: validation does not trim passwords and login failures do not expose account existence
+00:00 +1: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:00 +2: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:00 +3: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:00 +4: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:00 +5: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:00 +6: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:00 +7: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:00 +8: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:00 +9: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:00 +10: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:00 +11: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:01 +12: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:01 +13: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:01 +14: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:01 +15: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:01 +16: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:02 +17: /home/ael/DATA/project on linux/mobileapp/ruma/test/agenda_test.dart: agenda form keeps validation and actions reachable at 320px and text 200%
+00:02 +18: /home/ael/DATA/project on linux/mobileapp/ruma/test/finance_test.dart: transaction form retains invalid and failed input; unchanged retry keeps ID
+00:02 +19: /home/ael/DATA/project on linux/mobileapp/ruma/test/finance_test.dart: transaction form retains invalid and failed input; unchanged retry keeps ID
+00:02 +20: /home/ael/DATA/project on linux/mobileapp/ruma/test/finance_test.dart: transaction form retains invalid and failed input; unchanged retry keeps ID
+00:02 +21: /home/ael/DATA/project on linux/mobileapp/ruma/test/finance_test.dart: transaction form retains invalid and failed input; unchanged retry keeps ID
+00:03 +22: /home/ael/DATA/project on linux/mobileapp/ruma/test/assistant_test.dart: review at 320px and 200% text supports remove, restore and editing without saving
+00:03 +23: /home/ael/DATA/project on linux/mobileapp/ruma/test/assistant_test.dart: review at 320px and 200% text supports remove, restore and editing without saving
+00:03 +24: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:03 +25: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:03 +26: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:03 +27: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:03 +28: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:03 +29: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:03 +30: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:04 +31: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:04 +32: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:04 +33: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:04 +34: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:04 +35: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:04 +36: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:04 +37: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:04 +38: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:05 +39: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:05 +40: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:05 +41: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:05 +42: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:05 +43: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:05 +44: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:05 +45: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:05 +46: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:05 +47: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:05 +48: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:05 +49: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:05 +50: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:05 +51: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:05 +52: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:05 +53: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:05 +54: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:05 +55: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:06 +56: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:06 +57: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:06 +58: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:06 +59: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:06 +60: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:06 +61: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:06 +62: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:06 +63: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:07 +64: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:07 +65: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:07 +66: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:07 +67: /home/ael/DATA/project on linux/mobileapp/ruma/test/final_stages_test.dart: profile and preferences remain editable at narrow 200 percent text
+00:07 +68: /home/ael/DATA/project on linux/mobileapp/ruma/test/savings_ui_test.dart: list and detail show real progress/history and open the selected goal
+00:08 +69: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(320.0, 640.0), including large type and keyboard
+00:09 +70: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(320.0, 640.0), including large type and keyboard
+00:09 +71: /home/ael/DATA/project on linux/mobileapp/ruma/test/savings_ui_test.dart: withdrawal form saves correct type, captures version and protects dirty cancellation
+00:10 +72: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(844.0, 390.0), including large type and keyboard
+00:10 +73: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(844.0, 390.0), including large type and keyboard
+00:10 +74: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(844.0, 390.0), including large type and keyboard
+00:11 +75: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(844.0, 390.0), including large type and keyboard
+00:11 +76: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: duration shortcuts preserve custom values and respect disabled state
+00:11 +77: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: navigation makes room for IME without losing a tab
+00:12 +78: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: (tearDownAll)
+00:12 +78: All tests passed!

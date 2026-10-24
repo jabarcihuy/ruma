@@ -1,0 +1,42 @@
+Resolving dependencies...
+Downloading packages...
+  material_color_utilities 0.13.0 (0.13.1 available)
+  test_api 0.7.12 (0.7.15 available)
+  xml 7.0.1 (7.1.0 available)
+Got dependencies!
+3 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+00:00 +0: loading /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart
+00:00 +0: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:03 +1: all pages remain scrollable at Size(320.0, 640.0), including large type and keyboard
+00:05 +2: all pages remain scrollable at Size(844.0, 390.0), including large type and keyboard
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: null
+  Actual: FlutterError:<A RenderFlex overflowed by 14 pixels on the bottom.>
+profile edit dialog
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///home/ael/DATA/project%20on%20linux/mobileapp/ruma/test/ui_polish_test.dart:190:9)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///home/ael/DATA/project%20on%20linux/mobileapp/ruma/test/ui_polish_test.dart line 190
+The test description was:
+  all pages remain scrollable at Size(844.0, 390.0), including large type and keyboard
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:07 +2 -1: all pages remain scrollable at Size(844.0, 390.0), including large type and keyboard [E]
+  Test failed. See exception logs above.
+  The test description was: all pages remain scrollable at Size(844.0, 390.0), including large type and keyboard
+  
+00:07 +2 -1: navigation makes room for IME without losing a tab
+00:07 +3 -1: Some tests failed.
+
+Failing tests:
+  /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(844.0, 390.0), including large type and keyboard

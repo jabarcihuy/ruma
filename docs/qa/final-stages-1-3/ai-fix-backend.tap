@@ -1,0 +1,43 @@
+✔ future plan cannot become an expense even if model labels it actual today (6.255357ms)
+✔ actual expense is reviewable, never reported as saved (1.846159ms)
+✔ free model text cannot make a persistence claim (0.591758ms)
+✔ reject invalid money, impossible dates, forged evidence and extra authority (2.189316ms)
+✔ verify signature, expiry, project, subject and auth time; cache certificate (254.529247ms)
+✔ JWKS rejects malformed keys and refreshes an unknown kid after cooldown (105.475586ms)
+✔ captured real partial output cannot silently discard the agenda sentence (68.451271ms)
+✔ unverified provider payload asks for clarification, never exposes saved claims or retries (7.01596ms)
+✔ fully covered statements, greetings and rupiah punctuation retain combined draft (8.474829ms)
+✔ Firestore adapter decodes timestamps and encodes conditional atomic writes (42.767911ms)
+✔ OAuth cache never mixes datastore and FCM scopes (125.073942ms)
+✔ disabled cron makes no reads or sends (4.906829ms)
+✔ generic payload, stable tag and exact owner; send creates one inbox, next tick does not duplicate (57.359463ms)
+✔ two concurrent ticks have one lease winner (2.524136ms)
+✔ completed/deleted/moved and expired sources never send (2.912373ms)
+✔ partial delivery persists successes, retries only failed devices with Retry-After (9.909691ms)
+✔ invalid token disabled; old generation completion cannot overwrite a new generation (3.270167ms)
+✔ hard daily cap prevents sends and defers; no active devices fails explicitly (1.413743ms)
+✔ permanent device errors are not retried when another device needs a retry (5.186928ms)
+✔ requests without auth or with forged auth do not reach provider (63.538191ms)
+✔ reject client-selected model/URL/UID, system messages, stale time and oversized body (6.318583ms)
+✔ quota rejection fails closed and never reaches model (2.273354ms)
+✔ fixed provider/model/system and no storage claim in client response (6.570324ms)
+✔ provider failures are bounded, mapped and never retried automatically (5.794828ms)
+✔ unconfigured global quota cannot enable an unmetered proxy (2.034039ms)
+✔ Jakarta date crosses midnight at 17:00 UTC for transaction context (5.906576ms)
+✔ quota uses two calls, conditional atomic commit and bounded conflict retry (120.754289ms)
+✔ read queries and change drafts are bounded, never model-authored answers or commits (4.436045ms)
+✔ reject forged paths, malformed dates, unsafe changes and delete payload edits (5.047187ms)
+✔ transactions require old date, delete has no replacement fields (0.700843ms)
+✔ weekly next, moved in and earliest regular occurrence keep original identity (3.841689ms)
+✔ future changes, cancellation and finite end are respected (2.015086ms)
+✔ invalid JSON, wrong original weekday and invalid dates fail closed (0.755902ms)
+✔ weekly dispatch writes one old inbox and atomically advances next cursor (44.727529ms)
+✔ no devices still advances recurring cursor; cancelled meeting never sends (1.040739ms)
+ℹ tests 35
+ℹ suites 0
+ℹ pass 35
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 593.494377

@@ -1,0 +1,32 @@
+✔ goal create/edit, optional future date and initial core are valid (7512.685909ms)
+✔ deposit and withdrawal preserve income/expense and recorded balance (1383.037535ms)
+✔ available funds shared across goals, overdraft and empty withdrawal rejected (1524.976243ms)
+✔ retry is idempotent, collisions/stale edits do not overwrite (781.06447ms)
+✔ forged balances, totals, cashflow, version and metadata rejected (1520.992693ms)
+✔ goal validation enforces nonblank name, integer target, real date and shape (2231.071153ms)
+✔ movement validates type, integer amount, date, source and immutable goal fields (2087.19809ms)
+✔ missing coupled documents or wrong receipt cannot partially commit (1360.058906ms)
+[2026-10-21T16:22:09.953Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x7aa2cbb0 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'delete' @ L423
+[2026-10-21T16:22:09.971Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x7aa2cbb1 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'delete' @ L423
+[2026-10-21T16:22:09.990Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x7aa2cbb2 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'delete' @ L423
+[2026-10-21T16:22:10.005Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x7aa2cbb3 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'delete' @ L423
+[2026-10-21T16:22:10.036Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x7aa2cbb4 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'update' @ L423
+[2026-10-21T16:22:10.077Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x7aa2cbb5 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'update' @ L423
+✔ history/receipts append only, goals/summary cannot hard delete (410.864955ms)
+✔ other UID and signed out cannot read, query or write savings (759.075326ms)
+✔ parallel deposits serialize or reject without overallocating (544.052383ms)
+✔ negative available after expense correction permits withdrawals only (535.682098ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 21884.078407

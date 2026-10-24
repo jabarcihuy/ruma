@@ -1,0 +1,17 @@
+{
+  "project": "mobile-app-3479f",
+  "suite": "notifications_cloud_test",
+  "fixtureUids": [
+    "tGiY2Ervd0akwlVdF7ZaBFbgVjs2",
+    "XnSZAZmNp2duCEDMvgG81UjGMJy2"
+  ],
+  "authFixturesDeleted": [
+    "tGiY2Ervd0akwlVdF7ZaBFbgVjs2",
+    "XnSZAZmNp2duCEDMvgG81UjGMJy2"
+  ],
+  "modelCalls": 0,
+  "processAbsentBeforeDelivery": true,
+  "nativeNotificationObserved": true,
+  "coldTapOpensMatchingAgenda": true,
+  "passed": true
+}

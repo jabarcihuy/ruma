@@ -1,0 +1,32 @@
+{
+  "project": "mobile-app-3479f",
+  "fixtureUids": [
+    "DZAxEyaP3dVCPht51nagTHOK8eK2",
+    "marvqabVihTAs2MXPc0w7YRRWB72"
+  ],
+  "deleted": [
+    "users/DZAxEyaP3dVCPht51nagTHOK8eK2/transactions/0kyjucCf4GgyfD48SAXd",
+    "users/DZAxEyaP3dVCPht51nagTHOK8eK2/transactions/PDJnRlUa2YBfwJsmNQDk",
+    "users/DZAxEyaP3dVCPht51nagTHOK8eK2/months/2026-01",
+    "users/DZAxEyaP3dVCPht51nagTHOK8eK2/state/core",
+    "users/DZAxEyaP3dVCPht51nagTHOK8eK2/state/savings",
+    "users/DZAxEyaP3dVCPht51nagTHOK8eK2/operations/Gih3yrhvCx5CqNEYCZen",
+    "users/DZAxEyaP3dVCPht51nagTHOK8eK2/operations/SLkAh10votRcd5pX3KKk",
+    "users/DZAxEyaP3dVCPht51nagTHOK8eK2/operations/bm08NuTJ5OnMv2y3Pxt7",
+    "users/DZAxEyaP3dVCPht51nagTHOK8eK2/operations/create-books",
+    "users/DZAxEyaP3dVCPht51nagTHOK8eK2/operations/create-emergency",
+    "users/DZAxEyaP3dVCPht51nagTHOK8eK2/operations/deposit-books",
+    "users/DZAxEyaP3dVCPht51nagTHOK8eK2/operations/deposit-emergency",
+    "users/DZAxEyaP3dVCPht51nagTHOK8eK2/operations/edit-emergency",
+    "users/DZAxEyaP3dVCPht51nagTHOK8eK2/operations/new-empty",
+    "users/DZAxEyaP3dVCPht51nagTHOK8eK2/operations/withdraw",
+    "users/DZAxEyaP3dVCPht51nagTHOK8eK2/savingsGoals/books",
+    "users/DZAxEyaP3dVCPht51nagTHOK8eK2/savingsGoals/emergency",
+    "users/DZAxEyaP3dVCPht51nagTHOK8eK2/savingsGoals/empty",
+    "users/DZAxEyaP3dVCPht51nagTHOK8eK2/savingsMovements/deposit-books",
+    "users/DZAxEyaP3dVCPht51nagTHOK8eK2/savingsMovements/deposit-emergency",
+    "users/DZAxEyaP3dVCPht51nagTHOK8eK2/savingsMovements/withdraw"
+  ],
+  "verifiedEmpty": true,
+  "modelCalls": 0
+}

@@ -1,0 +1,14 @@
+{
+  "project": "demo-ruma",
+  "productionWrites": 0,
+  "results": {
+    "auth": {
+      "status": 200,
+      "cleared": true
+    },
+    "firestore": {
+      "status": 200,
+      "cleared": true
+    }
+  }
+}

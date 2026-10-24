@@ -1,0 +1,24 @@
+{
+  "project": "mobile-app-3479f",
+  "status": "published_and_verified",
+  "productionWrites": "authorized synthetic fixtures + normal quota counters only",
+  "modelCalls": 4,
+  "sha256": {
+    "config/firebase/firestore.agent.rules": "a63af23d0e0e0c25b5b1ba6ebf1464d8e6fba1381afadf8f8715097127dcce97",
+    "backend/src/worker.mjs": "184ac2124177011f9e7ca54c0f05ad14b6d9f7dcff240aeadc59fdb159c34810",
+    "backend/src/agent.mjs": "95714501f07ca05a598ed5551a618c365c2f44ad380a8da4f4f4bd087cb92b9c",
+    "backend/src/record-tools.mjs": "1d5267e7443e23cd3f4d66429f46d48be84417b3da65cae991728640ab9c6fe9"
+  },
+  "flutterTestsPassed": 32,
+  "backendTestsPassed": 17,
+  "rulesTestsPassed": 38,
+  "nativeAndroidSuitePassed": true,
+  "normalApkInstalled": true,
+  "previewAbi": "x86_64",
+  "pendingApproval": [],
+  "workerPublished": true,
+  "workerVersion": "f0bc9c39",
+  "restoreRulesPublished": true,
+  "productionTestPassed": true,
+  "fixturesCleaned": true
+}

@@ -1,0 +1,124 @@
+Resolving dependencies...
+Downloading packages...
+  material_color_utilities 0.13.0 (0.13.1 available)
+  test_api 0.7.12 (0.7.15 available)
+  xml 7.0.1 (7.1.0 available)
+Got dependencies!
+3 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Running Gradle task 'assembleDebug'...                          
+WARNING: Your app uses the following plugins that apply Kotlin Gradle Plugin (KGP): firebase_auth, firebase_core
+Future versions of Flutter will fail to build if your app uses plugins that apply KGP.
+
+Please check the changelogs of these plugins and upgrade to a version that supports Built-in Kotlin.
+If no such version exists, report the issue to the plugin. If necessary, here is a guide on filing
+an issue against a plugin: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-app-developers#report-incompatible-kotlin-gradle-plugin-usage-to-plugin-authors
+
+If you are a plugin author, please migrate your plugin to Built-in Kotlin using this guide: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-plugin-authors
+Running Gradle task 'assembleDebug'...                             22.4s
+✓ Built build/app/outputs/flutter-apk/app-debug.apk
+Installing build/app/outputs/flutter-apk/app-debug.apk...        1,585ms
+I/Choreographer( 5210): Skipped 40 frames!  The application may be doing too much work on its main thread.
+D/FlutterJNI( 5210): Sending viewport metrics to the engine.
+D/ProfileInstaller( 5210): Installing profile for id.ruma.app
+VMServiceFlutterDriver: Connecting to Flutter application at http://127.0.0.1:45441/95pgUhwyEzw=/
+VMServiceFlutterDriver: Isolate found with number: 736043157755163
+VMServiceFlutterDriver: Isolate 736043157755163 is runnable.
+VMServiceFlutterDriver: Isolate is paused at start.
+VMServiceFlutterDriver: Attempting to resume isolate
+I/flutter ( 5210): 00:00 +0: native assistant keyboard leaves the input visible and hides navigation
+VMServiceFlutterDriver: Connected to Flutter application.
+I/FirebaseApp( 5210): Device unlocked: initializing all Firebase APIs for app [DEFAULT]
+D/FirebaseAuth( 5210): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth( 5210): Notifying auth state listeners about a sign-out event.
+W/System  ( 5210): Ignoring header X-Firebase-Locale because its value was null.
+D/TrafficStats( 5210): tagSocket(151) with statsTag=0xffffffff, statsUid=-1
+W/System  ( 5210): Ignoring header X-Firebase-Locale because its value was null.
+D/FirebaseAuth( 5210): Notifying id token listeners about user ( VtEnPUuptp0uy3gMjt5qiunG09qg ).
+D/FirebaseAuth( 5210): Notifying auth state listeners about user ( VtEnPUuptp0uy3gMjt5qiunG09qg ).
+D/FlutterJNI( 5210): Sending viewport metrics to the engine.
+W/DynamiteModule( 5210): Local module descriptor class for com.google.android.gms.providerinstaller.dynamite not found.
+I/DynamiteModule( 5210): Considering local module com.google.android.gms.providerinstaller.dynamite:0 and remote module com.google.android.gms.providerinstaller.dynamite:0
+W/ProviderInstaller( 5210): Failed to load providerinstaller module: No acceptable module com.google.android.gms.providerinstaller.dynamite found. Local version is 0 and remote version is 0.
+D/ApplicationLoaders( 5210): Returning zygote-cached class loader: /system/framework/org.apache.http.legacy.jar
+D/nativeloader( 5210): Configuring clns-8 for other apk /system/framework/com.android.media.remotedisplay.jar. target_sdk_version=34, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+D/nativeloader( 5210): Configuring clns-9 for other apk /system/framework/com.android.location.provider.jar. target_sdk_version=34, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+D/ApplicationLoaders( 5210): Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+D/ApplicationLoaders( 5210): Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+D/nativeloader( 5210): InitLlndkLibrariesProduct: libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libRS.so:libandroid_net.so:libapexsupport.so:libbinder_ndk.so:libc.so:libcgrouprc.so:libclang_rt.asan-x86_64-android.so:libcom.android.tethering.connectivity_native.so:libdl.so:libft2.so:liblog.so:libm.so:libmediandk.so:libnativewindow.so:libneuralnetworks.so:libselinux.so:libsync.so:libvendorsupport.so:libvndksupport.so:libvulkan.so
+D/nativeloader( 5210): Configuring product-clns-10 for unbundled product apk /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk. target_sdk_version=34, uses_libraries=, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms:/product/lib64:/system/product/lib64
+D/nativeloader( 5210): InitVndkspLibrariesProduct: VNDK is deprecated with product
+D/nativeloader( 5210): Load /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64/libconscrypt_gmscore_jni.so using ns product-clns-10 from class loader (caller=/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!classes3.dex): ok
+I/id.ruma.app( 5210): Waiting for a blocking GC ClassLinker
+I/id.ruma.app( 5210): WaitForGcToComplete blocked ClassLinker on Background for 44.793ms
+V/NativeCrypto( 5210): Registering com/google/android/gms/org/conscrypt/NativeCrypto's 305 native methods...
+W/id.ruma.app( 5210): Accessing hidden method Ljava/security/spec/ECParameterSpec;->getCurveName()Ljava/lang/String; (unsupported, reflection, allowed)
+I/ProviderInstaller( 5210): Installed default security provider GmsCore_OpenSSL
+D/TrafficStats( 5210): tagSocket(164) with statsTag=0xffffffff, statsUid=-1
+D/EGL_emulation( 5210): app_time_stats: avg=1025.15ms min=416.29ms max=1905.62ms count=3
+W/WindowOnBackDispatcher( 5210): OnBackInvokedCallback is not enabled for the application.
+W/WindowOnBackDispatcher( 5210): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+I/ImeTracker( 5210): id.ruma.app:8373833f: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false
+D/InputMethodManager( 5210): showSoftInput() view=io.flutter.embedding.android.FlutterView{9dc69a1 VFE...... .F....ID 0,0-1080,2340 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+I/AssistStructure( 5210): Flattened final assist data: 504 bytes, containing 1 windows, 3 views
+D/InputConnectionAdaptor( 5210): The input method toggled cursor monitoring on
+D/InsetsController( 5210): show(ime(), fromIme=true)
+W/InteractionJankMonitor( 5210): Initializing without READ_DEVICE_CONFIG permission. enabled=true, interval=1, missedFrameThreshold=3, frameTimeThreshold=64, package=id.ruma.app
+D/FlutterJNI( 5210): Sending viewport metrics to the engine.
+D/FlutterJNI( 5210): Sending viewport metrics to the engine.
+D/FlutterJNI( 5210): Sending viewport metrics to the engine.
+D/FlutterJNI( 5210): Sending viewport metrics to the engine.
+D/FlutterJNI( 5210): Sending viewport metrics to the engine.
+D/FlutterJNI( 5210): Sending viewport metrics to the engine.
+D/FlutterJNI( 5210): Sending viewport metrics to the engine.
+D/FlutterJNI( 5210): Sending viewport metrics to the engine.
+D/FlutterJNI( 5210): Sending viewport metrics to the engine.
+D/FlutterJNI( 5210): Sending viewport metrics to the engine.
+D/FlutterJNI( 5210): Sending viewport metrics to the engine.
+D/FlutterJNI( 5210): Sending viewport metrics to the engine.
+D/EGL_emulation( 5210): app_time_stats: avg=141.93ms min=36.12ms max=338.08ms count=8
+I/ImeTracker( 5210): id.ruma.app:8373833f: onShown
+D/FlutterJNI( 5210): Sending viewport metrics to the engine.
+D/FlutterJNI( 5210): Sending viewport metrics to the engine.
+VMServiceFlutterDriver: request_data message is taking a long time to complete...
+I/ImeTracker( 5210): id.ruma.app:2b4a939: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT fromUser false
+D/EGL_emulation( 5210): app_time_stats: avg=444.21ms min=143.12ms max=941.54ms count=3
+I/ImeTracker( 5210): id.ruma.app:3a27b1b: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT fromUser false
+D/InputConnectionAdaptor( 5210): The input method toggled cursor monitoring off
+D/InsetsController( 5210): hide(ime(), fromIme=true)
+D/FlutterJNI( 5210): Sending viewport metrics to the engine.
+D/EGL_emulation( 5210): app_time_stats: avg=364.12ms min=10.62ms max=3422.10ms count=15
+D/FlutterJNI( 5210): Sending viewport metrics to the engine.
+W/FrameTracker( 5210): Missed SF frame:PREDICTION_ERROR, 53651, 0, CUJ=J<IME_INSETS_SHOW_ANIMATION::0@1@id.ruma.app>
+W/FrameTracker( 5210): Missed SF frame:PREDICTION_ERROR, 53687, 0, CUJ=J<IME_INSETS_SHOW_ANIMATION::0@1@id.ruma.app>
+W/FrameTracker( 5210): Missed SF frame:PREDICTION_ERROR, 53737, 0, CUJ=J<IME_INSETS_SHOW_ANIMATION::0@1@id.ruma.app>
+W/FrameTracker( 5210): Missed SF frame:PREDICTION_ERROR, 53773, 0, CUJ=J<IME_INSETS_SHOW_ANIMATION::0@1@id.ruma.app>
+W/FrameTracker( 5210): Missed SF frame:PREDICTION_ERROR, 53809, 0, CUJ=J<IME_INSETS_SHOW_ANIMATION::0@1@id.ruma.app>
+W/FrameTracker( 5210): Missed SF frame:PREDICTION_ERROR, 53845, 0, CUJ=J<IME_INSETS_SHOW_ANIMATION::0@1@id.ruma.app>
+W/FrameTracker( 5210): Missed SF frame:PREDICTION_ERROR, 53881, 0, CUJ=J<IME_INSETS_SHOW_ANIMATION::0@1@id.ruma.app>
+W/FrameTracker( 5210): Missed SF frame:PREDICTION_ERROR, 53910, 0, CUJ=J<IME_INSETS_SHOW_ANIMATION::0@1@id.ruma.app>
+W/FrameTracker( 5210): Missed SF frame:PREDICTION_ERROR, 53939, 0, CUJ=J<IME_INSETS_SHOW_ANIMATION::0@1@id.ruma.app>
+W/FrameTracker( 5210): Missed SF frame:PREDICTION_ERROR, 53968, 0, CUJ=J<IME_INSETS_SHOW_ANIMATION::0@1@id.ruma.app>
+W/FrameTracker( 5210): Missed SF frame:PREDICTION_ERROR, 53997, 0, CUJ=J<IME_INSETS_SHOW_ANIMATION::0@1@id.ruma.app>
+W/FrameTracker( 5210): Missed SF frame:UNKNOWN: 80, 54026, 0, CUJ=J<IME_INSETS_SHOW_ANIMATION::0@1@id.ruma.app>
+V/PerfettoTrigger( 5210): Triggering /system/bin/trigger_perfetto com.android.telemetry.interaction-jank-monitor-80
+D/FlutterJNI( 5210): Sending viewport metrics to the engine.
+D/FlutterJNI( 5210): Sending viewport metrics to the engine.
+D/FlutterJNI( 5210): Sending viewport metrics to the engine.
+D/FlutterJNI( 5210): Sending viewport metrics to the engine.
+W/System  ( 5210): Ignoring header X-Firebase-Locale because its value was null.
+D/FlutterJNI( 5210): Sending viewport metrics to the engine.
+D/FlutterJNI( 5210): Sending viewport metrics to the engine.
+D/FirebaseAuth( 5210): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth( 5210): Notifying auth state listeners about a sign-out event.
+I/flutter ( 5210): 00:06 +1: (tearDownAll)
+D/FlutterJNI( 5210): Sending viewport metrics to the engine.
+I/flutter ( 5210): 00:06 +2: All tests passed!
+D/FlutterJNI( 5210): Sending viewport metrics to the engine.
+All tests passed.
+D/FlutterJNI( 5210): Sending viewport metrics to the engine.
+D/FlutterJNI( 5210): Sending viewport metrics to the engine.
+D/FlutterJNI( 5210): Sending viewport metrics to the engine.
+D/FlutterJNI( 5210): Sending viewport metrics to the engine.
+D/FlutterJNI( 5210): Sending viewport metrics to the engine.
+D/FlutterJNI( 5210): Sending viewport metrics to the engine.

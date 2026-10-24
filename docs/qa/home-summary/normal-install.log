@@ -1,0 +1,9 @@
+Initial pm clear returned Failed; pm path then found no installed package after the integration driver finished.
+Normal candidate install -r: Success.
+Starting: Intent { cmp=id.ruma.app/.MainActivity }
+Status: ok
+LaunchState: COLD
+Activity: id.ruma.app/.MainActivity
+TotalTime: 4109
+WaitTime: 4115
+Complete

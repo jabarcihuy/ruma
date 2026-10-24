@@ -1,0 +1,12 @@
+{
+  "name": "ruma-backend-checks",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/agent.test.mjs tests/auth.test.mjs tests/proxy.test.mjs tests/quota-commit.test.mjs",
+    "test:ai": "node tests/agent-live.mjs",
+    "test:rules": "node --test tests/firestore.rules.test.mjs && node --test tests/quota.test.mjs"
+  },
+  "dependencies": {"jose": "6.2.2"},
+  "devDependencies": {"@firebase/rules-unit-testing": "5.0.1", "firebase": "12.9.0"}
+}

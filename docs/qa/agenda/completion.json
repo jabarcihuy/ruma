@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-19",
+  "scope": "manual single-occurrence agenda",
+  "rulesPublished": true,
+  "rulesCasesPassed": 12,
+  "flutterTestsPassed": 10,
+  "analyzerIssues": 0,
+  "androidEmulatorSuitePassed": true,
+  "androidProductionSuitePassed": true,
+  "productionFixtureAuthAccountsDeleted": 2,
+  "productionFixtureDocumentsDeleted": 5,
+  "localTestServersStopped": true,
+  "adbTestReversePortsRemoved": [
+    9096,
+    8086
+  ],
+  "normalPreviewInstalledAndLaunched": true,
+  "modelCalls": 0,
+  "sqliteAdded": false,
+  "nextStep": "Manual finance: transactions, budgets and summary"
+}

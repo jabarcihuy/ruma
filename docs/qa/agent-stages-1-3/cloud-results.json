@@ -1,0 +1,23 @@
+{
+  "project": "mobile-app-3479f",
+  "suite": "agent_tools_cloud_test",
+  "fixtureUids": [
+    "pLoQ78vMkUYd38qxdsofiog4mBo1",
+    "rX3OSaRuZ1a9vWu5n6fj9ae34Ef1"
+  ],
+  "authFixturesDeleted": [
+    "pLoQ78vMkUYd38qxdsofiog4mBo1",
+    "rX3OSaRuZ1a9vWu5n6fj9ae34Ef1"
+  ],
+  "modelCalls": 4,
+  "passed": true,
+  "cases": [
+    "four bounded real model calls",
+    "reviewed combined slots and save",
+    "read no writes",
+    "existing agenda edit and undo",
+    "expense delete and exact restore",
+    "retry no duplicates",
+    "UID isolation"
+  ]
+}

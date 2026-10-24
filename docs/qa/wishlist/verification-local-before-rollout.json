@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-22",
+  "stage": "wishlist-savings",
+  "productionWrites": 0,
+  "modelCalls": 0,
+  "fcmCalls": 0,
+  "analyzer": "clean",
+  "flutterTestsPassed": 77,
+  "widgetConfirmationPassed": 9,
+  "savingsWishlistRulesTestsPassed": 13,
+  "rulesRegressionPassed": 51,
+  "androidCaseGroupsPassed": 6,
+  "candidateRules": {
+    "path": "config/firebase/firestore.wishlist.rules",
+    "sha256": "0217e0247e06a58a9332b1e782bb008c3fc4472784b2437e1db59701f380ee6b",
+    "published": false
+  },
+  "candidateApk": {
+    "path": "output/apk/ruma-wishlist-candidate.apk",
+    "sha256": "fe4360df78a88cf187f32e34638425812f02dff4ece11b521488aa5e26214f85",
+    "bytes": 102430734,
+    "target": "normal debug x86_64, production Firebase config",
+    "installedAsNormal": false,
+    "releaseSigned": false
+  },
+  "activeRules": "config/firebase/firestore.savings.rules",
+  "normalApkRestored": "output/apk/ruma-savings-ui-candidate.apk",
+  "localAuthAndFirestoreCleared": true,
+  "reversePortsRemoved": true,
+  "screenshots": [
+    "docs/qa/wishlist/01-savings-empty.png",
+    "docs/qa/wishlist/02-goal-form.png",
+    "docs/qa/wishlist/03-deposit-form.png",
+    "docs/qa/wishlist/04-edit-goal.png",
+    "docs/qa/wishlist/05-savings-detail.png",
+    "docs/qa/wishlist/06-savings-list.png",
+    "docs/qa/wishlist/07-withdrawal-form.png",
+    "docs/qa/wishlist/08-finance-summary.png",
+    "docs/qa/wishlist/09-home-summary.png"
+  ],
+  "visualConfirmation": "Selected icon no longer has a checkbox overlay; final form and list visually inspected; first pass archived",
+  "productionApprovalPending": true,
+  "deferred": [
+    "expense pie",
+    "savings agent tools",
+    "Figma/PDF update"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "requestTimeWib": "2026-10-21 08:30:30.642",
+  "workerVersion": "774700f2-baa7-48c8-ada9-a417fb6d88db",
+  "httpStatus": 502,
+  "outcome": "ok",
+  "wallTimeMs": 16480,
+  "cpuTimeMs": 10,
+  "cpuExceeded": false,
+  "requestId": "b38cd51b307696a2b2c49ce4bdbaf895",
+  "globalAiRequestsReservedToday": 2,
+  "reason": "Response body not retained by client; provider_unavailable or invalid_model_output cannot be distinguished from HTTP status alone",
+  "retryPerformed": false,
+  "fixtureRequests": [
+    {
+      "uid": "x6peUeYuRYWyUQo49ewtXvR1aK53",
+      "reserved": 0
+    },
+    {
+      "uid": "MR2800tg5ROh7wujWImX3gBJ5VH3",
+      "reserved": 1
+    }
+  ],
+  "globalCounterIsNotTestSpecific": true
+}

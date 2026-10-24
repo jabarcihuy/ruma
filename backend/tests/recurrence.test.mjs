@@ -1,0 +1,21 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';
+import {weeklyMeeting,nextWeekly} from '../src/recurrence.mjs';
+import {dispatchReminders} from '../src/notifications.mjs';
+const start=new Date('2026-11-02T02:00:00Z');
+const base=()=>({title:'Kuliah',description:'',kind:'class',priority:'normal',durationMinutes:60,startAtUtc:start,deadlineAtUtc:null,status:'planned',deletedAt:null,version:1,recurrence:{type:'weekly',originDate:'2026-11-02',untilLocalDate:null,exceptions:'{}',changes:'{}'}});
+const value=(date,status='planned')=>({title:'Pindah',description:'',kind:'class',priority:'normal',durationMinutes:60,startAtUtc:date,deadlineAtUtc:null,status});
+test('weekly next, moved in and earliest regular occurrence keep original identity',()=>{const a=base();a.recurrence.exceptions=JSON.stringify({'2026-11-09':value('2026-12-01T02:00:00Z')});assert.equal(weeklyMeeting(a,'2026-11-09').startAtUtc.toISOString(),'2026-12-01T02:00:00.000Z');assert.equal(nextWeekly(a,new Date('2026-11-08')).occurrenceDate,'2026-11-16');});
+test('future changes, cancellation and finite end are respected',()=>{const a=base();a.recurrence.changes=JSON.stringify({'2026-11-09':value('2026-11-10T03:00:00Z')});a.recurrence.exceptions=JSON.stringify({'2026-11-16':value('2026-11-17T03:00:00Z','cancelled')});a.recurrence.untilLocalDate='2026-11-23';assert.equal(nextWeekly(a,new Date('2026-11-11')).occurrenceDate,'2026-11-23');assert.equal(nextWeekly(a,new Date('2026-12-01')),null);assert.equal(weeklyMeeting(a,'2026-11-02').title,'Kuliah');});
+test('invalid JSON, wrong original weekday and invalid dates fail closed',()=>{for(const p of [{exceptions:'[]'},{originDate:'2026-02-30'},{exceptions:JSON.stringify({'2026-11-03':value('2026-11-03T02:00:00Z')})}])assert.throws(()=>nextWeekly({...base(),recurrence:{...base().recurrence,...p}},new Date('2026-11-01')));});
+class Memory {
+ constructor(){this.docs=new Map();this.rev=0;}
+ put(path,data){this.docs.set(path,{path,data,version:String(++this.rev)});}
+ async get(path){return structuredClone(this.docs.get(path)??null);}
+ async commit(w){for(const a of w){const d=this.docs.get(a.path);if(a.version?d?.version!==a.version:!!d)throw Error('conflict');}for(const a of w)this.put(a.path,a.data);}
+ async query(parent,q){return [...this.docs.values()].filter(d=>parent?d.path.startsWith(parent+'/devices/')&&d.data.enabled:d.path.includes('/reminders/')&&['queued','leased'].includes(d.data.status)&&d.data.availableAtUtc<=now).slice(0,q.limit).map(x=>structuredClone(x));}
+}
+const now=new Date('2026-11-02T01:50:00Z');
+function setup(devices=true){const db=new Memory();db.put('users/u/agenda/a',base());db.put('users/u/reminders/a',{agendaId:'a',sourceVersion:1,generation:1,enabled:true,leadMinutes:10,occurrenceDate:'2026-11-02',anchorAtUtc:start,dueAtUtc:now,availableAtUtc:now,status:'queued',attempts:0,leaseId:null,leaseUntilUtc:null,lastError:null,deviceResults:{}});if(devices)db.put('users/u/devices/d',{enabled:true,token:'synthetic'});return db;}
+const env={FIREBASE_PROJECT_ID:'demo-ruma',NOTIFICATIONS_ENABLED:'true'};
+test('weekly dispatch writes one old inbox and atomically advances next cursor',async()=>{const db=setup();let sends=0;const s=await dispatchReminders(env,{db,token:'synthetic',now,fetch:async(_,o)=>{sends++;assert.equal(JSON.parse(o.body).message.data.occurrenceDate,'2026-11-02');return Response.json({name:'sent'});}});assert.equal(s.sent,1);assert.equal(sends,1);assert.equal((await db.get('users/u/reminders/a')).data.occurrenceDate,'2026-11-09');assert.equal((await db.get('users/u/reminders/a')).data.generation,2);assert.equal((await db.get('users/u/notifications/a_1')).data.occurrenceDate,'2026-11-02');});
+test('no devices still advances recurring cursor; cancelled meeting never sends',async()=>{const db=setup(false);await dispatchReminders(env,{db,token:'synthetic',now,fetch:()=>assert.fail('send')});assert.equal((await db.get('users/u/reminders/a')).data.occurrenceDate,'2026-11-09');const other=setup();const a=base();a.recurrence.exceptions=JSON.stringify({'2026-11-02':value(start.toISOString(),'cancelled')});other.put('users/u/agenda/a',a);await dispatchReminders(env,{db:other,token:'synthetic',now,fetch:()=>assert.fail('cancelled send')});assert.equal((await other.get('users/u/reminders/a')).data.status,'cancelled');});

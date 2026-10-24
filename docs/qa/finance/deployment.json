@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-19",
+  "projectId": "mobile-app-3479f",
+  "rulesFile": "config/firebase/firestore.finance.rules",
+  "sha256": "9f13b4bcf240accb825a4c390dc703fc26e3d594ccf8b9ed86ee49462edcc27f",
+  "published": true,
+  "status": "published and native SDK production smoke passed; fixtures cleaned",
+  "editorContentComparedWithLocalFile": true,
+  "editorCharacters": 18360,
+  "evidence": "docs/qa/finance/rules-published.jpg",
+  "proposedProductionTest": "integration_test/finance_cloud_test.dart",
+  "testGuard": "FINANCE_LIVE_TESTS=true; AUTH_EMULATOR=false",
+  "proposedCleanup": "backend/tests/finance-cloud-cleanup.mjs; exact two synthetic UIDs, transactions/months/state/operations only",
+  "billingChanged": false,
+  "iamRolesChanged": false,
+  "modelCalls": 0,
+  "consoleVersionLabel": "Today • 10:02 PM",
+  "publicationMethod": "Firebase Console; explicit user authorization",
+  "productionSdkEvidence": "docs/qa/finance/cloud-results.json",
+  "fixtureCleanupEvidence": [
+    "docs/qa/finance/cloud-first-failed-cleanup.json",
+    "docs/qa/finance/cloud-cleanup.json"
+  ]
+}

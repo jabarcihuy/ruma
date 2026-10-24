@@ -1,0 +1,12 @@
+{
+  "project": "mobile-app-3479f",
+  "fixtureUids": [
+    "CjBPkZaRVmXSBuSLkap9PrjZ9Fx1"
+  ],
+  "deleted": [
+    "users/CjBPkZaRVmXSBuSLkap9PrjZ9Fx1/assistant/session",
+    "users/CjBPkZaRVmXSBuSLkap9PrjZ9Fx1/settings/personal"
+  ],
+  "verifiedEmpty": true,
+  "modelCalls": 0
+}

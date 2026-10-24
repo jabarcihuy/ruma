@@ -1,0 +1,11 @@
+
+ ⛅️ wrangler 4.151.1 (update available 4.151.3)
+───────────────────────────────────────────────
+Total Upload: 55.05 KiB / gzip: 17.84 KiB
+Your Worker has access to the following bindings:
+Binding                                             Resource                  
+env.FIREBASE_PROJECT_ID ("mobile-app-3479f")        Environment Variable      
+env.AI_GLOBAL_DAILY_LIMIT ("10")                    Environment Variable      
+env.NOTIFICATIONS_ENABLED ("true")                  Environment Variable      
+
+--dry-run: exiting now.

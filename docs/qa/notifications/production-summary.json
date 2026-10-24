@@ -1,0 +1,15 @@
+{
+  "project": "mobile-app-3479f",
+  "status": "verified_and_cleaned",
+  "realFcmMessages": 3,
+  "reservedPushJobs": 3,
+  "modelCalls": 0,
+  "authFixturesDeleted": 5,
+  "firestoreFixtureDocumentsDeleted": 24,
+  "quotaCountersPreserved": true,
+  "foreground": true,
+  "backgroundAndTap": true,
+  "terminatedAndColdTap": true,
+  "normalApkMatchesCandidate": true,
+  "remainingApprovedFcmBudget": 0
+}

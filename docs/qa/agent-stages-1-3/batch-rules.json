@@ -1,0 +1,15 @@
+{
+  "productionWrites": 0,
+  "cases": [
+    "3+3 same month",
+    "3+3 three months",
+    "single domain",
+    "atomic rollback",
+    "missing dependency",
+    "arithmetic forgery",
+    "manifest boundary",
+    "ownership immutable identities",
+    "existing ledger batch",
+    "unlisted target"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-19",
+  "scope": "19 implemented Flutter pages/states",
+  "flutterTestsPassed": 27,
+  "analyzerClean": true,
+  "nativeSuiteRun": true,
+  "installed": true,
+  "productionWrites": 0,
+  "modelCalls": 0,
+  "backendChanged": false,
+  "figmaChanged": false,
+  "apkBuilt": true,
+  "apk": "output/apk/ruma-ui-preview.apk",
+  "emulatorStopped": true,
+  "contrastMinimumMeasured": 4.53,
+  "nativeSuitePassed": true,
+  "nativeScreenshots": 26,
+  "nativeVisualVerified": true,
+  "coldLaunch": true,
+  "fixturesCleaned": true,
+  "reviewPdf": "output/pdf/ruma-review-antarmuka.pdf",
+  "reviewPdfPages": 9
+}

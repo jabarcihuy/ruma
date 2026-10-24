@@ -1,0 +1,354 @@
+{
+  "date": "2026-10-17",
+  "sourceRevision": "v26-icon-only-abstract-friend",
+  "copiedFiles": 69,
+  "missingFromOriginalManifest": [],
+  "originalManifestHashMismatches": [],
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 3313,
+      "sha256": "935a1d9d58d09cd6aa863bff6bc760cfe3914a68092ae8961c3b52407891cb74"
+    },
+    {
+      "path": "brand/app-foreground.svg",
+      "bytes": 244,
+      "sha256": "6b1cb458d7d077965d422b6ccab86427b11db54aa3658874bf5c004cb4dd7250"
+    },
+    {
+      "path": "brand/app-icon.svg",
+      "bytes": 299,
+      "sha256": "6b009031cabb3af5b5463c6fb14349eeef126d1702af33f863f336e97411b32b"
+    },
+    {
+      "path": "brand/brand-mark.svg",
+      "bytes": 242,
+      "sha256": "499af8e11bb6c1460d171f84fae1e2974cfa673866adf9394fb4f7d649aedfa4"
+    },
+    {
+      "path": "brand/notification-mark.svg",
+      "bytes": 244,
+      "sha256": "9799d58476e70e0f38252328c790ce45e3c6c8bb49f3b95073680ebba90e0b01"
+    },
+    {
+      "path": "fonts/Manrope-Variable.ttf",
+      "bytes": 164700,
+      "sha256": "3ae11c49db0455a3cc33e37d380f20fdb8c7f8b41dc07625c177e3d87a9d6ae6"
+    },
+    {
+      "path": "fonts/OFL.txt",
+      "bytes": 4387,
+      "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b"
+    },
+    {
+      "path": "icons/LICENSE-Lucide-v0.468.0.txt",
+      "bytes": 880,
+      "sha256": "1e7290b35280a048667bbf0ebabac1c7fd52a75300e8b2946ac165715997f2bc"
+    },
+    {
+      "path": "icons/LICENSE-Lucide.txt",
+      "bytes": 3208,
+      "sha256": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57"
+    },
+    {
+      "path": "icons/arrow-left.svg",
+      "bytes": 257,
+      "sha256": "489e8713d451f2ca6fa771c7645bebb9fc6a164a07a5fa2c7b7250e69700c510"
+    },
+    {
+      "path": "icons/battery-full.svg",
+      "bytes": 352,
+      "sha256": "797fcedd8f38355d104bb77a32be2fb5ec77af6bf708b5c1a3e7752483626283"
+    },
+    {
+      "path": "icons/bell.svg",
+      "bytes": 388,
+      "sha256": "781eb9cea071bc90401999f3c620d35ce6412078738a60a1b738de00117b0ef0"
+    },
+    {
+      "path": "icons/book-open.svg",
+      "bytes": 382,
+      "sha256": "2a247903721076878b33f7105383b72a644a9193fdf6c4188d32d7539881e018"
+    },
+    {
+      "path": "icons/bus-front.svg",
+      "bytes": 404,
+      "sha256": "a39eb3b549e8e900a0c5d050273254f8cfd02651d0d7e3efbbc79a7418f841f9"
+    },
+    {
+      "path": "icons/calendar-days.svg",
+      "bytes": 478,
+      "sha256": "ef9d6f4b88f5a8b70264d099cbd3ac902f9a09ae36f714e741c74ef5dd076f95"
+    },
+    {
+      "path": "icons/check-check.svg",
+      "bytes": 270,
+      "sha256": "674eb76f364c211bbb285ecf8f83c98b572410c03c323241f9eb2a756032a9ff"
+    },
+    {
+      "path": "icons/check.svg",
+      "bytes": 234,
+      "sha256": "41dacbd420ca434eb7abc47e16fc1cffbcb609a79b8f592f232cdc101a70bec4"
+    },
+    {
+      "path": "icons/chevron-down.svg",
+      "bytes": 231,
+      "sha256": "654ff8394eb85dd0a2ea991a8bec21f9af014e42595cbdd16dfeb76adfe30726"
+    },
+    {
+      "path": "icons/chevron-right.svg",
+      "bytes": 232,
+      "sha256": "5111de69b377ce6762e010320bc9cbca4f2f3b405c9a9e7cc52be3f54222cdce"
+    },
+    {
+      "path": "icons/circle-alert.svg",
+      "bytes": 327,
+      "sha256": "b56183b12dc19d38e88745e4436cd5a3585502c89c19f15ff2ccb21b1afd49b9"
+    },
+    {
+      "path": "icons/clock-3.svg",
+      "bytes": 264,
+      "sha256": "96baf7a0740384e55574ed8a6d0877439146ef740f7ebbf2ba250738e0261746"
+    },
+    {
+      "path": "icons/coffee.svg",
+      "bytes": 374,
+      "sha256": "a99c58c9b7d0cd5db6eb8a0c212d9171cc7618525adbebe85fd33fb9a4c680c7"
+    },
+    {
+      "path": "icons/flag.svg",
+      "bytes": 365,
+      "sha256": "c9c8df08280f323fd3ef820588ce68c044ee68d5cb187c2d3bcd88211c47c5d5"
+    },
+    {
+      "path": "icons/house.svg",
+      "bytes": 480,
+      "sha256": "6769634bce9d7b228fdf924e50fa9c27d58e3e58d2dd2c42fe191e51fdae3717"
+    },
+    {
+      "path": "icons/inbox.svg",
+      "bytes": 383,
+      "sha256": "eef836b7f2d869ce86d977366cde4ede7908805d76eef82fed0416cbb80ff6d4"
+    },
+    {
+      "path": "icons/loader-circle.svg",
+      "bytes": 246,
+      "sha256": "7a5a68a3876941dcaecac9afe5630b0d2c9a497963365634e4be6b24cd09062f"
+    },
+    {
+      "path": "icons/lock-keyhole.svg",
+      "bytes": 332,
+      "sha256": "84082e244181c323ffd323035fd960df32c15a0eed1b590f9e139a1f0c13d147"
+    },
+    {
+      "path": "icons/log-out.svg",
+      "bytes": 312,
+      "sha256": "e5a15a381e574eed95df1b713af03206d913bb19021d5c46595a0aeebe376c6a"
+    },
+    {
+      "path": "icons/mail.svg",
+      "bytes": 311,
+      "sha256": "44ec5be9185ccdc2fbd7f08d3cda08c204329003b9f3b40deacb7d90a12a2ae3"
+    },
+    {
+      "path": "icons/message-circle.svg",
+      "bytes": 588,
+      "sha256": "85dd1d71ebc9a5575f4fd0cafdc7b8feb5368168acce6e4cbfcfd22e45218a51"
+    },
+    {
+      "path": "icons/moon.svg",
+      "bytes": 329,
+      "sha256": "96a369cfdcee83580a70691902474f971a0801dc05e2b50a4437456118d72d81"
+    },
+    {
+      "path": "icons/plus.svg",
+      "bytes": 251,
+      "sha256": "72a8b1299143597ed54ee33a0283b23edbd82499ed333e4b1553999cb9d379a6"
+    },
+    {
+      "path": "icons/refresh-cw.svg",
+      "bytes": 387,
+      "sha256": "42b4b33edd88ee05f1319e1c9e33986157a878b86f67caace9110291dec47718"
+    },
+    {
+      "path": "icons/search.svg",
+      "bytes": 270,
+      "sha256": "a796f7eccb8967b49800ec96c659173474f0772ab345121588ee13fa8c26ee5f"
+    },
+    {
+      "path": "icons/send.svg",
+      "bytes": 388,
+      "sha256": "ff7b7bf94033d4e10672784206b0401a208bf634a10207d1453f0b6c92548b6e"
+    },
+    {
+      "path": "icons/settings-2.svg",
+      "bytes": 319,
+      "sha256": "8467e9b710f7d9db8e61626af6c14791b5e91abfabd55c02b958382e4a3f4ead"
+    },
+    {
+      "path": "icons/shield-check.svg",
+      "bytes": 410,
+      "sha256": "b642a04ae8253d6bc4aa4453335f5d554e107b492fa85714ad34b9bc71b0d784"
+    },
+    {
+      "path": "icons/signal.svg",
+      "bytes": 325,
+      "sha256": "dc0d70befcf83711e7e8b4c963cdc40a880c4b45d92a2851b201ca5f9c4d4532"
+    },
+    {
+      "path": "icons/sliders-horizontal.svg",
+      "bytes": 417,
+      "sha256": "bc6d01425c93601c40a49911047547cd17d5c9914fc82103dc4646d79f5b6388"
+    },
+    {
+      "path": "icons/sun.svg",
+      "bytes": 480,
+      "sha256": "c53bdbc7a66b431f0aed1cfce2a54e1ca58ad6a0b069c9dd515ab17a9dd4ac3d"
+    },
+    {
+      "path": "icons/user-round.svg",
+      "bytes": 274,
+      "sha256": "fd788c4a8626cb1f624e403e37afdb3d33df7b48b489a2c08189af612216e048"
+    },
+    {
+      "path": "icons/utensils.svg",
+      "bytes": 314,
+      "sha256": "82da38024b46041486dc51e342ee4f5335abaa977069a8b3fdd1d2223f420a55"
+    },
+    {
+      "path": "icons/wallet.svg",
+      "bytes": 771,
+      "sha256": "fdf73c741fe3d235a26966c7bfa22ca005baefca54cc14ecdad606bd789a597c"
+    },
+    {
+      "path": "icons/wifi.svg",
+      "bytes": 352,
+      "sha256": "cfcbb95bfa3751a699032f8efebb89dd12c8759afb2e2b8687b4fece119c2888"
+    },
+    {
+      "path": "illustrations/illustration-calendar.svg",
+      "bytes": 2543,
+      "sha256": "ef1d701f467e3007e4c3b39e28eb8e7fcf06163bf248fb76f2cd11462a3e38a9"
+    },
+    {
+      "path": "illustrations/illustration-search.svg",
+      "bytes": 2282,
+      "sha256": "c354f44fba502df4e2e265c3179335530ac779b10d3a416b8872e35498fd5c58"
+    },
+    {
+      "path": "illustrations/illustration-wallet.svg",
+      "bytes": 933,
+      "sha256": "052a159b838ae24cbf4bae63abab57d63f7d2aed49d6a7f472dfffcea59716a7"
+    },
+    {
+      "path": "launcher/app-foreground-1024.png",
+      "bytes": 18761,
+      "sha256": "122ffca0711025083acc2aa14fd1c6adc7681130011c832ebe858fc94f6b0cf3"
+    },
+    {
+      "path": "launcher/app-foreground-108.png",
+      "bytes": 1562,
+      "sha256": "8edc504ba2f432137fdc74e841577af569b6db00a8feffe913f6c137b8fdc91e"
+    },
+    {
+      "path": "launcher/app-foreground-162.png",
+      "bytes": 2345,
+      "sha256": "8d3190cc53ba32ed90ff23ee9c8ed2816ee7aea7a0f425d9e04f7d7301a45704"
+    },
+    {
+      "path": "launcher/app-foreground-216.png",
+      "bytes": 3117,
+      "sha256": "e253b0083e623ab16965aefe966f3318025d29b5ddf213985d12dbd3419acbee"
+    },
+    {
+      "path": "launcher/app-foreground-324.png",
+      "bytes": 4869,
+      "sha256": "ac889edf3c5753ef7106385a40737dbcfaab9c40d2f4d00ca526c086395a1bd0"
+    },
+    {
+      "path": "launcher/app-foreground-432.png",
+      "bytes": 6760,
+      "sha256": "9e790ff376b0ae940d6cf9253c28816f2fdca76326daf6bf64e856069583b8c0"
+    },
+    {
+      "path": "launcher/app-icon-1024.png",
+      "bytes": 31694,
+      "sha256": "74a7037572fa546fdada252363f34023e1f4f315f7736c44368a04153fd8c1b8"
+    },
+    {
+      "path": "launcher/app-icon-144.png",
+      "bytes": 3493,
+      "sha256": "0f1c0086062b92af51993b035224dccb97eb409a64813d96907224b79fd94327"
+    },
+    {
+      "path": "launcher/app-icon-192.png",
+      "bytes": 4682,
+      "sha256": "bdf103dcc0d0ebf533c26a540b765defb6066de96db249138dd9e73aab8a8400"
+    },
+    {
+      "path": "launcher/app-icon-48.png",
+      "bytes": 1196,
+      "sha256": "9d71588e211260229ac596b4178b66d6cbfd4fc4d196eadd0f2f39a45a8f145c"
+    },
+    {
+      "path": "launcher/app-icon-512.png",
+      "bytes": 14165,
+      "sha256": "dd2049be26eb9cfafaca44b4f8bf37c2e7ac5386859effdeb0732f742d1e9ba4"
+    },
+    {
+      "path": "launcher/app-icon-72.png",
+      "bytes": 1738,
+      "sha256": "d0b1e50a98756f845d7f2afe9f255f8a325766a111f1e270c1c1bdf6ecc60955"
+    },
+    {
+      "path": "launcher/app-icon-96.png",
+      "bytes": 2274,
+      "sha256": "bf180fd0f4702d98d5441d9cbd490bd7b533bf9e1dc2dde7553783ecdacf2f1e"
+    },
+    {
+      "path": "launcher/notification-mark-24.png",
+      "bytes": 346,
+      "sha256": "9eeb026c3ae0972d4960454058f9cf648bd506cb5f2c5c3a30814f003dd9da54"
+    },
+    {
+      "path": "launcher/notification-mark-36.png",
+      "bytes": 469,
+      "sha256": "21ffa331287e456428f5a10e72e272a684bcf5b9a4510c54025faaffc85ec214"
+    },
+    {
+      "path": "launcher/notification-mark-48.png",
+      "bytes": 576,
+      "sha256": "49ed937a2fa5267d34b7bbe59519f197ea9560f23c9ecf063395c660d02e2ec3"
+    },
+    {
+      "path": "launcher/notification-mark-72.png",
+      "bytes": 782,
+      "sha256": "f95da9966448407cde1ad0d026f007c683441e6f8a9a27c69efa58f39cc76756"
+    },
+    {
+      "path": "launcher/notification-mark-96.png",
+      "bytes": 996,
+      "sha256": "f9aab16b1c2caf5e9b8a657743e999d4cab94b0ed50f0369f81aee9f805c5d90"
+    },
+    {
+      "path": "manifest.json",
+      "bytes": 16359,
+      "sha256": "4de7eab4e7cc2dbec6ebe2cbec5a589ce3e4b5c8a241be88856b126208a5e9a1"
+    },
+    {
+      "path": "mascot/abstract-friend-badge.svg",
+      "bytes": 1173,
+      "sha256": "56e2ee2ba9a0d9b0f9c985afebf9e450352920703f30344bb25938f2129c54ed"
+    },
+    {
+      "path": "mascot/abstract-friend-icon.svg",
+      "bytes": 829,
+      "sha256": "9d0e862f906e85c4d8923e121369b841a4f554c830d93de69eb86685b24b839f"
+    },
+    {
+      "path": "mascot/abstract-friend.svg",
+      "bytes": 1543,
+      "sha256": "c2c55ffcfef5def719e04bfd6e11cbb7bf6def69d6c4dcbd6cdba564b9b6b538"
+    }
+  ]
+}

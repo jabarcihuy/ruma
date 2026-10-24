@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-18",
+  "scope": "Android readiness recheck after user accepted licenses",
+  "androidSdk": "/home/ael/Android/Sdk",
+  "javaHome": "/usr/lib/jvm/java-17-openjdk",
+  "exitCode": 0,
+  "summary": [
+    "[✓] Flutter (Channel stable, 3.47.7, on CachyOS 7.2.9-2-cachyos, locale C.UTF-8) [92ms]",
+    "[✓] Android toolchain - develop for Android devices (Android SDK version 36.1.0) [1,809ms]",
+    "[✓] Connected device (1 available) [126ms]",
+    "[✓] Network resources [585ms]"
+  ],
+  "licensesAccepted": true,
+  "androidToolchainReady": true,
+  "sdkConfigExists": true,
+  "sdkConfigMatchesRuma": true,
+  "providerKeyConfigured": false
+}

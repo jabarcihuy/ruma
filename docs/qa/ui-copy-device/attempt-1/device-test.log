@@ -1,0 +1,200 @@
+Resolving dependencies...
+Downloading packages...
+  material_color_utilities 0.13.0 (0.13.1 available)
+  test_api 0.7.12 (0.7.15 available)
+  xml 7.0.1 (7.1.0 available)
+Got dependencies!
+3 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Running Gradle task 'assembleDebug'...                          
+WARNING: Your app uses the following plugins that apply Kotlin Gradle Plugin (KGP): firebase_auth, firebase_core
+Future versions of Flutter will fail to build if your app uses plugins that apply KGP.
+
+Please check the changelogs of these plugins and upgrade to a version that supports Built-in Kotlin.
+If no such version exists, report the issue to the plugin. If necessary, here is a guide on filing
+an issue against a plugin: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-app-developers#report-incompatible-kotlin-gradle-plugin-usage-to-plugin-authors
+
+If you are a plugin author, please migrate your plugin to Built-in Kotlin using this guide: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-plugin-authors
+Running Gradle task 'assembleDebug'...                             47.9s
+✓ Built build/app/outputs/flutter-apk/app-debug.apk
+Installing build/app/outputs/flutter-apk/app-debug.apk...        2,232ms
+I/id.ruma.app( 3855): Compiler allocated 5174KB to compile void android.view.ViewRootImpl.performTraversals()
+I/Choreographer( 3855): Skipped 128 frames!  The application may be doing too much work on its main thread.
+D/FlutterJNI( 3855): Sending viewport metrics to the engine.
+D/ProfileInstaller( 3855): Installing profile for id.ruma.app
+VMServiceFlutterDriver: Connecting to Flutter application at http://127.0.0.1:33957/uDFAQkTHGbw=/
+VMServiceFlutterDriver: Isolate found with number: 8367057453312467
+VMServiceFlutterDriver: Isolate 8367057453312467 is runnable.
+VMServiceFlutterDriver: Isolate is paused at start.
+VMServiceFlutterDriver: Attempting to resume isolate
+I/flutter ( 3855): 00:00 +0: all implemented phone pages and dialogs use consistent geometry
+VMServiceFlutterDriver: Connected to Flutter application.
+I/Choreographer( 3855): Skipped 33 frames!  The application may be doing too much work on its main thread.
+I/FirebaseApp( 3855): Device unlocked: initializing all Firebase APIs for app [DEFAULT]
+W/id.ruma.app( 3855): Verification of java.util.List com.google.firebase.datastorage.JavaDataStorage.dataStore_delegate$lambda$1(com.google.firebase.datastorage.JavaDataStorage, android.content.Context) took 132.950ms (135.39 bytecodes/s) (2696B approximate peak alloc)
+W/id.ruma.app( 3855): Verification of void kotlinx.coroutines.EventLoopImplBase.scheduleResumeAfterDelay(long, kotlinx.coroutines.CancellableContinuation) took 204.557ms (249.32 bytecodes/s) (3320B approximate peak alloc)
+D/FirebaseAuth( 3855): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth( 3855): Notifying auth state listeners about a sign-out event.
+W/id.ruma.app( 3855): Long monitor contention with owner Firebase Background Thread #0 (3947) at java.lang.Void com.google.firebase.heartbeatinfo.DefaultHeartBeatController.lambda$registerHeartBeat$0$com-google-firebase-heartbeatinfo-DefaultHeartBeatController()(DefaultHeartBeatController.java:71) waiters=1 in java.lang.Void com.google.firebase.heartbeatinfo.DefaultHeartBeatController.lambda$registerHeartBeat$0$com-google-firebase-heartbeatinfo-DefaultHeartBeatController() for 938ms
+W/id.ruma.app( 3855): Long monitor contention with owner Firebase Background Thread #0 (3947) at java.lang.Void com.google.firebase.heartbeatinfo.DefaultHeartBeatController.lambda$registerHeartBeat$0$com-google-firebase-heartbeatinfo-DefaultHeartBeatController()(DefaultHeartBeatController.java:71) waiters=2 in java.lang.Void com.google.firebase.heartbeatinfo.DefaultHeartBeatController.lambda$registerHeartBeat$0$com-google-firebase-heartbeatinfo-DefaultHeartBeatController() for 919ms
+W/id.ruma.app( 3855): Long monitor contention with owner Firebase Background Thread #0 (3947) at java.lang.Void com.google.firebase.heartbeatinfo.DefaultHeartBeatController.lambda$registerHeartBeat$0$com-google-firebase-heartbeatinfo-DefaultHeartBeatController()(DefaultHeartBeatController.java:71) waiters=0 in java.lang.Void com.google.firebase.heartbeatinfo.DefaultHeartBeatController.lambda$registerHeartBeat$0$com-google-firebase-heartbeatinfo-DefaultHeartBeatController() for 1.065s
+D/FlutterJNI( 3855): Sending viewport metrics to the engine.
+VMServiceFlutterDriver: request_data message is taking a long time to complete...
+D/EGL_emulation( 3855): app_time_stats: avg=1163.74ms min=143.52ms max=2525.39ms count=4
+W/WindowOnBackDispatcher( 3855): OnBackInvokedCallback is not enabled for the application.
+W/WindowOnBackDispatcher( 3855): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+D/EGL_emulation( 3855): app_time_stats: avg=280.44ms min=104.58ms max=566.78ms count=4
+W/WindowOnBackDispatcher( 3855): OnBackInvokedCallback is not enabled for the application.
+W/WindowOnBackDispatcher( 3855): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+D/EGL_emulation( 3855): app_time_stats: avg=173.61ms min=77.75ms max=364.74ms count=6
+D/EGL_emulation( 3855): app_time_stats: avg=210.90ms min=111.65ms max=578.33ms count=5
+W/System  ( 3855): Ignoring header X-Firebase-Locale because its value was null.
+D/TrafficStats( 3855): tagSocket(153) with statsTag=0xffffffff, statsUid=-1
+W/System  ( 3855): Ignoring header X-Firebase-Locale because its value was null.
+W/id.ruma.app( 3855): ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/talkback/talkback.apk' with 1 weak references
+W/id.ruma.app( 3855): ApkAssets: Deleting an ApkAssets object '/vendor/overlay/EmulatorTalkBackOverlay/EmulatorTalkBackOverlay.apk' with 1 weak references
+D/FirebaseAuth( 3855): Notifying id token listeners about user ( 5uSKPitjpV2Pj6moggtBCocHNCRT ).
+D/FirebaseAuth( 3855): Notifying auth state listeners about user ( 5uSKPitjpV2Pj6moggtBCocHNCRT ).
+W/DynamiteModule( 3855): Local module descriptor class for com.google.android.gms.providerinstaller.dynamite not found.
+I/DynamiteModule( 3855): Considering local module com.google.android.gms.providerinstaller.dynamite:0 and remote module com.google.android.gms.providerinstaller.dynamite:0
+W/ProviderInstaller( 3855): Failed to load providerinstaller module: No acceptable module com.google.android.gms.providerinstaller.dynamite found. Local version is 0 and remote version is 0.
+D/ApplicationLoaders( 3855): Returning zygote-cached class loader: /system/framework/org.apache.http.legacy.jar
+D/nativeloader( 3855): Configuring clns-8 for other apk /system/framework/com.android.media.remotedisplay.jar. target_sdk_version=34, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+D/nativeloader( 3855): Configuring clns-9 for other apk /system/framework/com.android.location.provider.jar. target_sdk_version=34, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+D/ApplicationLoaders( 3855): Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+D/ApplicationLoaders( 3855): Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+D/nativeloader( 3855): InitLlndkLibrariesProduct: libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libRS.so:libandroid_net.so:libapexsupport.so:libbinder_ndk.so:libc.so:libcgrouprc.so:libclang_rt.asan-x86_64-android.so:libcom.android.tethering.connectivity_native.so:libdl.so:libft2.so:liblog.so:libm.so:libmediandk.so:libnativewindow.so:libneuralnetworks.so:libselinux.so:libsync.so:libvendorsupport.so:libvndksupport.so:libvulkan.so
+D/nativeloader( 3855): Configuring product-clns-10 for unbundled product apk /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk. target_sdk_version=34, uses_libraries=, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms:/product/lib64:/system/product/lib64
+D/nativeloader( 3855): InitVndkspLibrariesProduct: VNDK is deprecated with product
+D/nativeloader( 3855): Load /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64/libconscrypt_gmscore_jni.so using ns product-clns-10 from class loader (caller=/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!classes3.dex): ok
+I/id.ruma.app( 3855): Waiting for a blocking GC ClassLinker
+I/id.ruma.app( 3855): WaitForGcToComplete blocked ClassLinker on Background for 17.342ms
+V/NativeCrypto( 3855): Registering com/google/android/gms/org/conscrypt/NativeCrypto's 305 native methods...
+W/id.ruma.app( 3855): Accessing hidden method Ljava/security/spec/ECParameterSpec;->getCurveName()Ljava/lang/String; (unsupported, reflection, allowed)
+I/ProviderInstaller( 3855): Installed default security provider GmsCore_OpenSSL
+D/TrafficStats( 3855): tagSocket(168) with statsTag=0xffffffff, statsUid=-1
+D/EGL_emulation( 3855): app_time_stats: avg=3509.29ms min=117.89ms max=6900.69ms count=2
+D/EGL_emulation( 3855): app_time_stats: avg=227.79ms min=127.05ms max=705.15ms count=7
+W/WindowOnBackDispatcher( 3855): OnBackInvokedCallback is not enabled for the application.
+W/WindowOnBackDispatcher( 3855): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+D/EGL_emulation( 3855): app_time_stats: avg=129.43ms min=19.20ms max=391.70ms count=8
+D/EGL_emulation( 3855): app_time_stats: avg=1233.45ms min=1233.45ms max=1233.45ms count=1
+D/EGL_emulation( 3855): app_time_stats: avg=265.79ms min=90.51ms max=564.24ms count=4
+D/EGL_emulation( 3855): app_time_stats: avg=161.43ms min=93.17ms max=262.48ms count=7
+D/EGL_emulation( 3855): app_time_stats: avg=178.48ms min=100.66ms max=496.27ms count=6
+D/EGL_emulation( 3855): app_time_stats: avg=214.01ms min=110.19ms max=601.48ms count=7
+D/EGL_emulation( 3855): app_time_stats: avg=113.61ms min=20.74ms max=215.50ms count=9
+D/EGL_emulation( 3855): app_time_stats: avg=233.87ms min=110.23ms max=711.86ms count=5
+W/id.ruma.app( 3855): ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/talkback/talkback.apk' with 1 weak references
+W/id.ruma.app( 3855): ApkAssets: Deleting an ApkAssets object '/vendor/overlay/EmulatorTalkBackOverlay/EmulatorTalkBackOverlay.apk' with 1 weak references
+D/EGL_emulation( 3855): app_time_stats: avg=215.94ms min=100.86ms max=516.88ms count=5
+D/EGL_emulation( 3855): app_time_stats: avg=142.75ms min=91.49ms max=255.73ms count=7
+D/EGL_emulation( 3855): app_time_stats: avg=213.15ms min=105.80ms max=581.29ms count=5
+D/EGL_emulation( 3855): app_time_stats: avg=228.88ms min=105.06ms max=740.66ms count=7
+D/EGL_emulation( 3855): app_time_stats: avg=151.24ms min=103.35ms max=295.29ms count=7
+D/EGL_emulation( 3855): app_time_stats: avg=256.71ms min=115.53ms max=646.17ms count=4
+D/EGL_emulation( 3855): app_time_stats: avg=131.88ms min=106.24ms max=207.38ms count=8
+D/EGL_emulation( 3855): app_time_stats: avg=260.57ms min=113.55ms max=638.68ms count=4
+D/EGL_emulation( 3855): app_time_stats: avg=181.04ms min=111.26ms max=382.02ms count=6
+D/EGL_emulation( 3855): app_time_stats: avg=250.05ms min=108.69ms max=645.94ms count=4
+D/EGL_emulation( 3855): app_time_stats: avg=96.76ms min=14.64ms max=137.48ms count=11
+D/EGL_emulation( 3855): app_time_stats: avg=213.30ms min=55.11ms max=648.98ms count=5
+D/EGL_emulation( 3855): app_time_stats: avg=205.42ms min=94.85ms max=585.58ms count=5
+D/EGL_emulation( 3855): app_time_stats: avg=110.00ms min=9.51ms max=161.61ms count=9
+D/EGL_emulation( 3855): app_time_stats: avg=256.72ms min=124.93ms max=628.59ms count=4
+D/EGL_emulation( 3855): app_time_stats: avg=171.29ms min=18.29ms max=682.03ms count=9
+D/EGL_emulation( 3855): app_time_stats: avg=138.72ms min=7.53ms max=565.80ms count=10
+D/EGL_emulation( 3855): app_time_stats: avg=153.37ms min=6.53ms max=635.65ms count=10
+D/EGL_emulation( 3855): app_time_stats: avg=169.63ms min=34.91ms max=564.91ms count=6
+D/EGL_emulation( 3855): app_time_stats: avg=126.32ms min=111.94ms max=151.67ms count=8
+D/EGL_emulation( 3855): app_time_stats: avg=262.58ms min=114.81ms max=685.14ms count=4
+I/ImeTracker( 3855): id.ruma.app:40cf3295: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false
+D/InputMethodManager( 3855): showSoftInput() view=io.flutter.embedding.android.FlutterView{8546c59 VFE...... .F....ID 0,0-1080,2340 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+I/AssistStructure( 3855): Flattened final assist data: 504 bytes, containing 1 windows, 3 views
+D/InputConnectionAdaptor( 3855): The input method toggled cursor monitoring on
+D/EGL_emulation( 3855): app_time_stats: avg=203.20ms min=18.21ms max=630.71ms count=5
+D/InsetsController( 3855): show(ime(), fromIme=true)
+W/InteractionJankMonitor( 3855): Initializing without READ_DEVICE_CONFIG permission. enabled=true, interval=1, missedFrameThreshold=3, frameTimeThreshold=64, package=id.ruma.app
+D/FlutterJNI( 3855): Sending viewport metrics to the engine.
+D/FlutterJNI( 3855): Sending viewport metrics to the engine.
+D/EGL_emulation( 3855): app_time_stats: avg=25286.41ms min=1104.91ms max=49467.89ms count=2
+D/FlutterJNI( 3855): Sending viewport metrics to the engine.
+D/FlutterJNI( 3855): Sending viewport metrics to the engine.
+D/FlutterJNI( 3855): Sending viewport metrics to the engine.
+D/FlutterJNI( 3855): Sending viewport metrics to the engine.
+D/FlutterJNI( 3855): Sending viewport metrics to the engine.
+D/FlutterJNI( 3855): Sending viewport metrics to the engine.
+D/FlutterJNI( 3855): Sending viewport metrics to the engine.
+D/FlutterJNI( 3855): Sending viewport metrics to the engine.
+D/FlutterJNI( 3855): Sending viewport metrics to the engine.
+D/FlutterJNI( 3855): Sending viewport metrics to the engine.
+D/FlutterJNI( 3855): Sending viewport metrics to the engine.
+D/FlutterJNI( 3855): Sending viewport metrics to the engine.
+D/FlutterJNI( 3855): Sending viewport metrics to the engine.
+I/ImeTracker( 3855): id.ruma.app:40cf3295: onShown
+D/FlutterJNI( 3855): Sending viewport metrics to the engine.
+D/FlutterJNI( 3855): Sending viewport metrics to the engine.
+W/System  ( 3855): Ignoring header X-Firebase-Locale because its value was null.
+D/TrafficStats( 3855): tagSocket(140) with statsTag=0xffffffff, statsUid=-1
+D/FirebaseAuth( 3855): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth( 3855): Notifying auth state listeners about a sign-out event.
+I/flutter ( 3855): ══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+I/flutter ( 3855): The following TestFailure was thrown running a test:
+I/flutter ( 3855): Expected: no matching candidates
+I/flutter ( 3855):   Actual: _KeyWidgetFinder:<Found 1 widget with key [<'tab-0'>]: [
+I/flutter ( 3855):             InkWell-[<'tab-0'>],
+I/flutter ( 3855):           ]>
+I/flutter ( 3855):    Which: means one was found but none were expected
+I/flutter ( 3855): 
+I/flutter ( 3855): When the exception was thrown, this was the stack:
+I/flutter ( 3855): #4      main.<anonymous closure> (file:///home/ael/DATA/project%20on%20linux/mobileapp/ruma/integration_test/ui_polish_test.dart:281:9)
+I/flutter ( 3855): <asynchronous suspension>
+I/flutter ( 3855): #5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+I/flutter ( 3855): <asynchronous suspension>
+I/flutter ( 3855): #6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+I/flutter ( 3855): <asynchronous suspension>
+I/flutter ( 3855): #7      TestWidgetsFlutterBinding._createTestCompletionHandler.<anonymous closure> (package:flutter_test/src/binding.dart:1707:12)
+I/flutter ( 3855): <asynchronous suspension>
+I/flutter ( 3855): 
+I/flutter ( 3855): This was caught by the test expectation on the following line:
+I/flutter ( 3855):   file:///home/ael/DATA/project%20on%20linux/mobileapp/ruma/integration_test/ui_polish_test.dart line 281
+I/flutter ( 3855): The test description was:
+I/flutter ( 3855):   all implemented phone pages and dialogs use consistent geometry
+I/flutter ( 3855): ════════════════════════════════════════════════════════════════════════════════════════════════════
+I/flutter ( 3855): 00:53 +0: all implemented phone pages and dialogs use consistent geometry [E]
+I/flutter ( 3855):   Test failed. See exception logs above.
+I/flutter ( 3855):   The test description was: all implemented phone pages and dialogs use consistent geometry
+I/flutter ( 3855):   
+I/flutter ( 3855): 00:53 +0 -1: (tearDownAll)
+I/flutter ( 3855): 00:53 +1 -1: Some tests failed.
+Failure Details:
+Failure in method: all implemented phone pages and dialogs use consistent geometry
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞═════════════════
+The following TestFailure was thrown running a test:
+Expected: no matching candidates
+  Actual: _KeyWidgetFinder:<Found 1 widget with key [<'tab-0'>]:
+[
+            InkWell-[<'tab-0'>],
+          ]>
+   Which: means one was found but none were expected
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///home/ael/DATA/project%20on%20linux/mobileapp/ruma/integration_test/ui_polish_test.dart:281:9)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+#7      TestWidgetsFlutterBinding._createTestCompletionHandler.<anonymous closure> (package:flutter_test/src/binding.dart:1707:12)
+<asynchronous suspension>
+
+This was caught by the test expectation on the following line:
+  file:///home/ael/DATA/project%20on%20linux/mobileapp/ruma/integration_test/ui_polish_test.dart line 281
+The test description was:
+  all implemented phone pages and dialogs use consistent geometry
+═════════════════════════════════════════════════════════════════
+
+end of failure 1
+
+
+

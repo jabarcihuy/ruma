@@ -1,0 +1,12 @@
+{
+  "pdf": "output/pdf/ruma-review-antarmuka.pdf",
+  "pages": 9,
+  "screens": 26,
+  "uniqueSourceImages": 26,
+  "pageSize": "A4 landscape",
+  "source": "native Android screenshots; demo-ruma synthetic data",
+  "allScreenLabelsPresent": true,
+  "sha256": "69675b012811b1c18779be4daae9e1340e73eaabda9d594a5fb40e03c742a14c",
+  "renderReviewed": true,
+  "renderReview": "All 9 page layouts inspected; pages 8 and 9 also inspected at full render size. No clipping or image distortion."
+}

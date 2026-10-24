@@ -1,0 +1,47 @@
+i  emulators: Starting emulators: firestore
+i  emulators: Detected demo project ID "demo-ruma", emulated services will use a demo configuration and attempts to access non-emulated services for this project will fail.
+i  firestore: Firestore Emulator logging to firestore-debug.log
+✔  firestore: Firestore Emulator was started in standard edition.
+✔  firestore: Firestore Emulator UI websocket is running on 9150.
+i  Running script: cd backend && RUMA_AGENT_RULES=1 FIRESTORE_EMULATOR_HOST=127.0.0.1:8086 /home/ael/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node --test tests/agenda.rules.test.mjs
+✔ first agenda initializes core atomically; same receipt does not duplicate (3323.400021ms)
+✔ owner list works; cross-account and unauthenticated reads/writes are denied (301.006832ms)
+✔ edit and complete increment entity version and agenda revision (299.644514ms)
+[2026-10-19T15:38:15.001Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x574b3cca error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'delete' @ L249
+✔ soft delete is atomic and tombstones cannot be edited or hard deleted (288.42076ms)
+✔ missing receipt or missing entity rolls back the whole operation (146.651393ms)
+✔ invalid shape, duration, paired time, deadline, class and zone are rejected (493.153511ms)
+✔ unscheduled tasks are supported (64.092941ms)
+✔ agenda operations cannot forge balances or finance revisions (200.5894ms)
+[2026-10-19T15:38:16.038Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x574b3d16 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'update' @ L249
+[2026-10-19T15:38:16.047Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x574b3d17 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'delete' @ L249
+✔ created timestamps and operation receipts are immutable (138.858118ms)
+✔ wrong receipt target or version cannot authorize changes (99.487973ms)
+✔ concurrent submissions against the same revision have one winner (114.696365ms)
+[2026-10-19T15:38:16.297Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x574b3d29 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L249, false for 'update' @ L249
+[2026-10-19T15:38:16.320Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x574b3d2b error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L197, false for 'create' @ L249, false for 'update' @ L199, false for 'update' @ L249
+[2026-10-19T15:38:16.340Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x574b3d2c error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L249, false for 'update' @ L249
+[2026-10-19T15:38:16.358Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x574b3d2d error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L249, false for 'update' @ L249
+[2026-10-19T15:38:16.374Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x574b3d2e error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L249, false for 'update' @ L249
+✔ all unsupported feature and server paths remain closed (118.75634ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5868.708962
+✔  Script exited successfully (code 0)
+i  emulators: Shutting down emulators.
+i  firestore: Stopping Firestore Emulator
+i  hub: Stopping emulator hub
+i  logging: Stopping Logging Emulator

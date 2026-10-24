@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-19",
+  "endpoint": "https://ruma-api.abduljabarbrngkl.workers.dev/v1/agent/turn",
+  "scope": "Actual deployed Worker, Firebase anonymous JWT and Firestore quota; synthetic data only",
+  "ledgerWrites": 0,
+  "requests": [
+    {
+      "name": "no-auth",
+      "requestId": "ruma-cloud-no-auth-1792346554676",
+      "status": 401,
+      "wallTimeMs": 481,
+      "response": {
+        "error": "unauthenticated"
+      }
+    },
+    {
+      "name": "forged-auth",
+      "requestId": "ruma-cloud-forged-auth-1792346555162",
+      "status": 401,
+      "wallTimeMs": 188,
+      "response": {
+        "error": "unauthenticated"
+      }
+    },
+    {
+      "name": "first-authenticated",
+      "requestId": "ruma-cloud-first-authenticated-1792346556494",
+      "status": 401,
+      "wallTimeMs": 186,
+      "response": {
+        "error": "unauthenticated"
+      }
+    }
+  ],
+  "modelRequestsAttempted": 1,
+  "testAccountCreated": true,
+  "passed": false,
+  "error": "Unexpected cloud response",
+  "testAccountDeleted": true
+}

@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-19",
+  "signupStatus": 200,
+  "claims": {
+    "alg": "RS256",
+    "hasKid": true,
+    "aud": "mobile-app-3479f",
+    "iss": "https://securetoken.google.com/mobile-app-3479f",
+    "subIsString": true,
+    "iat": 1792346601,
+    "authTime": 1792346601,
+    "exp": 1792350201,
+    "now": 1792346601
+  },
+  "nodeVerificationPassed": true,
+  "accountDeleted": true
+}

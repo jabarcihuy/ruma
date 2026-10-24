@@ -1,0 +1,12 @@
+{
+  "project": "mobile-app-3479f",
+  "publishedAt": "2026-10-22T06:55:10.543Z",
+  "rulesSha256": "0217e0247e06a58a9332b1e782bb008c3fc4472784b2437e1db59701f380ee6b",
+  "exactReadbackAfterReload": true,
+  "previousRulesMatched": true,
+  "changes": [
+    "optional savings goal iconId enum"
+  ],
+  "iamChanged": false,
+  "billingChanged": false
+}

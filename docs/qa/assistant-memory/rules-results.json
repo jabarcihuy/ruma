@@ -1,0 +1,10 @@
+{
+  "project": "demo-ruma",
+  "productionWrites": 0,
+  "cases": [
+    "owner",
+    "isolation",
+    "validation",
+    "not-authority"
+  ]
+}

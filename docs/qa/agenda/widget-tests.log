@@ -1,0 +1,12 @@
+00:00 +0: loading /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart
+00:00 +0: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: validation does not trim passwords and login failures do not expose account existence
+00:00 +1: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: validation does not trim passwords and login failures do not expose account existence
+00:00 +2: /home/ael/DATA/project on linux/mobileapp/ruma/test/agenda_test.dart: adjacent sessions are allowed; overlap excludes completed and cancelled agenda
+00:00 +3: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:00 +4: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:00 +5: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:00 +6: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:01 +7: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:01 +8: /home/ael/DATA/project on linux/mobileapp/ruma/test/agenda_test.dart: agenda empty state and week navigation remain usable with large text
+00:01 +9: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: five tabs preserve icon geometry, semantics and home navigation
+00:01 +10: All tests passed!

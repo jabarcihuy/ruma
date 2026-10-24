@@ -1,0 +1,13 @@
+{
+  "apk": "output/apk/ruma-assistant-candidate.apk",
+  "bytes": 40786334,
+  "sha256": "c00652cefe9f64c33f8f4afcb7e309075207323266677afe0e3c4926d1315a91",
+  "exactSecretMatches": 0,
+  "privateFileEntries": [],
+  "kind": "profile ARM64 normal lib/main.dart preview",
+  "productionReady": true,
+  "previewApk": "output/apk/ruma-assistant-preview.apk",
+  "previewHashMatchesCandidate": true,
+  "releaseFinal": false,
+  "installed": true
+}

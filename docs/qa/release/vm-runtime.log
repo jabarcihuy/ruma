@@ -1,0 +1,9 @@
+--------- beginning of main
+10-22 14:01:30.611  3961  3961 I FirebaseApp: Device unlocked: initializing all Firebase APIs for app [DEFAULT]
+10-22 14:01:30.619  3961  3961 I FirebaseInitProvider: FirebaseApp initialization successful
+10-22 14:01:31.390  3961  4014 I flutter : [IMPORTANT:flutter/shell/platform/android/android_context_gl_impeller.cc(104)] Using the Impeller rendering backend (OpenGLES).
+10-22 14:01:55.483  4047  4047 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-22 14:01:55.492  4047  4047 I AndroidRuntime: Using default boot image
+10-22 14:01:55.492  4047  4047 I AndroidRuntime: Leaving lock profiling enabled
+10-22 14:01:55.805  4047  4047 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-22 14:01:57.009  4047  4047 D AndroidRuntime: Shutting down VM

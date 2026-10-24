@@ -1,0 +1,942 @@
+{
+  "pages": [
+    {
+      "id": "0:1",
+      "name": "Page 1"
+    },
+    {
+      "id": "7:53",
+      "name": "Ruma — Mobile UI & UX"
+    },
+    {
+      "id": "90:1880",
+      "name": "Page 5"
+    },
+    {
+      "id": "35:53",
+      "name": "Ruma · 01 Full product design"
+    },
+    {
+      "id": "42:53",
+      "name": "Ruma · 02 Interactive prototype"
+    }
+  ],
+  "prototypeFrames": [
+    {
+      "id": "44:53",
+      "name": "Prototype / welcome"
+    },
+    {
+      "id": "44:82",
+      "name": "Prototype / signin"
+    },
+    {
+      "id": "44:128",
+      "name": "Prototype / signup"
+    },
+    {
+      "id": "44:307",
+      "name": "Prototype / consent"
+    },
+    {
+      "id": "44:8518",
+      "name": "Prototype / classAdd · shared"
+    },
+    {
+      "id": "44:8557",
+      "name": "Prototype / repeat"
+    },
+    {
+      "id": "44:8599",
+      "name": "Prototype / scope"
+    },
+    {
+      "id": "44:8623",
+      "name": "Prototype / cancelMeeting"
+    },
+    {
+      "id": "44:9131",
+      "name": "Prototype / dashboard"
+    },
+    {
+      "id": "44:9165",
+      "name": "Prototype / calendar"
+    },
+    {
+      "id": "44:9227",
+      "name": "Prototype / datePicker"
+    },
+    {
+      "id": "44:9337",
+      "name": "Prototype / timePicker"
+    },
+    {
+      "id": "44:9365",
+      "name": "Prototype / taskAdd · shared"
+    },
+    {
+      "id": "44:9434",
+      "name": "Prototype / deadline"
+    },
+    {
+      "id": "44:9464",
+      "name": "Prototype / slots · shared"
+    },
+    {
+      "id": "44:10045",
+      "name": "Prototype / manual"
+    },
+    {
+      "id": "44:10074",
+      "name": "Prototype / taskDetail · shared"
+    },
+    {
+      "id": "44:10101",
+      "name": "Prototype / saved"
+    },
+    {
+      "id": "44:10179",
+      "name": "Prototype / completed"
+    },
+    {
+      "id": "44:10209",
+      "name": "Prototype / unscheduled"
+    },
+    {
+      "id": "44:10243",
+      "name": "Prototype / emptyAgenda"
+    },
+    {
+      "id": "44:10938",
+      "name": "Prototype / noSlot"
+    },
+    {
+      "id": "44:11003",
+      "name": "Prototype / saveError"
+    },
+    {
+      "id": "44:11031",
+      "name": "Prototype / deleteTask"
+    },
+    {
+      "id": "44:11093",
+      "name": "Prototype / conflict"
+    },
+    {
+      "id": "44:11118",
+      "name": "Prototype / stale"
+    },
+    {
+      "id": "44:11597",
+      "name": "Prototype / changeConfirm"
+    },
+    {
+      "id": "44:11622",
+      "name": "Prototype / chat · shared"
+    },
+    {
+      "id": "44:11665",
+      "name": "Prototype / chatDraft · shared"
+    },
+    {
+      "id": "44:11698",
+      "name": "Prototype / aiLoading"
+    },
+    {
+      "id": "44:11758",
+      "name": "Prototype / aiError"
+    },
+    {
+      "id": "44:11784",
+      "name": "Prototype / history"
+    },
+    {
+      "id": "44:12372",
+      "name": "Prototype / personalPrefs"
+    },
+    {
+      "id": "44:13738",
+      "name": "Prototype / notifications"
+    },
+    {
+      "id": "44:13762",
+      "name": "Prototype / reminder"
+    },
+    {
+      "id": "44:13839",
+      "name": "Prototype / notificationPermission"
+    },
+    {
+      "id": "44:13865",
+      "name": "Prototype / notifDetail"
+    },
+    {
+      "id": "44:14321",
+      "name": "Prototype / notificationDenied"
+    },
+    {
+      "id": "44:15228",
+      "name": "Prototype / settings"
+    },
+    {
+      "id": "44:15257",
+      "name": "Prototype / profile"
+    },
+    {
+      "id": "44:15289",
+      "name": "Prototype / appPrefs"
+    },
+    {
+      "id": "44:15824",
+      "name": "Prototype / privacy"
+    },
+    {
+      "id": "44:15910",
+      "name": "Prototype / help"
+    },
+    {
+      "id": "44:15964",
+      "name": "Prototype / historyFilter"
+    },
+    {
+      "id": "44:15995",
+      "name": "Prototype / deleteHistory"
+    },
+    {
+      "id": "44:16437",
+      "name": "Prototype / logout"
+    },
+    {
+      "id": "79:5049",
+      "name": "Prototype / agentRead"
+    },
+    {
+      "id": "79:5076",
+      "name": "Prototype / agentUpdate"
+    },
+    {
+      "id": "79:5104",
+      "name": "Prototype / agentDelete"
+    },
+    {
+      "id": "79:5130",
+      "name": "Prototype / agentClarify"
+    },
+    {
+      "id": "79:5157",
+      "name": "Prototype / agentConflict"
+    },
+    {
+      "id": "79:5184",
+      "name": "Prototype / agentApplied"
+    },
+    {
+      "id": "79:5209",
+      "name": "Prototype / agentUndo"
+    },
+    {
+      "id": "79:5232",
+      "name": "Prototype / avatarPicker"
+    },
+    {
+      "id": "130:20708",
+      "name": "Prototype / profileHome"
+    },
+    {
+      "id": "146:19711",
+      "name": "Prototype / budgetHome"
+    },
+    {
+      "id": "146:19749",
+      "name": "Prototype / budgetSetup"
+    },
+    {
+      "id": "146:19785",
+      "name": "Prototype / expenseAdd · shared"
+    },
+    {
+      "id": "146:19884",
+      "name": "Prototype / transactionDetail"
+    },
+    {
+      "id": "146:19922",
+      "name": "Prototype / transactionHistory"
+    },
+    {
+      "id": "146:20003",
+      "name": "Prototype / transactionFilter"
+    },
+    {
+      "id": "146:20051",
+      "name": "Prototype / budgetReport"
+    },
+    {
+      "id": "146:20103",
+      "name": "Prototype / budgetEmpty"
+    },
+    {
+      "id": "146:20124",
+      "name": "Prototype / budgetError"
+    },
+    {
+      "id": "146:20199",
+      "name": "Prototype / budgetAIedit"
+    },
+    {
+      "id": "146:20219",
+      "name": "Prototype / budgetAIdelete"
+    },
+    {
+      "id": "146:20239",
+      "name": "Prototype / budgetAIread"
+    },
+    {
+      "id": "146:20261",
+      "name": "Prototype / transactionSaved"
+    },
+    {
+      "id": "281:4972",
+      "name": "Prototype / combinedDraft · shared"
+    },
+    {
+      "id": "281:5075",
+      "name": "Prototype / combinedEdit"
+    },
+    {
+      "id": "281:5131",
+      "name": "Prototype / combinedSaved"
+    }
+  ],
+  "screens": [
+    {
+      "id": "44:9131",
+      "name": "Prototype / dashboard",
+      "width": 390,
+      "height": 844,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9647058844566345,
+            "g": 0.9686274528503418,
+            "b": 0.9529411792755127
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8:55"
+            }
+          }
+        }
+      ],
+      "texts": [
+        {
+          "text": "9:41",
+          "font": {
+            "family": "Manrope",
+            "style": "Medium",
+            "variationSettings": {
+              "wght": 500
+            }
+          },
+          "size": 12
+        },
+        {
+          "text": "ruma",
+          "font": {
+            "family": "Manrope",
+            "style": "Bold",
+            "variationSettings": {
+              "wght": 700
+            }
+          },
+          "size": 22
+        },
+        {
+          "text": "Waktu & uangmu.",
+          "font": {
+            "family": "Manrope",
+            "style": "Bold",
+            "variationSettings": {
+              "wght": 700
+            }
+          },
+          "size": 28
+        },
+        {
+          "text": "Senin, 12 Oktober · Halo, Naya",
+          "font": {
+            "family": "Manrope",
+            "style": "Medium",
+            "variationSettings": {
+              "wght": 500
+            }
+          },
+          "size": 12
+        },
+        {
+          "text": "Kelola waktu & uang",
+          "font": {
+            "family": "Manrope",
+            "style": "Bold",
+            "variationSettings": {
+              "wght": 700
+            }
+          },
+          "size": 15
+        },
+        {
+          "text": "Ruma bantu lewat percakapan.",
+          "font": {
+            "family": "Manrope",
+            "style": "Medium",
+            "variationSettings": {
+              "wght": 500
+            }
+          },
+          "size": 12
+        },
+        {
+          "text": "Waktu hari ini",
+          "font": {
+            "family": "Manrope",
+            "style": "Bold",
+            "variationSettings": {
+              "wght": 700
+            }
+          },
+          "size": 15
+        },
+        {
+          "text": "Agenda",
+          "font": {
+            "family": "Manrope",
+            "style": "Medium",
+            "variationSettings": {
+              "wght": 500
+            }
+          },
+          "size": 12
+        },
+        {
+          "text": "2 kegiatan",
+          "font": {
+            "family": "Manrope",
+            "style": "Bold",
+            "variationSettings": {
+              "wght": 700
+            }
+          },
+          "size": 15
+        }
+      ]
+    },
+    {
+      "id": "44:9165",
+      "name": "Prototype / calendar",
+      "width": 390,
+      "height": 844,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9647058844566345,
+            "g": 0.9686274528503418,
+            "b": 0.9529411792755127
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8:55"
+            }
+          }
+        }
+      ],
+      "texts": [
+        {
+          "text": "9:41",
+          "font": {
+            "family": "Manrope",
+            "style": "Medium",
+            "variationSettings": {
+              "wght": 500
+            }
+          },
+          "size": 12
+        },
+        {
+          "text": "Agenda",
+          "font": {
+            "family": "Manrope",
+            "style": "Bold",
+            "variationSettings": {
+              "wght": 700
+            }
+          },
+          "size": 22
+        },
+        {
+          "text": "Tambah",
+          "font": {
+            "family": "Manrope",
+            "style": "SemiBold",
+            "variationSettings": {
+              "wght": 600
+            }
+          },
+          "size": 13
+        },
+        {
+          "text": "Agendamu minggu ini",
+          "font": {
+            "family": "Manrope",
+            "style": "Bold",
+            "variationSettings": {
+              "wght": 700
+            }
+          },
+          "size": 28
+        },
+        {
+          "text": "12–18 Oktober 2026",
+          "font": {
+            "family": "Manrope",
+            "style": "Medium",
+            "variationSettings": {
+              "wght": 500
+            }
+          },
+          "size": 12
+        },
+        {
+          "text": "Sen",
+          "font": {
+            "family": "Manrope",
+            "style": "Medium",
+            "variationSettings": {
+              "wght": 500
+            }
+          },
+          "size": 12
+        },
+        {
+          "text": "12",
+          "font": {
+            "family": "Manrope",
+            "style": "Bold",
+            "variationSettings": {
+              "wght": 700
+            }
+          },
+          "size": 15
+        },
+        {
+          "text": "Sel",
+          "font": {
+            "family": "Manrope",
+            "style": "Medium",
+            "variationSettings": {
+              "wght": 500
+            }
+          },
+          "size": 12
+        },
+        {
+          "text": "13",
+          "font": {
+            "family": "Manrope",
+            "style": "Bold",
+            "variationSettings": {
+              "wght": 700
+            }
+          },
+          "size": 15
+        }
+      ]
+    },
+    {
+      "id": "44:11622",
+      "name": "Prototype / chat · shared",
+      "width": 390,
+      "height": 844,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9647058844566345,
+            "g": 0.9686274528503418,
+            "b": 0.9529411792755127
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8:55"
+            }
+          }
+        }
+      ],
+      "texts": [
+        {
+          "text": "9:41",
+          "font": {
+            "family": "Manrope",
+            "style": "Medium",
+            "variationSettings": {
+              "wght": 500
+            }
+          },
+          "size": 12
+        },
+        {
+          "text": "Asisten Ruma",
+          "font": {
+            "family": "Manrope",
+            "style": "Bold",
+            "variationSettings": {
+              "wght": 700
+            }
+          },
+          "size": 22
+        },
+        {
+          "text": "Mau dibantu apa?",
+          "font": {
+            "family": "Manrope",
+            "style": "Bold",
+            "variationSettings": {
+              "wght": 700
+            }
+          },
+          "size": 28
+        },
+        {
+          "text": "Waktu dan uang, cukup ceritakan.",
+          "font": {
+            "family": "Manrope",
+            "style": "Medium",
+            "variationSettings": {
+              "wght": 500
+            }
+          },
+          "size": 12
+        },
+        {
+          "text": "Siap membantu",
+          "font": {
+            "family": "Manrope",
+            "style": "Medium",
+            "variationSettings": {
+              "wght": 500
+            }
+          },
+          "size": 12
+        },
+        {
+          "text": "Atur waktu & uang",
+          "font": {
+            "family": "Manrope",
+            "style": "Bold",
+            "variationSettings": {
+              "wght": 700
+            }
+          },
+          "size": 15
+        },
+        {
+          "text": "Besok revisi 1 jam, baca 30 menit.\nMakan 18 ribu, cetak 15 ribu.",
+          "font": {
+            "family": "Manrope",
+            "style": "Medium",
+            "variationSettings": {
+              "wght": 500
+            }
+          },
+          "size": 12
+        },
+        {
+          "text": "Atur agenda",
+          "font": {
+            "family": "Manrope",
+            "style": "SemiBold",
+            "variationSettings": {
+              "wght": 600
+            }
+          },
+          "size": 13
+        },
+        {
+          "text": "Cari waktu untuk kegiatanmu.",
+          "font": {
+            "family": "Manrope",
+            "style": "Medium",
+            "variationSettings": {
+              "wght": 500
+            }
+          },
+          "size": 12
+        }
+      ]
+    },
+    {
+      "id": "130:20708",
+      "name": "Prototype / profileHome",
+      "width": 390,
+      "height": 844,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9647058844566345,
+            "g": 0.9686274528503418,
+            "b": 0.9529411792755127
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8:55"
+            }
+          }
+        }
+      ],
+      "texts": [
+        {
+          "text": "9:41",
+          "font": {
+            "family": "Manrope",
+            "style": "Medium",
+            "variationSettings": {
+              "wght": 500
+            }
+          },
+          "size": 12
+        },
+        {
+          "text": "Profil",
+          "font": {
+            "family": "Manrope",
+            "style": "Bold",
+            "variationSettings": {
+              "wght": 700
+            }
+          },
+          "size": 22
+        },
+        {
+          "text": "Ruang untuk dirimu.",
+          "font": {
+            "family": "Manrope",
+            "style": "Bold",
+            "variationSettings": {
+              "wght": 700
+            }
+          },
+          "size": 28
+        },
+        {
+          "text": "Profil dan preferensi, sesuai keseharianmu.",
+          "font": {
+            "family": "Manrope",
+            "style": "Medium",
+            "variationSettings": {
+              "wght": 500
+            }
+          },
+          "size": 12
+        },
+        {
+          "text": "N",
+          "font": {
+            "family": "Manrope",
+            "style": "Bold",
+            "variationSettings": {
+              "wght": 700
+            }
+          },
+          "size": 26
+        },
+        {
+          "text": "Naya",
+          "font": {
+            "family": "Manrope",
+            "style": "Bold",
+            "variationSettings": {
+              "wght": 700
+            }
+          },
+          "size": 26
+        },
+        {
+          "text": "Sedikit demi sedikit, tetap maju.",
+          "font": {
+            "family": "Manrope",
+            "style": "Medium",
+            "variationSettings": {
+              "wght": 500
+            }
+          },
+          "size": 12
+        },
+        {
+          "text": "Edit profil",
+          "font": {
+            "family": "Manrope",
+            "style": "SemiBold",
+            "variationSettings": {
+              "wght": 600
+            }
+          },
+          "size": 13
+        },
+        {
+          "text": "INFORMASI STUDI",
+          "font": {
+            "family": "Manrope",
+            "style": "Medium",
+            "variationSettings": {
+              "wght": 500
+            }
+          },
+          "size": 12
+        }
+      ]
+    },
+    {
+      "id": "146:19711",
+      "name": "Prototype / budgetHome",
+      "width": 390,
+      "height": 844,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9647058844566345,
+            "g": 0.9686274528503418,
+            "b": 0.9529411792755127
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8:55"
+            }
+          }
+        }
+      ],
+      "texts": [
+        {
+          "text": "9:41",
+          "font": {
+            "family": "Manrope",
+            "style": "Medium",
+            "variationSettings": {
+              "wght": 500
+            }
+          },
+          "size": 12
+        },
+        {
+          "text": "Keuangan",
+          "font": {
+            "family": "Manrope",
+            "style": "Bold",
+            "variationSettings": {
+              "wght": 700
+            }
+          },
+          "size": 22
+        },
+        {
+          "text": "Uangmu punya arah.",
+          "font": {
+            "family": "Manrope",
+            "style": "Bold",
+            "variationSettings": {
+              "wght": 700
+            }
+          },
+          "size": 28
+        },
+        {
+          "text": "1–14 Oktober 2026",
+          "font": {
+            "family": "Manrope",
+            "style": "Medium",
+            "variationSettings": {
+              "wght": 500
+            }
+          },
+          "size": 12
+        },
+        {
+          "text": "Oktober 2026",
+          "font": {
+            "family": "Manrope",
+            "style": "Bold",
+            "variationSettings": {
+              "wght": 700
+            }
+          },
+          "size": 15
+        },
+        {
+          "text": "SALDO TERCATAT",
+          "font": {
+            "family": "Manrope",
+            "style": "Medium",
+            "variationSettings": {
+              "wght": 500
+            }
+          },
+          "size": 12
+        },
+        {
+          "text": "Rp820.000",
+          "font": {
+            "family": "Manrope",
+            "style": "ExtraBold",
+            "variationSettings": {
+              "wght": 800
+            }
+          },
+          "size": 32
+        },
+        {
+          "text": "Berdasarkan transaksi yang kamu catat.",
+          "font": {
+            "family": "Manrope",
+            "style": "Medium",
+            "variationSettings": {
+              "wght": 500
+            }
+          },
+          "size": 12
+        },
+        {
+          "text": "Pemasukan",
+          "font": {
+            "family": "Manrope",
+            "style": "Medium",
+            "variationSettings": {
+              "wght": 500
+            }
+          },
+          "size": 12
+        }
+      ]
+    }
+  ]
+}

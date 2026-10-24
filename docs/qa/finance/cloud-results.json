@@ -1,0 +1,22 @@
+{
+  "project": "mobile-app-3479f",
+  "transport": "Flutter Android SDK on physical USB device",
+  "suite": "finance_cloud_test",
+  "fixtureUids": [
+    "6qiLyIFmA9NIbr4i3dBLcNU9epb2",
+    "gljHQsoMqTSgKSTfd9bQiR0RmL53"
+  ],
+  "authFixturesDeleted": [
+    "6qiLyIFmA9NIbr4i3dBLcNU9epb2",
+    "gljHQsoMqTSgKSTfd9bQiR0RmL53"
+  ],
+  "modelCalls": 0,
+  "createReadTotals": true,
+  "retryWithoutDuplicate": true,
+  "budgetNeverChangesBalance": true,
+  "crossMonthEdit": true,
+  "softDeleteReversesTotals": true,
+  "unauthenticatedDenied": true,
+  "otherUserDenied": true,
+  "passed": true
+}

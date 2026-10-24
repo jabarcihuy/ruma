@@ -1,0 +1,36 @@
+✔ first agenda initializes core atomically; same receipt does not duplicate (354.924646ms)
+✔ owner list works; cross-account and unauthenticated reads/writes are denied (169.081721ms)
+✔ edit and complete increment entity version and agenda revision (110.305362ms)
+[2026-10-19T15:01:30.160Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x188d04d3 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'delete' @ L198
+✔ soft delete is atomic and tombstones cannot be edited or hard deleted (133.113953ms)
+✔ missing receipt or missing entity rolls back the whole operation (85.153133ms)
+✔ invalid shape, duration, paired time, deadline, class and zone are rejected (211.411026ms)
+✔ unscheduled tasks are supported (38.880238ms)
+✔ agenda operations cannot forge balances or finance revisions (125.707158ms)
+[2026-10-19T15:01:30.707Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x188d051f error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'update' @ L198
+[2026-10-19T15:01:30.714Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x188d0520 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'delete' @ L198
+✔ created timestamps and operation receipts are immutable (90.013352ms)
+✔ wrong receipt target or version cannot authorize changes (74.836739ms)
+✔ concurrent submissions against the same revision have one winner (71.613903ms)
+[2026-10-19T15:01:30.895Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x188d0532 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L198, false for 'update' @ L198
+[2026-10-19T15:01:30.912Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x188d0534 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L146, false for 'create' @ L198, false for 'update' @ L148, false for 'update' @ L198
+[2026-10-19T15:01:30.926Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x188d0535 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L198, false for 'update' @ L198
+[2026-10-19T15:01:30.939Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x188d0536 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L198, false for 'update' @ L198
+[2026-10-19T15:01:30.951Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x188d0537 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L198, false for 'update' @ L198
+✔ all unsupported feature and server paths remain closed (93.935214ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1833.700519

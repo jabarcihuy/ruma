@@ -1,0 +1,31 @@
+{
+  "project": "demo-ruma",
+  "productionWrites": 0,
+  "modelCalls": 0,
+  "screens": [
+    "01-welcome",
+    "02-signin",
+    "03-signup",
+    "04-home",
+    "05-agenda",
+    "06-task-form",
+    "07-class-form",
+    "08-agenda-detail",
+    "09-finance",
+    "10-expense-form",
+    "11-income-form",
+    "12-budget-form",
+    "13-history",
+    "14-report",
+    "15-transaction-detail",
+    "16-profile",
+    "17-profile-name-dialog",
+    "18-privacy",
+    "19-assistant",
+    "27-assistant-info",
+    "20-combined-review",
+    "26-combined-review-actions",
+    "21-combined-saved",
+    "22-assistant-keyboard"
+  ]
+}

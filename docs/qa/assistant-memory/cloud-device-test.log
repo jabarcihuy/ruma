@@ -1,0 +1,75 @@
+Resolving dependencies...
+Downloading packages...
+  material_color_utilities 0.13.0 (0.13.1 available)
+  test_api 0.7.12 (0.7.15 available)
+  vector_graphics 1.2.3 (1.2.4 available)
+  xml 7.0.1 (7.1.0 available)
+Got dependencies!
+4 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Running Gradle task 'assembleDebug'...                          
+WARNING: Your app uses the following plugins that apply Kotlin Gradle Plugin (KGP): firebase_auth, firebase_core
+Future versions of Flutter will fail to build if your app uses plugins that apply KGP.
+
+Please check the changelogs of these plugins and upgrade to a version that supports Built-in Kotlin.
+If no such version exists, report the issue to the plugin. If necessary, here is a guide on filing
+an issue against a plugin: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-app-developers#report-incompatible-kotlin-gradle-plugin-usage-to-plugin-authors
+
+If you are a plugin author, please migrate your plugin to Built-in Kotlin using this guide: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-plugin-authors
+Running Gradle task 'assembleDebug'...                             26.8s
+✓ Built build/app/outputs/flutter-apk/app-debug.apk
+Installing build/app/outputs/flutter-apk/app-debug.apk...        1,505ms
+D/FlutterJNI(10950): Sending viewport metrics to the engine.
+D/ProfileInstaller(10950): Installing profile for id.ruma.app
+VMServiceFlutterDriver: Connecting to Flutter application at http://127.0.0.1:44307/JWNRtf6Wjqw=/
+VMServiceFlutterDriver: Isolate found with number: 358082370671931
+VMServiceFlutterDriver: Isolate 358082370671931 is runnable.
+VMServiceFlutterDriver: Isolate is paused at start.
+VMServiceFlutterDriver: Attempting to resume isolate
+I/flutter (10950): 00:00 +0: approved cloud assistant memory with two disposable accounts
+VMServiceFlutterDriver: Connected to Flutter application.
+D/FirebaseAuth(10950): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth(10950): Notifying auth state listeners about a sign-out event.
+W/System  (10950): Ignoring header X-Firebase-Locale because its value was null.
+D/TrafficStats(10950): tagSocket(150) with statsTag=0xffffffff, statsUid=-1
+W/System  (10950): Ignoring header X-Firebase-Locale because its value was null.
+D/FirebaseAuth(10950): Notifying id token listeners about user ( uupBPHAU8qVvKsXqpKSXGHMlvRu2 ).
+D/FirebaseAuth(10950): Notifying auth state listeners about user ( uupBPHAU8qVvKsXqpKSXGHMlvRu2 ).
+I/flutter (10950): RUMA_MEMORY_SYNTHETIC_UID=uupBPHAU8qVvKsXqpKSXGHMlvRu2
+W/DynamiteModule(10950): Local module descriptor class for com.google.android.gms.providerinstaller.dynamite not found.
+I/DynamiteModule(10950): Considering local module com.google.android.gms.providerinstaller.dynamite:0 and remote module com.google.android.gms.providerinstaller.dynamite:0
+W/ProviderInstaller(10950): Failed to load providerinstaller module: No acceptable module com.google.android.gms.providerinstaller.dynamite found. Local version is 0 and remote version is 0.
+D/ApplicationLoaders(10950): Returning zygote-cached class loader: /system/framework/org.apache.http.legacy.jar
+D/nativeloader(10950): Configuring clns-8 for other apk /system/framework/com.android.media.remotedisplay.jar. target_sdk_version=34, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+D/nativeloader(10950): Configuring clns-9 for other apk /system/framework/com.android.location.provider.jar. target_sdk_version=34, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+D/ApplicationLoaders(10950): Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+D/ApplicationLoaders(10950): Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+D/nativeloader(10950): InitLlndkLibrariesProduct: libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libRS.so:libandroid_net.so:libapexsupport.so:libbinder_ndk.so:libc.so:libcgrouprc.so:libclang_rt.asan-x86_64-android.so:libcom.android.tethering.connectivity_native.so:libdl.so:libft2.so:liblog.so:libm.so:libmediandk.so:libnativewindow.so:libneuralnetworks.so:libselinux.so:libsync.so:libvendorsupport.so:libvndksupport.so:libvulkan.so
+D/nativeloader(10950): Configuring product-clns-10 for unbundled product apk /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk. target_sdk_version=34, uses_libraries=, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms:/product/lib64:/system/product/lib64
+D/nativeloader(10950): InitVndkspLibrariesProduct: VNDK is deprecated with product
+D/nativeloader(10950): Load /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64/libconscrypt_gmscore_jni.so using ns product-clns-10 from class loader (caller=/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!classes3.dex): ok
+V/NativeCrypto(10950): Registering com/google/android/gms/org/conscrypt/NativeCrypto's 305 native methods...
+W/id.ruma.app(10950): Accessing hidden method Ljava/security/spec/ECParameterSpec;->getCurveName()Ljava/lang/String; (unsupported, reflection, allowed)
+I/ProviderInstaller(10950): Installed default security provider GmsCore_OpenSSL
+D/TrafficStats(10950): tagSocket(162) with statsTag=0xffffffff, statsUid=-1
+W/id.ruma.app(10950): Accessing hidden field Ljava/net/Socket;->impl:Ljava/net/SocketImpl; (unsupported, reflection, allowed)
+W/id.ruma.app(10950): Accessing hidden method Ljava/security/spec/ECParameterSpec;->setCurveName(Ljava/lang/String;)V (unsupported, reflection, allowed)
+VMServiceFlutterDriver: request_data message is taking a long time to complete...
+W/System  (10950): Ignoring header X-Firebase-Locale because its value was null.
+D/TrafficStats(10950): tagSocket(6) with statsTag=0xffffffff, statsUid=-1
+D/FirebaseAuth(10950): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth(10950): Notifying auth state listeners about a sign-out event.
+W/System  (10950): Ignoring header X-Firebase-Locale because its value was null.
+W/System  (10950): Ignoring header X-Firebase-Locale because its value was null.
+D/FirebaseAuth(10950): Notifying id token listeners about user ( N1uIpkr2cxMKdEtFAfrZo44JhgX2 ).
+D/FirebaseAuth(10950): Notifying auth state listeners about user ( N1uIpkr2cxMKdEtFAfrZo44JhgX2 ).
+I/flutter (10950): RUMA_MEMORY_SYNTHETIC_UID=N1uIpkr2cxMKdEtFAfrZo44JhgX2
+W/Firestore(10950): (27.0.0) [Firestore]: Listen for QueryWrapper(query=Query(target=Query(users/uupBPHAU8qVvKsXqpKSXGHMlvRu2/assistant/session order by __name__);limitType=LIMIT_TO_FIRST)) failed: Status{code=PERMISSION_DENIED, description=Missing or insufficient permissions., cause=null}
+W/System  (10950): Ignoring header X-Firebase-Locale because its value was null.
+D/FirebaseAuth(10950): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth(10950): Notifying auth state listeners about a sign-out event.
+D/FirebaseAuth(10950): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth(10950): Notifying auth state listeners about a sign-out event.
+I/flutter (10950): 00:11 +1: (tearDownAll)
+I/flutter (10950): 00:11 +2: All tests passed!
+All tests passed.

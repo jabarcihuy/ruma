@@ -1,0 +1,18 @@
+{
+  "project": "mobile-app-3479f",
+  "suite": "final_stages_cloud_test",
+  "fixtureUids": [
+    "x6peUeYuRYWyUQo49ewtXvR1aK53",
+    "MR2800tg5ROh7wujWImX3gBJ5VH3"
+  ],
+  "authFixturesDeleted": [
+    "x6peUeYuRYWyUQo49ewtXvR1aK53",
+    "MR2800tg5ROh7wujWImX3gBJ5VH3"
+  ],
+  "modelCalls": 1,
+  "additionalFcmSends": 0,
+  "cases": [
+    "second account defaults and old profile access denied",
+    "production profile preferences persist"
+  ]
+}

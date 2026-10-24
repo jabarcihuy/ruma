@@ -1,0 +1,16 @@
+Computing fixes in ruma...
+Applying fixes...
+
+lib/app/main_shell.dart
+  curly_braces_in_flow_control_structures - 1 fix
+
+lib/data/push_notifications.dart
+  curly_braces_in_flow_control_structures - 3 fixes
+
+lib/data/reminders.dart
+  curly_braces_in_flow_control_structures - 5 fixes
+
+lib/features/notifications/notification_pages.dart
+  curly_braces_in_flow_control_structures - 5 fixes
+
+14 fixes made in 4 files.

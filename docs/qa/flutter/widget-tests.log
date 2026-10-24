@@ -1,0 +1,5 @@
+00:00 +0: loading /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart
+00:00 +0: validation does not trim passwords and login failures do not expose account existence
+00:00 +1: welcome and sign-in remain usable on a small screen at 200% text
+00:01 +2: five tabs preserve icon geometry, semantics and home navigation
+00:01 +3: All tests passed!

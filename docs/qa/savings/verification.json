@@ -1,0 +1,29 @@
+{
+  "stage": "savings-data-foundation",
+  "date": "2026-10-21",
+  "project": "demo-ruma",
+  "productionWrites": 0,
+  "newUnitTests": 10,
+  "flutterSuitePassed": 67,
+  "newRulesTestsPassed": 12,
+  "existingRulesRegressionPassed": 51,
+  "analyzer": "No issues found",
+  "nativeAndroidSdk": {
+    "status": "passed",
+    "caseGroups": 6,
+    "evidence": "android-results.json"
+  },
+  "productionRulesChanged": false,
+  "activeRules": "config/firebase/firestore.final-stages.rules",
+  "candidateRules": "config/firebase/firestore.savings.rules",
+  "newDependencies": false,
+  "cleanup": {
+    "project": "demo-ruma",
+    "firestore": "cleared",
+    "auth": "cleared"
+  },
+  "normalApkRestored": "output/apk/ruma-ai-output-guard.apk",
+  "candidateRulesSha256": "338c3dba7a5a55f793ed8894851f44b0f30ba6abc486563e0e2b2ae58fe848f3",
+  "activeRulesSha256": "db1518ec8a81917ba61a696ed31931ecd774bf9f36ff592936b5bb738ef972fb",
+  "localEmulatorsStopped": true
+}

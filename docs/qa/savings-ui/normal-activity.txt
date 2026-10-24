@@ -1,0 +1,18 @@
+  * Task{62d4e05 #8 type=standard I=id.ruma.app/.MainActivity U=0 visible=true visibleRequested=true mode=fullscreen translucent=false sz=1}
+    topResumedActivity=ActivityRecord{a93057c u0 id.ruma.app/.MainActivity t8}
+    * Hist  #0: ActivityRecord{a93057c u0 id.ruma.app/.MainActivity t8}
+      Intent { flg=0x10000000 cmp=id.ruma.app/.MainActivity }
+      rootOfTask=true task=Task{62d4e05 #8 type=standard I=id.ruma.app/.MainActivity}
+      mActivityComponent=id.ruma.app/.MainActivity
+  Resumed activities in task display areas (from top to bottom):
+    Resumed: ActivityRecord{a93057c u0 id.ruma.app/.MainActivity t8}
+  ResumedActivity: ActivityRecord{a93057c u0 id.ruma.app/.MainActivity t8}
+  topDisplayFocusedRootTask=Task{62d4e05 #8 type=standard I=id.ruma.app/.MainActivity}
+  deepestLastOrientationSource=ActivityRecord{a93057c u0 id.ruma.app/.MainActivity t8}
+  mFocusedApp=ActivityRecord{a93057c u0 id.ruma.app/.MainActivity t8}
+      mPreferredTopFocusableRootTask=Task{62d4e05 #8 type=standard I=id.ruma.app/.MainActivity}
+      mLastFocusedRootTask=Task{62d4e05 #8 type=standard I=id.ruma.app/.MainActivity}
+      * Task{62d4e05 #8 type=standard I=id.ruma.app/.MainActivity U=0 visible=true visibleRequested=true mode=fullscreen translucent=false sz=1}
+        * ActivityRecord{a93057c u0 id.ruma.app/.MainActivity t8}
+    mSystemBarColorApps={ActivityRecord{a93057c u0 id.ruma.app/.MainActivity t8}}
+        (fullscreen) Task{62d4e05 #8 type=standard I=id.ruma.app/.MainActivity}

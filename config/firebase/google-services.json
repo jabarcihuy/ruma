@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "18934621879",
+    "project_id": "mobile-app-3479f",
+    "storage_bucket": "mobile-app-3479f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:18934621879:android:8041df319968c51fe08f32",
+        "android_client_info": {
+          "package_name": "com.accela.accela"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDD6TuRjVRL8p1TYsWpsSkSwgr5jbm7NeU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:18934621879:android:f55e5c5ae15c5f6ce08f32",
+        "android_client_info": {
+          "package_name": "id.ember.ember_siaga"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDD6TuRjVRL8p1TYsWpsSkSwgr5jbm7NeU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:18934621879:android:8f7ae40b378ec1dce08f32",
+        "android_client_info": {
+          "package_name": "id.ruma.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDD6TuRjVRL8p1TYsWpsSkSwgr5jbm7NeU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

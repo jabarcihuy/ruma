@@ -1,0 +1,2244 @@
+{
+  "fileKey": "FE73TkpfpJrSuEX97IdrTX",
+  "groups": [
+    {
+      "key": "auth",
+      "title": "01 · Mulai & akun",
+      "count": 4,
+      "description": "Mulai tanpa akun atau masuk."
+    },
+    {
+      "key": "rhythm",
+      "title": "02 · Jadwal kuliah",
+      "count": 4,
+      "description": "Jadwal kuliah dan perubahan pertemuan."
+    },
+    {
+      "key": "planner",
+      "title": "03 · Agenda & kegiatan",
+      "count": 9,
+      "description": "Ringkasan waktu dan uang, agenda, serta form kegiatan."
+    },
+    {
+      "key": "states",
+      "title": "04 · Keadaan inti",
+      "count": 7,
+      "description": "Keadaan kosong, berhasil, dan pemulihan."
+    },
+    {
+      "key": "changes",
+      "title": "05 · Perubahan jadwal",
+      "count": 3,
+      "description": "Perubahan kuliah dan penyelesaian bentrokan."
+    },
+    {
+      "key": "ai",
+      "title": "06 · Asisten pribadi",
+      "count": 6,
+      "description": "Percakapan, perkiraan durasi, dan riwayat."
+    },
+    {
+      "key": "agent",
+      "title": "07 · Agent: agenda & uang",
+      "count": 10,
+      "description": "CRUD dan satu draf gabungan agenda/transaksi."
+    },
+    {
+      "key": "notify",
+      "title": "08 · Pengingat",
+      "count": 5,
+      "description": "Pengingat dan izin perangkat."
+    },
+    {
+      "key": "account",
+      "title": "09 · Profil & pengaturan",
+      "count": 9,
+      "description": "Identitas, preferensi dasar, dan privasi."
+    },
+    {
+      "key": "personal",
+      "title": "10 · Personalisasi profil",
+      "count": 1,
+      "description": "Avatar inisial dan pilihan warna profil."
+    },
+    {
+      "key": "budget",
+      "title": "11 · Keuangan pribadi",
+      "count": 13,
+      "description": "Anggaran, transaksi, laporan, dan CRUD melalui AI."
+    }
+  ],
+  "items": [
+    {
+      "key": "welcome",
+      "id": "36:143",
+      "title": "Ruang untuk waktu dan uangmu.",
+      "group": "auth",
+      "section": "01 · Mulai & akun",
+      "proto": "44:53",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "signin",
+      "id": "36:237",
+      "title": "Selamat datang lagi",
+      "group": "auth",
+      "section": "01 · Mulai & akun",
+      "proto": "44:82",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "signup",
+      "id": "36:328",
+      "title": "Buat akun Ruma",
+      "group": "auth",
+      "section": "01 · Mulai & akun",
+      "proto": "44:128",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "consent",
+      "id": "37:643",
+      "title": "Kamu pegang kendali",
+      "group": "auth",
+      "section": "01 · Mulai & akun",
+      "proto": "44:307",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "classAdd",
+      "id": "37:2922",
+      "title": "Tambah jadwal",
+      "group": "rhythm",
+      "section": "02 · Jadwal kuliah",
+      "proto": "44:8518",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "repeat",
+      "id": "37:3013",
+      "title": "Pengulangan jadwal",
+      "group": "rhythm",
+      "section": "02 · Jadwal kuliah",
+      "proto": "44:8557",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "scope",
+      "id": "37:3106",
+      "title": "Terapkan ke mana?",
+      "group": "rhythm",
+      "section": "02 · Jadwal kuliah",
+      "proto": "44:8599",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "cancelMeeting",
+      "id": "37:3192",
+      "title": "Batalkan pertemuan?",
+      "group": "rhythm",
+      "section": "02 · Jadwal kuliah",
+      "proto": "44:8623",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "dashboard",
+      "id": "37:3641",
+      "title": "Waktu & uangmu.",
+      "group": "planner",
+      "section": "03 · Agenda & kegiatan",
+      "proto": "44:9131",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "calendar",
+      "id": "37:3837",
+      "title": "Agendamu minggu ini",
+      "group": "planner",
+      "section": "03 · Agenda & kegiatan",
+      "proto": "44:9165",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "datePicker",
+      "id": "37:4083",
+      "title": "Pilih tanggal",
+      "group": "planner",
+      "section": "03 · Agenda & kegiatan",
+      "proto": "44:9227",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "timePicker",
+      "id": "37:4256",
+      "title": "Pilih waktu",
+      "group": "planner",
+      "section": "03 · Agenda & kegiatan",
+      "proto": "44:9337",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "taskAdd",
+      "id": "37:4326",
+      "title": "Kegiatan baru",
+      "group": "planner",
+      "section": "03 · Agenda & kegiatan",
+      "proto": "44:9365",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "deadline",
+      "id": "37:4500",
+      "title": "Batas & prioritas",
+      "group": "planner",
+      "section": "03 · Agenda & kegiatan",
+      "proto": "44:9434",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "slots",
+      "id": "37:4586",
+      "title": "Pilih selamu",
+      "group": "planner",
+      "section": "03 · Agenda & kegiatan",
+      "proto": "44:9464",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "manual",
+      "id": "37:4800",
+      "title": "Atur waktu sendiri",
+      "group": "planner",
+      "section": "03 · Agenda & kegiatan",
+      "proto": "44:10045",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "taskDetail",
+      "id": "37:4888",
+      "title": "Laporan praktikum",
+      "group": "planner",
+      "section": "03 · Agenda & kegiatan",
+      "proto": "44:10074",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "saved",
+      "id": "37:4995",
+      "title": "Kegiatan tersimpan",
+      "group": "states",
+      "section": "04 · Keadaan inti",
+      "proto": "44:10101",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "completed",
+      "id": "37:5383",
+      "title": "Satu kegiatan selesai",
+      "group": "states",
+      "section": "04 · Keadaan inti",
+      "proto": "44:10179",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "unscheduled",
+      "id": "37:5494",
+      "title": "Belum mendapat waktu",
+      "group": "states",
+      "section": "04 · Keadaan inti",
+      "proto": "44:10209",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "emptyAgenda",
+      "id": "37:5680",
+      "title": "Harimu masih lapang",
+      "group": "states",
+      "section": "04 · Keadaan inti",
+      "proto": "44:10243",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "noSlot",
+      "id": "37:6020",
+      "title": "Hari ini sudah penuh",
+      "group": "states",
+      "section": "04 · Keadaan inti",
+      "proto": "44:10938",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "saveError",
+      "id": "37:6198",
+      "title": "Belum berhasil tersimpan",
+      "group": "states",
+      "section": "04 · Keadaan inti",
+      "proto": "44:11003",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "deleteTask",
+      "id": "37:6288",
+      "title": "Hapus kegiatan ini?",
+      "group": "states",
+      "section": "04 · Keadaan inti",
+      "proto": "44:11031",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "conflict",
+      "id": "37:6462",
+      "title": "Tinjau bentrokan",
+      "group": "changes",
+      "section": "05 · Perubahan jadwal",
+      "proto": "44:11093",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "stale",
+      "id": "37:6560",
+      "title": "Pilihan perlu diperbarui",
+      "group": "changes",
+      "section": "05 · Perubahan jadwal",
+      "proto": "44:11118",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "changeConfirm",
+      "id": "37:6658",
+      "title": "Terapkan perubahan?",
+      "group": "changes",
+      "section": "05 · Perubahan jadwal",
+      "proto": "44:11597",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "chat",
+      "id": "37:6752",
+      "title": "Mau dibantu apa?",
+      "group": "ai",
+      "section": "06 · Asisten pribadi",
+      "proto": "44:11622",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "chatDraft",
+      "id": "37:6932",
+      "title": "Tinjau draf dari AI",
+      "group": "ai",
+      "section": "06 · Asisten pribadi",
+      "proto": "44:11665",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "aiLoading",
+      "id": "37:7028",
+      "title": "Memperkirakan durasi",
+      "group": "ai",
+      "section": "06 · Asisten pribadi",
+      "proto": "44:11698",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "aiError",
+      "id": "37:7196",
+      "title": "AI belum bisa membantu",
+      "group": "ai",
+      "section": "06 · Asisten pribadi",
+      "proto": "44:11758",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "history",
+      "id": "37:7285",
+      "title": "Riwayat & pembelajaran",
+      "group": "ai",
+      "section": "06 · Asisten pribadi",
+      "proto": "44:11784",
+      "designSize": {
+        "width": 390,
+        "height": 922
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "personalPrefs",
+      "id": "37:7653",
+      "title": "Personalisasi milikmu",
+      "group": "ai",
+      "section": "06 · Asisten pribadi",
+      "proto": "44:12372",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "agentRead",
+      "id": "75:5307",
+      "title": "Ini kegiatanmu",
+      "group": "agent",
+      "section": "07 · Agent: agenda & uang",
+      "proto": "79:5049",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "agentUpdate",
+      "id": "75:5449",
+      "title": "Tinjau perubahan",
+      "group": "agent",
+      "section": "07 · Agent: agenda & uang",
+      "proto": "79:5076",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "agentDelete",
+      "id": "75:5575",
+      "title": "Hapus kegiatan ini?",
+      "group": "agent",
+      "section": "07 · Agent: agenda & uang",
+      "proto": "79:5104",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "agentClarify",
+      "id": "75:5680",
+      "title": "Laporan yang mana?",
+      "group": "agent",
+      "section": "07 · Agent: agenda & uang",
+      "proto": "79:5130",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "agentConflict",
+      "id": "75:5801",
+      "title": "Jamnya sudah terisi",
+      "group": "agent",
+      "section": "07 · Agent: agenda & uang",
+      "proto": "79:5157",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "agentApplied",
+      "id": "75:5927",
+      "title": "Hasil tindakan AI",
+      "group": "agent",
+      "section": "07 · Agent: agenda & uang",
+      "proto": "79:5184",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "agentUndo",
+      "id": "75:6053",
+      "title": "Urungkan tindakan AI",
+      "group": "agent",
+      "section": "07 · Agent: agenda & uang",
+      "proto": "79:5209",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "combinedDraft",
+      "id": "279:5001",
+      "title": "AI · Tinjauan gabungan",
+      "group": "agent",
+      "section": "07 · Agent: agenda & uang",
+      "proto": "281:4972",
+      "designSize": {
+        "width": 390,
+        "height": 1552
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "combinedEdit",
+      "id": "279:5186",
+      "title": "AI · Ubah satu item draf",
+      "group": "agent",
+      "section": "07 · Agent: agenda & uang",
+      "proto": "281:5075",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "combinedSaved",
+      "id": "279:5291",
+      "title": "AI · Hasil gabungan",
+      "group": "agent",
+      "section": "07 · Agent: agenda & uang",
+      "proto": "281:5131",
+      "designSize": {
+        "width": 390,
+        "height": 1022
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "notifications",
+      "id": "37:9316",
+      "title": "Pengingatmu",
+      "group": "notify",
+      "section": "08 · Pengingat",
+      "proto": "44:13738",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "reminder",
+      "id": "37:9422",
+      "title": "Atur pengingat",
+      "group": "notify",
+      "section": "08 · Pengingat",
+      "proto": "44:13762",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "notificationPermission",
+      "id": "37:9606",
+      "title": "Aktifkan pengingat?",
+      "group": "notify",
+      "section": "08 · Pengingat",
+      "proto": "44:13839",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "notifDetail",
+      "id": "37:9682",
+      "title": "Sebentar lagi waktumu",
+      "group": "notify",
+      "section": "08 · Pengingat",
+      "proto": "44:13865",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "notificationDenied",
+      "id": "37:9773",
+      "title": "Pengingat tetap di sini",
+      "group": "notify",
+      "section": "08 · Pengingat",
+      "proto": "44:14321",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "settings",
+      "id": "37:11226",
+      "title": "Pengaturan Ruma",
+      "group": "account",
+      "section": "09 · Profil & pengaturan",
+      "proto": "44:15228",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "profile",
+      "id": "37:11396",
+      "title": "Profilmu",
+      "group": "account",
+      "section": "09 · Profil & pengaturan",
+      "proto": "44:15257",
+      "designSize": {
+        "width": 390,
+        "height": 1034
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "appPrefs",
+      "id": "37:11481",
+      "title": "Preferensi aplikasi",
+      "group": "account",
+      "section": "09 · Profil & pengaturan",
+      "proto": "44:15289",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "privacy",
+      "id": "37:11656",
+      "title": "Datamu, kendalimu",
+      "group": "account",
+      "section": "09 · Profil & pengaturan",
+      "proto": "44:15824",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "help",
+      "id": "37:11915",
+      "title": "Ada yang ingin kamu pahami?",
+      "group": "account",
+      "section": "09 · Profil & pengaturan",
+      "proto": "44:15910",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "historyFilter",
+      "id": "37:12106",
+      "title": "Filter riwayat",
+      "group": "account",
+      "section": "09 · Profil & pengaturan",
+      "proto": "44:15964",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "deleteHistory",
+      "id": "37:12193",
+      "title": "Hapus riwayat AI?",
+      "group": "account",
+      "section": "09 · Profil & pengaturan",
+      "proto": "44:15995",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "logout",
+      "id": "37:12269",
+      "title": "Keluar dari akun?",
+      "group": "account",
+      "section": "09 · Profil & pengaturan",
+      "proto": "44:16437",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "profileHome",
+      "id": "128:8953",
+      "title": "Ruang untuk dirimu.",
+      "group": "account",
+      "section": "09 · Profil & pengaturan",
+      "proto": "130:20708",
+      "designSize": {
+        "width": 390,
+        "height": 914
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "avatarPicker",
+      "id": "75:6159",
+      "title": "Pilih tampilanmu",
+      "group": "personal",
+      "section": "10 · Personalisasi profil",
+      "proto": "79:5232",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "budgetHome",
+      "id": "144:11489",
+      "title": "Uangmu punya arah.",
+      "group": "budget",
+      "section": "11 · Keuangan pribadi",
+      "proto": "146:19711",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "budgetSetup",
+      "id": "144:11753",
+      "title": "Atur batas bulanan.",
+      "group": "budget",
+      "section": "11 · Keuangan pribadi",
+      "proto": "146:19749",
+      "designSize": {
+        "width": 390,
+        "height": 906
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "expenseAdd",
+      "id": "144:11905",
+      "title": "Catat pengeluaran.",
+      "group": "budget",
+      "section": "11 · Keuangan pribadi",
+      "proto": "146:19785",
+      "designSize": {
+        "width": 390,
+        "height": 850
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "transactionDetail",
+      "id": "144:12391",
+      "title": "Detail transaksi",
+      "group": "budget",
+      "section": "11 · Keuangan pribadi",
+      "proto": "146:19884",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "transactionHistory",
+      "id": "144:12702",
+      "title": "Setiap rupiah tercatat.",
+      "group": "budget",
+      "section": "11 · Keuangan pribadi",
+      "proto": "146:19922",
+      "designSize": {
+        "width": 390,
+        "height": 898
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "transactionFilter",
+      "id": "144:13358",
+      "title": "Temukan catatanmu.",
+      "group": "budget",
+      "section": "11 · Keuangan pribadi",
+      "proto": "146:20003",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "budgetReport",
+      "id": "144:13661",
+      "title": "Lihat pola uangmu.",
+      "group": "budget",
+      "section": "11 · Keuangan pribadi",
+      "proto": "146:20051",
+      "designSize": {
+        "width": 390,
+        "height": 1374
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "budgetEmpty",
+      "id": "144:13866",
+      "title": "Mulai dari satu catatan.",
+      "group": "budget",
+      "section": "11 · Keuangan pribadi",
+      "proto": "146:20103",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "budgetError",
+      "id": "144:14038",
+      "title": "Periksa nominalnya.",
+      "group": "budget",
+      "section": "11 · Keuangan pribadi",
+      "proto": "146:20124",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "budgetAIedit",
+      "id": "144:14574",
+      "title": "Tinjau perubahan.",
+      "group": "budget",
+      "section": "11 · Keuangan pribadi",
+      "proto": "146:20199",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "budgetAIdelete",
+      "id": "144:14736",
+      "title": "Hapus catatan ini?",
+      "group": "budget",
+      "section": "11 · Keuangan pribadi",
+      "proto": "146:20219",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "budgetAIread",
+      "id": "144:14898",
+      "title": "Ini pola pengeluaranmu.",
+      "group": "budget",
+      "section": "11 · Keuangan pribadi",
+      "proto": "146:20239",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "key": "transactionSaved",
+      "id": "144:15056",
+      "title": "Hasil transaksi",
+      "group": "budget",
+      "section": "11 · Keuangan pribadi",
+      "proto": "146:20261",
+      "designSize": {
+        "width": 390,
+        "height": 844
+      },
+      "prototypeSize": {
+        "width": 390,
+        "height": 844
+      }
+    }
+  ],
+  "starts": [
+    {
+      "nodeId": "44:53",
+      "name": "01 · Mulai & akun"
+    },
+    {
+      "nodeId": "44:8408",
+      "name": "02 · Ritme & jadwal"
+    },
+    {
+      "nodeId": "44:9131",
+      "name": "03 · Beranda & agenda"
+    },
+    {
+      "nodeId": "44:10101",
+      "name": "04 · Keadaan inti"
+    },
+    {
+      "nodeId": "44:11093",
+      "name": "05 · Tinjau perubahan jadwal"
+    },
+    {
+      "nodeId": "44:11622",
+      "name": "06 · Asisten agenda & uang"
+    },
+    {
+      "nodeId": "44:13738",
+      "name": "08 · Pengingat"
+    },
+    {
+      "nodeId": "44:15228",
+      "name": "09 · Profil & pengaturan"
+    },
+    {
+      "nodeId": "44:10243",
+      "name": "Kondisi khusus · Harimu masih lapang"
+    },
+    {
+      "nodeId": "44:10938",
+      "name": "Kondisi khusus · Hari ini sudah penuh"
+    },
+    {
+      "nodeId": "44:11003",
+      "name": "Kondisi khusus · Belum berhasil tersimpan"
+    },
+    {
+      "nodeId": "44:11118",
+      "name": "Kondisi khusus · Pilihan perlu diperbarui"
+    },
+    {
+      "nodeId": "44:11758",
+      "name": "Kondisi khusus · AI belum bisa membantu"
+    },
+    {
+      "nodeId": "281:4972",
+      "name": "07 · Agent agenda & uang"
+    },
+    {
+      "nodeId": "79:5232",
+      "name": "10 · Personalisasi profil"
+    },
+    {
+      "nodeId": "79:5157",
+      "name": "Kondisi khusus · Jamnya sudah terisi"
+    },
+    {
+      "nodeId": "130:20708",
+      "name": "09 · Ringkasan profil"
+    },
+    {
+      "nodeId": "146:19711",
+      "name": "11 · Keuangan — ringkasan & transaksi"
+    },
+    {
+      "nodeId": "146:20103",
+      "name": "11 · Keuangan — keadaan kosong"
+    },
+    {
+      "nodeId": "146:20124",
+      "name": "11 · Keuangan — validasi nominal"
+    },
+    {
+      "nodeId": "318:4575",
+      "name": "QA · Uji draf gabungan & kondisi pemulihan"
+    }
+  ],
+  "product": "Ruma",
+  "brandingV15": {
+    "previousName": "Sela",
+    "name": "Ruma",
+    "tagline": "Ruang untuk waktu dan uangmu.",
+    "positioning": "Agent AI pribadi untuk mengelola waktu dan uang",
+    "figmaFileKey": "FE73TkpfpJrSuEX97IdrTX"
+  },
+  "homeSummaryV17": {
+    "purpose": "Beranda merangkum keuangan dan agenda; detail tetap pada halaman terkait.",
+    "title": "Waktu & uangmu.",
+    "agent": "Bantu aku, Ruma",
+    "financeMetrics": [
+      "Saldo tercatat",
+      "Sisa anggaran"
+    ],
+    "agenda": [
+      "Kegiatan terdekat",
+      "Waktu kosong"
+    ],
+    "design": {
+      "moneyHeading": "196:8400",
+      "totals": "196:8403",
+      "agenda": "63:5069",
+      "agent": "37:3708"
+    },
+    "prototype": {
+      "moneyHeading": "197:8040",
+      "totals": "197:8043",
+      "agenda": "106:19354",
+      "agent": "106:19353"
+    },
+    "date": "2026-10-15"
+  },
+  "scopeV18": {
+    "revision": "v18-lean-82",
+    "before": 143,
+    "after": 82,
+    "removedFrames": 61,
+    "groups": 12,
+    "deferredFeatures": [
+      "pembagian pekerjaan menjadi beberapa sesi",
+      "ritme berbeda per hari",
+      "zona waktu kustom",
+      "ekspor data",
+      "tema gelap dan pengaturan animasi khusus",
+      "pemotongan foto profil",
+      "penghapusan akun lanjutan"
+    ],
+    "archive": "/home/ael/.codex/visualizations/2026/10/11/01a12a84-2e7a-70c1-8312-f658de8338a7/archive/v17-before-reduction",
+    "sharedScreens": [
+      "calendar",
+      "detailMetode",
+      "taskDetail",
+      "taskAdd",
+      "taskEdit",
+      "agentUpdate",
+      "agentApplied",
+      "agentUndo",
+      "transactionDetail",
+      "transactionHistory",
+      "budgetAIdelete",
+      "transactionSaved"
+    ],
+    "behaviorCases": 17,
+    "behaviorPass": true,
+    "missingDestinations": [],
+    "prototypeStarts": 21
+  },
+  "revision": "v23-final-v1-draft",
+  "pdfStatus": "exported-ready-for-LMS",
+  "pdfRevision": "v32-expense-insight",
+  "staleImageKeys": [
+    "welcome",
+    "signin",
+    "signup",
+    "consent",
+    "daily",
+    "classAdd",
+    "repeat",
+    "scope",
+    "cancelMeeting",
+    "dashboard",
+    "calendar",
+    "datePicker",
+    "timePicker",
+    "taskAdd",
+    "deadline",
+    "slots",
+    "manual",
+    "taskDetail",
+    "saved",
+    "completed",
+    "unscheduled",
+    "emptyAgenda",
+    "noSlot",
+    "saveError",
+    "deleteTask",
+    "conflict",
+    "stale",
+    "changeConfirm",
+    "chat",
+    "chatDraft",
+    "aiLoading",
+    "aiError",
+    "history",
+    "personalPrefs",
+    "agentRead",
+    "agentUpdate",
+    "agentDelete",
+    "agentClarify",
+    "agentConflict",
+    "agentApplied",
+    "agentUndo",
+    "combinedDraft",
+    "combinedEdit",
+    "combinedSaved",
+    "notifications",
+    "reminder",
+    "notificationPermission",
+    "notifDetail",
+    "notificationDenied",
+    "settings",
+    "profile",
+    "appPrefs",
+    "privacy",
+    "help",
+    "historyFilter",
+    "deleteHistory",
+    "logout",
+    "profileHome",
+    "avatarPicker",
+    "budgetHome",
+    "budgetSetup",
+    "expenseAdd",
+    "transactionDetail",
+    "transactionHistory",
+    "transactionFilter",
+    "budgetReport",
+    "budgetEmpty",
+    "budgetError",
+    "budgetAIedit",
+    "budgetAIdelete",
+    "budgetAIread",
+    "transactionSaved"
+  ],
+  "simpleFlowsV20": {
+    "revision": "v20-simple-flows",
+    "ledger": "ruma-simple-flows-v20-state.json",
+    "variables": {
+      "collection": "VariableCollectionId:266:5021",
+      "mode": "266:0",
+      "vars": {
+        "taskDeadline": "VariableID:266:5022",
+        "editDeadline": "VariableID:266:5023",
+        "taskContext": "VariableID:266:5024",
+        "taskAddOpen": "VariableID:266:5025",
+        "taskAddLabel": "VariableID:266:5026",
+        "taskEditOpen": "VariableID:266:5027",
+        "taskEditLabel": "VariableID:266:5028",
+        "expenseAddOpen": "VariableID:266:5029",
+        "expenseAddLabel": "VariableID:266:5030",
+        "incomeAddOpen": "VariableID:266:5031",
+        "incomeAddLabel": "VariableID:266:5032",
+        "chatOpen": "VariableID:266:5033",
+        "chatLabel": "VariableID:266:5034",
+        "budgetChatOpen": "VariableID:266:5035",
+        "budgetChatLabel": "VariableID:266:5036",
+        "budgetHomeOpen": "VariableID:266:5037",
+        "budgetHomeLabel": "VariableID:266:5038"
+      },
+      "createdNodeIds": [],
+      "mutatedNodeIds": []
+    },
+    "sourceItems": {
+      "dashboard": {
+        "hiddenPreview": "63:5072"
+      },
+      "taskAdd": {
+        "toggle": "267:6420",
+        "fold": "267:6426",
+        "openVariable": "VariableID:266:5025",
+        "labelVariable": "VariableID:266:5026",
+        "openLabel": "Opsi lainnya",
+        "closeLabel": "Sembunyikan opsi",
+        "children": [
+          "37:4383",
+          "37:4387",
+          "37:4391",
+          "267:6396"
+        ],
+        "deadline": "37:4396",
+        "priority": "267:6396",
+        "caption": "267:6393"
+      },
+      "taskEdit": {
+        "toggle": "267:6454",
+        "fold": "267:6460",
+        "openVariable": "VariableID:266:5027",
+        "labelVariable": "VariableID:266:5028",
+        "openLabel": "Opsi lainnya",
+        "closeLabel": "Sembunyikan opsi",
+        "children": [
+          "37:4473",
+          "37:4477",
+          "267:6430"
+        ],
+        "deadline": "37:4481",
+        "priority": "267:6430",
+        "caption": "267:6427"
+      },
+      "expenseAdd": {
+        "toggle": "267:6462",
+        "fold": "267:6468",
+        "openVariable": "VariableID:266:5029",
+        "labelVariable": "VariableID:266:5030",
+        "openLabel": "Opsi lainnya",
+        "closeLabel": "Sembunyikan opsi",
+        "children": [
+          "144:12024",
+          "144:12036",
+          "144:12040"
+        ],
+        "dateCaption": "267:6461",
+        "basic": [
+          "144:12028",
+          "144:12032"
+        ]
+      },
+      "incomeAdd": {
+        "toggle": "267:6470",
+        "fold": "267:6476",
+        "openVariable": "VariableID:266:5031",
+        "labelVariable": "VariableID:266:5032",
+        "openLabel": "Opsi lainnya",
+        "closeLabel": "Sembunyikan opsi",
+        "children": [
+          "144:12186",
+          "144:12198",
+          "144:12202"
+        ],
+        "dateCaption": "267:6469",
+        "basic": [
+          "144:12190",
+          "144:12194"
+        ]
+      },
+      "chat": {
+        "toggle": "267:6477",
+        "fold": "267:6483",
+        "openVariable": "VariableID:266:5033",
+        "labelVariable": "VariableID:266:5034",
+        "openLabel": "Contoh lainnya",
+        "closeLabel": "Tutup contoh lainnya",
+        "children": [
+          "103:15205"
+        ]
+      },
+      "budgetChat": {
+        "toggle": "267:6484",
+        "fold": "267:6490",
+        "openVariable": "VariableID:266:5035",
+        "labelVariable": "VariableID:266:5036",
+        "openLabel": "Contoh lainnya",
+        "closeLabel": "Tutup contoh lainnya",
+        "children": [
+          "144:14351",
+          "144:14370"
+        ]
+      },
+      "budgetHome": {
+        "toggle": "267:6492",
+        "fold": "267:6498",
+        "openVariable": "VariableID:266:5037",
+        "labelVariable": "VariableID:266:5038",
+        "openLabel": "Riwayat & laporan",
+        "closeLabel": "Tutup riwayat & laporan",
+        "children": [
+          "144:11701",
+          "144:11717"
+        ],
+        "budget": "144:11684",
+        "header": "267:6491"
+      }
+    },
+    "prototypeItems": {
+      "dashboard": {
+        "hiddenPreview": "106:19358"
+      },
+      "taskAdd": {
+        "toggle": "267:12195",
+        "fold": "267:12201",
+        "openVariable": "VariableID:266:5025",
+        "labelVariable": "VariableID:266:5026",
+        "openLabel": "Opsi lainnya",
+        "closeLabel": "Sembunyikan opsi",
+        "children": [
+          "106:19520",
+          "106:19523",
+          "106:19527",
+          "267:12170"
+        ],
+        "deadline": "106:19528",
+        "priority": "267:12170",
+        "caption": "267:12167"
+      },
+      "taskEdit": {
+        "toggle": "267:12232",
+        "fold": "267:12238",
+        "openVariable": "VariableID:266:5027",
+        "labelVariable": "VariableID:266:5028",
+        "openLabel": "Opsi lainnya",
+        "closeLabel": "Sembunyikan opsi",
+        "children": [
+          "106:19555",
+          "106:19558",
+          "267:12207"
+        ],
+        "deadline": "106:19561",
+        "priority": "267:12207",
+        "caption": "267:12204"
+      },
+      "expenseAdd": {
+        "toggle": "267:12241",
+        "fold": "267:12247",
+        "openVariable": "VariableID:266:5029",
+        "labelVariable": "VariableID:266:5030",
+        "openLabel": "Opsi lainnya",
+        "closeLabel": "Sembunyikan opsi",
+        "children": [
+          "146:19800",
+          "146:19809",
+          "146:19812"
+        ],
+        "dateCaption": "267:12240",
+        "basic": [
+          "146:19803",
+          "146:19806"
+        ]
+      },
+      "incomeAdd": {
+        "toggle": "267:12250",
+        "fold": "267:12256",
+        "openVariable": "VariableID:266:5031",
+        "labelVariable": "VariableID:266:5032",
+        "openLabel": "Opsi lainnya",
+        "closeLabel": "Sembunyikan opsi",
+        "children": [
+          "146:19833",
+          "146:19842",
+          "146:19845"
+        ],
+        "dateCaption": "267:12249",
+        "basic": [
+          "146:19836",
+          "146:19839"
+        ]
+      },
+      "chat": {
+        "toggle": "267:12258",
+        "fold": "267:12264",
+        "openVariable": "VariableID:266:5033",
+        "labelVariable": "VariableID:266:5034",
+        "openLabel": "Contoh lainnya",
+        "closeLabel": "Tutup contoh lainnya",
+        "children": [
+          "106:22188"
+        ]
+      },
+      "budgetChat": {
+        "toggle": "267:12266",
+        "fold": "267:12272",
+        "openVariable": "VariableID:266:5035",
+        "labelVariable": "VariableID:266:5036",
+        "openLabel": "Contoh lainnya",
+        "closeLabel": "Tutup contoh lainnya",
+        "children": [
+          "146:20170",
+          "146:20171"
+        ]
+      },
+      "budgetHome": {
+        "toggle": "267:12275",
+        "fold": "267:12281",
+        "openVariable": "VariableID:266:5037",
+        "labelVariable": "VariableID:266:5038",
+        "openLabel": "Riwayat & laporan",
+        "closeLabel": "Tutup riwayat & laporan",
+        "children": [
+          "146:19744",
+          "146:19745"
+        ],
+        "budget": "146:19737",
+        "header": "267:12274"
+      },
+      "deadline": {
+        "save": "106:19595",
+        "back": "106:19573"
+      }
+    },
+    "qa": "ruma-simple-flows-v20-qa.json",
+    "screensChanged": [
+      "dashboard",
+      "taskAdd",
+      "taskEdit",
+      "expenseAdd",
+      "incomeAdd",
+      "chat",
+      "budgetChat",
+      "budgetHome"
+    ],
+    "deadlineRoutingAdjusted": true,
+    "frameCount": 82,
+    "pdfStatus": "deferred; v18 PDF preserved"
+  },
+  "combinedDraftV21": {
+    "revision": "v21-combined-draft",
+    "status": "complete",
+    "source": "ruma-combined-v21-source.json",
+    "prototype": "ruma-combined-v21-prototype.json",
+    "qa": "ruma-combined-v21-qa.json",
+    "variables": {
+      "a1Visible": "VariableID:279:4986",
+      "a1Detail": "VariableID:279:4987",
+      "a2Visible": "VariableID:279:4988",
+      "a2Detail": "VariableID:279:4989",
+      "t1Visible": "VariableID:279:4990",
+      "t1Detail": "VariableID:279:4991",
+      "t2Visible": "VariableID:279:4992",
+      "t2Detail": "VariableID:279:4993",
+      "empty": "VariableID:279:4994",
+      "editKey": "VariableID:279:4995",
+      "editName": "VariableID:279:4996",
+      "editValue": "VariableID:279:4997",
+      "editAlt": "VariableID:279:4998",
+      "editLabel": "VariableID:281:10081"
+    },
+    "component": "279:4945",
+    "newScreens": [
+      "combinedDraft",
+      "combinedEdit",
+      "combinedSaved"
+    ],
+    "frameCount": 85,
+    "prototypeStarts": 22,
+    "pdfStatus": "deferred; v18 preserved",
+    "limitation": "Prototype simulates fixed example field changes; saved result does not update existing agenda/history module fixtures."
+  },
+  "reductionV22": {
+    "revision": "v22-reduction-72",
+    "status": "complete",
+    "before": 85,
+    "after": 72,
+    "removedFrames": 13,
+    "mergedFrames": 10,
+    "deferredFrames": 3,
+    "groups": 11,
+    "prototypeStarts": 20,
+    "mergedInto": {
+      "taskEdit": "taskAdd",
+      "classEdit": "classAdd",
+      "incomeAdd": "expenseAdd",
+      "transactionEdit": "expenseAdd",
+      "budgetChat": "chat",
+      "slotAlt": "slots",
+      "agentCreate": "combinedDraft",
+      "budgetAIreview": "combinedDraft",
+      "detailMetode": "taskDetail",
+      "aiResult": "chatDraft"
+    },
+    "deferredFeatures": [
+      "quiet hours",
+      "feedback sesi",
+      "profile preview"
+    ],
+    "retained": [
+      "deleteHistory",
+      "history",
+      "historyFilter",
+      "logout",
+      "personalPrefs",
+      "signin",
+      "signup"
+    ],
+    "sharedContexts": {
+      "taskAdd": {
+        "root": "44:9365",
+        "modes": {
+          "taskAdd": [
+            "106:19501",
+            "106:19509",
+            "106:19512",
+            "106:19531"
+          ],
+          "taskEdit": [
+            "303:13519",
+            "303:13544",
+            "303:13547",
+            "303:13595"
+          ]
+        },
+        "height": 844
+      },
+      "classAdd": {
+        "root": "44:8518",
+        "modes": {
+          "classAdd": [
+            "106:19176",
+            "106:19184",
+            "106:19187",
+            "106:19206"
+          ],
+          "classEdit": [
+            "303:13602",
+            "303:13627",
+            "303:13630",
+            "303:13674"
+          ]
+        },
+        "height": 844
+      },
+      "expenseAdd": {
+        "root": "146:19785",
+        "modes": {
+          "expenseAdd": [
+            "146:19791",
+            "146:19795",
+            "146:19798",
+            "146:19816"
+          ],
+          "incomeAdd": [
+            "303:13681",
+            "303:13688",
+            "303:13691",
+            "303:13734"
+          ],
+          "transactionEdit": [
+            "303:13741",
+            "303:13748",
+            "303:13751",
+            "303:13787"
+          ]
+        },
+        "height": 844
+      },
+      "chat": {
+        "root": "44:11622",
+        "modes": {
+          "chat": [
+            "106:22170",
+            "106:22178",
+            "106:22181",
+            "106:22189",
+            "146:22883"
+          ],
+          "budgetChat": [
+            "303:13794",
+            "303:13801",
+            "303:13804",
+            "303:13863",
+            "303:13879"
+          ]
+        },
+        "height": 844
+      },
+      "slots": {
+        "root": "44:9464",
+        "modes": {
+          "slots": [
+            "106:19601",
+            "106:19609",
+            "106:19612",
+            "106:19621"
+          ],
+          "slotAlt": [
+            "303:13914",
+            "303:13939",
+            "303:13942",
+            "303:13994"
+          ]
+        },
+        "height": 844
+      },
+      "combinedDraft": {
+        "root": "281:4972",
+        "modes": {
+          "combinedDraft": [
+            "281:4978",
+            "281:4986",
+            "281:4989",
+            "281:5004"
+          ],
+          "agentCreate": [
+            "303:14001",
+            "303:14026",
+            "303:14029",
+            "303:14065"
+          ],
+          "budgetAIreview": [
+            "303:14078",
+            "303:14085",
+            "303:14088",
+            "303:14114"
+          ]
+        },
+        "height": 844
+      },
+      "taskDetail": {
+        "root": "44:10074",
+        "modes": {
+          "taskDetail": [
+            "106:19683",
+            "106:19691",
+            "106:19694",
+            "106:19699"
+          ],
+          "detailMetode": [
+            "303:14127",
+            "303:14152",
+            "303:14155",
+            "303:14186"
+          ]
+        },
+        "height": 844
+      },
+      "chatDraft": {
+        "root": "44:11665",
+        "modes": {
+          "chatDraft": [
+            "106:22206",
+            "106:22214",
+            "106:22217",
+            "106:22230"
+          ],
+          "aiResult": [
+            "303:14193",
+            "303:14218",
+            "303:14221",
+            "303:14240"
+          ]
+        },
+        "height": 844
+      }
+    },
+    "contextVariables": {
+      "taskAdd": {
+        "taskAdd": "VariableID:303:6763",
+        "taskEdit": "VariableID:303:6764"
+      },
+      "classAdd": {
+        "classAdd": "VariableID:303:6765",
+        "classEdit": "VariableID:303:6766"
+      },
+      "expenseAdd": {
+        "expenseAdd": "VariableID:303:6767",
+        "incomeAdd": "VariableID:303:6768",
+        "transactionEdit": "VariableID:303:6769"
+      },
+      "chat": {
+        "chat": "VariableID:303:6770",
+        "budgetChat": "VariableID:303:6771"
+      },
+      "slots": {
+        "slots": "VariableID:303:6772",
+        "slotAlt": "VariableID:303:6773"
+      },
+      "combinedDraft": {
+        "combinedDraft": "VariableID:303:6774",
+        "agentCreate": "VariableID:303:6775",
+        "budgetAIreview": "VariableID:303:6776"
+      },
+      "taskDetail": {
+        "taskDetail": "VariableID:303:6777",
+        "detailMetode": "VariableID:303:6778"
+      },
+      "chatDraft": {
+        "chatDraft": "VariableID:303:6779",
+        "aiResult": "VariableID:303:6780"
+      }
+    },
+    "sourceMerge": "ruma-v22-source-merge.json",
+    "prototypeMerge": "ruma-v22-prototype-merge.json",
+    "qa": "ruma-v22-prototype-qa.json",
+    "sourceQa": "ruma-v22-source-qa.json",
+    "archive": "archive/v21-before-reduction",
+    "pdfStatus": "deferred; v18 unchanged",
+    "prototypeLimitation": "Fixed sample input; not arbitrary typing or real AI. Combined save summary still does not mutate the separate legacy agenda/finance fixtures."
+  },
+  "finalV1": {
+    "revision": "v23-final-v1-draft",
+    "status": "ready-for-user-testing",
+    "frames": 72,
+    "groups": 11,
+    "productStarts": 20,
+    "qaStarts": 1,
+    "qaCases": 28,
+    "regressionCases": 36,
+    "navActions": 492,
+    "qa": "ruma-final-v23-qa.json",
+    "state": "ruma-final-v23-state.json",
+    "usabilityGuide": "ruma-uji-pengguna-v1.md",
+    "limitation": "Prototype memakai pesan dan nilai contoh, bukan AI nyata atau ketikan bebas. Satu batch gabungan contoh memperbarui agenda, riwayat, angka Beranda/Keuangan, kategori dan laporan; simpan ulang batch yang sama tidak menggandakan pengeluaran. Simulasi satu batch ini belum menjadi ledger persisten untuk banyak batch atau kombinasi seluruh mutasi lama. Detail transaksi gabungan tersedia baca-saja; edit dilakukan pada draf sebelum persetujuan. Implementasi Flutter wajib memakai penyimpanan dan validasi atomik sungguhan.",
+    "pdf": "deferred; unchanged"
+  },
+  "categoryIconsV24": {
+    "revision": "v24-category-icons",
+    "state": "ruma-category-icons-v24-state.json",
+    "categoryIcons": {
+      "kos": "128:8166",
+      "kuliah": "17:2302",
+      "makanan": "335:4527",
+      "transport": "335:4538"
+    },
+    "newComponents": 2,
+    "reusedComponents": 2,
+    "sourceInstances": 6,
+    "prototypeInstances": 6,
+    "assetsZip": "output/assets/ruma-assets-v24.zip",
+    "frameCount": 72,
+    "pdf": "deferred; unchanged"
+  },
+  "latestVisualRevision": "v32-expense-insight",
+  "navigationV25": {
+    "revision": "v25-floating-navigation",
+    "status": "complete",
+    "chosenOption": 2,
+    "style": "white floating panel",
+    "radius": 16,
+    "size": [
+      342,
+      72
+    ],
+    "tabSize": [
+      65.2,
+      56
+    ],
+    "order": [
+      "Beranda",
+      "Agenda",
+      "Asisten",
+      "Keuangan",
+      "Profil"
+    ],
+    "sourceNavbars": 14,
+    "prototypeNavbars": 14,
+    "components": 5,
+    "qaPass": true,
+    "tabRoutesChecked": 70,
+    "state": "ruma-floating-navbar-v25-state.json",
+    "productFrames": 72,
+    "pdf": "deferred; unchanged"
+  },
+  "navigationV26": {
+    "revision": "v26-icon-only-abstract-friend",
+    "status": "complete",
+    "style": {
+      "order": [
+        "Beranda",
+        "Agenda",
+        "Asisten",
+        "Keuangan",
+        "Profil"
+      ],
+      "visibleLabels": false,
+      "size": [
+        342,
+        64
+      ],
+      "radius": 24,
+      "tabSize": [
+        65.2,
+        48
+      ],
+      "sideIcons": [
+        22,
+        22
+      ],
+      "centerBadge": [
+        48,
+        48
+      ],
+      "centerFace": [
+        32,
+        32
+      ],
+      "activeIndicator": [
+        4,
+        4
+      ],
+      "selectedMascot": "Teman Abstrak"
+    },
+    "components": {
+      "mascot": "355:4863",
+      "face": "355:4870",
+      "badge": "355:4871",
+      "centerItem": "359:5080",
+      "navFamily": "128:8866"
+    },
+    "sourceNavbars": 14,
+    "prototypeNavbars": 14,
+    "qaPass": true,
+    "tabRoutesChecked": 70,
+    "state": "ruma-icon-only-navbar-v26-state.json",
+    "productFrames": 72,
+    "pdf": "deferred; unchanged"
+  },
+  "balanceV27": {
+    "revision": "v27-balanced-time-money",
+    "status": "complete",
+    "positioning": "Ruma adalah aplikasi pribadi untuk mengelola waktu dan uang, dibantu agent AI.",
+    "state": "ruma-balanced-time-money-v27-state.json",
+    "screens": 72,
+    "homePanelSize": [
+      342,
+      184
+    ],
+    "homeActions": [
+      "Tambah agenda",
+      "Catat transaksi"
+    ],
+    "assistantShortcuts": [
+      "Atur agenda",
+      "Lihat agenda",
+      "Catat transaksi",
+      "Cek anggaran"
+    ],
+    "assistantManualActions": [
+      "Agenda manual",
+      "Transaksi manual"
+    ],
+    "combinedExample": "2 agenda + 2 transaksi; tinjau sebelum simpan",
+    "qa": {
+      "preservedActions": 11,
+      "financialBindings": 4,
+      "layoutOverflow": 0,
+      "pass": true
+    },
+    "pdf": "deferred; unchanged"
+  },
+  "pdfV27": {
+    "file": "/home/ael/.codex/visualizations/2026/10/11/01a12a84-2e7a-70c1-8312-f658de8338a7/output/pdf/ruma-desain-antarmuka-lms.pdf",
+    "revision": "v27-balanced-time-money",
+    "date": "2026-10-17",
+    "pages": 12,
+    "screens": 72,
+    "groups": 11,
+    "bytes": 4222969,
+    "sha256": "8b5e1f4ac07a38f12d4d86ae1fea280f0cb453c096252aae1190a69200c057b7",
+    "status": "complete",
+    "qa": "ruma-lms-pdf-v27-qa.json",
+    "format": "A3 portrait; adaptive four-column layout"
+  },
+  "pdfFile": "/home/ael/.codex/visualizations/2026/10/11/01a12a84-2e7a-70c1-8312-f658de8338a7/output/pdf/ruma-desain-antarmuka-lms.pdf",
+  "tidinessV29": {
+    "revision": "v29-frame-tidiness",
+    "status": "complete",
+    "date": "2026-10-17",
+    "audit": "ruma-frame-tidiness-v29-audit.json",
+    "designFrames": 72,
+    "prototypeFrames": 72,
+    "remainingGeometryIssues": 0,
+    "remainingTextFitCandidates": 0,
+    "timepickerAndChatState": "ruma-timepicker-chat-v28-state.json",
+    "featuresRemoved": 0
+  },
+  "pdfV29": {
+    "file": "/home/ael/.codex/visualizations/2026/10/11/01a12a84-2e7a-70c1-8312-f658de8338a7/output/pdf/ruma-desain-antarmuka-lms.pdf",
+    "revision": "v29-frame-tidiness",
+    "date": "2026-10-17",
+    "pages": 12,
+    "screens": 72,
+    "groups": 11,
+    "bytes": 4213982,
+    "sha256": "13616cfd1cad2af6e4a4a172dbcb5937127f5db7802039e548b04d1de1f7a460",
+    "status": "complete",
+    "format": "A3 portrait; adaptive four-column layout",
+    "qa": "ruma-lms-pdf-v27-qa.json"
+  },
+  "copyV30": {
+    "status": "complete",
+    "record": "ruma-two-line-copy-v30.json",
+    "textNodesUpdated": 6,
+    "uniqueCopyChanges": 3,
+    "maxLines": 2
+  },
+  "pdfSyncStatus": "current-v32",
+  "pdfV30": {
+    "file": "/home/ael/.codex/visualizations/2026/10/11/01a12a84-2e7a-70c1-8312-f658de8338a7/output/pdf/ruma-desain-antarmuka-lms.pdf",
+    "revision": "v30-two-line-copy",
+    "date": "2026-10-17",
+    "pages": 12,
+    "screens": 72,
+    "groups": 11,
+    "bytes": 4206597,
+    "sha256": "42e76f5c44050f49b2ec8e709e450b59985c24f2ccf1aa8b21c5567f82bd44af",
+    "status": "complete",
+    "format": "A3 portrait; adaptive four-column layout",
+    "qa": "ruma-lms-pdf-v27-qa.json"
+  },
+  "dailyRemovalV31": {
+    "revision": "v31-remove-daily-rhythm",
+    "date": "2026-10-17",
+    "status": "complete",
+    "sourceFrames": 71,
+    "prototypeFrames": 71,
+    "onboarding": "Welcome without account and consent continue to Beranda",
+    "scheduling": "Agenda, deadlines, duration, and requested time range. AI asks when range is unclear. User reviews draft.",
+    "pdfBottomLabels": false,
+    "record": "ruma-remove-daily-v31.json"
+  },
+  "count": 71,
+  "pdfV31": {
+    "file": "/home/ael/.codex/visualizations/2026/10/11/01a12a84-2e7a-70c1-8312-f658de8338a7/output/pdf/ruma-desain-antarmuka-lms.pdf",
+    "revision": "v31-remove-daily-rhythm",
+    "date": "2026-10-17",
+    "pages": 12,
+    "screens": 71,
+    "groups": 11,
+    "bytes": 4090023,
+    "sha256": "5088791bdb06edc6545fb7609350a983743e4ad7837030a5ca3045b915f3089d",
+    "status": "complete",
+    "format": "A3 portrait; adaptive four-column layout",
+    "qa": "ruma-lms-pdf-v27-qa.json",
+    "perFrameFooterLabels": false
+  },
+  "expenseInsightV32": {
+    "revision": "v32-expense-insight",
+    "date": "2026-10-17",
+    "text": "54% pengeluaranmu untuk makan.\nSisa anggaran bulan ini Rp320.000.",
+    "sourceText": "144:15020",
+    "prototypeText": "146:20257",
+    "lines": 2,
+    "calculation": "round(640000 / 1180000 * 100) = 54",
+    "status": "complete",
+    "visualQA": "Updated source frame reviewed; existing 310 x 44 text area fits two lines without changing font size."
+  },
+  "pdfV32": {
+    "file": "/home/ael/.codex/visualizations/2026/10/11/01a12a84-2e7a-70c1-8312-f658de8338a7/output/pdf/ruma-desain-antarmuka-lms.pdf",
+    "revision": "v32-expense-insight",
+    "date": "2026-10-17",
+    "pages": 12,
+    "screens": 71,
+    "groups": 11,
+    "bytes": 4089826,
+    "sha256": "ba4cc22532c00ec8f4f618675c06a529a9a783a3a794a8cefc65f92659d0f3b0",
+    "status": "complete",
+    "format": "A3 portrait; adaptive four-column layout",
+    "qa": "ruma-lms-pdf-v27-qa.json"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "date": "2026-10-19",
+  "source": "Cloudflare Workers invocation log; sanitized allowlist",
+  "beforeOptimization": [
+    {
+      "sample": "first-authenticated-after-deploy",
+      "version": "8fc0c86e-cd56-4bcc-b2f7-0b63b9eed0c9",
+      "status": 200,
+      "cpuTimeMs": 13,
+      "wallTimeMs": 26914
+    },
+    {
+      "sample": "repeat-authenticated",
+      "version": "8fc0c86e-cd56-4bcc-b2f7-0b63b9eed0c9",
+      "status": 200,
+      "cpuTimeMs": 5,
+      "wallTimeMs": 3196
+    }
+  ],
+  "nominalFreeRequestCpuMs": 10,
+  "afterDateOptimization": [
+    {
+      "sample": "first-authenticated-after-deploy",
+      "version": "936cbc7b-4499-4a7d-b469-a3c39e1312ec",
+      "status": 200,
+      "cpuTimeMs": 11,
+      "wallTimeMs": 23279
+    },
+    {
+      "sample": "repeat-authenticated",
+      "version": "936cbc7b-4499-4a7d-b469-a3c39e1312ec",
+      "status": 200,
+      "cpuTimeMs": 4,
+      "wallTimeMs": 4100
+    }
+  ],
+  "measuredSampleWithinNominalLimit": false,
+  "limitation": "Latest minified build measured 13 ms on its first authenticated invocation and 4 ms on repeat; nominal 10 ms gate remains not passed. Earlier trials measured JWK 15/5 ms and conditional commit 16/4 ms. No profiler isolated a single CPU root cause. Functional correctness passed; worst-case Free feasibility is not established. Provider and hosting unchanged.",
+  "afterJwkOptimization": [
+    {
+      "sample": "first-authenticated-after-deploy",
+      "version": "6ec7778a-2505-4dc2-b36b-a1555f31e16d",
+      "status": 200,
+      "cpuTimeMs": 15,
+      "wallTimeMs": 18873
+    },
+    {
+      "sample": "repeat-authenticated",
+      "version": "6ec7778a-2505-4dc2-b36b-a1555f31e16d",
+      "status": 200,
+      "cpuTimeMs": 5,
+      "wallTimeMs": 4351
+    }
+  ],
+  "afterConditionalCommitOptimization": [
+    {
+      "sample": "first-authenticated-after-deploy",
+      "version": "0551e7e1-8627-4a07-a67a-97ac443b9e96",
+      "status": 200,
+      "cpuTimeMs": 16,
+      "wallTimeMs": 20935
+    },
+    {
+      "sample": "repeat-authenticated",
+      "version": "0551e7e1-8627-4a07-a67a-97ac443b9e96",
+      "status": 200,
+      "cpuTimeMs": 4,
+      "wallTimeMs": 10580
+    }
+  ],
+  "afterProductionBuild": [
+    {
+      "sample": "first-authenticated-after-deploy",
+      "version": "c6bedf81-7f1a-4d01-b4e2-aee42d574c09",
+      "status": 200,
+      "cpuTimeMs": 13,
+      "wallTimeMs": 15362
+    },
+    {
+      "sample": "repeat-authenticated",
+      "version": "c6bedf81-7f1a-4d01-b4e2-aee42d574c09",
+      "status": 200,
+      "cpuTimeMs": 4,
+      "wallTimeMs": 2909
+    }
+  ],
+  "latestVersion": "c6bedf81-7f1a-4d01-b4e2-aee42d574c09",
+  "functionalGatePassed": true
+}

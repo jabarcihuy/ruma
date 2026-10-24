@@ -1,0 +1,18 @@
+{
+  "project": "demo-ruma",
+  "productionWrites": 0,
+  "modelCalls": 0,
+  "fcmSends": 0,
+  "cases": [
+    "current agenda and canonical balance, expense and budget match real SDK",
+    "deadline opens the exact agenda detail",
+    "returning from an older finance report restores current month without relabelling old figures"
+  ],
+  "screens": [
+    "01-home-empty",
+    "02-home-populated",
+    "03-home-money",
+    "04-home-current-month"
+  ],
+  "passed": true
+}

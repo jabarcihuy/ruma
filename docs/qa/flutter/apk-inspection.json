@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-19",
+  "apk": "output/apk/ruma-foundation-preview.apk",
+  "buildMode": "profile",
+  "target": "lib/main.dart",
+  "androidAbi": "arm64-v8a",
+  "firebaseMode": "production",
+  "bytes": 30152909,
+  "sha256": "4892c70bf4cebbbdb39576ed57c0f2298586c2293428e5e85cf4a81a261e4adf",
+  "knownServerSecretValuesChecked": 2,
+  "knownServerSecretMatches": [],
+  "disallowedPrivateFileEntries": [],
+  "scope": "Exact-value checks of current local server secrets and private file paths; not a full security audit",
+  "courseReleaseSigningComplete": false,
+  "installedOnPhysicalAndroid": true,
+  "coldLaunchStatus": "ok",
+  "foregroundPackageVerified": true
+}

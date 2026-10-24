@@ -1,0 +1,7 @@
+{
+  "project": "demo-ruma",
+  "productionWrites": 0,
+  "modelCalls": 0,
+  "firestore": 200,
+  "auth": 200
+}

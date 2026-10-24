@@ -1,0 +1,41 @@
+[2026-10-21T17:38:18.276Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x8f9f35fe error. Code: 7 Message: 7 PERMISSION_DENIED: 
+evaluation error at L300:33 for 'update' @ L300, false for 'update' @ L424, false for 'update' @ L300, false for 'update' @ L424
+[2026-10-21T17:38:18.286Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x8f9f35ff error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'delete' @ L424
+✔ owner settings require exact fields, timestamp, valid ranges and revision CAS (480.547974ms)
+[2026-10-21T17:38:18.381Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x8f9f3602 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L300, false for 'create' @ L424, false for 'update' @ L300, false for 'update' @ L424
+[2026-10-21T17:38:18.426Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x8f9f3604 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L300, false for 'create' @ L424, false for 'update' @ L300, false for 'update' @ L424
+✔ foreign and unauthenticated profiles cannot read or write (139.545984ms)
+[2026-10-21T17:38:18.455Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x8f9f3605 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+evaluation error at L300:33 for 'create' @ L300, false for 'create' @ L424, evaluation error at L300:33 for 'update' @ L300, false for 'update' @ L424, false for 'create' @ L300, false for 'create' @ L424
+[2026-10-21T17:38:18.479Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x8f9f3606 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+evaluation error at L300:33 for 'create' @ L300, false for 'create' @ L424, evaluation error at L300:33 for 'update' @ L300, false for 'update' @ L424, false for 'create' @ L300, false for 'create' @ L424
+[2026-10-21T17:38:18.505Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x8f9f3607 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+evaluation error at L300:33 for 'create' @ L300, false for 'create' @ L424, evaluation error at L300:33 for 'update' @ L300, false for 'update' @ L424, false for 'create' @ L300, false for 'create' @ L424
+[2026-10-21T17:38:18.530Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x8f9f3608 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+evaluation error at L300:33 for 'create' @ L300, false for 'create' @ L424, evaluation error at L300:33 for 'update' @ L300, false for 'update' @ L424, false for 'create' @ L300, false for 'create' @ L424
+[2026-10-21T17:38:18.554Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x8f9f3609 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+evaluation error at L300:33 for 'create' @ L300, false for 'create' @ L424, evaluation error at L300:33 for 'update' @ L300, false for 'update' @ L424, false for 'create' @ L300, false for 'create' @ L424
+[2026-10-21T17:38:18.580Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x8f9f360a error. Code: 7 Message: 7 PERMISSION_DENIED: 
+evaluation error at L300:33 for 'create' @ L300, false for 'create' @ L424, evaluation error at L300:33 for 'update' @ L300, false for 'update' @ L424, false for 'create' @ L300, false for 'create' @ L424
+[2026-10-21T17:38:18.601Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x8f9f360b error. Code: 7 Message: 7 PERMISSION_DENIED: 
+evaluation error at L300:33 for 'create' @ L300, false for 'create' @ L424, evaluation error at L300:33 for 'update' @ L300, false for 'update' @ L424, false for 'create' @ L300, false for 'create' @ L424
+[2026-10-21T17:38:18.621Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x8f9f360c error. Code: 7 Message: 7 PERMISSION_DENIED: 
+evaluation error at L300:33 for 'create' @ L300, false for 'create' @ L424, evaluation error at L300:33 for 'update' @ L300, false for 'update' @ L424, false for 'create' @ L300, false for 'create' @ L424
+[2026-10-21T17:38:18.645Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x8f9f360d error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L300, false for 'create' @ L424, false for 'update' @ L300, false for 'update' @ L424
+✔ profile rejects unbounded text, foreign fields, durations and fake server time (218.870365ms)
+[2026-10-21T17:38:18.727Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x8f9f3610 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+evaluation error at L344:26 for 'update' @ L344, false for 'update' @ L424, false for 'update' @ L344, false for 'update' @ L424
+✔ valid weekly pattern atomically couples agenda/core/receipt without touching money (81.777248ms)
+✔ weekly recurrence rejects missing metadata, extra keys and oversized override storage (148.973372ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1330.925278

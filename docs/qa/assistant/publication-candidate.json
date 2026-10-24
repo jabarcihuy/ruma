@@ -1,0 +1,19 @@
+{
+  "project": "mobile-app-3479f",
+  "file": "config/firebase/firestore.agent.rules",
+  "bytes": 23319,
+  "sha256": "bfea361767e0ea8ecdb4cea2ee871191cb5b01c73d6d452e3e015ab598e0ddcd",
+  "editorMatchesLocal": true,
+  "published": true,
+  "localSdkPassed": true,
+  "rulesTestsPassed": 38,
+  "modelCallsProposed": 1,
+  "cloudTestPrepared": true,
+  "cloudTestRun": true,
+  "screenshot": "docs/qa/assistant/rules-awaiting-publication.jpg",
+  "publishedAtWIB": "2026-10-19 22:52",
+  "approval": "User explicitly permitted assistant Rules publication, one real AI call, synthetic cleanup and normal APK installation",
+  "publishedScreenshot": "docs/qa/assistant/rules-published.jpg",
+  "cloudTestPassed": true,
+  "fixturesCleaned": true
+}

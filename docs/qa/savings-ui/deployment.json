@@ -1,0 +1,9 @@
+{
+  "project": "mobile-app-3479f",
+  "rules": "config/firebase/firestore.savings.rules",
+  "sha256": "338c3dba7a5a55f793ed8894851f44b0f30ba6abc486563e0e2b2ae58fe848f3",
+  "verifiedAt": "2026-10-21T17:22:03.620278+00:00",
+  "method": "Firebase Console editor exact clipboard comparison; published revision Today 12:21 AM; no unpublished changes",
+  "screenshot": "rules-published.png",
+  "publishedContentVerifiedAfterReload": true
+}

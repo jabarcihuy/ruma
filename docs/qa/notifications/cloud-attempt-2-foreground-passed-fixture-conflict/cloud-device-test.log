@@ -1,0 +1,144 @@
+Resolving dependencies...
+Downloading packages...
+  material_color_utilities 0.13.0 (0.13.1 available)
+  test_api 0.7.12 (0.7.15 available)
+  vector_graphics 1.2.3 (1.2.4 available)
+  xml 7.0.1 (7.1.0 available)
+Got dependencies!
+4 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Running Gradle task 'assembleDebug'...                          
+WARNING: Your app uses the following plugins that apply Kotlin Gradle Plugin (KGP): firebase_auth, firebase_core
+Future versions of Flutter will fail to build if your app uses plugins that apply KGP.
+
+Please check the changelogs of these plugins and upgrade to a version that supports Built-in Kotlin.
+If no such version exists, report the issue to the plugin. If necessary, here is a guide on filing
+an issue against a plugin: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-app-developers#report-incompatible-kotlin-gradle-plugin-usage-to-plugin-authors
+
+If you are a plugin author, please migrate your plugin to Built-in Kotlin using this guide: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-plugin-authors
+Running Gradle task 'assembleDebug'...                             19.2s
+✓ Built build/app/outputs/flutter-apk/app-debug.apk
+Installing build/app/outputs/flutter-apk/app-debug.apk...        1,381ms
+I/Choreographer( 6669): Skipped 54 frames!  The application may be doing too much work on its main thread.
+D/FlutterJNI( 6669): Sending viewport metrics to the engine.
+D/ProfileInstaller( 6669): Installing profile for id.ruma.app
+VMServiceFlutterDriver: Connecting to Flutter application at http://127.0.0.1:34463/HKMJXCE77W8=/
+VMServiceFlutterDriver: Isolate found with number: 634945351786867
+VMServiceFlutterDriver: Isolate 634945351786867 is runnable.
+VMServiceFlutterDriver: Isolate is paused at start.
+VMServiceFlutterDriver: Attempting to resume isolate
+I/flutter ( 6669): 00:00 +0: real FCM foreground and background tap
+VMServiceFlutterDriver: Connected to Flutter application.
+D/FirebaseAuth( 6669): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth( 6669): Notifying auth state listeners about a sign-out event.
+W/System  ( 6669): Ignoring header X-Firebase-Locale because its value was null.
+D/TrafficStats( 6669): tagSocket(147) with statsTag=0xffffffff, statsUid=-1
+W/System  ( 6669): Ignoring header X-Firebase-Locale because its value was null.
+D/FirebaseAuth( 6669): Notifying id token listeners about user ( 92CHv05w0rSDO0rEO1w7hNl7V0D3 ).
+D/FirebaseAuth( 6669): Notifying auth state listeners about user ( 92CHv05w0rSDO0rEO1w7hNl7V0D3 ).
+I/flutter ( 6669): RUMA_NOTIFICATION_SYNTHETIC_UID=92CHv05w0rSDO0rEO1w7hNl7V0D3
+D/TrafficStats( 6669): tagSocket(154) with statsTag=0x8001, statsUid=-1
+W/id.ruma.app( 6669): Long monitor contention with owner Firebase-Messaging-Init (6705) at com.google.android.gms.tasks.Task com.google.firebase.messaging.RequestDeduplicator.getOrStartGetTokenRequest(java.lang.String, com.google.firebase.messaging.RequestDeduplicator$GetTokenRequest)(RequestDeduplicator.java:77) waiters=0 in com.google.android.gms.tasks.Task com.google.firebase.messaging.RequestDeduplicator.getOrStartGetTokenRequest(java.lang.String, com.google.firebase.messaging.RequestDeduplicator$GetTokenRequest) for 1.168s
+VMServiceFlutterDriver: request_data message is taking a long time to complete...
+W/DynamiteModule( 6669): Local module descriptor class for com.google.android.gms.providerinstaller.dynamite not found.
+I/DynamiteModule( 6669): Considering local module com.google.android.gms.providerinstaller.dynamite:0 and remote module com.google.android.gms.providerinstaller.dynamite:0
+W/ProviderInstaller( 6669): Failed to load providerinstaller module: No acceptable module com.google.android.gms.providerinstaller.dynamite found. Local version is 0 and remote version is 0.
+D/ApplicationLoaders( 6669): Returning zygote-cached class loader: /system/framework/org.apache.http.legacy.jar
+D/nativeloader( 6669): Configuring clns-8 for other apk /system/framework/com.android.media.remotedisplay.jar. target_sdk_version=34, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+D/nativeloader( 6669): Configuring clns-9 for other apk /system/framework/com.android.location.provider.jar. target_sdk_version=34, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+D/ApplicationLoaders( 6669): Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+D/ApplicationLoaders( 6669): Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+D/nativeloader( 6669): InitLlndkLibrariesProduct: libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libRS.so:libandroid_net.so:libapexsupport.so:libbinder_ndk.so:libc.so:libcgrouprc.so:libclang_rt.asan-x86_64-android.so:libcom.android.tethering.connectivity_native.so:libdl.so:libft2.so:liblog.so:libm.so:libmediandk.so:libnativewindow.so:libneuralnetworks.so:libselinux.so:libsync.so:libvendorsupport.so:libvndksupport.so:libvulkan.so
+D/nativeloader( 6669): Configuring product-clns-10 for unbundled product apk /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk. target_sdk_version=34, uses_libraries=, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms:/product/lib64:/system/product/lib64
+D/nativeloader( 6669): InitVndkspLibrariesProduct: VNDK is deprecated with product
+I/id.ruma.app( 6669): Waiting for a blocking GC ClassLinker
+I/id.ruma.app( 6669): WaitForGcToComplete blocked ClassLinker on Background for 8.051ms
+D/nativeloader( 6669): Load /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64/libconscrypt_gmscore_jni.so using ns product-clns-10 from class loader (caller=/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!classes3.dex): ok
+V/NativeCrypto( 6669): Registering com/google/android/gms/org/conscrypt/NativeCrypto's 305 native methods...
+W/id.ruma.app( 6669): Accessing hidden method Ljava/security/spec/ECParameterSpec;->getCurveName()Ljava/lang/String; (unsupported, reflection, allowed)
+I/ProviderInstaller( 6669): Installed default security provider GmsCore_OpenSSL
+D/TrafficStats( 6669): tagSocket(164) with statsTag=0xffffffff, statsUid=-1
+W/id.ruma.app( 6669): Accessing hidden field Ljava/net/Socket;->impl:Ljava/net/SocketImpl; (unsupported, reflection, allowed)
+W/id.ruma.app( 6669): Accessing hidden method Ljava/security/spec/ECParameterSpec;->setCurveName(Ljava/lang/String;)V (unsupported, reflection, allowed)
+I/id.ruma.app( 6669): Background concurrent mark compact GC freed 2665KB AllocSpace bytes, 2(32KB) LOS objects, 49% free, 6530KB/12MB, paused 998us,10.553ms total 129.527ms
+D/FlutterJNI( 6669): Sending viewport metrics to the engine.
+D/EGL_emulation( 6669): app_time_stats: avg=4369.25ms min=501.89ms max=8423.11ms count=3
+D/EGL_emulation( 6669): app_time_stats: avg=5113.05ms min=5113.05ms max=5113.05ms count=1
+D/EGL_emulation( 6669): app_time_stats: avg=5181.74ms min=5181.74ms max=5181.74ms count=1
+D/EGL_emulation( 6669): app_time_stats: avg=5361.00ms min=5361.00ms max=5361.00ms count=1
+D/EGL_emulation( 6669): app_time_stats: avg=5213.62ms min=5213.62ms max=5213.62ms count=1
+D/EGL_emulation( 6669): app_time_stats: avg=5102.32ms min=5102.32ms max=5102.32ms count=1
+D/EGL_emulation( 6669): app_time_stats: avg=5248.91ms min=5248.91ms max=5248.91ms count=1
+D/EGL_emulation( 6669): app_time_stats: avg=5147.31ms min=5147.31ms max=5147.31ms count=1
+D/EGL_emulation( 6669): app_time_stats: avg=5234.62ms min=5234.62ms max=5234.62ms count=1
+D/EGL_emulation( 6669): app_time_stats: avg=5282.21ms min=5282.21ms max=5282.21ms count=1
+D/FLTFireMsgReceiver( 6669): broadcast received for message
+W/id.ruma.app( 6669): Accessing hidden method Landroid/os/WorkSource;->add(I)Z (unsupported,test-api, reflection, allowed)
+W/id.ruma.app( 6669): Accessing hidden method Landroid/os/WorkSource;->add(ILjava/lang/String;)Z (unsupported,test-api, reflection, allowed)
+W/id.ruma.app( 6669): Accessing hidden method Landroid/os/WorkSource;->get(I)I (unsupported, reflection, allowed)
+W/id.ruma.app( 6669): Accessing hidden method Landroid/os/WorkSource;->getName(I)Ljava/lang/String; (unsupported, reflection, allowed)
+W/FirebaseMessaging( 6669): Unable to log event: analytics library is missing
+W/FirebaseMessaging( 6669): Unable to log event: analytics library is missing
+W/System  ( 6669): Ignoring header X-Firebase-Locale because its value was null.
+D/TrafficStats( 6669): tagSocket(170) with statsTag=0xffffffff, statsUid=-1
+D/FirebaseAuth( 6669): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth( 6669): Notifying auth state listeners about a sign-out event.
+D/FirebaseAuth( 6669): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth( 6669): Notifying auth state listeners about a sign-out event.
+D/EGL_emulation( 6669): app_time_stats: avg=6737.30ms min=6737.30ms max=6737.30ms count=1
+I/flutter ( 6669): ══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+I/flutter ( 6669): The following AgendaFailure was thrown running a test:
+I/flutter ( 6669): Jam ini berbenturan dengan “QA FCM foreground”. Pilih waktu lain; isianmu tetap ada.
+I/flutter ( 6669): 
+I/flutter ( 6669): When the exception was thrown, this was the stack:
+I/flutter ( 6669): #0      AgendaRepository.save (package:ruma/data/agenda_repository.dart:94:9)
+I/flutter ( 6669): <asynchronous suspension>
+I/flutter ( 6669): #1      main.<anonymous closure>.create (file:///home/ael/DATA/project%20on%20linux/mobileapp/ruma/integration_test/notifications_cloud_test.dart:76:9)
+I/flutter ( 6669): <asynchronous suspension>
+I/flutter ( 6669): #2      main.<anonymous closure> (file:///home/ael/DATA/project%20on%20linux/mobileapp/ruma/integration_test/notifications_cloud_test.dart:138:22)
+I/flutter ( 6669): <asynchronous suspension>
+I/flutter ( 6669): #3      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+I/flutter ( 6669): <asynchronous suspension>
+I/flutter ( 6669): #4      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+I/flutter ( 6669): <asynchronous suspension>
+I/flutter ( 6669): #5      TestWidgetsFlutterBinding._createTestCompletionHandler.<anonymous closure> (package:flutter_test/src/binding.dart:1707:12)
+I/flutter ( 6669): <asynchronous suspension>
+I/flutter ( 6669): 
+I/flutter ( 6669): The test description was:
+I/flutter ( 6669):   real FCM foreground and background tap
+I/flutter ( 6669): ════════════════════════════════════════════════════════════════════════════════════════════════════
+I/flutter ( 6669): 01:07 +0: real FCM foreground and background tap [E]
+I/flutter ( 6669):   Test failed. See exception logs above.
+I/flutter ( 6669):   The test description was: real FCM foreground and background tap
+I/flutter ( 6669):   
+I/flutter ( 6669): 01:07 +0 -1: (tearDownAll)
+I/flutter ( 6669): 01:07 +1 -1: Some tests failed.
+Failure Details:
+Failure in method: real FCM foreground and background tap
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞═════════════════
+The following AgendaFailure was thrown running a test:
+Jam ini berbenturan dengan “QA FCM foreground”. Pilih waktu lain;
+isianmu tetap ada.
+
+When the exception was thrown, this was the stack:
+#0      AgendaRepository.save (package:ruma/data/agenda_repository.dart:94:9)
+<asynchronous suspension>
+#1      main.<anonymous closure>.create (file:///home/ael/DATA/project%20on%20linux/mobileapp/ruma/integration_test/notifications_cloud_test.dart:76:9)
+<asynchronous suspension>
+#2      main.<anonymous closure> (file:///home/ael/DATA/project%20on%20linux/mobileapp/ruma/integration_test/notifications_cloud_test.dart:138:22)
+<asynchronous suspension>
+#3      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#4      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+#5      TestWidgetsFlutterBinding._createTestCompletionHandler.<anonymous closure> (package:flutter_test/src/binding.dart:1707:12)
+<asynchronous suspension>
+
+The test description was:
+  real FCM foreground and background tap
+═════════════════════════════════════════════════════════════════
+
+end of failure 1
+
+
+

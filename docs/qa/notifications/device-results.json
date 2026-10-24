@@ -1,0 +1,13 @@
+{
+  "project": "demo-ruma",
+  "productionWrites": 0,
+  "modelCalls": 0,
+  "fcmSends": 0,
+  "cases": [
+    "configuration and no-op save; tap opens correct agenda",
+    "move/complete/reopen/delete/restore update job atomically",
+    "foreground local display replaces same stable ID without duplicate card",
+    "stale payload opens latest state; another UID cannot open detail"
+  ],
+  "passed": true
+}

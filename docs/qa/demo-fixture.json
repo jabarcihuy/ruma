@@ -1,0 +1,30 @@
+{
+  "fixtureOnly": true,
+  "description": "Data sintetis untuk pengujian, bukan seed yang sudah dimasukkan ke Firebase.",
+  "referenceNow": "2026-10-18T10:00:00+07:00",
+  "timezone": "Asia/Jakarta",
+  "budgetMonth": "2026-10",
+  "budgetTotalRupiah": 1500000,
+  "transactions": [
+    {"id": "qa-income", "type": "income", "amountRupiah": 2000000, "categoryId": "allowance", "localDate": "2026-10-01"},
+    {"id": "qa-food", "type": "expense", "amountRupiah": 640000, "categoryId": "food", "localDate": "2026-10-10"},
+    {"id": "qa-other", "type": "expense", "amountRupiah": 540000, "categoryId": "other", "localDate": "2026-10-11"}
+  ],
+  "agenda": [
+    {"id": "qa-class", "title": "Kuliah", "startAtUtc": "2026-10-19T01:00:00Z", "endAtUtc": "2026-10-19T03:00:00Z"},
+    {"id": "qa-practicum", "title": "Praktikum", "startAtUtc": "2026-10-19T06:00:00Z", "endAtUtc": "2026-10-19T08:00:00Z"}
+  ],
+  "userAvailableWindow": {"startAtUtc": "2026-10-19T03:00:00Z", "endAtUtc": "2026-10-19T05:00:00Z"},
+  "message": "Besok revisi laporan satu jam dan baca jurnal 30 menit. Tadi makan 18 ribu dan cetak laporan 15 ribu.",
+  "proposedAgenda": [
+    {"id": "qa-new-task-1", "title": "Revisi laporan", "durationMinutes": 60, "startAtUtc": "2026-10-19T03:00:00Z", "endAtUtc": "2026-10-19T04:00:00Z"},
+    {"id": "qa-new-task-2", "title": "Baca jurnal", "durationMinutes": 30, "startAtUtc": "2026-10-19T04:00:00Z", "endAtUtc": "2026-10-19T04:30:00Z"}
+  ],
+  "proposedTransactions": [
+    {"id": "qa-new-expense-1", "type": "expense", "amountRupiah": 18000, "categoryId": "food", "localDate": "2026-10-18"},
+    {"id": "qa-new-expense-2", "type": "expense", "amountRupiah": 15000, "categoryId": "other", "localDate": "2026-10-18"}
+  ],
+  "expectedBefore": {"expenseRupiah": 1180000, "balanceRupiah": 820000, "remainingBudgetRupiah": 320000},
+  "expectedAfter": {"expenseRupiah": 1213000, "balanceRupiah": 787000, "remainingBudgetRupiah": 287000},
+  "expectedAfterEditingFoodTo20000": {"expenseRupiah": 1215000, "balanceRupiah": 785000, "remainingBudgetRupiah": 285000}
+}

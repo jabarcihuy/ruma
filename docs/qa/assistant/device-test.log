@@ -1,0 +1,107 @@
+Resolving dependencies...
+Downloading packages...
+  material_color_utilities 0.13.0 (0.13.1 available)
+  test_api 0.7.12 (0.7.15 available)
+  xml 7.0.1 (7.1.0 available)
+Got dependencies!
+3 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Running Gradle task 'assembleDebug'...                          
+WARNING: Your app uses the following plugins that apply Kotlin Gradle Plugin (KGP): firebase_auth, firebase_core
+Future versions of Flutter will fail to build if your app uses plugins that apply KGP.
+
+Please check the changelogs of these plugins and upgrade to a version that supports Built-in Kotlin.
+If no such version exists, report the issue to the plugin. If necessary, here is a guide on filing
+an issue against a plugin: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-app-developers#report-incompatible-kotlin-gradle-plugin-usage-to-plugin-authors
+
+If you are a plugin author, please migrate your plugin to Built-in Kotlin using this guide: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-plugin-authors
+Running Gradle task 'assembleDebug'...                             10.9s
+✓ Built build/app/outputs/flutter-apk/app-debug.apk
+Installing build/app/outputs/flutter-apk/app-debug.apk...           7.6s
+D/ProfileInstaller(30721): Installing profile for id.ruma.app
+VMServiceFlutterDriver: Connecting to Flutter application at http://127.0.0.1:38479/v6HQP4eWzTI=/
+VMServiceFlutterDriver: Isolate found with number: 407275361253311
+VMServiceFlutterDriver: Isolate 407275361253311 is runnable.
+VMServiceFlutterDriver: Isolate is paused at start.
+VMServiceFlutterDriver: Attempting to resume isolate
+I/flutter (30721): 00:00 +0: local native SDK approved batch and shared review form
+VMServiceFlutterDriver: Connected to Flutter application.
+I/Choreographer(30721): Skipped 44 frames!  The application may be doing too much work on its main thread.
+I/GrallocExtra(30721): gralloc_extra_query:is_SW3D 0
+I/GrallocExtra(30721): gralloc_extra_query:is_SW3D 0
+W/libc    (30721): Access denied finding property "ro.vendor.display.iris_x7.support"
+W/1.raster(30721): type=1400 audit(0.0:28912): avc:  denied  { read } for  name="u:object_r:vendor_displayfeature_prop:s0" dev="tmpfs" ino=593 scontext=u:r:untrusted_app:s0:c184,c257,c512,c768 tcontext=u:object_r:vendor_displayfeature_prop:s0 tclass=file permissive=0 app=id.ruma.app
+D/BLASTBufferQueue(30721): [5d9b7c3 SurfaceView[id.ruma.app/id.ruma.app.MainActivity]#1](f:0,a:1) acquireNextBufferLocked size=1080x2400 mFrameNumber=1 applyTransaction=true mTimestamp=26223027806332(auto) mPendingTransactions.size=0 graphicBufferId=131945690300426 transform=0
+I/Choreographer(30721): Skipped 51 frames!  The application may be doing too much work on its main thread.
+D/VRI[MainActivity](30721): vri.Setup new sync=wmsSync-VRI[MainActivity]#1
+I/SKIA    (30721): CreateGraphicsPipeline pipeline cache hit. elpased time: 0.16 ms.
+D/BLASTBufferQueue(30721): [VRI[MainActivity]#0](f:0,a:1) acquireNextBufferLocked size=1080x2400 mFrameNumber=1 applyTransaction=true mTimestamp=26223146648255(auto) mPendingTransactions.size=0 graphicBufferId=131945690300434 transform=0
+D/VRI[MainActivity](30721): vri.reportDrawFinished 0 0 Rect(0, 0 - 1080, 2400)
+I/NativeTurboSchedManager(30721): Load libmiui_runtime
+I/HandWritingStubImpl(30721): refreshLastKeyboardType: 1
+I/HandWritingStubImpl(30721): getCurrentKeyboardType: 1
+I/FirebaseApp(30721): Device unlocked: initializing all Firebase APIs for app [DEFAULT]
+D/InsetsController(30721): hide(ime(), fromIme=false)
+I/ImeTracker(30721): id.ruma.app:b7133677: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+I/HandWritingStubImpl(30721): getCurrentKeyboardType: 1
+W/InsetsSource(30721): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(30721): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(30721): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(30721): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+D/FirebaseAuth(30721): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth(30721): Notifying auth state listeners about a sign-out event.
+W/System  (30721): Ignoring header X-Firebase-Locale because its value was null.
+W/System  (30721): Ignoring header X-Firebase-Locale because its value was null.
+D/FirebaseAuth(30721): Notifying id token listeners about user ( leRhlBOSaHYaNYD366uqfZGEL5Jm ).
+D/FirebaseAuth(30721): Notifying auth state listeners about user ( leRhlBOSaHYaNYD366uqfZGEL5Jm ).
+W/DynamiteModule(30721): Local module descriptor class for com.google.android.gms.providerinstaller.dynamite not found.
+I/DynamiteModule(30721): Considering local module com.google.android.gms.providerinstaller.dynamite:0 and remote module com.google.android.gms.providerinstaller.dynamite:0
+W/ProviderInstaller(30721): Failed to load providerinstaller module: No acceptable module com.google.android.gms.providerinstaller.dynamite found. Local version is 0 and remote version is 0.
+D/ApplicationLoaders(30721): Returning zygote-cached class loader: /system/framework/org.apache.http.legacy.jar
+D/ApplicationLoaders(30721): Returning zygote-cached class loader: /system/framework/com.android.location.provider.jar
+D/ApplicationLoaders(30721): Returning zygote-cached class loader: /system/framework/com.android.media.remotedisplay.jar
+D/nativeloader(30721): Configuring clns-11 for other apk /system_ext/framework/com.android.extensions.appfunctions.jar. target_sdk_version=37, uses_libraries=ALL, library_path=/data/app/~~ZCVdjtP4bqdfjtF8y0tZIQ==/com.google.android.gms-VnOrDxKRydQ2_6tvyy7JMQ==/lib/arm64:/data/app/~~ZCVdjtP4bqdfjtF8y0tZIQ==/com.google.android.gms-VnOrDxKRydQ2_6tvyy7JMQ==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+D/nativeloader(30721): Extending system_exposed_libraries: libapuwareapusys.mtk.so:libapuwareapusys_v2.mtk.so:libapuwarexrp.mtk.so:libapuwarexrp_v2.mtk.so:libapuwareutils.mtk.so:libapuwareutils_v2.mtk.so:libapuwarehmp.mtk.so:libapuwareaiste.mtk.so:libneuron_graph_delegate.mtk.so:libneuronusdk_adapter.mtk.so:libtflite_mtk.mtk.so:libarmnn_ndk.mtk.so:libcmdl_ndk.mtk.so:libnir_neon_driver_ndk.mtk.so:libmvpu_runtime.mtk.so:libmvpu_runtime_pub.mtk.so:libmvpu_engine_pub.mtk.so:libmvpu_pattern_pub.mtk.so:libmvpuop_mtk_cv.mtk.so:libmvpuop_mtk_nn.mtk.so:libmvpu_runtime_25.mtk.so:libmvpu_runtime_25_pub.mtk.so:libmvpu_engine_25_pub.mtk.so:libmvpu_pattern_25_pub.mtk.so:libmvpuop25_mtk_cv.mtk.so:libmvpuop25_mtk_nn.mtk.so:libmvpu_config.mtk.so:libmvpu_engine_30.mtk.so:libmvpu_pattern_30.mtk.so:libmvpu_cic_ci_compiler_30.mtk.so:libmvpu_runtime_30.mtk.so:libmvpu_clc_30_mvpu_debuginfo.mtk.so:libmvpu_clc_30_mvpu_elf.mtk.so:libmvpu_clc_30_mvpu_utility.mtk.so:libneuronservice_adapter.mtk.so:libneuron_sys_util.mtk.so:libmvpuop30_mtk_nn.mtk.so:libneuron
+D/ApplicationLoaders(30721): Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+D/ApplicationLoaders(30721): Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+D/nativeloader(30721): Configuring clns-12 for other apk /data/app/~~ZCVdjtP4bqdfjtF8y0tZIQ==/com.google.android.gms-VnOrDxKRydQ2_6tvyy7JMQ==/base.apk. target_sdk_version=37, uses_libraries=, library_path=/data/app/~~ZCVdjtP4bqdfjtF8y0tZIQ==/com.google.android.gms-VnOrDxKRydQ2_6tvyy7JMQ==/lib/arm64:/data/app/~~ZCVdjtP4bqdfjtF8y0tZIQ==/com.google.android.gms-VnOrDxKRydQ2_6tvyy7JMQ==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+I/id.ruma.app(30721): AssetManager2(0xb400007ab5e1dc98) locale list changing from [] to [en-US]
+I/id.ruma.app(30721): hiddenapi: Accessing hidden method Ldalvik/system/VMStack;->getStackClass2()Ljava/lang/Class; (runtime_flags=0, domain=core-platform, api=unsupported) from Libva; (domain=app, TargetSdkVersion=36) using reflection: allowed
+I/ProviderInstaller(30721): Installed default security provider AndroidOpenSSL (via CompatProvider)
+W/FinalizerDaemon(30721): type=1400 audit(0.0:28916): avc:  denied  { getopt } for  path="/dev/socket/usap_pool_primary" scontext=u:r:untrusted_app:s0:c184,c257,c512,c768 tcontext=u:r:zygote:s0 tclass=unix_stream_socket permissive=0 app=id.ruma.app
+I/flutter (30721): RUMA_ASSISTANT_NATIVE_SDK_PASSED
+VMServiceFlutterDriver: request_data message is taking a long time to complete...
+E/id.ruma.app(30721): FrameInsert open fail: No such file or directory
+D/BufferQueueConsumer(30721): [](id:780100000002,api:0,p:-1,c:30721) connect: controlledByApp=true
+I/Choreographer(30721): Skipped 46 frames!  The application may be doing too much work on its main thread.
+D/VRI[MainActivity](30721): getMiuiFreeformStackInfo mTmpFrames.miuiFreeFormStackInfo: null
+W/InsetsSource(30721): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(30721): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(30721): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(30721): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(30721): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(30721): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+D/FlutterJNI(30721): Sending viewport metrics to the engine.
+I/id.ruma.app(30721): AssetManager2(0xb400007ab5e679d8) locale list changing from [] to [en-US]
+I/id.ruma.app(30721): AssetManager2(0xb400007ab5e68fb8) locale list changing from [] to [en-US]
+I/id.ruma.app(30721): AssetManager2(0xb400007ab5e67398) locale list changing from [] to [en-US]
+I/id.ruma.app(30721): AssetManager2(0xb400007ab5e66718) locale list changing from [] to [en-US]
+I/id.ruma.app(30721): AssetManager2(0xb400007ab5e5cdf8) locale list changing from [] to [en-US]
+I/id.ruma.app(30721): AssetManager2(0xb400007ab5e5e3d8) locale list changing from [] to [en-US]
+I/SKIA    (30721): CreateGraphicsPipeline pipeline cache hit. elpased time: 0.36 ms.
+I/SKIA    (30721): CreateGraphicsPipeline pipeline cache hit. elpased time: 0.37 ms.
+I/id.ruma.app(30721): AssetManager2(0xb400007ab5e776f8) locale list changing from [] to [en-US]
+I/id.ruma.app(30721): AssetManager2(0xb400007ab5e77d38) locale list changing from [] to [en-US]
+I/id.ruma.app(30721): AssetManager2(0xb400007ab5e744f8) locale list changing from [] to [en-US]
+I/id.ruma.app(30721): AssetManager2(0xb400007ab5e77a18) locale list changing from [] to [en-US]
+I/id.ruma.app(30721): AssetManager2(0xb400007ab5e74e58) locale list changing from [] to [en-US]
+I/id.ruma.app(30721): AssetManager2(0xb400007ab5e73558) locale list changing from [] to [en-US]
+W/System  (30721): Ignoring header X-Firebase-Locale because its value was null.
+D/FirebaseAuth(30721): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth(30721): Notifying auth state listeners about a sign-out event.
+W/id.ruma.app(30721): Binder 0xb400007a95e332c0 destroyed after setInheritRt before being parceled.
+W/id.ruma.app(30721): Binder 0xb400007a95e4d180 destroyed after setInheritRt before being parceled.
+D/BufferQueueConsumer(30721): [ImageReader-1080x2400f1m3-30721-0](id:780100000002,api:0,p:-1,c:30721) disconnect: caller 30721
+I/flutter (30721): 00:13 +1: (tearDownAll)
+I/flutter (30721): 00:13 +2: All tests passed!
+All tests passed.

@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-19",
+  "provider": "NaraRouter",
+  "requestedModel": "glm-5.3-flash",
+  "syntheticDataOnly": true,
+  "databaseWrites": 0,
+  "modelRequests": 1,
+  "tests": [
+    {
+      "name": "future_purchase_is_not_actual_expense",
+      "passed": true,
+      "httpStatus": 200,
+      "responseModel": "glm-5.3-flash",
+      "usage": {
+        "completion_tokens": 606,
+        "prompt_tokens": 469,
+        "total_tokens": 1075
+      },
+      "finishReason": "stop",
+      "latencyMs": 16432,
+      "reply": "Baik, saya catat dulu sebagai rencana ya: beli buku seharga Rp50.000 pada 19 Oktober 2026 (besok).\n\nKarena ini rencana belanja yang belum terjadi, saya belum bisa mencatatnya sebagai pengeluaran aktual. Supaya tepat, boleh saya konfirmasi beberapa hal:\n\n1. **Ini agenda atau sekadar rencana belanja?** Kalau mau saya jadwalkan sebagai agenda, kira-kira jam berapa besok dan berapa lama waktunya (misal 30 menit)?\n2. **Kalau hanya rencana belanja**, saya akan mencatatnya sebagai pengeluaran aktual setelah kamu konfirmasi pembeliannya benar-benar sudah terjadi.\n\nMau seperti mana?",
+      "toolCalls": [],
+      "limitation": "No mutation tool call is checked automatically; wording requires review. One sample is not a reliability estimate."
+    }
+  ],
+  "scope": "Direct provider compatibility only; not a deployed proxy or app evaluation",
+  "checkedAtUtc": "2026-10-18T17:04:19.188367+00:00",
+  "payloadProfile": "minimal model/messages/tools; no optional generation settings",
+  "overallPassed": true,
+  "manualReview": {
+    "clarifiesFuturePurchase": true,
+    "actualExpenseCreated": false,
+    "storageClaimAmbiguous": true,
+    "issue": "Opening says saya catat dulu sebagai rencana although no storage/tool action happened. Ask clarification without implying saved data.",
+    "productionReady": false,
+    "note": "Identical input previously triggered a tool call; the earlier report did not capture arguments. Do not infer that earlier call created an expense. One successful retry does not establish reliability."
+  }
+}

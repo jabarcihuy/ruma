@@ -1,0 +1,119 @@
+Resolving dependencies...
+Downloading packages...
+  material_color_utilities 0.13.0 (0.13.1 available)
+  test_api 0.7.12 (0.7.15 available)
+  vector_graphics 1.2.3 (1.2.4 available)
+  xml 7.0.1 (7.1.0 available)
+Got dependencies!
+4 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Running Gradle task 'assembleDebug'...                          
+WARNING: Your app uses the following plugins that apply Kotlin Gradle Plugin (KGP): firebase_auth, firebase_core
+Future versions of Flutter will fail to build if your app uses plugins that apply KGP.
+
+Please check the changelogs of these plugins and upgrade to a version that supports Built-in Kotlin.
+If no such version exists, report the issue to the plugin. If necessary, here is a guide on filing
+an issue against a plugin: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-app-developers#report-incompatible-kotlin-gradle-plugin-usage-to-plugin-authors
+
+If you are a plugin author, please migrate your plugin to Built-in Kotlin using this guide: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-plugin-authors
+Running Gradle task 'assembleDebug'...                             13.2s
+✓ Built build/app/outputs/flutter-apk/app-debug.apk
+Installing build/app/outputs/flutter-apk/app-debug.apk...          938ms
+I/id.ruma.app( 3730): Compiler allocated 5174KB to compile void android.view.ViewRootImpl.performTraversals()
+I/Choreographer( 3730): Skipped 39 frames!  The application may be doing too much work on its main thread.
+D/FlutterJNI( 3730): Sending viewport metrics to the engine.
+VMServiceFlutterDriver: Connecting to Flutter application at http://127.0.0.1:35705/mCWe6EpKKtA=/
+VMServiceFlutterDriver: Isolate found with number: 3465145632284255
+VMServiceFlutterDriver: Isolate 3465145632284255 is runnable.
+VMServiceFlutterDriver: Isolate is paused at start.
+VMServiceFlutterDriver: Attempting to resume isolate
+I/flutter ( 3730): 00:00 +0: savings UI CRUD and summaries with native local Firebase
+VMServiceFlutterDriver: Connected to Flutter application.
+I/FirebaseApp( 3730): Device unlocked: initializing all Firebase APIs for app [DEFAULT]
+W/GooglePlayServicesUtil( 3730): Google Play services out of date for id.ruma.app.  Requires 261200000 but found 242335041
+W/GoogleApiManager( 3730): The service for com.google.android.gms.internal.cloudmessaging.zzd is not available: ConnectionResult{statusCode=SERVICE_VERSION_UPDATE_REQUIRED, resolution=null, message=null, clientMethodKey=null}
+D/FirebaseAuth( 3730): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth( 3730): Notifying auth state listeners about a sign-out event.
+W/System  ( 3730): Ignoring header X-Firebase-Locale because its value was null.
+W/id.ruma.app( 3730): Long monitor contention with owner Firebase Background Thread #0 (3820) at java.lang.Void com.google.firebase.heartbeatinfo.DefaultHeartBeatController.lambda$registerHeartBeat$0$com-google-firebase-heartbeatinfo-DefaultHeartBeatController()(DefaultHeartBeatController.java:71) waiters=1 in java.lang.Void com.google.firebase.heartbeatinfo.DefaultHeartBeatController.lambda$registerHeartBeat$0$com-google-firebase-heartbeatinfo-DefaultHeartBeatController() for 886ms
+D/TrafficStats( 3730): tagSocket(152) with statsTag=0xffffffff, statsUid=-1
+W/System  ( 3730): Ignoring header X-Firebase-Locale because its value was null.
+D/FirebaseAuth( 3730): Notifying id token listeners about user ( YT0dEAMgWGDtvO71rZH5ft8Y57lt ).
+D/FirebaseAuth( 3730): Notifying auth state listeners about user ( YT0dEAMgWGDtvO71rZH5ft8Y57lt ).
+W/DynamiteModule( 3730): Local module descriptor class for com.google.android.gms.providerinstaller.dynamite not found.
+I/DynamiteModule( 3730): Considering local module com.google.android.gms.providerinstaller.dynamite:0 and remote module com.google.android.gms.providerinstaller.dynamite:0
+W/ProviderInstaller( 3730): Failed to load providerinstaller module: No acceptable module com.google.android.gms.providerinstaller.dynamite found. Local version is 0 and remote version is 0.
+D/ApplicationLoaders( 3730): Returning zygote-cached class loader: /system/framework/org.apache.http.legacy.jar
+D/nativeloader( 3730): Configuring clns-8 for other apk /system/framework/com.android.media.remotedisplay.jar. target_sdk_version=34, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+D/nativeloader( 3730): Configuring clns-9 for other apk /system/framework/com.android.location.provider.jar. target_sdk_version=34, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+D/ApplicationLoaders( 3730): Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+D/ApplicationLoaders( 3730): Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+D/nativeloader( 3730): InitLlndkLibrariesProduct: libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libRS.so:libandroid_net.so:libapexsupport.so:libbinder_ndk.so:libc.so:libcgrouprc.so:libclang_rt.asan-x86_64-android.so:libcom.android.tethering.connectivity_native.so:libdl.so:libft2.so:liblog.so:libm.so:libmediandk.so:libnativewindow.so:libneuralnetworks.so:libselinux.so:libsync.so:libvendorsupport.so:libvndksupport.so:libvulkan.so
+D/nativeloader( 3730): Configuring product-clns-10 for unbundled product apk /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk. target_sdk_version=34, uses_libraries=, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms:/product/lib64:/system/product/lib64
+D/nativeloader( 3730): InitVndkspLibrariesProduct: VNDK is deprecated with product
+D/nativeloader( 3730): Load /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64/libconscrypt_gmscore_jni.so using ns product-clns-10 from class loader (caller=/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!classes3.dex): ok
+V/NativeCrypto( 3730): Registering com/google/android/gms/org/conscrypt/NativeCrypto's 305 native methods...
+W/id.ruma.app( 3730): Accessing hidden method Ljava/security/spec/ECParameterSpec;->getCurveName()Ljava/lang/String; (unsupported, reflection, allowed)
+I/ProviderInstaller( 3730): Installed default security provider GmsCore_OpenSSL
+D/ProfileInstaller( 3730): Installing profile for id.ruma.app
+D/TrafficStats( 3730): tagSocket(165) with statsTag=0xffffffff, statsUid=-1
+W/id.ruma.app( 3730): Suspending all threads took: 5.943ms
+D/FlutterJNI( 3730): Sending viewport metrics to the engine.
+I/id.ruma.app( 3730): Background concurrent mark compact GC freed 9026KB AllocSpace bytes, 21(764KB) LOS objects, 49% free, 6217KB/12MB, paused 6.931ms,19.600ms total 234.542ms
+VMServiceFlutterDriver: request_data message is taking a long time to complete...
+I/Choreographer( 3730): Skipped 44 frames!  The application may be doing too much work on its main thread.
+I/HWUI    ( 3730): Davey! duration=760ms; Flags=0, FrameTimelineVsyncId=44080, IntendedVsync=266932762851, Vsync=267666096155, InputEventId=0, HandleInputStart=267675514061, AnimationStart=267675515529, PerformTraversalsStart=267675516275, DrawStart=267675984661, FrameDeadline=266949429517, FrameInterval=267675253124, FrameStartTime=16666666, SyncQueued=267676115572, SyncStart=267676141534, IssueDrawCommandsStart=267676203339, SwapBuffers=267677013347, FrameCompleted=267692914731, DequeueBufferDuration=11218863, QueueBufferDuration=206913, GpuCompleted=267683848106, SwapBuffersCompleted=267692914731, DisplayPresentTime=144115222452437076, CommandSubmissionCompleted=267677013347, 
+W/WindowOnBackDispatcher( 3730): OnBackInvokedCallback is not enabled for the application.
+W/WindowOnBackDispatcher( 3730): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+D/EGL_emulation( 3730): app_time_stats: avg=314.83ms min=122.56ms max=561.64ms count=4
+D/EGL_emulation( 3730): app_time_stats: avg=205.52ms min=20.09ms max=706.50ms count=5
+D/EGL_emulation( 3730): app_time_stats: avg=3923.18ms min=3253.03ms max=4593.32ms count=2
+D/EGL_emulation( 3730): app_time_stats: avg=227.93ms min=43.70ms max=482.06ms count=5
+D/EGL_emulation( 3730): app_time_stats: avg=109.86ms min=47.84ms max=244.49ms count=10
+D/EGL_emulation( 3730): app_time_stats: avg=2337.20ms min=2337.20ms max=2337.20ms count=1
+W/id.ruma.app( 3730): ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/talkback/talkback.apk' with 1 weak references
+W/id.ruma.app( 3730): ApkAssets: Deleting an ApkAssets object '/vendor/overlay/EmulatorTalkBackOverlay/EmulatorTalkBackOverlay.apk' with 1 weak references
+D/EGL_emulation( 3730): app_time_stats: avg=190.49ms min=67.94ms max=443.56ms count=6
+D/EGL_emulation( 3730): app_time_stats: avg=113.98ms min=41.96ms max=211.94ms count=9
+D/EGL_emulation( 3730): app_time_stats: avg=185.71ms min=86.85ms max=388.99ms count=6
+D/EGL_emulation( 3730): app_time_stats: avg=85.12ms min=39.12ms max=124.22ms count=12
+D/EGL_emulation( 3730): app_time_stats: avg=95.61ms min=23.15ms max=197.72ms count=11
+D/EGL_emulation( 3730): app_time_stats: avg=185.19ms min=40.77ms max=429.17ms count=6
+D/EGL_emulation( 3730): app_time_stats: avg=5768.34ms min=5768.34ms max=5768.34ms count=1
+D/EGL_emulation( 3730): app_time_stats: avg=127.15ms min=33.72ms max=336.51ms count=9
+D/EGL_emulation( 3730): app_time_stats: avg=180.57ms min=73.73ms max=360.43ms count=6
+D/EGL_emulation( 3730): app_time_stats: avg=113.21ms min=29.76ms max=402.10ms count=11
+D/EGL_emulation( 3730): app_time_stats: avg=3603.82ms min=3603.82ms max=3603.82ms count=1
+W/id.ruma.app( 3730): ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/talkback/talkback.apk' with 1 weak references
+W/id.ruma.app( 3730): ApkAssets: Deleting an ApkAssets object '/vendor/overlay/EmulatorTalkBackOverlay/EmulatorTalkBackOverlay.apk' with 1 weak references
+D/EGL_emulation( 3730): app_time_stats: avg=120.67ms min=15.63ms max=337.70ms count=9
+D/EGL_emulation( 3730): app_time_stats: avg=210.41ms min=83.36ms max=664.02ms count=7
+D/EGL_emulation( 3730): app_time_stats: avg=2307.24ms min=2307.24ms max=2307.24ms count=1
+D/EGL_emulation( 3730): app_time_stats: avg=104.16ms min=42.80ms max=252.64ms count=10
+D/EGL_emulation( 3730): app_time_stats: avg=77.16ms min=25.69ms max=119.72ms count=13
+D/EGL_emulation( 3730): app_time_stats: avg=96.43ms min=22.85ms max=168.78ms count=12
+D/EGL_emulation( 3730): app_time_stats: avg=149.50ms min=81.16ms max=362.09ms count=7
+D/EGL_emulation( 3730): app_time_stats: avg=84.67ms min=40.51ms max=128.13ms count=12
+D/EGL_emulation( 3730): app_time_stats: avg=86.20ms min=18.66ms max=127.15ms count=12
+D/EGL_emulation( 3730): app_time_stats: avg=127.20ms min=54.82ms max=199.30ms count=8
+D/EGL_emulation( 3730): app_time_stats: avg=8257.74ms min=8257.74ms max=8257.74ms count=1
+D/EGL_emulation( 3730): app_time_stats: avg=158.66ms min=48.95ms max=435.36ms count=8
+D/EGL_emulation( 3730): app_time_stats: avg=92.51ms min=48.51ms max=132.71ms count=11
+D/EGL_emulation( 3730): app_time_stats: avg=112.43ms min=24.51ms max=419.56ms count=9
+D/EGL_emulation( 3730): app_time_stats: avg=2601.43ms min=2601.43ms max=2601.43ms count=1
+W/id.ruma.app( 3730): ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/talkback/talkback.apk' with 1 weak references
+W/id.ruma.app( 3730): ApkAssets: Deleting an ApkAssets object '/vendor/overlay/EmulatorTalkBackOverlay/EmulatorTalkBackOverlay.apk' with 1 weak references
+D/EGL_emulation( 3730): app_time_stats: avg=104.97ms min=29.54ms max=331.82ms count=10
+D/EGL_emulation( 3730): app_time_stats: avg=78.66ms min=14.63ms max=122.37ms count=14
+D/EGL_emulation( 3730): app_time_stats: avg=167.32ms min=83.05ms max=356.84ms count=8
+D/EGL_emulation( 3730): app_time_stats: avg=188.51ms min=24.56ms max=436.60ms count=6
+D/EGL_emulation( 3730): app_time_stats: avg=4496.36ms min=4496.36ms max=4496.36ms count=1
+D/EGL_emulation( 3730): app_time_stats: avg=113.39ms min=40.50ms max=323.26ms count=9
+D/EGL_emulation( 3730): app_time_stats: avg=1439.59ms min=1439.59ms max=1439.59ms count=1
+W/System  ( 3730): Ignoring header X-Firebase-Locale because its value was null.
+D/TrafficStats( 3730): tagSocket(152) with statsTag=0xffffffff, statsUid=-1
+D/FirebaseAuth( 3730): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth( 3730): Notifying auth state listeners about a sign-out event.
+I/flutter ( 3730): 00:39 +1: (tearDownAll)
+I/flutter ( 3730): 00:39 +2: All tests passed!
+All tests passed.

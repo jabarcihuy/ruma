@@ -1,0 +1,40 @@
+[2026-10-21T17:38:15.878Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x86dafc4a error. Code: 7 Message: 7 PERMISSION_DENIED: 
+evaluation error at L332:33 for 'update' @ L332, false for 'update' @ L424, false for 'update' @ L332, false for 'update' @ L424
+[2026-10-21T17:38:15.889Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x86dafc4b error. Code: 7 Message: 7 PERMISSION_DENIED: 
+evaluation error at L332:33 for 'update' @ L332, false for 'update' @ L424, false for 'update' @ L332, false for 'update' @ L424
+[2026-10-21T17:38:15.900Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x86dafc4c error. Code: 7 Message: 7 PERMISSION_DENIED: 
+evaluation error at L332:33 for 'update' @ L332, false for 'update' @ L424, false for 'update' @ L332, false for 'update' @ L424
+✔ owner can configure and disable a future reminder; cannot forge dispatch or another target (599.952086ms)
+[2026-10-21T17:38:15.994Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x86dafc4f error. Code: 7 Message: 7 PERMISSION_DENIED: 
+evaluation error at L322:33 for 'update' @ L322, false for 'update' @ L424, false for 'update' @ L322, false for 'update' @ L424
+[2026-10-21T17:38:16.021Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x86dafc51 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L424, evaluation error at L336:26 for 'update' @ L336, false for 'update' @ L424, false for 'create' @ L424
+[2026-10-21T17:38:16.055Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x86dafc53 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+evaluation error at L336:26 for 'update' @ L336, false for 'update' @ L424, false for 'update' @ L336, false for 'update' @ L424
+✔ device fields restricted, token and inbox belong to owner (159.945503ms)
+[2026-10-21T17:38:16.165Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x86dafc57 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+evaluation error at L341:26 for 'create' @ L341, false for 'create' @ L424, evaluation error at L344:26 for 'update' @ L344, false for 'update' @ L424, evaluation error at L388:33 for 'create' @ L388, false for 'create' @ L424, evaluation error at L388:33 for 'update' @ L388, false for 'update' @ L424, evaluation error at L404:26 for 'create' @ L404, false for 'create' @ L424, false for 'update' @ L424, false for 'update' @ L388, false for 'update' @ L424, false for 'update' @ L344, false for 'update' @ L424
+✔ agenda mutation with existing job must update source version atomically (130.924002ms)
+[2026-10-21T17:38:16.267Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x86dafc5b error. Code: 7 Message: 7 PERMISSION_DENIED: 
+evaluation error at L332:33 for 'create' @ L332, false for 'create' @ L424, evaluation error at L332:33 for 'update' @ L332, false for 'update' @ L424, false for 'create' @ L332, false for 'create' @ L424
+[2026-10-21T17:38:16.283Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x86dafc5c error. Code: 7 Message: 7 PERMISSION_DENIED: 
+evaluation error at L332:33 for 'create' @ L332, false for 'create' @ L424, evaluation error at L332:33 for 'update' @ L332, false for 'update' @ L424, false for 'create' @ L332, false for 'create' @ L424
+[2026-10-21T17:38:16.301Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x86dafc5d error. Code: 7 Message: 7 PERMISSION_DENIED: 
+evaluation error at L332:33 for 'create' @ L332, false for 'create' @ L424, evaluation error at L332:33 for 'update' @ L332, false for 'update' @ L424, false for 'create' @ L332, false for 'create' @ L424
+[2026-10-21T17:38:16.317Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x86dafc5e error. Code: 7 Message: 7 PERMISSION_DENIED: 
+evaluation error at L332:33 for 'create' @ L332, false for 'create' @ L424, evaluation error at L332:33 for 'update' @ L332, false for 'update' @ L424, false for 'create' @ L332, false for 'create' @ L424
+[2026-10-21T17:38:16.331Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x86dafc5f error. Code: 7 Message: 7 PERMISSION_DENIED: 
+evaluation error at L332:33 for 'create' @ L332, false for 'create' @ L424, evaluation error at L332:33 for 'update' @ L332, false for 'update' @ L424, false for 'create' @ L332, false for 'create' @ L424
+[2026-10-21T17:38:16.345Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x86dafc60 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+evaluation error at L332:33 for 'create' @ L332, false for 'create' @ L424, evaluation error at L332:33 for 'update' @ L332, false for 'update' @ L424, false for 'create' @ L332, false for 'create' @ L424
+[2026-10-21T17:38:16.358Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x86dafc61 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+evaluation error at L332:33 for 'create' @ L332, false for 'create' @ L424, evaluation error at L332:33 for 'update' @ L332, false for 'update' @ L424, false for 'create' @ L332, false for 'create' @ L424
+✔ invalid due, lead, agenda ID and status cannot queue (151.920177ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1299.674885

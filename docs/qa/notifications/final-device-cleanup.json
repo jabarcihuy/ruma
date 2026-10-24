@@ -1,0 +1,27 @@
+{
+  "clearSyntheticAppData": {
+    "exitCode": 0,
+    "output": "Success"
+  },
+  "revokeFixturePermission": {
+    "exitCode": 0,
+    "output": ""
+  },
+  "removeFixtureUiDump": {
+    "exitCode": 0,
+    "output": ""
+  },
+  "collapseShade": {
+    "exitCode": 0,
+    "output": ""
+  },
+  "normalColdLaunch": {
+    "exitCode": 0,
+    "statusOk": true
+  },
+  "screenSetting": "1",
+  "reversePorts": "",
+  "temporaryAuthTokenRemoved": true,
+  "normalWelcomeScreenVisuallyVerified": true,
+  "screenshot": "06-normal-app-after-cleanup.png"
+}

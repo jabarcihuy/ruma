@@ -1,0 +1,10 @@
+{
+  "project": "demo-ruma",
+  "modelCalls": 0,
+  "fcmSends": 0,
+  "productionWrites": 0,
+  "cases": [
+    "profile and preferences persist per UID"
+  ],
+  "screens": []
+}

@@ -1,0 +1,8 @@
+{
+  "project": "demo-ruma",
+  "productionWrites": 0,
+  "nativeTestStarted": true,
+  "nativeSuitePassed": true,
+  "firestore": 200,
+  "auth": 200
+}

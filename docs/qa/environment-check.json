@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-18",
+  "scope": "readiness check using process-local environment; no global configuration changed",
+  "androidSdk": "/home/ael/Android/Sdk",
+  "javaHome": "/usr/lib/jvm/java-17-openjdk",
+  "node": {
+    "exitCode": 0,
+    "version": "v26.11.1"
+  },
+  "npm": {
+    "exitCode": 0,
+    "version": "12.2.1"
+  },
+  "java": {
+    "exitCode": 0,
+    "version": "openjdk version \"17.0.20.1\" 2026-08-18"
+  },
+  "flutterDoctor": {
+    "exitCode": 0,
+    "summary": [
+      "[✓] Flutter (Channel stable, 3.47.7, on CachyOS 7.2.9-2-cachyos, locale C.UTF-8) [104ms]",
+      "[!] Android toolchain - develop for Android devices (Android SDK version 36.1.0) [3.2s]",
+      "[✗] Chrome - develop for the web (Cannot find Chrome executable at google-chrome) [25ms]",
+      "[✓] Linux toolchain - develop for Linux desktop [603ms]",
+      "[✓] Connected device (1 available) [342ms]",
+      "[✓] Network resources [484ms]"
+    ]
+  },
+  "androidWarnings": [
+    "• Java version OpenJDK Runtime Environment (build 17.0.20.1+1)",
+    "! Some Android licenses not accepted. To resolve this, run: flutter doctor --android-licenses"
+  ]
+}

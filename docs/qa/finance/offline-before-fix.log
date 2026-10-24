@@ -1,0 +1,244 @@
+Resolving dependencies...
+Downloading packages...
+  material_color_utilities 0.13.0 (0.13.1 available)
+  test_api 0.7.12 (0.7.15 available)
+  xml 7.0.1 (7.1.0 available)
+Got dependencies!
+3 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Running Gradle task 'assembleDebug'...                          
+WARNING: Your app uses the following plugins that apply Kotlin Gradle Plugin (KGP): firebase_auth, firebase_core
+Future versions of Flutter will fail to build if your app uses plugins that apply KGP.
+
+Please check the changelogs of these plugins and upgrade to a version that supports Built-in Kotlin.
+If no such version exists, report the issue to the plugin. If necessary, here is a guide on filing
+an issue against a plugin: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-app-developers#report-incompatible-kotlin-gradle-plugin-usage-to-plugin-authors
+
+If you are a plugin author, please migrate your plugin to Built-in Kotlin using this guide: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-plugin-authors
+Running Gradle task 'assembleDebug'...                             11.2s
+✓ Built build/app/outputs/flutter-apk/app-debug.apk
+Installing build/app/outputs/flutter-apk/app-debug.apk...          19.1s
+Error: ADB exited with exit code 1
+Performing Streamed Install
+
+adb: failed to install /home/ael/DATA/project on linux/mobileapp/ruma/build/app/outputs/flutter-apk/app-debug.apk: Failure [INSTALL_FAILED_USER_RESTRICTED: Install canceled by user]
+Application failed to start on attempt: 1
+Installing build/app/outputs/flutter-apk/app-debug.apk...           8.6s
+I/id.ruma.app(25186): Compiler allocated 6807KB to compile void android.view.ViewRootImpl.performTraversals()
+D/ProfileInstaller(25186): Installing profile for id.ruma.app
+VMServiceFlutterDriver: Connecting to Flutter application at http://127.0.0.1:42569/YBX1Kykoamw=/
+VMServiceFlutterDriver: Isolate found with number: 3090508875220147
+VMServiceFlutterDriver: Isolate 3090508875220147 is runnable.
+VMServiceFlutterDriver: Isolate is paused at start.
+VMServiceFlutterDriver: Attempting to resume isolate
+I/flutter (25186): 00:00 +0: manual finance UI + native SDK and agenda interoperability
+VMServiceFlutterDriver: Connected to Flutter application.
+I/Choreographer(25186): Skipped 46 frames!  The application may be doing too much work on its main thread.
+I/GrallocExtra(25186): gralloc_extra_query:is_SW3D 0
+I/GrallocExtra(25186): gralloc_extra_query:is_SW3D 0
+W/libc    (25186): Access denied finding property "ro.vendor.display.iris_x7.support"
+W/1.raster(25186): type=1400 audit(0.0:27012): avc:  denied  { read } for  name="u:object_r:vendor_displayfeature_prop:s0" dev="tmpfs" ino=593 scontext=u:r:untrusted_app:s0:c180,c257,c512,c768 tcontext=u:object_r:vendor_displayfeature_prop:s0 tclass=file permissive=0 app=id.ruma.app
+I/Choreographer(25186): Skipped 58 frames!  The application may be doing too much work on its main thread.
+D/VRI[MainActivity](25186): vri.Setup new sync=wmsSync-VRI[MainActivity]#1
+I/SKIA    (25186): CreateGraphicsPipeline pipeline cache hit. elpased time: 5.82 ms.
+D/BLASTBufferQueue(25186): [VRI[MainActivity]#0](f:0,a:1) acquireNextBufferLocked size=1080x2400 mFrameNumber=1 applyTransaction=true mTimestamp=23217729391922(auto) mPendingTransactions.size=0 graphicBufferId=108173046317074 transform=0
+D/VRI[MainActivity](25186): vri.reportDrawFinished 0 0 Rect(0, 0 - 1080, 2400)
+I/NativeTurboSchedManager(25186): Load libmiui_runtime
+I/HandWritingStubImpl(25186): refreshLastKeyboardType: 1
+I/HandWritingStubImpl(25186): getCurrentKeyboardType: 1
+I/FirebaseApp(25186): Device unlocked: initializing all Firebase APIs for app [DEFAULT]
+D/InsetsController(25186): hide(ime(), fromIme=false)
+I/ImeTracker(25186): id.ruma.app:f7e94cb8: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+I/HandWritingStubImpl(25186): getCurrentKeyboardType: 1
+W/InsetsSource(25186): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(25186): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(25186): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(25186): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+D/FirebaseAuth(25186): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth(25186): Notifying auth state listeners about a sign-out event.
+W/System  (25186): Ignoring header X-Firebase-Locale because its value was null.
+W/System  (25186): Ignoring header X-Firebase-Locale because its value was null.
+D/FirebaseAuth(25186): Notifying id token listeners about user ( 3SoZYkL0n9fyPQP6ec0AWylYyuGd ).
+D/FirebaseAuth(25186): Notifying auth state listeners about user ( 3SoZYkL0n9fyPQP6ec0AWylYyuGd ).
+W/FinalizerDaemon(25186): type=1400 audit(0.0:27015): avc:  denied  { getopt } for  path="/dev/socket/usap_pool_primary" scontext=u:r:untrusted_app:s0:c180,c257,c512,c768 tcontext=u:r:zygote:s0 tclass=unix_stream_socket permissive=0 app=id.ruma.app
+D/BufferQueueConsumer(25186): [](id:626200000002,api:0,p:-1,c:25186) connect: controlledByApp=true
+D/VRI[MainActivity](25186): getMiuiFreeformStackInfo mTmpFrames.miuiFreeFormStackInfo: null
+W/InsetsSource(25186): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(25186): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(25186): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(25186): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(25186): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(25186): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+D/FlutterJNI(25186): Sending viewport metrics to the engine.
+W/DynamiteModule(25186): Local module descriptor class for com.google.android.gms.providerinstaller.dynamite not found.
+I/DynamiteModule(25186): Considering local module com.google.android.gms.providerinstaller.dynamite:0 and remote module com.google.android.gms.providerinstaller.dynamite:0
+W/ProviderInstaller(25186): Failed to load providerinstaller module: No acceptable module com.google.android.gms.providerinstaller.dynamite found. Local version is 0 and remote version is 0.
+D/ApplicationLoaders(25186): Returning zygote-cached class loader: /system/framework/org.apache.http.legacy.jar
+D/ApplicationLoaders(25186): Returning zygote-cached class loader: /system/framework/com.android.location.provider.jar
+D/ApplicationLoaders(25186): Returning zygote-cached class loader: /system/framework/com.android.media.remotedisplay.jar
+D/nativeloader(25186): Configuring clns-11 for other apk /system_ext/framework/com.android.extensions.appfunctions.jar. target_sdk_version=37, uses_libraries=ALL, library_path=/data/app/~~ZCVdjtP4bqdfjtF8y0tZIQ==/com.google.android.gms-VnOrDxKRydQ2_6tvyy7JMQ==/lib/arm64:/data/app/~~ZCVdjtP4bqdfjtF8y0tZIQ==/com.google.android.gms-VnOrDxKRydQ2_6tvyy7JMQ==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+D/nativeloader(25186): Extending system_exposed_libraries: libapuwareapusys.mtk.so:libapuwareapusys_v2.mtk.so:libapuwarexrp.mtk.so:libapuwarexrp_v2.mtk.so:libapuwareutils.mtk.so:libapuwareutils_v2.mtk.so:libapuwarehmp.mtk.so:libapuwareaiste.mtk.so:libneuron_graph_delegate.mtk.so:libneuronusdk_adapter.mtk.so:libtflite_mtk.mtk.so:libarmnn_ndk.mtk.so:libcmdl_ndk.mtk.so:libnir_neon_driver_ndk.mtk.so:libmvpu_runtime.mtk.so:libmvpu_runtime_pub.mtk.so:libmvpu_engine_pub.mtk.so:libmvpu_pattern_pub.mtk.so:libmvpuop_mtk_cv.mtk.so:libmvpuop_mtk_nn.mtk.so:libmvpu_runtime_25.mtk.so:libmvpu_runtime_25_pub.mtk.so:libmvpu_engine_25_pub.mtk.so:libmvpu_pattern_25_pub.mtk.so:libmvpuop25_mtk_cv.mtk.so:libmvpuop25_mtk_nn.mtk.so:libmvpu_config.mtk.so:libmvpu_engine_30.mtk.so:libmvpu_pattern_30.mtk.so:libmvpu_cic_ci_compiler_30.mtk.so:libmvpu_runtime_30.mtk.so:libmvpu_clc_30_mvpu_debuginfo.mtk.so:libmvpu_clc_30_mvpu_elf.mtk.so:libmvpu_clc_30_mvpu_utility.mtk.so:libneuronservice_adapter.mtk.so:libneuron_sys_util.mtk.so:libmvpuop30_mtk_nn.mtk.so:libneuron
+D/ApplicationLoaders(25186): Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+D/ApplicationLoaders(25186): Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+D/nativeloader(25186): Configuring clns-12 for other apk /data/app/~~ZCVdjtP4bqdfjtF8y0tZIQ==/com.google.android.gms-VnOrDxKRydQ2_6tvyy7JMQ==/base.apk. target_sdk_version=37, uses_libraries=, library_path=/data/app/~~ZCVdjtP4bqdfjtF8y0tZIQ==/com.google.android.gms-VnOrDxKRydQ2_6tvyy7JMQ==/lib/arm64:/data/app/~~ZCVdjtP4bqdfjtF8y0tZIQ==/com.google.android.gms-VnOrDxKRydQ2_6tvyy7JMQ==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+I/id.ruma.app(25186): AssetManager2(0xb400007ab5e4a838) locale list changing from [] to [en-US]
+I/id.ruma.app(25186): hiddenapi: Accessing hidden method Ldalvik/system/VMStack;->getStackClass2()Ljava/lang/Class; (runtime_flags=0, domain=core-platform, api=unsupported) from Libva; (domain=app, TargetSdkVersion=36) using reflection: allowed
+I/ProviderInstaller(25186): Installed default security provider AndroidOpenSSL (via CompatProvider)
+W/FlagStore(25186): Failed to commit to updated flags for com.google.android.gms.providerinstaller#id.ruma.app
+W/FlagStore(25186): java.lang.SecurityException: GoogleCertificatesRslt: not allowed: pkg=id.ruma.app, sha256=[d99dd897124e38aeaa87d402055a171f36e460065d1db0cdd0228b7392491fcf], atk=false, ver=264032035.true (go/gsrlt)
+W/FlagStore(25186): 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3361)
+W/FlagStore(25186): 	at android.os.Parcel.createException(Parcel.java:3345)
+W/FlagStore(25186): 	at android.os.Parcel.readException(Parcel.java:3328)
+W/FlagStore(25186): 	at android.os.Parcel.readException(Parcel.java:3270)
+W/FlagStore(25186): 	at acni.transactAndReadExceptionReturnVoid(:com.google.android.gms@264032035@26.40.32 (260400-995630914):11)
+W/FlagStore(25186): 	at fuzl.b(:com.google.android.gms@264032035@26.40.32 (260400-995630914):12)
+W/FlagStore(25186): 	at fuwi.d(:com.google.android.gms@264032035@26.40.32 (260400-995630914):20)
+W/FlagStore(25186): 	at bqdw.a(:com.google.android.gms@264032035@26.40.32 (260400-995630914):5)
+W/FlagStore(25186): 	at bpzl.g(:com.google.android.gms@264032035@26.40.32 (260400-995630914):7)
+W/FlagStore(25186): 	at bqcb.t(:com.google.android.gms@264032035@26.40.32 (260400-995630914):10)
+W/FlagStore(25186): 	at bqcb.u(:com.google.android.gms@264032035@26.40.32 (260400-995630914):119)
+W/FlagStore(25186): 	at bqcb.c(:com.google.android.gms@264032035@26.40.32 (260400-995630914):16)
+W/FlagStore(25186): 	at bqch.handleMessage(:com.google.android.gms@264032035@26.40.32 (260400-995630914):874)
+W/FlagStore(25186): 	at android.os.Handler.dispatchMessage(Handler.java:110)
+W/FlagStore(25186): 	at dosw.lP(:com.google.android.gms@264032035@26.40.32 (260400-995630914):1)
+W/FlagStore(25186): 	at dosw.dispatchMessage(:com.google.android.gms@264032035@26.40.32 (260400-995630914):5)
+W/FlagStore(25186): 	at android.os.Looper.loopOnce(Looper.java:274)
+W/FlagStore(25186): 	at android.os.Looper.loop(Looper.java:369)
+W/FlagStore(25186): 	at android.os.HandlerThread.run(HandlerThread.java:85)
+D/libEGL  (25186): Post task 1
+D/libEGL  (25186): Worker thread start 525159846848
+D/libEGL  (25186): Run task 1
+VMServiceFlutterDriver: request_data message is taking a long time to complete...
+E/id.ruma.app(25186): FrameInsert open fail: No such file or directory
+I/SKIA    (25186): CreateGraphicsPipeline pipeline cache hit. elpased time: 5.77 ms.
+I/SKIA    (25186): CreateGraphicsPipeline pipeline cache hit. elpased time: 7.16 ms.
+I/id.ruma.app(25186): AssetManager2(0xb400007ab5e5b4f8) locale list changing from [] to [en-US]
+I/id.ruma.app(25186): AssetManager2(0xb400007ab5e676b8) locale list changing from [] to [en-US]
+I/id.ruma.app(25186): AssetManager2(0xb400007ab5e5be58) locale list changing from [] to [en-US]
+I/id.ruma.app(25186): AssetManager2(0xb400007ab5e60f98) locale list changing from [] to [en-US]
+I/id.ruma.app(25186): AssetManager2(0xb400007ab5e65a98) locale list changing from [] to [en-US]
+I/id.ruma.app(25186): AssetManager2(0xb400007ab5e61f38) locale list changing from [] to [en-US]
+D/libEGL  (25186): Post task 2
+D/libEGL  (25186): Run task 2
+E/LB      (25186): fail to open file: No such file or directory
+W/1.raster(25186): type=1400 audit(0.0:27020): avc:  denied  { getattr } for  path="/sys/module/metis/parameters/minor_window_app" dev="sysfs" ino=81117 scontext=u:r:untrusted_app:s0:c180,c257,c512,c768 tcontext=u:object_r:sysfs_migt:s0 tclass=file permissive=0 app=id.ruma.app
+I/MIUIInput(25186): [MotionEvent] ViewRootImpl windowName 'id.ruma.app/id.ruma.app.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=23247064, downTime=23247064, phoneEventTime=1792421871798 } moveCount:0
+W/MirrorManager(25186): this model don't Support
+D/VRI[MainActivity](25186): getMiuiFreeformStackInfo mTmpFrames.miuiFreeFormStackInfo: null
+I/flutter (25186): Some possible finders for the widgets at Offset(307.9, 270.0):
+I/flutter (25186):   find.text('SALDO TERCATAT')
+I/flutter (25186):   find.widgetWithText(PhysicalShape, 'SALDO TERCATAT')
+I/flutter (25186):   find.widgetWithText(SizedBox, 'SALDO TERCATAT')
+I/flutter (25186):   find.widgetWithText(RumaCard, 'SALDO TERCATAT')
+I/flutter (25186):   find.widgetWithText(MoneyCard, 'SALDO TERCATAT')
+I/flutter (25186):   find.byKey(const Key('finance-3SoZYkL0n9fyPQP6ec0AWylYyuGd'))
+I/PowerHalMgrImpl(25186): perfLockAcq is supported. 
+I/flutter (25186):   find.widgetWithText(RawGestureDetector, 'SALDO TERCATAT')
+I/flutter (25186):   find.byType(ImageFiltered)
+I/flutter (25186):   find.byType(StretchEffect)
+I/flutter (25186):   find.byType(StretchingOverscrollIndicator)
+I/flutter (25186):   find.byType(Scrollable)
+I/flutter (25186):   find.byKey(const Key('3SoZYkL0n9fyPQP6ec0AWylYyuGd-3'))
+I/flutter (25186):   find.byType(AnimatedSwitcher)
+I/flutter (25186):   find.byKey(const Key('3SoZYkL0n9fyPQP6ec0AWylYyuGd'))
+I/MIUIInput(25186): [MotionEvent] ViewRootImpl windowName 'id.ruma.app/id.ruma.app.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=23247129, downTime=23247064, phoneEventTime=1792421871864 } moveCount:0
+I/MIUIInput(25186): [MotionEvent] ViewRootImpl windowName 'id.ruma.app/id.ruma.app.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=23247728, downTime=23247728, phoneEventTime=1792421872462 } moveCount:0
+D/VRI[MainActivity](25186): getMiuiFreeformStackInfo mTmpFrames.miuiFreeFormStackInfo: null
+I/flutter (25186): Some possible finders for the widgets at Offset(302.3, 270.1):
+I/flutter (25186):   find.text('SALDO TERCATAT')
+I/flutter (25186):   find.widgetWithText(PhysicalShape, 'SALDO TERCATAT')
+I/flutter (25186):   find.widgetWithText(SizedBox, 'SALDO TERCATAT')
+I/flutter (25186):   find.widgetWithText(RumaCard, 'SALDO TERCATAT')
+I/flutter (25186):   find.widgetWithText(MoneyCard, 'SALDO TERCATAT')
+I/flutter (25186):   find.byKey(const Key('finance-3SoZYkL0n9fyPQP6ec0AWylYyuGd'))
+I/flutter (25186):   find.widgetWithText(RawGestureDetector, 'SALDO TERCATAT')
+I/flutter (25186):   find.byType(ImageFiltered)
+I/flutter (25186):   find.byType(StretchEffect)
+I/flutter (25186):   find.byType(StretchingOverscrollIndicator)
+I/flutter (25186):   find.byType(Scrollable)
+I/flutter (25186):   find.byKey(const Key('3SoZYkL0n9fyPQP6ec0AWylYyuGd-3'))
+I/flutter (25186):   find.byType(AnimatedSwitcher)
+I/flutter (25186):   find.byKey(const Key('3SoZYkL0n9fyPQP6ec0AWylYyuGd'))
+I/MIUIInput(25186): [MotionEvent] ViewRootImpl windowName 'id.ruma.app/id.ruma.app.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=23247795, downTime=23247728, phoneEventTime=1792421872529 } moveCount:0
+I/PowerHalMgrImpl(25186): hdl:13977, pid:25186 
+I/id.ruma.app(25186): AssetManager2(0xb400007ab5e7fd58) locale list changing from [] to [en-US]
+I/id.ruma.app(25186): AssetManager2(0xb400007ab5e68018) locale list changing from [] to [en-US]
+I/id.ruma.app(25186): AssetManager2(0xb400007ab5e55a58) locale list changing from [] to [en-US]
+I/id.ruma.app(25186): AssetManager2(0xb400007ab5e62ed8) locale list changing from [] to [en-US]
+I/id.ruma.app(25186): AssetManager2(0xb400007ab5e7daf8) locale list changing from [] to [en-US]
+I/id.ruma.app(25186): AssetManager2(0xb400007ab5e78cd8) locale list changing from [] to [en-US]
+D/libEGL  (25186): Worker thread exit 525159846848
+I/id.ruma.app(25186): Background young concurrent mark compact GC freed 4630KB AllocSpace bytes, 15(1568KB) LOS objects, 53% free, 5284KB/11MB, paused 573us,5.393ms total 28.886ms
+W/System  (25186): Ignoring header X-Firebase-Locale because its value was null.
+D/FirebaseAuth(25186): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth(25186): Notifying auth state listeners about a sign-out event.
+I/flutter (25186): ══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+I/flutter (25186): The following TestFailure was thrown running a test:
+I/flutter (25186): Expected: throws anything
+I/flutter (25186):   Actual: <Instance of 'Future<void>'>
+I/flutter (25186):    Which: emitted <null>
+I/flutter (25186): 
+I/flutter (25186): When the exception was thrown, this was the stack:
+I/flutter (25186): #0      fail (package:matcher/src/expect/expect.dart:187:31)
+I/flutter (25186): #1      _expect.<anonymous closure> (package:matcher/src/expect/expect.dart:155:13)
+I/flutter (25186): <asynchronous suspension>
+I/flutter (25186): #4      OutstandingWork.complete (package:test_api/hooks.dart:77:3)
+I/flutter (25186): <asynchronous suspension>
+I/flutter (25186): #5      expectLater.<anonymous closure> (package:flutter_test/src/widget_tester.dart:508:19)
+I/flutter (25186): <asynchronous suspension>
+I/flutter (25186): #6      main.<anonymous closure> (file:///home/ael/DATA/project%20on%20linux/mobileapp/ruma/integration_test/finance_flow_test.dart:178:7)
+I/flutter (25186): <asynchronous suspension>
+I/flutter (25186): #7      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+I/flutter (25186): <asynchronous suspension>
+I/flutter (25186): #8      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+I/flutter (25186): <asynchronous suspension>
+I/flutter (25186): #9      TestWidgetsFlutterBinding._createTestCompletionHandler.<anonymous closure> (package:flutter_test/src/binding.dart:1707:12)
+I/flutter (25186): <asynchronous suspension>
+I/flutter (25186): (elided 2 frames from dart:async)
+I/flutter (25186): 
+I/flutter (25186): The test description was:
+I/flutter (25186):   manual finance UI + native SDK and agenda interoperability
+I/flutter (25186): ════════════════════════════════════════════════════════════════════════════════════════════════════
+I/flutter (25186): 00:58 +0: manual finance UI + native SDK and agenda interoperability [E]
+I/flutter (25186):   Test failed. See exception logs above.
+I/flutter (25186):   The test description was: manual finance UI + native SDK and agenda interoperability
+I/flutter (25186):   
+W/id.ruma.app(25186): Binder 0xb400007a95e33860 destroyed after setInheritRt before being parceled.
+W/id.ruma.app(25186): Binder 0xb400007a95e4d1e0 destroyed after setInheritRt before being parceled.
+D/BufferQueueConsumer(25186): [ImageReader-1080x2400f1m3-25186-0](id:626200000002,api:0,p:-1,c:25186) disconnect: caller 25186
+I/flutter (25186): 00:58 +0 -1: (tearDownAll)
+I/flutter (25186): 00:59 +1 -1: Some tests failed.
+Failure Details:
+Failure in method: manual finance UI + native SDK and agenda interoperability
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞═════════════════
+The following TestFailure was thrown running a test:
+Expected: throws anything
+  Actual: <Instance of 'Future<void>'>
+   Which: emitted <null>
+
+When the exception was thrown, this was the stack:
+#0      fail (package:matcher/src/expect/expect.dart:187:31)
+#1      _expect.<anonymous closure> (package:matcher/src/expect/expect.dart:155:13)
+<asynchronous suspension>
+#4      OutstandingWork.complete (package:test_api/hooks.dart:77:3)
+<asynchronous suspension>
+#5      expectLater.<anonymous closure> (package:flutter_test/src/widget_tester.dart:508:19)
+<asynchronous suspension>
+#6      main.<anonymous closure> (file:///home/ael/DATA/project%20on%20linux/mobileapp/ruma/integration_test/finance_flow_test.dart:178:7)
+<asynchronous suspension>
+#7      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#8      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+#9      TestWidgetsFlutterBinding._createTestCompletionHandler.<anonymous closure> (package:flutter_test/src/binding.dart:1707:12)
+<asynchronous suspension>
+(elided 2 frames from dart:async)
+
+The test description was:
+  manual finance UI + native SDK and agenda interoperability
+═════════════════════════════════════════════════════════════════
+
+end of failure 1
+
+
+

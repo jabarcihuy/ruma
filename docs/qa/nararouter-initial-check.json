@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-18",
+  "provider": "NaraRouter",
+  "requestedModel": "glm-5.3-flash",
+  "syntheticDataOnly": true,
+  "databaseWrites": 0,
+  "modelRequests": 1,
+  "tests": [
+    {
+      "name": "model_catalog",
+      "passed": true,
+      "httpStatus": 200,
+      "latencyMs": 6298,
+      "exactModelListed": true
+    },
+    {
+      "name": "plain_message",
+      "passed": false,
+      "httpStatus": 400,
+      "error": "The model rejected this request. It may not support the input you sent (e.g. images on a text-only model) or a parameter is invalid.",
+      "latencyMs": 19752,
+      "visibleReply": ""
+    }
+  ],
+  "scope": "Direct provider compatibility only; not a deployed proxy or app evaluation",
+  "overallPassed": false
+}

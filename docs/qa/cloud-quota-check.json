@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-19",
+  "scope": "Deployed quota rejection using an explicitly full disposable UID counter; global counter never reset",
+  "passed": true,
+  "globalCountBefore": 6,
+  "requestId": "ruma-cloud-quota-1792401150455",
+  "status": 429,
+  "response": {
+    "requestId": "ruma-cloud-quota-1792401150455",
+    "error": "rate_limited"
+  },
+  "globalCountAfter": 6,
+  "providerCallBlocked": true,
+  "syntheticCounterDeleted": true,
+  "testAccountDeleted": true
+}

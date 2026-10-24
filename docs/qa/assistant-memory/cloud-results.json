@@ -1,0 +1,20 @@
+{
+  "project": "mobile-app-3479f",
+  "suite": "assistant_memory_cloud_test",
+  "fixtureUids": [
+    "uupBPHAU8qVvKsXqpKSXGHMlvRu2",
+    "N1uIpkr2cxMKdEtFAfrZo44JhgX2"
+  ],
+  "authFixturesDeleted": [
+    "uupBPHAU8qVvKsXqpKSXGHMlvRu2",
+    "N1uIpkr2cxMKdEtFAfrZo44JhgX2"
+  ],
+  "modelCalls": 0,
+  "fcmSends": 0,
+  "cases": [
+    "workspace restore and lost acknowledgement reconcile exactly one batch",
+    "conversation history survives recreated store",
+    "other account denied old workspace and receives own empty state"
+  ],
+  "passed": true
+}

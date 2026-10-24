@@ -1,0 +1,127 @@
+rules_version = '2';
+// Candidate integration slice. NOT deployed. Unsupported paths remain denied.
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function owner(uid) { return request.auth != null && request.auth.uid == uid; }
+    function text(value, maximum) { return value is string && value.size() <= maximum; }
+    function base(d) {
+      return d.schemaVersion == 1 && d.version is int && d.version >= 1
+        && d.createdAt is timestamp && d.updatedAt == request.time;
+    }
+    function fresh() { return base(request.resource.data) && request.resource.data.version == 1 && request.resource.data.createdAt == request.time; }
+    function revised() { return base(request.resource.data) && request.resource.data.version == resource.data.version + 1 && request.resource.data.createdAt == resource.data.createdAt; }
+    function receipt(uid, op, target) {
+      let r = getAfter(/databases/$(database)/documents/users/$(uid)/operations/$(op)).data;
+      return r.createdAt == request.time && r.kind == 'create_batch' && (target == null || r.targets.hasAny([target]));
+    }
+    function core(uid, op) {
+      let c = getAfter(/databases/$(database)/documents/users/$(uid)/state/core).data;
+      return c.updatedAt == request.time && c.lastUndoOperationId == op;
+    }
+    function agenda(d) {
+      return d.keys().hasAll(['schemaVersion','version','createdAt','updatedAt','deletedAt','operationId','kind','title','description','startAtUtc','endAtUtc','durationMinutes','deadlineAtUtc','priority','status','timezone','recurrence'])
+        && d.keys().hasOnly(['schemaVersion','version','createdAt','updatedAt','deletedAt','operationId','kind','title','description','startAtUtc','endAtUtc','durationMinutes','deadlineAtUtc','priority','status','timezone','recurrence'])
+        && d.kind in ['class','task'] && text(d.title,120) && d.title.size() > 0 && text(d.description,1000)
+        && d.durationMinutes is int && d.durationMinutes >= 5 && d.durationMinutes <= 720
+        && ((d.startAtUtc == null && d.endAtUtc == null) || (d.startAtUtc is timestamp && d.endAtUtc is timestamp && d.endAtUtc-d.startAtUtc == duration.value(d.durationMinutes,'m')))
+        && (d.deadlineAtUtc == null || (d.deadlineAtUtc is timestamp && (d.endAtUtc == null || d.endAtUtc <= d.deadlineAtUtc)))
+        && d.priority in ['low','normal','high'] && d.status in ['planned','completed','cancelled']
+        && d.timezone == 'Asia/Jakarta' && d.deletedAt == null
+        && d.recurrence is map && d.recurrence.keys().hasOnly(['type']) && d.recurrence.type == 'none'
+        && text(d.operationId,80) && d.operationId.size() > 0;
+    }
+    function money(d) {
+      return d.keys().hasAll(['schemaVersion','version','createdAt','updatedAt','deletedAt','operationId','type','amountRupiah','categoryId','localDate','monthKey','description','source'])
+        && d.keys().hasOnly(['schemaVersion','version','createdAt','updatedAt','deletedAt','operationId','type','amountRupiah','categoryId','localDate','monthKey','description','source'])
+        && d.amountRupiah is int && d.amountRupiah > 0 && d.amountRupiah <= 1000000000
+        && ((d.type == 'expense' && d.categoryId in ['food','transport','housing','other']) || (d.type == 'income' && d.categoryId in ['allowance','work','other_income']))
+        && d.localDate is string && d.localDate.matches('^[0-9]{4}-(0[1-9]|1[0-2])-([0-2][0-9]|3[01])$')
+        && d.monthKey is string && d.monthKey.matches('^[0-9]{4}-(0[1-9]|1[0-2])$')
+        && d.localDate.matches('^'+d.monthKey+'-([0-2][0-9]|3[01])$') && actualDate(d.localDate)
+        && text(d.description,1000) && d.source in ['manual','ai'] && d.deletedAt == null
+        && text(d.operationId,80) && d.operationId.size() > 0;
+    }
+    function actualDate(value) {
+      let parts = value.split('-');
+      let y = int(parts[0]);
+      let m = int(parts[1]);
+      let d = int(parts[2]);
+      let t = timestamp.date(y,m,d);
+      return t.year() == y && t.month() == m && t.day() == d && t <= (request.time+duration.value(7,'h')).date();
+    }
+    match /users/{uid} {
+      allow read: if owner(uid);
+      // Profiles, recurring classes, edits/undo and chat are deferred until their validators exist.
+      match /agenda/{id} {
+        allow read: if owner(uid);
+        allow create: if owner(uid) && fresh() && agenda(request.resource.data)
+          && core(uid,request.resource.data.operationId) && receipt(uid,request.resource.data.operationId,'agenda/'+id);
+      }
+      match /transactions/{id} {
+        allow read: if owner(uid);
+        allow create: if owner(uid) && fresh() && money(request.resource.data)
+          && core(uid,request.resource.data.operationId) && receipt(uid,request.resource.data.operationId,'transactions/'+id)
+          && getAfter(/databases/$(database)/documents/users/$(uid)/months/$(request.resource.data.monthKey)).data.updatedAt == request.time;
+      }
+      match /operations/{id} {
+        allow read: if owner(uid);
+        allow create: if owner(uid) && fresh()
+          && request.resource.data.keys().hasOnly(['schemaVersion','version','createdAt','updatedAt','draftId','approvedRevision','kind','targets','result','undoState'])
+          && request.resource.data.kind == 'create_batch' && text(request.resource.data.draftId,80)
+          && request.resource.data.approvedRevision is int && request.resource.data.approvedRevision >= 1
+          && request.resource.data.targets is list && request.resource.data.targets.size() >= 1 && request.resource.data.targets.size() <= 6
+          && request.resource.data.result is map && request.resource.data.undoState == 'available';
+      }
+      match /state/core {
+        allow read: if owner(uid);
+        allow create, update: if owner(uid) && base(request.resource.data)
+          && (resource == null ? fresh() : revised())
+          && request.resource.data.keys().hasOnly(['schemaVersion','version','createdAt','updatedAt','agendaRevision','financeRevision','balanceRupiah','lifetimeIncomeRupiah','lifetimeExpenseRupiah','lastUndoOperationId'])
+          && request.resource.data.agendaRevision is int && request.resource.data.financeRevision is int
+          && request.resource.data.agendaRevision >= 0 && request.resource.data.financeRevision >= 0
+          && (resource == null || (request.resource.data.agendaRevision >= resource.data.agendaRevision && request.resource.data.agendaRevision <= resource.data.agendaRevision + 1
+            && request.resource.data.financeRevision >= resource.data.financeRevision && request.resource.data.financeRevision <= resource.data.financeRevision + 1))
+          && request.resource.data.lifetimeIncomeRupiah is int && request.resource.data.lifetimeIncomeRupiah >= 0
+          && request.resource.data.lifetimeExpenseRupiah is int && request.resource.data.lifetimeExpenseRupiah >= 0
+          && request.resource.data.balanceRupiah is int && request.resource.data.balanceRupiah == request.resource.data.lifetimeIncomeRupiah-request.resource.data.lifetimeExpenseRupiah
+          && receipt(uid,request.resource.data.lastUndoOperationId,null);
+      }
+      match /months/{month} {
+        allow read: if owner(uid);
+        allow create, update: if owner(uid) && base(request.resource.data)
+          && (resource == null ? fresh() : revised())
+          && month.matches('^[0-9]{4}-(0[1-9]|1[0-2])$')
+          && request.resource.data.keys().hasOnly(['schemaVersion','version','createdAt','updatedAt','incomeRupiah','expenseRupiah','categoryExpenseRupiah','budgetTotalRupiah','categoryBudgetRupiah','operationId'])
+          && request.resource.data.incomeRupiah is int && request.resource.data.incomeRupiah >= 0
+          && request.resource.data.expenseRupiah is int && request.resource.data.expenseRupiah >= 0
+          && request.resource.data.categoryExpenseRupiah is map && request.resource.data.categoryBudgetRupiah is map
+          && (request.resource.data.budgetTotalRupiah == null || (request.resource.data.budgetTotalRupiah is int && request.resource.data.budgetTotalRupiah >= 0))
+          && receipt(uid,request.resource.data.operationId,null);
+      }
+      match /reminders/{id} {
+        allow read: if owner(uid);
+        allow create: if owner(uid) && fresh()
+          && request.resource.data.keys().hasOnly(['schemaVersion','version','createdAt','updatedAt','agendaId','occurrenceKey','sourceVersion','generation','enabled','leadMinutes','message','eventAtUtc','dueAtUtc','availableAtUtc','status','dispatch'])
+          && request.resource.data.enabled == true && request.resource.data.status == 'queued'
+          && request.resource.data.dispatch == {} && request.resource.data.generation == 1
+          && request.resource.data.sourceVersion == 1 && text(request.resource.data.agendaId,80)
+          && text(request.resource.data.occurrenceKey,160) && text(request.resource.data.message,1000)
+          && request.resource.data.leadMinutes is int && request.resource.data.leadMinutes >= 0 && request.resource.data.leadMinutes <= 10080
+          && request.resource.data.eventAtUtc is timestamp && request.resource.data.dueAtUtc is timestamp
+          && request.resource.data.availableAtUtc == request.resource.data.dueAtUtc
+          && request.resource.data.dueAtUtc == request.resource.data.eventAtUtc-duration.value(request.resource.data.leadMinutes,'m')
+          && reminderSource(uid,request.resource.data);
+      }
+      function reminderSource(uid,d) {
+        let a = getAfter(/databases/$(database)/documents/users/$(uid)/agenda/$(d.agendaId)).data;
+        return a.version == d.sourceVersion && a.deletedAt == null && a.status == 'planned'
+          && d.eventAtUtc == (a.startAtUtc == null ? a.deadlineAtUtc : a.startAtUtc);
+      }
+      match /notifications/{id} {
+        allow read: if owner(uid);
+        allow update: if owner(uid) && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['readAt']) && request.resource.data.readAt == request.time;
+      }
+    }
+    match /{document=**} { allow read, write: if false; }
+  }
+}

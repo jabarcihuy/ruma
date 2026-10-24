@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "updatedDate": "2026-10-19",
+  "status": "Auth, manual agenda and finance verified on physical Android emulator and production; app agent/FCM/recurrence pending",
+  "app": {
+    "displayName": "Ruma",
+    "platform": "android",
+    "androidApplicationId": "id.ruma.app",
+    "androidApplicationIdStatus": "registered and verified in Firebase Console",
+    "androidToolchainReady": true,
+    "androidLicensesAccepted": true,
+    "flutterScaffoldCreated": true,
+    "foundationEvidence": "docs/FLUTTER-FOUNDATION.md",
+    "authOnDeviceVerified": true,
+    "previewApk": "output/apk/ruma-finance-preview.apk",
+    "agendaEvidence": "docs/AGENDA-IMPLEMENTATION.md",
+    "previewInstalledAndLaunched": true,
+    "financeImplementationEvidence": "docs/FINANCE-IMPLEMENTATION.md"
+  },
+  "firebase": {
+    "projectId": "mobile-app-3479f",
+    "projectNumber": "18934621879",
+    "displayName": "Ruma",
+    "billingPlan": "Spark",
+    "existingApps": "retired by user; registrations retained",
+    "androidAppId": "1:18934621879:android:8f7ae40b378ec1dce08f32",
+    "authProvidersRequired": [
+      "password",
+      "anonymous"
+    ],
+    "firestoreDatabase": "(default)",
+    "firestoreLocation": "asia-southeast2",
+    "fcmRequired": true,
+    "cloudFunctionsRequired": false,
+    "androidConfigDownloadStatus": "file present and verified for project and Ruma Android app",
+    "authProvidersVerified": [
+      "password",
+      "anonymous"
+    ],
+    "anonymousAutoCleanupEnabled": false,
+    "firestoreEdition": "standard",
+    "firestoreStatus": "agenda/finance client storage enabled; all current-stage synthetic fixture documents cleaned; server usage counters retained",
+    "firestoreInitialRules": "verified allow read, write: if false",
+    "scheduledBackupsEnabled": false,
+    "fcmHttpV1Status": "enabled and verified",
+    "fcmLegacyStatus": "disabled",
+    "sdkConfigStatus": "verified at config/firebase/google-services.json",
+    "candidateRulesStatus": "Agent + reminders/inbox/device isolation deployed; 42 Rules checks passed",
+    "activeRules": "config/firebase/firestore.notifications.rules",
+    "financeCandidateRulesStatus": "published and production SDK verified"
+  },
+  "cloudflare": {
+    "plan": "Free",
+    "workerName": "ruma-api",
+    "accountId": "bf3e1e100ad681d46a58461be813c151",
+    "workerUrl": "https://ruma-api.abduljabarbrngkl.workers.dev",
+    "cron": "* * * * *",
+    "status": "deployed via dashboard; real JWT, upstream AI and quota verified",
+    "workersSubdomain": "abduljabarbrngkl.workers.dev",
+    "observedDailyRequestLimit": 100000,
+    "proposedTestDailyLimit": 10,
+    "configuredWorkerDailyLimit": 10,
+    "workerVersion": "c3759e9e-c2d6-4004-a2be-e6009ad04fe5",
+    "cronStatus": "configured every minute; scheduled executions observed",
+    "serverIdentity": "ruma-ai-proxy@mobile-app-3479f.iam.gserviceaccount.com",
+    "serverRole": "roles/datastore.user",
+    "cpuGate": "not passed: production bundle first authenticated invocation 13 ms vs nominal 10 ms; repeat 4 ms",
+    "observability": "invocation logs enabled; application does not log tokens/prompts",
+    "quotaImplementation": "Firestore batchGet + atomic commit with updateTime/exists preconditions; max 3 conflict attempts",
+    "cpuFollowUp": {
+      "status": "deferred_by_user",
+      "decisionDate": "2026-10-19",
+      "blocksFlutterDevelopment": false,
+      "reopenWhen": "App testing confirms a CPU-related failure (exceededCpu / Exceeded CPU Time Limits); inspect outcome for Error 1102 before assuming CPU",
+      "evidence": "docs/qa/CPU-FOLLOWUP.md",
+      "nominalCpuCheckPassed": false,
+      "additionalBenchmarkRequested": false
+    },
+    "serverRoles": [
+      "roles/datastore.user",
+      "projects/mobile-app-3479f/roles/rumaFcmSender"
+    ],
+    "notificationImplementation": "docs/NOTIFICATION-IMPLEMENTATION.md"
+  },
+  "ai": {
+    "provider": "NaraRouter",
+    "endpoint": "https://router.bynara.id/v1/chat/completions",
+    "model": "glm-5.3-flash",
+    "modelCompatibility": "basic protocol verified; revised policy 5/5 synthetic cases passed; max_tokens 8192 verified once; not a full app reliability estimate",
+    "projectDailyUpstreamLimit": 10,
+    "compatibilityEvidence": "docs/qa/agent-policy-check.json",
+    "localSecretStatus": "private local file and encrypted Cloudflare Worker Secret; not in app source",
+    "testedOutputLimit": 8192,
+    "cloudEvidence": "docs/qa/cloud-proxy-check.json"
+  }
+}

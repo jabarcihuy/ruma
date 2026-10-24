@@ -1,0 +1,11 @@
+{
+  "normalCandidateInstalled": true,
+  "coldLaunch": "Status: ok",
+  "foreground": "mCurrentFocus=Window{8db8e73 u0 id.ruma.app/id.ruma.app.MainActivity}",
+  "fontScale": "1.0",
+  "stayOn": "1",
+  "reverseList": "",
+  "avdLeftOpen": true,
+  "physicalPhoneUpdated": false,
+  "firebaseEmulatorsStopped": true
+}

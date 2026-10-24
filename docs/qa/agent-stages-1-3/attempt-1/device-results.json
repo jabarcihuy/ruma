@@ -1,0 +1,15 @@
+{
+  "project": "demo-ruma",
+  "productionWrites": 0,
+  "modelCalls": 0,
+  "cases": [
+    "three sequential non-overlapping suggested slots; reviewed atomic combined save",
+    "agenda, monthly summary and history read exact database data without writes",
+    "agenda edit requires approval, duplicate save idempotent, undo restores old duration",
+    "transaction delete/restore exact ledger and monthly totals, no duplicate undo",
+    "agenda delete and exact tombstone restoration",
+    "stale undo cannot overwrite a later transaction edit",
+    "conflicting edit aborts without changing agenda",
+    "cross-account read and stale session denied"
+  ]
+}

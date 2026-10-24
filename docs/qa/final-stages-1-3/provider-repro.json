@@ -1,0 +1,16 @@
+{
+  "scope": "direct synthetic provider capture; one request, no database writes, no FCM",
+  "modelRequests": 1,
+  "requestedModel": "glm-5.3-flash",
+  "input": "Besok baca jurnal. Tadi makan 18 ribu.",
+  "localDate": "2026-10-21",
+  "httpStatus": 200,
+  "responseModel": "glm-5.3-flash",
+  "finishReason": "tool_calls",
+  "toolNames": [
+    "prepare_draft"
+  ],
+  "normalizedType": "draft_proposal",
+  "normalizerPassed": true,
+  "envelopePassed": true
+}

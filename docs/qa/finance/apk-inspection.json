@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-19",
+  "apk": "output/apk/ruma-finance-preview.apk",
+  "buildMode": "profile",
+  "target": "lib/main.dart",
+  "firebaseMode": "production",
+  "bytes": 40458543,
+  "sha256": "3fb2fa606a44ff385cabd67c6fdfec2f0e6bde6b103cbcaf976c4257195d42f7",
+  "compiledAppLibraries": [
+    "lib/arm64-v8a/libapp.so"
+  ],
+  "knownServerSecretValuesChecked": 2,
+  "knownServerSecretMatches": [],
+  "disallowedPrivateFileEntries": [],
+  "scope": "Exact current AI key/private PEM checks in UTF-8/UTF-16; not a comprehensive security audit",
+  "courseReleaseSigningComplete": false,
+  "financeProductionRulesActive": true,
+  "installedOnPhysicalAndroid": true,
+  "coldLaunchStatus": "ok",
+  "foregroundPackageVerified": true,
+  "integrationTestTarget": false
+}

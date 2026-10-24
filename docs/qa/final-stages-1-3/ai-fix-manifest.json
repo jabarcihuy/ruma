@@ -1,0 +1,27 @@
+{
+  "apk": "output/apk/ruma-ai-output-guard.apk",
+  "target": "lib/main.dart",
+  "mode": "debug",
+  "abi": "x86_64",
+  "sha256": "03c1837417af11b5aa9aebbbed6cdf5c2b84988f1b3a7a08dcae90893416e268",
+  "bytes": 102381259,
+  "exactServerSecretMatches": 0,
+  "privateFileMatches": 0,
+  "flutterTestsPassed": 57,
+  "backendTestsPassed": 35,
+  "rulesTestsPreviouslyPassed": 51,
+  "rulesUnchanged": true,
+  "totalLocalTestsPassed": 143,
+  "nativeProductionSdkReplayPassed": true,
+  "usesCapturedRealResponse": true,
+  "liveWorkerEndToEndAfterFixTested": false,
+  "liveModelAfterFixTested": false,
+  "workerVersion": "359dcc2b-f7e5-494f-83d2-20583c620db5",
+  "sources": {
+    "backend/src/agent.mjs": "6fb720cb1cb2dae89dfce784f9983143dda9edf9427b197f3503c7d3b18a9882",
+    "backend/src/worker.mjs": "91bf6654a81cbfec59bf3236670329505af9598928cfe5a8beafaf1554269cf5",
+    "lib/data/assistant_service.dart": "89dba8e3ba25dc29c0d2cc5cc0b768ab5babb52fdf539da2625e5faef5b43d3d",
+    "backend/tests/incomplete-draft.test.mjs": "9f63f27a251accc7eda72833dcc489ecb67dd99f7c9178d8ec6a65615cc90080",
+    "test/assistant_test.dart": "1f956d5e583089d0ce6b665695c161de9e67ff3ca4f83ef77c8219cd97e3d875"
+  }
+}

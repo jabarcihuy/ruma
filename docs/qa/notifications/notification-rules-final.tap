@@ -1,0 +1,40 @@
+[2026-10-20T13:35:24.805Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x86aa0817 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+evaluation error at L225:33 for 'update' @ L225, false for 'update' @ L300, false for 'update' @ L225, false for 'update' @ L300
+[2026-10-20T13:35:24.819Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x86aa0818 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+evaluation error at L225:33 for 'update' @ L225, false for 'update' @ L300, false for 'update' @ L225, false for 'update' @ L300
+[2026-10-20T13:35:24.830Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x86aa0819 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+evaluation error at L225:33 for 'update' @ L225, false for 'update' @ L300, false for 'update' @ L225, false for 'update' @ L300
+✔ owner can configure and disable a future reminder; cannot forge dispatch or another target (516.79731ms)
+[2026-10-20T13:35:24.906Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x86aa081c error. Code: 7 Message: 7 PERMISSION_DENIED: 
+evaluation error at L215:33 for 'update' @ L215, false for 'update' @ L300, false for 'update' @ L215, false for 'update' @ L300
+[2026-10-20T13:35:24.935Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x86aa081e error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L300, evaluation error at L229:26 for 'update' @ L229, false for 'update' @ L300, false for 'create' @ L300
+[2026-10-20T13:35:24.970Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x86aa0820 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+evaluation error at L229:26 for 'update' @ L229, false for 'update' @ L300, false for 'update' @ L229, false for 'update' @ L300
+✔ device fields restricted, token and inbox belong to owner (148.628473ms)
+[2026-10-20T13:35:25.089Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x86aa0824 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+evaluation error at L234:26 for 'create' @ L234, false for 'create' @ L300, evaluation error at L237:26 for 'update' @ L237, false for 'update' @ L300, evaluation error at L264:33 for 'create' @ L264, false for 'create' @ L300, evaluation error at L264:33 for 'update' @ L264, false for 'update' @ L300, evaluation error at L280:26 for 'create' @ L280, false for 'create' @ L300, false for 'update' @ L300, false for 'create' @ L280, false for 'create' @ L300, false for 'update' @ L264, false for 'update' @ L300, false for 'update' @ L237, false for 'update' @ L300
+✔ agenda mutation with existing job must update source version atomically (142.615872ms)
+[2026-10-20T13:35:25.199Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x86aa0828 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+evaluation error at L225:33 for 'create' @ L225, false for 'create' @ L300, evaluation error at L225:33 for 'update' @ L225, false for 'update' @ L300, false for 'create' @ L225, false for 'create' @ L300
+[2026-10-20T13:35:25.215Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x86aa0829 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+evaluation error at L225:33 for 'create' @ L225, false for 'create' @ L300, evaluation error at L225:33 for 'update' @ L225, false for 'update' @ L300, false for 'create' @ L225, false for 'create' @ L300
+[2026-10-20T13:35:25.232Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x86aa082a error. Code: 7 Message: 7 PERMISSION_DENIED: 
+evaluation error at L225:33 for 'create' @ L225, false for 'create' @ L300, evaluation error at L225:33 for 'update' @ L225, false for 'update' @ L300, false for 'create' @ L225, false for 'create' @ L300
+[2026-10-20T13:35:25.247Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x86aa082b error. Code: 7 Message: 7 PERMISSION_DENIED: 
+evaluation error at L225:33 for 'create' @ L225, false for 'create' @ L300, evaluation error at L225:33 for 'update' @ L225, false for 'update' @ L300, false for 'create' @ L225, false for 'create' @ L300
+[2026-10-20T13:35:25.263Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x86aa082c error. Code: 7 Message: 7 PERMISSION_DENIED: 
+evaluation error at L225:33 for 'create' @ L225, false for 'create' @ L300, evaluation error at L225:33 for 'update' @ L225, false for 'update' @ L300, false for 'create' @ L225, false for 'create' @ L300
+[2026-10-20T13:35:25.279Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x86aa082d error. Code: 7 Message: 7 PERMISSION_DENIED: 
+evaluation error at L225:33 for 'create' @ L225, false for 'create' @ L300, evaluation error at L225:33 for 'update' @ L225, false for 'update' @ L300, false for 'create' @ L225, false for 'create' @ L300
+[2026-10-20T13:35:25.294Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x86aa082e error. Code: 7 Message: 7 PERMISSION_DENIED: 
+evaluation error at L225:33 for 'create' @ L225, false for 'create' @ L300, evaluation error at L225:33 for 'update' @ L225, false for 'update' @ L300, false for 'create' @ L225, false for 'create' @ L300
+✔ invalid due, lead, agenda ID and status cannot queue (159.985689ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1295.122002

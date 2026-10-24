@@ -1,0 +1,16 @@
+{
+  "project": "mobile-app-3479f",
+  "fixtureUids": [
+    "uzKmqK2xVqhoQpokJmUpfOh2rMt2"
+  ],
+  "deleted": [
+    "users/uzKmqK2xVqhoQpokJmUpfOh2rMt2/transactions/aNGybclXxl7aM51v7nDK",
+    "users/uzKmqK2xVqhoQpokJmUpfOh2rMt2/transactions/yQKLtGdF3f7xHI6yxESa",
+    "users/uzKmqK2xVqhoQpokJmUpfOh2rMt2/months/2026-10",
+    "users/uzKmqK2xVqhoQpokJmUpfOh2rMt2/state/core",
+    "users/uzKmqK2xVqhoQpokJmUpfOh2rMt2/operations/YykTwP6Ux89roWqoumYs",
+    "users/uzKmqK2xVqhoQpokJmUpfOh2rMt2/operations/yVlmoTXk19VbaCgY6Rfb"
+  ],
+  "verifiedEmpty": true,
+  "modelCalls": 0
+}

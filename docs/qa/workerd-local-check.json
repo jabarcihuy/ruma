@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-19",
+  "scope": "Actual local Cloudflare workerd through Wrangler; unauthenticated rejection only; not deployed CPU proof",
+  "modelRequests": 0,
+  "results": [
+    {
+      "name": "no_auth",
+      "httpStatus": 401,
+      "body": {
+        "error": "unauthenticated"
+      },
+      "wallTimeMs": 79,
+      "passed": true
+    },
+    {
+      "name": "forged_auth",
+      "httpStatus": 401,
+      "body": {
+        "error": "unauthenticated"
+      },
+      "wallTimeMs": 18,
+      "passed": true
+    }
+  ],
+  "overallPassed": true
+}

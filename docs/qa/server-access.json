@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-19",
+  "identity": "ruma-ai-proxy@mobile-app-3479f.iam.gserviceaccount.com",
+  "projectId": "mobile-app-3479f",
+  "uniqueId": "116123708196313408124",
+  "googleKeyId": "cdc3addd69ec6ff2e6e3812dd0f096095f825a94",
+  "role": "roles/datastore.user",
+  "credentialOrigin": "locally generated RSA private key; public X509 certificate uploaded",
+  "workerSecrets": [
+    "GOOGLE_SERVICE_ACCOUNT",
+    "NARAROUTER_API_KEY"
+  ],
+  "privateFileMode": "0600",
+  "privateDirectoryMode": "0700",
+  "firebaseFunctionsOrBillingEnabled": false,
+  "fcmRoleGranted": false
+}

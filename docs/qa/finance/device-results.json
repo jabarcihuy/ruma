@@ -1,0 +1,16 @@
+{
+  "project": "demo-ruma",
+  "ownerUid": "9dbknFjt81p5OLAkYk7cWd4LUTmd",
+  "otherUid": "3bpT8Kj2mUhne9oVgsFNpsRVzHr7",
+  "uiCreateIncomeExpense": true,
+  "uiEditKeepsId": true,
+  "deleteCancelAndConfirm": true,
+  "budgetNeverChangesBalance": true,
+  "crossMonthTypeReversal": true,
+  "idempotentRetry": true,
+  "staleVersionRejected": true,
+  "offlineNotQueued": true,
+  "agendaInteroperability": true,
+  "accountIsolation": true,
+  "productionWrites": 0
+}

@@ -1,0 +1,23 @@
+{
+  "model": "glm-5.3-flash",
+  "choices": [
+    {
+      "finish_reason": "tool_calls",
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"items\": [{\"action\": \"create_transaction\", \"amountRupiah\": 18000, \"categoryId\": \"food\", \"deadlineLocal\": null, \"durationMinutes\": null, \"localDate\": \"2026-10-21\", \"sourceQuote\": \"Tadi makan 18 ribu\", \"startLocal\": null, \"title\": \"Makan\", \"transactionStatus\": \"actual\", \"transactionType\": \"expense\"}]}",
+              "name": "prepare_draft"
+            },
+            "id": "call_7e9fbe116317439fb2be366c",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      }
+    }
+  ]
+}

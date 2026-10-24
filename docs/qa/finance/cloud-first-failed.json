@@ -1,0 +1,15 @@
+{
+  "project": "mobile-app-3479f",
+  "suite": "finance_cloud_test",
+  "fixtureUids": [
+    "uzKmqK2xVqhoQpokJmUpfOh2rMt2"
+  ],
+  "authFixturesDeleted": [
+    "uzKmqK2xVqhoQpokJmUpfOh2rMt2"
+  ],
+  "passed": false,
+  "failure": "Cloud test omitted existing month version; repository correctly rejected budget before writing",
+  "fixtureIdentityEvidence": "cloud-first-failed.log RUMA_FINANCE_SYNTHETIC_UID marker after fresh sign-in",
+  "authDeletionEvidence": "SDK finally completed successfully; sign-out notification in cloud-first-failed.log; no cleanup exception",
+  "modelCalls": 0
+}

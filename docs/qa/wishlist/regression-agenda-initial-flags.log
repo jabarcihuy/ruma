@@ -1,0 +1,49 @@
+✔ first agenda initializes core atomically; same receipt does not duplicate (716.777185ms)
+✔ owner list works; cross-account and unauthenticated reads/writes are denied (218.73852ms)
+✔ edit and complete increment entity version and agenda revision (163.58268ms)
+✖ soft delete is atomic and tombstones cannot be edited or hard deleted (148.827359ms)
+✔ missing receipt or missing entity rolls back the whole operation (93.400352ms)
+✔ invalid shape, duration, paired time, deadline, class and zone are rejected (285.582507ms)
+✔ unscheduled tasks are supported (52.212994ms)
+✔ agenda operations cannot forge balances or finance revisions (130.694326ms)
+[2026-10-21T17:37:23.752Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x372d1fe2 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'update' @ L424
+[2026-10-21T17:37:23.762Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x372d1fe3 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'delete' @ L424
+✔ created timestamps and operation receipts are immutable (118.844378ms)
+✔ wrong receipt target or version cannot authorize changes (96.440719ms)
+✔ concurrent submissions against the same revision have one winner (80.893443ms)
+[2026-10-21T17:37:23.971Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x372d1ff5 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L424, false for 'update' @ L424
+[2026-10-21T17:37:23.991Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x372d1ff7 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L354, false for 'create' @ L424, false for 'update' @ L356, false for 'update' @ L424
+✖ all unsupported feature and server paths remain closed (57.631299ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 10
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2474.417921
+
+✖ failing tests:
+
+test at backend/tests/agenda.rules.test.mjs:49:1
+✖ soft delete is atomic and tombstones cannot be edited or hard deleted (148.827359ms)
+  Error: Expected request to fail, but it succeeded.
+      at file:///home/ael/DATA/project%20on%20linux/mobileapp/ruma/backend/node_modules/@firebase/rules-unit-testing/dist/esm/index.esm.js:572:31
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///home/ael/DATA/project%20on%20linux/mobileapp/ruma/backend/tests/agenda.rules.test.mjs:51:232
+      at async check (file:///home/ael/DATA/project%20on%20linux/mobileapp/ruma/backend/tests/agenda.rules.test.mjs:18:80)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+
+test at backend/tests/agenda.rules.test.mjs:76:1
+✖ all unsupported feature and server paths remain closed (57.631299ms)
+  Error: Expected request to fail, but it succeeded.
+      at file:///home/ael/DATA/project%20on%20linux/mobileapp/ruma/backend/node_modules/@firebase/rules-unit-testing/dist/esm/index.esm.js:572:31
+      at async file:///home/ael/DATA/project%20on%20linux/mobileapp/ruma/backend/tests/agenda.rules.test.mjs:77:501
+      at async check (file:///home/ael/DATA/project%20on%20linux/mobileapp/ruma/backend/tests/agenda.rules.test.mjs:18:80)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)

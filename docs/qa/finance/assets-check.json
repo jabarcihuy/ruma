@@ -1,0 +1,72 @@
+{
+  "date": "2026-10-19",
+  "figmaFile": "FE73TkpfpJrSuEX97IdrTX",
+  "designNodes": [
+    "144:11489",
+    "144:11753",
+    "144:11905",
+    "144:12391",
+    "144:12702",
+    "144:13661",
+    "144:13866"
+  ],
+  "localAssets": [
+    {
+      "path": "design/assets/ruma/icons/wallet.svg",
+      "bytes": 771
+    },
+    {
+      "path": "design/assets/ruma/icons/message-circle.svg",
+      "bytes": 588
+    },
+    {
+      "path": "design/assets/ruma/icons/settings-2.svg",
+      "bytes": 319
+    },
+    {
+      "path": "design/assets/ruma/icons/circle-alert.svg",
+      "bytes": 327
+    },
+    {
+      "path": "design/assets/ruma/icons/search.svg",
+      "bytes": 270
+    },
+    {
+      "path": "design/assets/ruma/icons/utensils.svg",
+      "bytes": 314
+    },
+    {
+      "path": "design/assets/ruma/icons/bus-front.svg",
+      "bytes": 404
+    },
+    {
+      "path": "design/assets/ruma/icons/house.svg",
+      "bytes": 480
+    },
+    {
+      "path": "design/assets/ruma/icons/chevron-right.svg",
+      "bytes": 232
+    },
+    {
+      "path": "design/assets/ruma/icons/calendar-days.svg",
+      "bytes": 478
+    },
+    {
+      "path": "design/assets/ruma/icons/arrow-left.svg",
+      "bytes": 257
+    },
+    {
+      "path": "design/assets/ruma/illustrations/illustration-wallet.svg",
+      "bytes": 933
+    }
+  ],
+  "iconRenderer": "RumaIcon: fixed equal width/height, BoxFit.contain",
+  "walletIllustrationSlot": {
+    "width": 200,
+    "height": 160,
+    "fit": "contain"
+  },
+  "navbar": "existing shared MainShell; native system status bar",
+  "dynamicValues": "actual selected-month ledger; not Figma sample numbers",
+  "screenshotReview": "Dashboard, transaction form/detail, report and home inspected; icons contain square slots; illustration wallet 200x160"
+}

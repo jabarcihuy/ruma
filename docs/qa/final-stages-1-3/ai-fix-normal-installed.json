@@ -1,0 +1,13 @@
+{
+  "apk": "output/apk/ruma-ai-output-guard.apk",
+  "sha256": "03c1837417af11b5aa9aebbbed6cdf5c2b84988f1b3a7a08dcae90893416e268",
+  "installedSha256Matches": true,
+  "coldLaunch": "Status ok",
+  "harnessReplaced": true,
+  "target": "lib/main.dart",
+  "abi": "x86_64",
+  "mode": "debug",
+  "reverseEmpty": true,
+  "font": "1.0",
+  "stayOn": "1"
+}

@@ -1,0 +1,94 @@
+i  emulators: Starting emulators: firestore
+i  emulators: Detected demo project ID "demo-ruma", emulated services will use a demo configuration and attempts to access non-emulated services for this project will fail.
+i  firestore: Firestore Emulator logging to firestore-debug.log
+✔  firestore: Firestore Emulator was started in standard edition.
+✔  firestore: Firestore Emulator UI websocket is running on 9150.
+i  Running script: cd backend && RUMA_AGENT_RULES=1 FIRESTORE_EMULATOR_HOST=127.0.0.1:8086 /home/ael/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node --test tests/finance.rules.test.mjs && RUMA_AGENT_RULES=1 FIRESTORE_EMULATOR_HOST=127.0.0.1:8086 /home/ael/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node --test tests/agenda.rules.test.mjs
+✔ expense initializes negative balance and exact monthly/category totals (2915.212069ms)
+✔ income and retry are atomic and do not double count (239.457378ms)
+✔ edit amount, category, type and month reverses old contribution (446.732117ms)
+[2026-10-19T15:36:12.632Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x784c81a1 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'delete' @ L249
+[2026-10-19T15:36:12.652Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x784c81a2 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'update' @ L249
+✔ soft delete reverses totals, tombstone and receipts remain immutable (377.138399ms)
+✔ budget alone initializes core and changing it never changes money (309.734088ms)
+✔ category budget cannot exceed total or exist without a total (205.727533ms)
+✔ valid shape, real past dates, integer amount and category/type enforced (565.281519ms)
+✔ forged lifetime balances and agenda revision rejected with rollback (226.609538ms)
+✔ forged period totals/category sums/budgets rejected (252.327428ms)
+[2026-10-19T15:36:14.369Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x784c8231 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+evaluation error at L206:33 for 'create' @ L206, false for 'create' @ L249, evaluation error at L206:33 for 'update' @ L206, false for 'update' @ L249, Null value error. for 'create' @ L206, false for 'create' @ L249
+[2026-10-19T15:36:14.389Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x784c8232 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+evaluation error at L213:33 for 'create' @ L213, false for 'create' @ L249, evaluation error at L213:33 for 'update' @ L213, false for 'update' @ L249, false for 'create' @ L213, false for 'create' @ L249
+✔ standalone core/month writes and receipt mismatch rejected (176.028043ms)
+✔ owner read permitted; other account and unauthenticated data inaccessible (295.204532ms)
+✔ concurrent submissions either serialize or reject without partial data; stable retry reconciles totals (194.324771ms)
+✔ stale version cannot overwrite newer transaction (162.178469ms)
+✔ budget operation cannot alter income, expenses or category totals (107.141123ms)
+[2026-10-19T15:36:15.182Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x784c8265 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L249, false for 'update' @ L249
+[2026-10-19T15:36:15.198Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x784c8267 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L249, false for 'update' @ L249
+[2026-10-19T15:36:15.212Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x784c8268 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L249, false for 'update' @ L249
+[2026-10-19T15:36:15.226Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x784c8269 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L249, false for 'update' @ L249
+✔ server counters, reminders, devices and chat remain closed (81.974479ms)
+✔ omitting either affected month rejects cross-month edits atomically (176.596474ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 16
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6996.286527
+✔ first agenda initializes core atomically; same receipt does not duplicate (597.421402ms)
+✔ owner list works; cross-account and unauthenticated reads/writes are denied (183.4741ms)
+✔ edit and complete increment entity version and agenda revision (158.005924ms)
+[2026-10-19T15:36:16.824Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x2a4305f2 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'delete' @ L249
+✔ soft delete is atomic and tombstones cannot be edited or hard deleted (143.418869ms)
+✔ missing receipt or missing entity rolls back the whole operation (90.646423ms)
+✔ invalid shape, duration, paired time, deadline, class and zone are rejected (283.187957ms)
+✔ unscheduled tasks are supported (61.753549ms)
+✔ agenda operations cannot forge balances or finance revisions (144.730512ms)
+[2026-10-19T15:36:17.523Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x2a43063e error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'update' @ L249
+[2026-10-19T15:36:17.531Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x2a43063f error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'delete' @ L249
+✔ created timestamps and operation receipts are immutable (123.956114ms)
+✔ wrong receipt target or version cannot authorize changes (74.366133ms)
+✔ concurrent submissions against the same revision have one winner (72.876799ms)
+[2026-10-19T15:36:17.707Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x2a430651 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L249, false for 'update' @ L249
+[2026-10-19T15:36:17.722Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x2a430653 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L197, false for 'create' @ L249, false for 'update' @ L199, false for 'update' @ L249
+✖ all unsupported feature and server paths remain closed (49.105807ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 11
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2274.908065
+
+✖ failing tests:
+
+test at tests/agenda.rules.test.mjs:76:1
+✖ all unsupported feature and server paths remain closed (49.105807ms)
+  Error: Expected request to fail, but it succeeded.
+      at file:///home/ael/DATA/project%20on%20linux/mobileapp/ruma/backend/node_modules/@firebase/rules-unit-testing/dist/esm/index.esm.js:572:31
+      at async file:///home/ael/DATA/project%20on%20linux/mobileapp/ruma/backend/tests/agenda.rules.test.mjs:77:343
+      at async check (file:///home/ael/DATA/project%20on%20linux/mobileapp/ruma/backend/tests/agenda.rules.test.mjs:18:80)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+⚠  Script exited unsuccessfully (code 1)
+i  emulators: Shutting down emulators.
+i  firestore: Stopping Firestore Emulator
+i  hub: Stopping emulator hub
+i  logging: Stopping Logging Emulator
+
+Error: Script "cd backend && RUMA_AGENT_RULES=1 FIRESTORE_EMULATOR_HOST=127.0.0.1:8086 /home/ael/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node --test tests/finance.rules.test.mjs && RUMA_AGENT_RULES=1 FIRESTORE_EMULATOR_HOST=127.0.0.1:8086 /home/ael/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node --test tests/agenda.rules.test.mjs" exited with code 1

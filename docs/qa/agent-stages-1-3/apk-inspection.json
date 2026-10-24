@@ -1,0 +1,10 @@
+{
+  "target": "lib/main.dart",
+  "abi": "x86_64",
+  "mode": "debug",
+  "apk": "output/apk/ruma-agent-tools-preview.apk",
+  "bytes": 157854885,
+  "sha256": "549f44d2f37bd0565f0582ab120d549fafd09ba0235f7bbafd7d1c7f58a8d315",
+  "exactServerSecretMatches": 0,
+  "privateFileEntries": []
+}

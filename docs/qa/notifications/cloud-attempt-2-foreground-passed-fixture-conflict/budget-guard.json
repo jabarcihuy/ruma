@@ -1,0 +1,18 @@
+{
+  "project": "mobile-app-3479f",
+  "fixtureUids": [
+    "92CHv05w0rSDO0rEO1w7hNl7V0D3"
+  ],
+  "jobAttempts": 0,
+  "budget": 3,
+  "stoppedAtBudget": false,
+  "states": [
+    {
+      "agendaId": "czdHoO3J6ZZcJ5v0WKGb",
+      "status": "queued",
+      "attempts": 0,
+      "error": null,
+      "results": {}
+    }
+  ]
+}

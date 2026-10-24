@@ -1,0 +1,36 @@
+// Explicit one-run cleanup: only UIDs emitted by the authorized Android smoke.
+// Never scans users or touches usage, finance, or other accounts.
+import {readFile, writeFile} from 'node:fs/promises';
+import {googleAccess} from '../src/quota.mjs';
+const root = new URL('../../', import.meta.url);
+if (process.env.RUMA_CLEAN_AGENDA_FIXTURES !== 'mobile-app-3479f') throw Error('explicit_cleanup_flag_required');
+const result = JSON.parse(await readFile(new URL('docs/qa/agenda/cloud-results.json', root), 'utf8'));
+if (result.project !== 'mobile-app-3479f' || !result.passed || result.fixtureUids?.length !== 2 ||
+    !result.fixtureUids.every(uid => /^[A-Za-z0-9_-]{20,128}$/.test(uid) && result.authFixturesDeleted.includes(uid))) {
+  throw Error('unexpected_fixture_manifest');
+}
+const token = await googleAccess({FIREBASE_PROJECT_ID: result.project,
+  GOOGLE_SERVICE_ACCOUNT: await readFile(new URL('.local/service-account-ruma-proxy.json', root), 'utf8')});
+const base = 'https://firestore.googleapis.com/v1/projects/mobile-app-3479f/databases/(default)/documents';
+const headers = {Authorization: `Bearer ${token}`};
+const report = {project: result.project, fixtureUids: result.fixtureUids, deleted: [], verifiedEmpty: false, modelCalls: 0};
+for (const uid of result.fixtureUids) {
+  for (const collection of ['agenda', 'state', 'operations']) {
+    const path = `${base}/users/${uid}/${collection}`;
+    const list = await fetch(`${path}?pageSize=20`, {headers});
+    if (!list.ok) throw Error(`fixture_list_${list.status}`);
+    const data = await list.json();
+    if (data.nextPageToken || (data.documents?.length ?? 0) > 10) throw Error('fixture_scope_exceeded');
+    for (const doc of data.documents ?? []) {
+      if (!doc.name.startsWith(`projects/mobile-app-3479f/databases/(default)/documents/users/${uid}/${collection}/`)) throw Error('path_mismatch');
+      const deletion = await fetch(`https://firestore.googleapis.com/v1/${doc.name}`, {method: 'DELETE', headers});
+      if (!deletion.ok) throw Error(`fixture_delete_${deletion.status}`);
+      report.deleted.push(doc.name.split('/documents/')[1]);
+    }
+    const verify = await fetch(`${path}?pageSize=1`, {headers});
+    if (!verify.ok || ((await verify.json()).documents?.length ?? 0) > 0) throw Error('fixture_not_empty');
+  }
+}
+report.verifiedEmpty = true;
+await writeFile(new URL('docs/qa/agenda/cloud-cleanup.json', root), JSON.stringify(report, null, 2) + '\n');
+console.log(JSON.stringify({verifiedEmpty: true, documentsDeleted: report.deleted.length, authAccountsDeleted: result.authFixturesDeleted.length}));

@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-19",
+  "apk": "output/apk/ruma-agenda-preview.apk",
+  "buildMode": "profile",
+  "target": "lib/main.dart",
+  "firebaseMode": "production",
+  "bytes": 40261935,
+  "sha256": "59959af9f1985ca0d9aa39faef0378d10156f51959d14cf82b4a757de623328c",
+  "knownServerSecretValuesChecked": 2,
+  "knownServerSecretMatches": [],
+  "disallowedPrivateFileEntries": [],
+  "scope": "Exact current AI key/private PEM checks, UTF-8/UTF-16; not a comprehensive security audit",
+  "courseReleaseSigningComplete": false,
+  "packagedNativeAbis": [
+    "arm64-v8a",
+    "armeabi-v7a",
+    "x86_64"
+  ],
+  "androidAbi": "arm64-v8a",
+  "installedOnPhysicalAndroid": true,
+  "coldLaunchStatus": "ok",
+  "integrationTestTarget": false,
+  "compiledAppLibraries": [
+    "lib/arm64-v8a/libapp.so"
+  ],
+  "foregroundPackageVerified": true
+}

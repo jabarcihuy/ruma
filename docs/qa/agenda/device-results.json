@@ -1,0 +1,19 @@
+{
+  "project": "demo-ruma",
+  "ownerUid": "r15ApsdKk7RtmaD3M4BMdbEcMxg1",
+  "otherUid": "os7hoTrVUlAJTQhxgPMaaYvAbHHA",
+  "manualCreate": true,
+  "editKeepsId": true,
+  "completeAndReopen": true,
+  "deleteCancel": true,
+  "softDelete": true,
+  "conflictRejected": true,
+  "adjacentAllowed": true,
+  "idempotentRetry": true,
+  "staleVersionRejected": true,
+  "offlineDidNotQueue": true,
+  "unauthenticatedDenied": true,
+  "otherUserDenied": true,
+  "oldSessionDiscarded": true,
+  "productionWrites": 0
+}

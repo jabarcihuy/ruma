@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-19",
+  "scope": "Firestore REST emulator conditional atomic commits; OAuth mocked with ephemeral synthetic key",
+  "productionWrites": 0,
+  "concurrentReservations": 8,
+  "globalDailyLimit": 3,
+  "succeeded": 3,
+  "rejected": 5,
+  "errors": [
+    "quota_conflict",
+    "quota_conflict",
+    "quota_conflict",
+    "quota_conflict",
+    "quota_conflict"
+  ],
+  "persistedCount": 3,
+  "oauthRequests": 1,
+  "passed": true
+}

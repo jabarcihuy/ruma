@@ -1,0 +1,29 @@
+{
+  "project": "mobile-app-3479f",
+  "suite": "notifications_cloud_test",
+  "fixtureUids": [
+    "j14KgPGnLdMBObscRzqLCRlcqkl1"
+  ],
+  "authFixturesDeleted": [
+    "j14KgPGnLdMBObscRzqLCRlcqkl1"
+  ],
+  "cases": [
+    "production device registration",
+    "real FCM background notification tapped to matching agenda"
+  ],
+  "modelCalls": 0,
+  "jobsCreated": 1,
+  "inboxCount": 1,
+  "jobAttempts": 1,
+  "passed": true,
+  "dispatchBeforeCleanup": [
+    {
+      "agendaId": "Sa6oyRwqBEeOun8IuorZ",
+      "attempts": 1,
+      "status": "sent",
+      "results": {
+        "users/j14KgPGnLdMBObscRzqLCRlcqkl1/devices/zsAEVezUjDOHSFYtUwza": "sent"
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "projectId": "demo-ruma",
+  "productionWrites": 0,
+  "passed": 6,
+  "cases": [
+    "goal initializes an empty core without adding money",
+    "deposit, multiple goals, reconciliation, 100 percent and idempotent retry",
+    "overdraft, over-withdrawal, stale version, request collision rollback",
+    "goal edit and withdrawal preserve ledger, reports, budget and recorded balance",
+    "offline write rejected without queued mutation",
+    "UID lifecycle, cross-account queries and signed-out isolation"
+  ]
+}

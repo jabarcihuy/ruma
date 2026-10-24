@@ -1,0 +1,60 @@
+{
+  "projectId": "demo-ruma",
+  "productionWrites": 0,
+  "cases": [
+    {
+      "name": "goals",
+      "passed": true
+    },
+    {
+      "name": "transfer-accounting",
+      "passed": true
+    },
+    {
+      "name": "funding-limits",
+      "passed": true
+    },
+    {
+      "name": "retry-and-stale",
+      "passed": true
+    },
+    {
+      "name": "forgery",
+      "passed": true
+    },
+    {
+      "name": "goal-validation",
+      "passed": true
+    },
+    {
+      "name": "movement-validation",
+      "passed": true
+    },
+    {
+      "name": "coupling",
+      "passed": true
+    },
+    {
+      "name": "immutable-history",
+      "passed": true
+    },
+    {
+      "name": "isolation",
+      "passed": true
+    },
+    {
+      "name": "concurrency",
+      "passed": true
+    },
+    {
+      "name": "negative-available",
+      "passed": true
+    },
+    {
+      "name": "wishlist-icons",
+      "passed": true
+    }
+  ],
+  "passed": 13,
+  "failed": 0
+}

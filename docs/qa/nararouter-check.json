@@ -1,0 +1,130 @@
+{
+  "date": "2026-10-19",
+  "provider": "NaraRouter",
+  "requestedModel": "glm-5.3-flash",
+  "syntheticDataOnly": true,
+  "databaseWrites": 0,
+  "modelRequests": 5,
+  "tests": [
+    {
+      "name": "model_catalog",
+      "passed": true,
+      "httpStatus": 200,
+      "latencyMs": 1530,
+      "exactModelListed": true
+    },
+    {
+      "name": "plain_message",
+      "passed": true,
+      "httpStatus": 200,
+      "latencyMs": 17291,
+      "usage": {
+        "completion_tokens": 174,
+        "prompt_tokens": 27,
+        "total_tokens": 201
+      },
+      "evidence": "nararouter-minimal-probe.json; reused, not resent"
+    },
+    {
+      "name": "function_call_arguments",
+      "passed": true,
+      "httpStatus": 200,
+      "responseModel": "glm-5.3-flash",
+      "usage": {
+        "completion_tokens": 46,
+        "prompt_tokens": 222,
+        "total_tokens": 268
+      },
+      "finishReason": "tool_calls",
+      "latencyMs": 20890
+    },
+    {
+      "name": "tool_result_round_trip",
+      "passed": true,
+      "httpStatus": 200,
+      "responseModel": "glm-5.3-flash",
+      "usage": {
+        "completion_tokens": 103,
+        "prompt_tokens": 290,
+        "total_tokens": 393
+      },
+      "finishReason": "stop",
+      "latencyMs": 6244,
+      "reply": "Sisa anggaran Oktober 2026 adalah **Rp 320.000**.\n\nDetailnya:\n- Anggaran: Rp 1.500.000\n- Pengeluaran: Rp 1.180.000\n- Sisa: Rp 320.000"
+    },
+    {
+      "name": "combined_draft_extraction",
+      "passed": true,
+      "httpStatus": 200,
+      "responseModel": "glm-5.3-flash",
+      "usage": {
+        "completion_tokens": 4932,
+        "prompt_tokens": 493,
+        "total_tokens": 5425
+      },
+      "finishReason": "tool_calls",
+      "latencyMs": 30416,
+      "draft": {
+        "items": [
+          {
+            "action": "create_agenda",
+            "amountRupiah": null,
+            "categoryId": null,
+            "durationMinutes": 60,
+            "localDate": "2026-10-19",
+            "title": "Revisi laporan",
+            "transactionType": null
+          },
+          {
+            "action": "create_agenda",
+            "amountRupiah": null,
+            "categoryId": null,
+            "durationMinutes": 30,
+            "localDate": "2026-10-19",
+            "title": "Baca jurnal",
+            "transactionType": null
+          },
+          {
+            "action": "create_transaction",
+            "amountRupiah": 18000,
+            "categoryId": "food",
+            "durationMinutes": null,
+            "localDate": "2026-10-18",
+            "title": "Makan",
+            "transactionType": "expense"
+          },
+          {
+            "action": "create_transaction",
+            "amountRupiah": 15000,
+            "categoryId": "other",
+            "durationMinutes": null,
+            "localDate": "2026-10-18",
+            "title": "Cetak laporan",
+            "transactionType": "expense"
+          }
+        ]
+      }
+    },
+    {
+      "name": "future_purchase_is_not_actual_expense",
+      "passed": false,
+      "httpStatus": 200,
+      "responseModel": "glm-5.3-flash",
+      "usage": {
+        "completion_tokens": 1278,
+        "prompt_tokens": 469,
+        "total_tokens": 1747
+      },
+      "finishReason": "tool_calls",
+      "latencyMs": 22201,
+      "reply": "",
+      "limitation": "No mutation tool call is checked automatically; wording requires review. One sample is not a reliability estimate."
+    }
+  ],
+  "scope": "Direct provider compatibility only; not a deployed proxy or app evaluation",
+  "payloadProfile": "minimal model/messages/tools; no optional generation settings",
+  "reusedBaselineModelRequests": 1,
+  "overallPassed": false,
+  "baselineDate": "2026-10-18",
+  "note": "Baseline reused from prior-day minimal probe; four new model requests ran after midnight Asia/Jakarta. Initial failed future-case arguments were not captured."
+}

@@ -1,0 +1,124 @@
+Resolving dependencies...
+Downloading packages...
+  material_color_utilities 0.13.0 (0.13.1 available)
+  test_api 0.7.12 (0.7.15 available)
+  xml 7.0.1 (7.1.0 available)
+Got dependencies!
+3 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Installing build/app/outputs/flutter-apk/app-debug.apk...           8.4s
+VMServiceFlutterDriver: Connecting to Flutter application at http://127.0.0.1:37667/syd7pmEXEuk=/
+VMServiceFlutterDriver: Isolate found with number: 999365555217619
+VMServiceFlutterDriver: Isolate 999365555217619 is runnable.
+VMServiceFlutterDriver: Isolate is paused at start.
+VMServiceFlutterDriver: Attempting to resume isolate
+D/ProfileInstaller(22195): Installing profile for id.ruma.app
+I/flutter (22195): 00:00 +0: production Android Firebase SDK: anonymous linking, sign out, sign in, validation and navigation
+VMServiceFlutterDriver: Connected to Flutter application.
+I/Choreographer(22195): Skipped 57 frames!  The application may be doing too much work on its main thread.
+I/GrallocExtra(22195): gralloc_extra_query:is_SW3D 0
+I/GrallocExtra(22195): gralloc_extra_query:is_SW3D 0
+W/libc    (22195): Access denied finding property "ro.vendor.display.iris_x7.support"
+W/1.raster(22195): type=1400 audit(0.0:24472): avc:  denied  { read } for  name="u:object_r:vendor_displayfeature_prop:s0" dev="tmpfs" ino=593 scontext=u:r:untrusted_app:s0:c170,c257,c512,c768 tcontext=u:object_r:vendor_displayfeature_prop:s0 tclass=file permissive=0 app=id.ruma.app
+D/BLASTBufferQueue(22195): [3f6dc7d SurfaceView[id.ruma.app/id.ruma.app.MainActivity]#1](f:0,a:1) acquireNextBufferLocked size=1080x2400 mFrameNumber=1 applyTransaction=true mTimestamp=19233809352684(auto) mPendingTransactions.size=0 graphicBufferId=95326799134730 transform=0
+I/Choreographer(22195): Skipped 56 frames!  The application may be doing too much work on its main thread.
+D/VRI[MainActivity](22195): vri.Setup new sync=wmsSync-VRI[MainActivity]#1
+I/SKIA    (22195): CreateGraphicsPipeline pipeline cache hit. elpased time: 0.20 ms.
+D/BLASTBufferQueue(22195): [VRI[MainActivity]#0](f:0,a:1) acquireNextBufferLocked size=1080x2400 mFrameNumber=1 applyTransaction=true mTimestamp=19233972530530(auto) mPendingTransactions.size=0 graphicBufferId=95326799134738 transform=0
+D/VRI[MainActivity](22195): vri.reportDrawFinished 0 0 Rect(0, 0 - 1080, 2400)
+I/NativeTurboSchedManager(22195): Load libmiui_runtime
+I/FirebaseApp(22195): Device unlocked: initializing all Firebase APIs for app [DEFAULT]
+I/HandWritingStubImpl(22195): refreshLastKeyboardType: 1
+I/HandWritingStubImpl(22195): getCurrentKeyboardType: 1
+D/InsetsController(22195): hide(ime(), fromIme=false)
+I/ImeTracker(22195): id.ruma.app:2fe9aa24: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+I/HandWritingStubImpl(22195): getCurrentKeyboardType: 1
+W/InsetsSource(22195): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(22195): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(22195): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(22195): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+D/FirebaseAuth(22195): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth(22195): Notifying auth state listeners about a sign-out event.
+D/BufferQueueConsumer(22195): [](id:56b300000002,api:0,p:-1,c:22195) connect: controlledByApp=true
+D/VRI[MainActivity](22195): getMiuiFreeformStackInfo mTmpFrames.miuiFreeFormStackInfo: null
+W/InsetsSource(22195): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(22195): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(22195): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(22195): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(22195): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(22195): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+D/FlutterJNI(22195): Sending viewport metrics to the engine.
+I/SKIA    (22195): CreateGraphicsPipeline pipeline cache hit. elpased time: 0.16 ms.
+I/id.ruma.app(22195): Background concurrent mark compact GC freed 3958KB AllocSpace bytes, 7(148KB) LOS objects, 65% free, 3168KB/9312KB, paused 466us,6.351ms total 41.680ms
+I/SKIA    (22195): CreateGraphicsPipeline pipeline cache hit. elpased time: 6.19 ms.
+W/FinalizerDaemon(22195): type=1400 audit(0.0:24476): avc:  denied  { getopt } for  path="/dev/socket/usap_pool_primary" scontext=u:r:untrusted_app:s0:c170,c257,c512,c768 tcontext=u:r:zygote:s0 tclass=unix_stream_socket permissive=0 app=id.ruma.app
+VMServiceFlutterDriver: request_data message is taking a long time to complete...
+I/id.ruma.app(22195): AssetManager2(0xb400007ab5e44438) locale list changing from [] to [en-US]
+I/id.ruma.app(22195): AssetManager2(0xb400007ab5e47958) locale list changing from [] to [en-US]
+I/id.ruma.app(22195): AssetManager2(0xb400007ab5e49898) locale list changing from [] to [en-US]
+I/id.ruma.app(22195): AssetManager2(0xb400007ab5e4c778) locale list changing from [] to [en-US]
+I/id.ruma.app(22195): AssetManager2(0xb400007ab5e54478) locale list changing from [] to [en-US]
+I/id.ruma.app(22195): AssetManager2(0xb400007ab5e54ab8) locale list changing from [] to [en-US]
+E/id.ruma.app(22195): FrameInsert open fail: No such file or directory
+W/WindowOnBackDispatcher(22195): sendCancelIfRunning: isInProgress=false callback=io.flutter.embedding.android.FlutterActivity$1@e516d62
+W/System  (22195): Ignoring header X-Firebase-Locale because its value was null.
+W/WindowOnBackDispatcher(22195): sendCancelIfRunning: isInProgress=false callback=io.flutter.embedding.android.FlutterActivity$1@e516d62
+E/LB      (22195): fail to open file: No such file or directory
+W/1.raster(22195): type=1400 audit(0.0:24478): avc:  denied  { getattr } for  path="/sys/module/metis/parameters/minor_window_app" dev="sysfs" ino=81117 scontext=u:r:untrusted_app:s0:c170,c257,c512,c768 tcontext=u:object_r:sysfs_migt:s0 tclass=file permissive=0 app=id.ruma.app
+W/System  (22195): Ignoring header X-Firebase-Locale because its value was null.
+D/FirebaseAuth(22195): Notifying id token listeners about user ( rzI9I59rsEQJY6kTD1Hpqoe8Caw1 ).
+D/FirebaseAuth(22195): Notifying auth state listeners about user ( rzI9I59rsEQJY6kTD1Hpqoe8Caw1 ).
+I/id.ruma.app(22195): AssetManager2(0xb400007ab5e6ce38) locale list changing from [] to [en-US]
+I/id.ruma.app(22195): AssetManager2(0xb400007ab5e6e418) locale list changing from [] to [en-US]
+I/id.ruma.app(22195): AssetManager2(0xb400007ab5e6c1b8) locale list changing from [] to [en-US]
+I/id.ruma.app(22195): AssetManager2(0xb400007ab5e69f58) locale list changing from [] to [en-US]
+I/id.ruma.app(22195): AssetManager2(0xb400007ab5e6bb78) locale list changing from [] to [en-US]
+I/id.ruma.app(22195): AssetManager2(0xb400007ab5e6b538) locale list changing from [] to [en-US]
+I/FirebaseAuth(22195): Linking email account with empty reCAPTCHA token
+W/System  (22195): Ignoring header X-Firebase-Locale because its value was null.
+W/System  (22195): Ignoring header X-Firebase-Locale because its value was null.
+D/FirebaseAuth(22195): Notifying id token listeners about user ( rzI9I59rsEQJY6kTD1Hpqoe8Caw1 ).
+W/System  (22195): Ignoring header X-Firebase-Locale because its value was null.
+W/System  (22195): Ignoring header X-Firebase-Locale because its value was null.
+W/System  (22195): Ignoring header X-Firebase-Locale because its value was null.
+D/FirebaseAuth(22195): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth(22195): Notifying auth state listeners about a sign-out event.
+W/WindowOnBackDispatcher(22195): sendCancelIfRunning: isInProgress=false callback=io.flutter.embedding.android.FlutterActivity$1@e516d62
+I/FirebaseAuth(22195): Logging in as ruma-foundation-1792417687654@example.invalid with empty reCAPTCHA token
+W/System  (22195): Ignoring header X-Firebase-Locale because its value was null.
+E/RecaptchaCallWrapper(22195): Initial task failed for action RecaptchaAction(action=signInWithPassword)with exception - The supplied auth credential is incorrect, malformed or has expired.
+I/FirebaseAuth(22195): Logging in as ruma-foundation-1792417687654@example.invalid with empty reCAPTCHA token
+W/System  (22195): Ignoring header X-Firebase-Locale because its value was null.
+W/System  (22195): Ignoring header X-Firebase-Locale because its value was null.
+D/FirebaseAuth(22195): Notifying id token listeners about user ( rzI9I59rsEQJY6kTD1Hpqoe8Caw1 ).
+D/FirebaseAuth(22195): Notifying auth state listeners about user ( rzI9I59rsEQJY6kTD1Hpqoe8Caw1 ).
+W/WindowOnBackDispatcher(22195): sendCancelIfRunning: isInProgress=false callback=io.flutter.embedding.android.FlutterActivity$1@e516d62
+W/System  (22195): Ignoring header X-Firebase-Locale because its value was null.
+W/System  (22195): Ignoring header X-Firebase-Locale because its value was null.
+W/System  (22195): Ignoring header X-Firebase-Locale because its value was null.
+W/System  (22195): Ignoring header X-Firebase-Locale because its value was null.
+D/FirebaseAuth(22195): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth(22195): Notifying auth state listeners about a sign-out event.
+D/FirebaseAuth(22195): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth(22195): Notifying auth state listeners about a sign-out event.
+I/FirebaseAuth(22195): Creating user with ruma-foundation-1792417687654@example.invalid with empty reCAPTCHA token
+W/System  (22195): Ignoring header X-Firebase-Locale because its value was null.
+W/System  (22195): Ignoring header X-Firebase-Locale because its value was null.
+D/FirebaseAuth(22195): Notifying id token listeners about user ( 1stizJWo6LWyCX6lDzARaZVlccf1 ).
+D/FirebaseAuth(22195): Notifying auth state listeners about user ( 1stizJWo6LWyCX6lDzARaZVlccf1 ).
+W/System  (22195): Ignoring header X-Firebase-Locale because its value was null.
+W/System  (22195): Ignoring header X-Firebase-Locale because its value was null.
+W/System  (22195): Ignoring header X-Firebase-Locale because its value was null.
+W/System  (22195): Ignoring header X-Firebase-Locale because its value was null.
+D/FirebaseAuth(22195): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth(22195): Notifying auth state listeners about a sign-out event.
+D/FirebaseAuth(22195): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth(22195): Notifying auth state listeners about a sign-out event.
+W/WindowOnBackDispatcher(22195): sendCancelIfRunning: isInProgress=false callback=io.flutter.embedding.android.FlutterActivity$1@e516d62
+W/id.ruma.app(22195): Binder 0xb400007a95e32900 destroyed after setInheritRt before being parceled.
+W/id.ruma.app(22195): Binder 0xb400007a95e4d1e0 destroyed after setInheritRt before being parceled.
+D/BufferQueueConsumer(22195): [ImageReader-1080x2400f1m3-22195-0](id:56b300000002,api:0,p:-1,c:22195) disconnect: caller 22195
+I/flutter (22195): 01:16 +1: (tearDownAll)
+I/flutter (22195): 01:16 +2: All tests passed!
+All tests passed.
+Leaving the application running.

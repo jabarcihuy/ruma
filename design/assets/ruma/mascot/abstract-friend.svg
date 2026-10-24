@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
+<title>Ruma — Teman Abstrak</title>
+<path id="left-foot" d="M39 99C33 103 28 110 27 116C26 121 31 124 40 124C49 124 56 121 57 116L57 104Z" fill="#CF4924"/>
+<path id="right-foot" d="M77 101L74 115C73 121 81 124 91 123C100 123 104 119 101 115L92 101Z" fill="#CF4924"/>
+<path id="waving-hand" d="M92 66C101 61 108 50 113 45C118 40 124 43 125 49C127 61 115 78 101 85Z" fill="#CF4924"/>
+<path id="body-crest" d="M30 99C20 87 19 69 26 54C32 42 42 34 49 26C51 16 61 5 77 4C89 3 103 7 103 13C103 19 86 22 81 31C99 39 106 53 107 71C109 88 105 102 94 110C79 120 43 117 30 99Z" fill="#CF4924"/>
+<path id="resting-hand" d="M29 65C21 68 10 78 8 88C6 97 13 101 21 97C29 92 35 84 37 76Z" fill="#CF4924"/>
+<path id="arm-separation" d="M29 79C27 86 23 91 19 94" stroke="#A9361C" stroke-width="2.5" stroke-linecap="round"/>
+<path id="cream-face" d="M37 49C49 40 75 36 88 43C101 50 105 67 99 79C92 93 68 96 49 91C32 87 25 76 28 64C29 58 32 53 37 49Z" fill="#FFF6EA"/>
+<ellipse id="left-eye" cx="48" cy="65" rx="4.7" ry="6.5" transform="rotate(-13 48 65)" fill="#20241F"/>
+<ellipse id="right-eye" cx="81" cy="59" rx="4.7" ry="6.5" transform="rotate(-13 81 59)" fill="#20241F"/>
+<ellipse id="left-eye-light" cx="46.6" cy="62.6" rx="1.3" ry="1.9" fill="#FFFFFF"/>
+<ellipse id="right-eye-light" cx="79.6" cy="56.6" rx="1.3" ry="1.9" fill="#FFFFFF"/>
+<path id="smile" d="M59 78C64 82 73 80 78 74" stroke="#20241F" stroke-width="3.7" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,9 @@
+{
+  "project": "demo-ruma",
+  "productionWrites": 0,
+  "modelCalls": 0,
+  "fcmSends": 0,
+  "allLocalSyntheticAttemptsCleaned": true,
+  "authCleanupStatus": 200,
+  "firestoreCleanupStatus": 200
+}

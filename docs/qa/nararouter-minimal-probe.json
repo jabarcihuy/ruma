@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-18",
+  "model": "glm-5.3-flash",
+  "purpose": "Diagnose HTTP 400 with exact minimal model/messages payload; no retries",
+  "tests": [
+    {
+      "name": "catalog_metadata",
+      "httpStatus": 200,
+      "modelMetadata": {
+        "id": "glm-5.3-flash",
+        "object": "model",
+        "owned_by": "byNara",
+        "name": "GLM 5.3 Flash",
+        "context_window": 1000000,
+        "vision": true,
+        "reasoning": true,
+        "payg_enabled": true,
+        "input_idr_per_1k": 0.533714,
+        "output_idr_per_1k": 1.779047,
+        "cache_read_idr_per_1k": 0.177905,
+        "input_idr_per_1m": 533.714,
+        "output_idr_per_1m": 1779.047,
+        "cache_read_idr_per_1m": 177.905
+      },
+      "latencyMs": 1530
+    },
+    {
+      "name": "minimal_message",
+      "httpStatus": 200,
+      "responseModel": "glm-5.3-flash",
+      "finishReason": "stop",
+      "reply": "RUMA_OK",
+      "usage": {
+        "completion_tokens": 174,
+        "prompt_tokens": 27,
+        "total_tokens": 201
+      },
+      "passed": true,
+      "latencyMs": 17291
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "date": "2026-10-21",
+  "stage": "savings-ui",
+  "productionWrites": 21,
+  "analyzer": "clean",
+  "flutterTestsPassed": 75,
+  "newWidgetStoreTests": 8,
+  "candidateRulesTestsPassed": 12,
+  "nativeAndroidCaseGroups": 6,
+  "screenshots": [
+    {
+      "path": "docs/qa/savings-ui/01-savings-empty.png",
+      "size": [
+        1080,
+        2340
+      ],
+      "bytes": 97717
+    },
+    {
+      "path": "docs/qa/savings-ui/02-goal-form.png",
+      "size": [
+        1080,
+        2340
+      ],
+      "bytes": 108404
+    },
+    {
+      "path": "docs/qa/savings-ui/03-deposit-form.png",
+      "size": [
+        1080,
+        2340
+      ],
+      "bytes": 117460
+    },
+    {
+      "path": "docs/qa/savings-ui/04-edit-goal.png",
+      "size": [
+        1080,
+        2340
+      ],
+      "bytes": 113600
+    },
+    {
+      "path": "docs/qa/savings-ui/05-savings-detail.png",
+      "size": [
+        1080,
+        2340
+      ],
+      "bytes": 126188
+    },
+    {
+      "path": "docs/qa/savings-ui/06-savings-list.png",
+      "size": [
+        1080,
+        2340
+      ],
+      "bytes": 132723
+    },
+    {
+      "path": "docs/qa/savings-ui/07-withdrawal-form.png",
+      "size": [
+        1080,
+        2340
+      ],
+      "bytes": 117268
+    },
+    {
+      "path": "docs/qa/savings-ui/08-finance-summary.png",
+      "size": [
+        1080,
+        2340
+      ],
+      "bytes": 162800
+    },
+    {
+      "path": "docs/qa/savings-ui/09-home-summary.png",
+      "size": [
+        1080,
+        2340
+      ],
+      "bytes": 162911
+    }
+  ],
+  "apk": {
+    "path": "output/apk/ruma-savings-ui-candidate.apk",
+    "bytes": 102426639,
+    "sha256": "d85bc7b9bea8986b9125b6c42a654e741a9d4b5ddce9781f173d07017d4154bf",
+    "target": "normal app, debug Android x86_64 (VM), production Firebase configuration",
+    "installedInProduction": false,
+    "releaseSigned": false,
+    "installedInVm": true,
+    "productionFirebaseConfiguration": true,
+    "normalLaunchVerified": true
+  },
+  "candidateRules": {
+    "path": "config/firebase/firestore.savings.rules",
+    "sha256": "338c3dba7a5a55f793ed8894851f44b0f30ba6abc486563e0e2b2ae58fe848f3",
+    "published": true
+  },
+  "activeRules": "config/firebase/firestore.savings.rules",
+  "scopeDeferred": [
+    "expense pie chart",
+    "savings agent tools",
+    "budget code/data removal"
+  ],
+  "cleanup": {
+    "project": "demo-ruma",
+    "auth": "cleared",
+    "firestore": "cleared",
+    "reversePorts": "removed",
+    "normalApkRestored": "output/apk/ruma-ai-output-guard.apk"
+  },
+  "screenshotMethod": "RenderRepaintBoundary from actual Android test app; retained SVG layers explicitly repainted",
+  "localEmulatorsStopped": true,
+  "cloudVerification": {
+    "date": "2026-10-22",
+    "project": "mobile-app-3479f",
+    "caseGroupsPassed": 5,
+    "accountsCreated": 2,
+    "accountsDeleted": 2,
+    "fixtureDocumentsDeleted": 21,
+    "fixtureCollectionsVerifiedEmpty": true,
+    "modelCalls": 0,
+    "fcmCalls": 0,
+    "evidence": [
+      "deployment.json",
+      "cloud-results.json",
+      "cloud-cleanup.json",
+      "launch-normal-apk.log",
+      "normal-apk-launched.png"
+    ]
+  },
+  "productionWritesMeaning": "21 synthetic fixture documents created then deleted; includes updates/retry within these documents, not RPC count"
+}

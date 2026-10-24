@@ -1,0 +1,201 @@
+{
+  "date": "2026-10-20",
+  "dateLabel": "20 OKTOBER 2026 / WIB",
+  "frames": [
+    {
+      "id": "01-welcome",
+      "title": "Sambutan",
+      "status": "LULUS",
+      "checked": "Judul, ilustrasi dan dua CTA terlihat utuh.",
+      "note": "Navigasi akun dibuka lewat route uji; CTA awal belum diketuk."
+    },
+    {
+      "id": "02-signin",
+      "title": "Masuk",
+      "status": "LULUS",
+      "checked": "Form email/kata sandi dan tombol terlihat.",
+      "note": "Submit email/password belum dijalankan pada sesi ini."
+    },
+    {
+      "id": "03-signup",
+      "title": "Daftar",
+      "status": "LULUS",
+      "checked": "Label, syarat 6 karakter dan persetujuan terlihat.",
+      "note": "Pendaftaran email belum di-submit; keterangan berulang sudah dihapus."
+    },
+    {
+      "id": "04-home",
+      "title": "Beranda",
+      "status": "CATATAN",
+      "checked": "Ringkasan agenda dan saldo selesai dimuat.",
+      "note": "Masih lebih sederhana dari Figma; kartu menyisakan banyak ruang kosong."
+    },
+    {
+      "id": "05-agenda",
+      "title": "Agenda",
+      "status": "CATATAN",
+      "checked": "Minggu, kuliah 09.00-10.30 dan tugas terlihat.",
+      "note": "Daftar hari bergulir horizontal; tujuh hari tidak terlihat sekaligus."
+    },
+    {
+      "id": "08-agenda-detail",
+      "title": "Detail agenda",
+      "status": "LULUS",
+      "checked": "Judul panjang, waktu dan aksi tertata.",
+      "note": "Edit/hapus/selesai belum diketuk pada uji tampilan ini."
+    },
+    {
+      "id": "06-task-form",
+      "title": "Form tugas / kegiatan",
+      "status": "LULUS",
+      "checked": "Field, durasi, opsi dan tombol terlihat.",
+      "note": "Form kosong ditampilkan; penyimpanan manual belum di-submit."
+    },
+    {
+      "id": "07-class-form",
+      "title": "Form kuliah",
+      "status": "PERLU REVISI",
+      "checked": "Form kuliah tampil tanpa overflow.",
+      "note": "Tombol bertuliskan Simpan tanpa waktu, padahal waktu wajib. Ubah menjadi Simpan jadwal."
+    },
+    {
+      "id": "23-date-picker",
+      "title": "Pilih tanggal",
+      "status": "LULUS",
+      "checked": "Dialog tanggal tampil; OKE membuka pemilih jam.",
+      "note": "Memakai komponen Material, bukan salinan khusus layout Figma."
+    },
+    {
+      "id": "24-time-picker",
+      "title": "Pilih waktu",
+      "status": "LULUS",
+      "checked": "Format 24 jam dan tombol Batal/OKE terlihat.",
+      "note": "Batal kembali ke form; konfirmasi jam baru belum diuji."
+    },
+    {
+      "id": "09-finance",
+      "title": "Keuangan",
+      "status": "LULUS",
+      "checked": "Saldo Rp1.482.000 dan sisa Rp682.000 sesuai fixture.",
+      "note": "Tautan bagian bawah perlu scroll; riwayat/laporan dibuka lewat route uji."
+    },
+    {
+      "id": "10-expense-form",
+      "title": "Form pengeluaran",
+      "status": "LULUS",
+      "checked": "Jenis, nominal, kategori dan tombol tertata.",
+      "note": "Submit transaksi manual belum dijalankan pada sesi ini."
+    },
+    {
+      "id": "11-income-form",
+      "title": "Form pemasukan",
+      "status": "LULUS",
+      "checked": "Mode Pemasukan dan kategori Uang saku terlihat.",
+      "note": "Submit pemasukan manual belum dijalankan pada sesi ini."
+    },
+    {
+      "id": "12-budget-form",
+      "title": "Form anggaran",
+      "status": "LULUS",
+      "checked": "Batas total/kategori tampil; helper tidak berulang.",
+      "note": "Submit dan validasi batas kategori belum diulang di emulator."
+    },
+    {
+      "id": "13-history",
+      "title": "Riwayat transaksi",
+      "status": "LULUS",
+      "checked": "Dua transaksi fixture dan kontrol filter terlihat.",
+      "note": "Pencarian/filter belum diinteraksikan pada sesi ini."
+    },
+    {
+      "id": "14-report",
+      "title": "Laporan keuangan",
+      "status": "LULUS",
+      "checked": "Arus kas, anggaran dan kategori terbaca.",
+      "note": "100% pada Makan berarti proporsi pengeluaran, bukan pemakaian batas. Daftar dapat digulir."
+    },
+    {
+      "id": "15-transaction-detail",
+      "title": "Detail transaksi",
+      "status": "LULUS",
+      "checked": "Nominal Rp18.000, tanggal dan aksi terlihat.",
+      "note": "Edit/hapus belum dijalankan pada sesi ini."
+    },
+    {
+      "id": "16-profile",
+      "title": "Profil",
+      "status": "CATATAN",
+      "checked": "Identitas akun sementara, nama dan privasi terlihat.",
+      "note": "Studi, bio, avatar picker dan preferensi Figma belum lengkap."
+    },
+    {
+      "id": "17-profile-name-dialog",
+      "title": "Ubah nama",
+      "status": "LULUS",
+      "checked": "Dialog dan tombol Batal/Simpan terlihat; Batal diuji.",
+      "note": "Belum menguji penyimpanan nama atau keyboard native di dialog ini."
+    },
+    {
+      "id": "18-privacy",
+      "title": "Privasi",
+      "status": "LULUS",
+      "checked": "Bottom sheet dapat dibuka dan ditutup.",
+      "note": "Isi privasi dipertahankan; bukan permintaan pemrosesan AI baru."
+    },
+    {
+      "id": "19-assistant",
+      "title": "Asisten",
+      "status": "LULUS",
+      "checked": "Kartu ringkas, maskot 1:1 dan input tertata.",
+      "note": "Tidak mengirim pesan ke provider AI; dua contoh pesan membungkus ke dua baris."
+    },
+    {
+      "id": "20-combined-review",
+      "title": "Tinjauan draf gabungan",
+      "status": "CATATAN",
+      "checked": "Satu agenda dan satu transaksi dapat ditinjau.",
+      "note": "Jam masih manual. Draf disisipkan fixture, bukan hasil panggilan AI nyata."
+    },
+    {
+      "id": "26-combined-review-actions",
+      "title": "Draf - tombol simpan",
+      "status": "LULUS",
+      "checked": "Bagian bawah draf dan tombol simpan terjangkau.",
+      "note": "Tombol simpan diketuk dan commit lokal berhasil; toggle item tidak diulang."
+    },
+    {
+      "id": "21-combined-saved",
+      "title": "Draf tersimpan",
+      "status": "LULUS",
+      "checked": "Hasil commit satu agenda + satu transaksi dikonfirmasi.",
+      "note": "Kartu sukses berulang dihapus. Retry/deduplikasi tidak diuji ulang pada sesi ini."
+    },
+    {
+      "id": "22-assistant-keyboard",
+      "title": "Asisten + keyboard",
+      "status": "CATATAN",
+      "checked": "Keyboard nyata muncul, input terlihat, navbar hilang.",
+      "note": "Tombol Kirim belum terlihat utuh pada posisi awal keyboard; perlu menggulir halaman."
+    },
+    {
+      "id": "25-finance-large-text",
+      "title": "Keuangan - teks 130%",
+      "status": "LULUS",
+      "checked": "Judul/angka membungkus tanpa overflow pada teks besar.",
+      "note": "Saldo Rp1.464.000 setelah pengeluaran draf Rp18.000 ditambahkan."
+    },
+    {
+      "id": "27-assistant-info",
+      "title": "Informasi Asisten",
+      "status": "LULUS",
+      "checked": "Dialog informasi dibuka; Mengerti menutupnya.",
+      "note": "Batas 3 agenda + 3 transaksi dan kemampuan yang belum tersedia tetap dijelaskan."
+    }
+  ],
+  "summary": [
+    "Layar 07: label tombol form kuliah bertentangan dengan field waktu wajib. Temuan dilaporkan; kode aplikasi belum diubah pada sesi pengujian ini.",
+    "Beranda/Profil masih lebih sederhana dari Figma; penjadwalan otomatis dan AI baca/edit/hapus catatan lama belum aktif. Ini batas implementasi, bukan crash.",
+    "Percobaan awal menunggu IME terlalu singkat. Harness kini menunggu inset nyata; tutorial stylus AVD dimatikan dan keyboard diuji ulang secara khusus.",
+    "Sesi ini menguji UI, picker, dialog dan commit draf lokal. Bukan uji menyeluruh login email, semua submit form, push notification, performa, atau AI produksi."
+  ]
+}

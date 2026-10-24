@@ -1,0 +1,29 @@
+{
+  "approvedAdditionalRequests": 2,
+  "approvedAdditionalAccounts": 2,
+  "additionalFcmBudget": 0,
+  "attempts": [
+    {
+      "kind": "native_proxy_diagnostic",
+      "providerRequests": 1,
+      "accounts": 1,
+      "httpStatus": 502,
+      "errorCode": "invalid_model_output"
+    },
+    {
+      "kind": "direct_provider_capture",
+      "providerRequests": 1,
+      "accounts": 0,
+      "httpStatus": 200,
+      "normalizerPassed": true
+    }
+  ],
+  "additionalProviderRequestsUsed": 2,
+  "additionalAccountsUsed": 2,
+  "remainingProviderRequests": 0,
+  "additionalFcmSends": 0,
+  "sdkReplayAccounts": 1,
+  "remainingAccounts": 0,
+  "replayProviderRequests": 0,
+  "cleanupVerified": true
+}

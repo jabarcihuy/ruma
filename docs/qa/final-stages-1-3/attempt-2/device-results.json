@@ -1,0 +1,13 @@
+{
+  "project": "demo-ruma",
+  "modelCalls": 0,
+  "fcmSends": 0,
+  "productionWrites": 0,
+  "cases": [
+    "profile and preferences persist per UID",
+    "weekly create, conflict, stable move/undo, future edit and future cancellation",
+    "Android schedules local snooze and cancels it after occurrence change",
+    "personal default, mixed draft approval, financial aggregate and restored receipt do not duplicate"
+  ],
+  "screens": []
+}

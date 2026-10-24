@@ -1,0 +1,125 @@
+Resolving dependencies...
+Downloading packages...
+  material_color_utilities 0.13.0 (0.13.1 available)
+  test_api 0.7.12 (0.7.15 available)
+  vector_graphics 1.2.3 (1.2.4 available)
+  xml 7.0.1 (7.1.0 available)
+Got dependencies!
+4 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Running Gradle task 'assembleDebug'...                          
+WARNING: Your app uses the following plugins that apply Kotlin Gradle Plugin (KGP): firebase_auth, firebase_core
+Future versions of Flutter will fail to build if your app uses plugins that apply KGP.
+
+Please check the changelogs of these plugins and upgrade to a version that supports Built-in Kotlin.
+If no such version exists, report the issue to the plugin. If necessary, here is a guide on filing
+an issue against a plugin: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-app-developers#report-incompatible-kotlin-gradle-plugin-usage-to-plugin-authors
+
+If you are a plugin author, please migrate your plugin to Built-in Kotlin using this guide: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-plugin-authors
+Running Gradle task 'assembleDebug'...                             18.9s
+✓ Built build/app/outputs/flutter-apk/app-debug.apk
+Installing build/app/outputs/flutter-apk/app-debug.apk...        1,305ms
+I/id.ruma.app( 5745): Compiler allocated 5174KB to compile void android.view.ViewRootImpl.performTraversals()
+I/Choreographer( 5745): Skipped 50 frames!  The application may be doing too much work on its main thread.
+D/FlutterJNI( 5745): Sending viewport metrics to the engine.
+D/ProfileInstaller( 5745): Installing profile for id.ruma.app
+VMServiceFlutterDriver: Connecting to Flutter application at http://127.0.0.1:43005/XcuxhTglABg=/
+VMServiceFlutterDriver: Isolate found with number: 6952323028188415
+VMServiceFlutterDriver: Isolate 6952323028188415 is runnable.
+VMServiceFlutterDriver: Isolate is paused at start.
+VMServiceFlutterDriver: Attempting to resume isolate
+I/flutter ( 5745): 00:00 +0: final stages real SDK profile, recurring scope, snooze and agent regression
+VMServiceFlutterDriver: Connected to Flutter application.
+I/FirebaseApp( 5745): Device unlocked: initializing all Firebase APIs for app [DEFAULT]
+D/FirebaseAuth( 5745): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth( 5745): Notifying auth state listeners about a sign-out event.
+W/GooglePlayServicesUtil( 5745): Google Play services out of date for id.ruma.app.  Requires 261200000 but found 242335041
+W/GoogleApiManager( 5745): The service for com.google.android.gms.internal.cloudmessaging.zzd is not available: ConnectionResult{statusCode=SERVICE_VERSION_UPDATE_REQUIRED, resolution=null, message=null, clientMethodKey=null}
+W/System  ( 5745): Ignoring header X-Firebase-Locale because its value was null.
+D/TrafficStats( 5745): tagSocket(156) with statsTag=0xffffffff, statsUid=-1
+W/System  ( 5745): Ignoring header X-Firebase-Locale because its value was null.
+D/FirebaseAuth( 5745): Notifying id token listeners about user ( pVEuxettV34sBiX3ZgSQ8jSZ6YHc ).
+D/FirebaseAuth( 5745): Notifying auth state listeners about user ( pVEuxettV34sBiX3ZgSQ8jSZ6YHc ).
+W/DynamiteModule( 5745): Local module descriptor class for com.google.android.gms.providerinstaller.dynamite not found.
+I/DynamiteModule( 5745): Considering local module com.google.android.gms.providerinstaller.dynamite:0 and remote module com.google.android.gms.providerinstaller.dynamite:0
+W/ProviderInstaller( 5745): Failed to load providerinstaller module: No acceptable module com.google.android.gms.providerinstaller.dynamite found. Local version is 0 and remote version is 0.
+D/ApplicationLoaders( 5745): Returning zygote-cached class loader: /system/framework/org.apache.http.legacy.jar
+D/nativeloader( 5745): Configuring clns-8 for other apk /system/framework/com.android.media.remotedisplay.jar. target_sdk_version=34, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+D/nativeloader( 5745): Configuring clns-9 for other apk /system/framework/com.android.location.provider.jar. target_sdk_version=34, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+D/ApplicationLoaders( 5745): Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+D/ApplicationLoaders( 5745): Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+D/nativeloader( 5745): InitLlndkLibrariesProduct: libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libRS.so:libandroid_net.so:libapexsupport.so:libbinder_ndk.so:libc.so:libcgrouprc.so:libclang_rt.asan-x86_64-android.so:libcom.android.tethering.connectivity_native.so:libdl.so:libft2.so:liblog.so:libm.so:libmediandk.so:libnativewindow.so:libneuralnetworks.so:libselinux.so:libsync.so:libvendorsupport.so:libvndksupport.so:libvulkan.so
+D/nativeloader( 5745): Configuring product-clns-10 for unbundled product apk /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk. target_sdk_version=34, uses_libraries=, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms:/product/lib64:/system/product/lib64
+D/nativeloader( 5745): InitVndkspLibrariesProduct: VNDK is deprecated with product
+D/nativeloader( 5745): Load /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64/libconscrypt_gmscore_jni.so using ns product-clns-10 from class loader (caller=/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!classes3.dex): ok
+V/NativeCrypto( 5745): Registering com/google/android/gms/org/conscrypt/NativeCrypto's 305 native methods...
+W/id.ruma.app( 5745): Accessing hidden method Ljava/security/spec/ECParameterSpec;->getCurveName()Ljava/lang/String; (unsupported, reflection, allowed)
+I/ProviderInstaller( 5745): Installed default security provider GmsCore_OpenSSL
+D/TrafficStats( 5745): tagSocket(166) with statsTag=0xffffffff, statsUid=-1
+VMServiceFlutterDriver: request_data message is taking a long time to complete...
+D/FlutterJNI( 5745): Sending viewport metrics to the engine.
+W/WindowOnBackDispatcher( 5745): OnBackInvokedCallback is not enabled for the application.
+W/WindowOnBackDispatcher( 5745): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+D/EGL_emulation( 5745): app_time_stats: avg=2220.44ms min=41.90ms max=14521.71ms count=7
+D/EGL_emulation( 5745): app_time_stats: avg=267.34ms min=112.11ms max=726.03ms count=4
+D/EGL_emulation( 5745): app_time_stats: avg=248.39ms min=60.46ms max=547.16ms count=5
+D/EGL_emulation( 5745): app_time_stats: avg=106.75ms min=16.60ms max=178.76ms count=10
+I/ImeTracker( 5745): id.ruma.app:40742fca: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false
+D/InputMethodManager( 5745): showSoftInput() view=io.flutter.embedding.android.FlutterView{5533952 VFE...... .F....ID 0,0-1080,2340 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+D/EGL_emulation( 5745): app_time_stats: avg=178.44ms min=18.43ms max=607.52ms count=6
+I/ImeTracker( 5745): id.ruma.app:486444c4: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false
+D/InputMethodManager( 5745): showSoftInput() view=io.flutter.embedding.android.FlutterView{5533952 VFE...... .F....ID 0,0-1080,2340 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+I/ImeTracker( 5745): id.ruma.app:b65efbbb: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT fromUser false
+W/RemoteInputConnectionImpl( 5745): requestCursorUpdates on inactive InputConnection
+D/InsetsController( 5745): show(ime(), fromIme=true)
+W/InteractionJankMonitor( 5745): Initializing without READ_DEVICE_CONFIG permission. enabled=true, interval=1, missedFrameThreshold=3, frameTimeThreshold=64, package=id.ruma.app
+D/FlutterJNI( 5745): Sending viewport metrics to the engine.
+D/InsetsController( 5745): show(ime(), fromIme=true)
+I/ImeTracker( 5745): id.ruma.app:486444c4: onCancelled at PHASE_CLIENT_APPLY_ANIMATION
+D/FlutterJNI( 5745): Sending viewport metrics to the engine.
+D/FlutterJNI( 5745): Sending viewport metrics to the engine.
+D/FlutterJNI( 5745): Sending viewport metrics to the engine.
+D/FlutterJNI( 5745): Sending viewport metrics to the engine.
+D/InsetsController( 5745): hide(ime(), fromIme=true)
+I/ImeTracker( 5745): id.ruma.app:40742fca: onCancelled at PHASE_CLIENT_ANIMATION_CANCEL
+D/FlutterJNI( 5745): Sending viewport metrics to the engine.
+D/FlutterJNI( 5745): Sending viewport metrics to the engine.
+D/FlutterJNI( 5745): Sending viewport metrics to the engine.
+D/FlutterJNI( 5745): Sending viewport metrics to the engine.
+D/FlutterJNI( 5745): Sending viewport metrics to the engine.
+D/FlutterJNI( 5745): Sending viewport metrics to the engine.
+D/FlutterJNI( 5745): Sending viewport metrics to the engine.
+D/FlutterJNI( 5745): Sending viewport metrics to the engine.
+D/FlutterJNI( 5745): Sending viewport metrics to the engine.
+D/FlutterJNI( 5745): Sending viewport metrics to the engine.
+D/FlutterJNI( 5745): Sending viewport metrics to the engine.
+I/ImeTracker( 5745): id.ruma.app:4a942650: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT_ON_ANIMATION_STATE_CHANGED fromUser false
+I/ImeTracker( 5745): id.ruma.app:b65efbbb: onHidden
+D/FlutterJNI( 5745): Sending viewport metrics to the engine.
+D/FlutterJNI( 5745): Sending viewport metrics to the engine.
+D/FlutterJNI( 5745): Sending viewport metrics to the engine.
+D/EGL_emulation( 5745): app_time_stats: avg=150.19ms min=37.68ms max=234.90ms count=7
+D/EGL_emulation( 5745): app_time_stats: avg=286.30ms min=99.93ms max=739.98ms count=4
+D/EGL_emulation( 5745): app_time_stats: avg=220.65ms min=103.60ms max=594.40ms count=5
+D/EGL_emulation( 5745): app_time_stats: avg=138.65ms min=94.33ms max=278.48ms count=8
+D/EGL_emulation( 5745): app_time_stats: avg=130.59ms min=11.02ms max=560.31ms count=11
+D/EGL_emulation( 5745): app_time_stats: avg=90.00ms min=6.51ms max=151.37ms count=11
+W/System  ( 5745): Ignoring header X-Firebase-Locale because its value was null.
+D/TrafficStats( 5745): tagSocket(156) with statsTag=0xffffffff, statsUid=-1
+D/FirebaseAuth( 5745): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth( 5745): Notifying auth state listeners about a sign-out event.
+W/System  ( 5745): Ignoring header X-Firebase-Locale because its value was null.
+W/System  ( 5745): Ignoring header X-Firebase-Locale because its value was null.
+D/FirebaseAuth( 5745): Notifying id token listeners about user ( oqeYKrq56AKRVwYdHhhwea2jOXb7 ).
+D/FirebaseAuth( 5745): Notifying auth state listeners about user ( oqeYKrq56AKRVwYdHhhwea2jOXb7 ).
+W/Firestore( 5745): (27.0.0) [Firestore]: Listen for QueryWrapper(query=Query(target=Query(users/pVEuxettV34sBiX3ZgSQ8jSZ6YHc/settings/personal order by __name__);limitType=LIMIT_TO_FIRST)) failed: Status{code=PERMISSION_DENIED, description=
+W/Firestore( 5745): false for 'get' @ L223, false for 'get' @ L331, cause=null}
+D/EGL_emulation( 5745): app_time_stats: avg=168.26ms min=58.72ms max=310.47ms count=6
+W/System  ( 5745): Ignoring header X-Firebase-Locale because its value was null.
+D/FirebaseAuth( 5745): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth( 5745): Notifying auth state listeners about a sign-out event.
+D/FirebaseAuth( 5745): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth( 5745): Notifying auth state listeners about a sign-out event.
+I/flutter ( 5745): 00:28 +1: (tearDownAll)
+I/flutter ( 5745): 00:28 +2: All tests passed!
+All tests passed.

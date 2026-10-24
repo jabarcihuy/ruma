@@ -1,0 +1,33 @@
+✔ goal create/edit, optional future date and initial core are valid (9165.63632ms)
+✔ deposit and withdrawal preserve income/expense and recorded balance (596.637219ms)
+✔ available funds shared across goals, overdraft and empty withdrawal rejected (960.956017ms)
+✔ retry is idempotent, collisions/stale edits do not overwrite (394.933906ms)
+✔ forged balances, totals, cashflow, version and metadata rejected (625.68483ms)
+✔ goal validation enforces nonblank name, integer target, real date and shape (1016.287081ms)
+✔ movement validates type, integer amount, date, source and immutable goal fields (719.289058ms)
+✔ missing coupled documents or wrong receipt cannot partially commit (427.25268ms)
+[2026-10-21T17:37:02.191Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x67205763 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'delete' @ L424
+[2026-10-21T17:37:02.200Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x67205764 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'delete' @ L424
+[2026-10-21T17:37:02.208Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x67205765 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'delete' @ L424
+[2026-10-21T17:37:02.216Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x67205766 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'delete' @ L424
+[2026-10-21T17:37:02.230Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x67205767 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'update' @ L424
+[2026-10-21T17:37:02.248Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x67205768 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'update' @ L424
+✔ history/receipts append only, goals/summary cannot hard delete (247.791154ms)
+✔ other UID and signed out cannot read, query or write savings (542.31277ms)
+✔ parallel deposits serialize or reject without overallocating (244.244263ms)
+✔ negative available after expense correction permits withdrawals only (361.11232ms)
+✔ optional wishlist icons accept legacy goals and preserve selection through transfers (856.301184ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 17246.606478

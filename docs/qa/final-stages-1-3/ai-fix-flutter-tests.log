@@ -1,0 +1,112 @@
+Resolving dependencies...
+Downloading packages...
+  material_color_utilities 0.13.0 (0.13.1 available)
+  test_api 0.7.12 (0.7.15 available)
+  vector_graphics 1.2.3 (1.2.4 available)
+  xml 7.0.1 (7.1.0 available)
+Got dependencies!
+4 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+00:00 +0: loading /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart
+00:00 +0: /home/ael/DATA/project on linux/mobileapp/ruma/test/assistant_test.dart: strict proposal parsing rejects invented quote, unknown authority, future money and excess items
+00:00 +1: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: validation does not trim passwords and login failures do not expose account existence
+00:00 +2: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: validation does not trim passwords and login failures do not expose account existence
+00:00 +3: /home/ael/DATA/project on linux/mobileapp/ruma/test/assistant_test.dart: consent required, edit changes revision, duplicate taps cannot duplicate save
+00:00 +4: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:00 +5: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:00 +6: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:00 +7: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:00 +8: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:00 +9: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:00 +10: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:00 +11: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:00 +12: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:00 +13: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:00 +14: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:00 +15: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:00 +16: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:02 +17: /home/ael/DATA/project on linux/mobileapp/ruma/test/foundation_test.dart: welcome and sign-in remain usable on a small screen at 200% text
+00:03 +18: /home/ael/DATA/project on linux/mobileapp/ruma/test/assistant_test.dart: review at 320px and 200% text supports remove, restore and editing without saving
+00:03 +19: /home/ael/DATA/project on linux/mobileapp/ruma/test/assistant_test.dart: review at 320px and 200% text supports remove, restore and editing without saving
+00:03 +20: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:03 +21: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:03 +22: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:03 +23: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:04 +24: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:04 +25: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:04 +26: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:04 +27: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:04 +28: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:04 +29: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:04 +30: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:05 +31: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:05 +32: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:05 +33: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:05 +34: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:05 +35: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:05 +36: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:05 +37: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:05 +38: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:05 +39: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:05 +40: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:05 +41: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:05 +42: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:05 +43: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(390.0, 844.0), including large type and keyboard
+00:06 +44: /home/ael/DATA/project on linux/mobileapp/ruma/test/notification_pages_test.dart: reminder controls fit narrow 200 percent text and remain editable
+00:07 +45: /home/ael/DATA/project on linux/mobileapp/ruma/test/home_summary_test.dart: only planned items count; ongoing and overdue have priority; detail opens exact item
+00:07 +46: /home/ael/DATA/project on linux/mobileapp/ruma/test/assistant_memory_test.dart: restored input and expandable history fit 320 width and large text
+00:07 +47: /home/ael/DATA/project on linux/mobileapp/ruma/test/final_stages_test.dart: profile and preferences remain editable at narrow 200 percent text
+00:08 +48: /home/ael/DATA/project on linux/mobileapp/ruma/test/final_stages_test.dart: profile and preferences remain editable at narrow 200 percent text
+
+Warning: A call to tap() with finder "Found 1 widget with key [<'personal-settings-save'>]: [
+  RumaButton-[<'personal-settings-save'>](dependencies: [_ScrollableScope]),
+]" derived an Offset (Offset(160.0, 759.0)) that would not hit test on the specified widget.
+Maybe the widget is actually off-screen, or another widget is obscuring it, or the widget cannot receive pointer events.
+Indeed, Offset(160.0, 759.0) is outside the bounds of the root of the render tree, Size(320.0, 640.0).
+The finder corresponds to this RenderBox: RenderSemanticsAnnotations#52283 relayoutBoundary=up17
+The hit test result at that offset is: HitTestResult(HitTestEntry<HitTestTarget>#05aba(_ReusableRenderView#f77bc), HitTestEntry<HitTestTarget>#f0106(<AutomatedTestWidgetsFlutterBinding>))
+#0      WidgetController._getElementPoint (package:flutter_test/src/controller.dart:2165:25)
+#1      WidgetController.getCenter (package:flutter_test/src/controller.dart:1947:12)
+#2      WidgetController.tap (package:flutter_test/src/controller.dart:1080:7)
+#3      main.<anonymous closure> (file:///home/ael/DATA/project%20on%20linux/mobileapp/ruma/test/final_stages_test.dart:242:17)
+<asynchronous suspension>
+#4      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#5      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+#6      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+To silence this warning, pass "warnIfMissed: false" to "tap()".
+To make this warning fatal, set WidgetController.hitTestWarningShouldBeFatal to true.
+
+00:08 +49: /home/ael/DATA/project on linux/mobileapp/ruma/test/final_stages_test.dart: profile and preferences remain editable at narrow 200 percent text
+00:08 +50: /home/ael/DATA/project on linux/mobileapp/ruma/test/final_stages_test.dart: profile and preferences remain editable at narrow 200 percent text
+
+Warning: A call to tap() with finder "Found 1 widget with key [<'personal-settings-save'>]: [
+  RumaButton-[<'personal-settings-save'>](dependencies: [_ScrollableScope]),
+]" derived an Offset (Offset(160.0, 731.0)) that would not hit test on the specified widget.
+Maybe the widget is actually off-screen, or another widget is obscuring it, or the widget cannot receive pointer events.
+Indeed, Offset(160.0, 731.0) is outside the bounds of the root of the render tree, Size(320.0, 640.0).
+The finder corresponds to this RenderBox: RenderSemanticsAnnotations#6235c relayoutBoundary=up17
+The hit test result at that offset is: HitTestResult(HitTestEntry<HitTestTarget>#96149(_ReusableRenderView#f77bc), HitTestEntry<HitTestTarget>#982d2(<AutomatedTestWidgetsFlutterBinding>))
+#0      WidgetController._getElementPoint (package:flutter_test/src/controller.dart:2165:25)
+#1      WidgetController.getCenter (package:flutter_test/src/controller.dart:1947:12)
+#2      WidgetController.tap (package:flutter_test/src/controller.dart:1080:7)
+#3      main.<anonymous closure> (file:///home/ael/DATA/project%20on%20linux/mobileapp/ruma/test/final_stages_test.dart:242:17)
+<asynchronous suspension>
+#4      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#5      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+#6      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+To silence this warning, pass "warnIfMissed: false" to "tap()".
+To make this warning fatal, set WidgetController.hitTestWarningShouldBeFatal to true.
+
+00:08 +51: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(320.0, 640.0), including large type and keyboard
+00:08 +52: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(320.0, 640.0), including large type and keyboard
+00:08 +53: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(320.0, 640.0), including large type and keyboard
+00:09 +54: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(320.0, 640.0), including large type and keyboard
+00:09 +55: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: all pages remain scrollable at Size(844.0, 390.0), including large type and keyboard
+00:11 +56: /home/ael/DATA/project on linux/mobileapp/ruma/test/ui_polish_test.dart: navigation makes room for IME without losing a tab
+00:11 +57: All tests passed!

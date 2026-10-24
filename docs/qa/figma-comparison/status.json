@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-19",
+  "figmaModified": false,
+  "prototypeFrames": 71,
+  "visualScreenPairs": 5,
+  "additionalTextInspectedScreens": 4,
+  "inventoryAvailability": {
+    "Tersedia": 33,
+    "Sebagian": 12,
+    "Belum": 26
+  },
+  "availabilityIsNotPixelFidelity": true,
+  "androidScreenshotRevision": "Before latest copy/card revision; native recheck deferred by user",
+  "source": "reference.json + live read-only MCP + code + previous stage evidence"
+}

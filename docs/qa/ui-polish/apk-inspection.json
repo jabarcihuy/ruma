@@ -1,0 +1,11 @@
+{
+  "apk": "output/apk/ruma-ui-preview.apk",
+  "target": "lib/main.dart",
+  "kind": "normal profile ARM64 preview; installed and cold launched",
+  "bytes": 40786334,
+  "sha256": "526d0f0208a733ea9e264c256fcf2a9f5810864c137a483069d8373c27132b7b",
+  "exactSecretMatches": 0,
+  "privateFileEntries": [],
+  "nativeVisualVerified": true,
+  "installed": true
+}

@@ -1,0 +1,20 @@
+{
+  "firestore": {
+    "rules": "config/firebase/firestore.wishlist.rules",
+    "indexes": "config/firebase/firestore.notifications.indexes.json"
+  },
+  "emulators": {
+    "firestore": {
+      "host": "127.0.0.1",
+      "port": 8086
+    },
+    "auth": {
+      "host": "127.0.0.1",
+      "port": 9096
+    },
+    "ui": {
+      "enabled": false
+    },
+    "singleProjectMode": true
+  }
+}

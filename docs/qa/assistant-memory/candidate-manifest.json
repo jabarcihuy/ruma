@@ -1,0 +1,41 @@
+{
+  "status": "local_verified_awaiting_production_approval",
+  "project": "mobile-app-3479f",
+  "localProject": "demo-ruma",
+  "flutterTests": 43,
+  "rulesTests": 46,
+  "backendTests": 27,
+  "localTotal": 116,
+  "analyzerClean": true,
+  "nativeSuitePassed": true,
+  "nativeCaseGroups": 6,
+  "realColdRestartPassed": true,
+  "sameDraftAndOperationConfirmed": true,
+  "modelCalls": 0,
+  "fcmSends": 0,
+  "productionWrites": 0,
+  "rulesPublished": false,
+  "workerChanged": false,
+  "candidateApk": {
+    "apk": "output/apk/ruma-assistant-memory-candidate.apk",
+    "bytes": 102321120,
+    "sha256": "2f6a960462bca6083ab5f986b0cc07bd97b72550e68b7db723a166db2c48c585",
+    "exactSecretMatches": 0,
+    "privateFileMatches": 0,
+    "type": "normal lib/main.dart debug x86_64; no emulator define; not installed",
+    "passed": true
+  },
+  "priorNormalRestored": true,
+  "localFixturesCleaned": true,
+  "sources": {
+    "lib/data/assistant_snapshot.dart": "c09ead0f6fd862d61fb855dc19e90dd3cd99700cf12785f58f28d4fd13a8f33d",
+    "lib/data/assistant_store.dart": "1f3084ea2b792f467e8526bd17257571157623f81dce22d0f0f256a425125edb",
+    "lib/data/draft_repository.dart": "9a3908d5c0b44760b337cb15eef5c0fd8e6fb18d924287f890a24a193626b60d",
+    "lib/app/main_shell.dart": "f0837179909f713d092cd600f486da963e82910090458c4d275a3f6f143ffd53",
+    "lib/features/assistant/assistant_page.dart": "474a2db3c01a9635a0397e732194e0d28ca8e1008ee5ee759a0634b423fa0477",
+    "config/firebase/firestore.assistant-memory.rules": "15e0e2b50fdb78b4d1ffb687f7135af8d0a9512e61e961e68c8b0eabd42bb0b2",
+    "firebase.assistant-memory.json": "79a45409a87df2e45b4d496942862414695140a8dfe55fda7842889e78152c85",
+    "integration_test/assistant_memory_cloud_test.dart": "4139f108908c4fb32566b3e72f73803ff20def1bfdf9f12324b82b3bc92f8873",
+    "backend/tests/assistant-cloud-cleanup.mjs": "30af95c4a4f41592234121a4269cdd48ec8a7a07768edda28e425cce808a1516"
+  }
+}

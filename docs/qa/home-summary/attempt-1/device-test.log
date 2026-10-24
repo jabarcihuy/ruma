@@ -1,0 +1,143 @@
+Resolving dependencies...
+Downloading packages...
+  material_color_utilities 0.13.0 (0.13.1 available)
+  test_api 0.7.12 (0.7.15 available)
+  vector_graphics 1.2.3 (1.2.4 available)
+  xml 7.0.1 (7.1.0 available)
+Got dependencies!
+4 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Running Gradle task 'assembleDebug'...                          
+WARNING: Your app uses the following plugins that apply Kotlin Gradle Plugin (KGP): firebase_auth, firebase_core
+Future versions of Flutter will fail to build if your app uses plugins that apply KGP.
+
+Please check the changelogs of these plugins and upgrade to a version that supports Built-in Kotlin.
+If no such version exists, report the issue to the plugin. If necessary, here is a guide on filing
+an issue against a plugin: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-app-developers#report-incompatible-kotlin-gradle-plugin-usage-to-plugin-authors
+
+If you are a plugin author, please migrate your plugin to Built-in Kotlin using this guide: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-plugin-authors
+Running Gradle task 'assembleDebug'...                             56.8s
+✓ Built build/app/outputs/flutter-apk/app-debug.apk
+Installing build/app/outputs/flutter-apk/app-debug.apk...        1,143ms
+D/ProfileInstaller( 3089): Installing profile for id.ruma.app
+VMServiceFlutterDriver: Connecting to Flutter application at http://127.0.0.1:38867/3969wHZp9eI=/
+VMServiceFlutterDriver: Isolate found with number: 6688610321636355
+VMServiceFlutterDriver: Isolate 6688610321636355 is runnable.
+VMServiceFlutterDriver: Isolate is paused at start.
+VMServiceFlutterDriver: Attempting to resume isolate
+I/flutter ( 3089): 00:00 +0: home uses real SDK summaries, exact details and current month
+VMServiceFlutterDriver: Connected to Flutter application.
+I/FirebaseApp( 3089): Device unlocked: initializing all Firebase APIs for app [DEFAULT]
+W/GooglePlayServicesUtil( 3089): Google Play services out of date for id.ruma.app.  Requires 261200000 but found 242335041
+W/GoogleApiManager( 3089): The service for com.google.android.gms.internal.cloudmessaging.zzd is not available: ConnectionResult{statusCode=SERVICE_VERSION_UPDATE_REQUIRED, resolution=null, message=null, clientMethodKey=null}
+D/FirebaseAuth( 3089): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth( 3089): Notifying auth state listeners about a sign-out event.
+D/FlutterJNI( 3089): Sending viewport metrics to the engine.
+W/System  ( 3089): Ignoring header X-Firebase-Locale because its value was null.
+D/TrafficStats( 3089): tagSocket(158) with statsTag=0xffffffff, statsUid=-1
+W/System  ( 3089): Ignoring header X-Firebase-Locale because its value was null.
+D/FirebaseAuth( 3089): Notifying id token listeners about user ( qCufBszIatXmGiG2s8png1bu2ZYA ).
+D/FirebaseAuth( 3089): Notifying auth state listeners about user ( qCufBszIatXmGiG2s8png1bu2ZYA ).
+W/DynamiteModule( 3089): Local module descriptor class for com.google.android.gms.providerinstaller.dynamite not found.
+I/DynamiteModule( 3089): Considering local module com.google.android.gms.providerinstaller.dynamite:0 and remote module com.google.android.gms.providerinstaller.dynamite:0
+W/ProviderInstaller( 3089): Failed to load providerinstaller module: No acceptable module com.google.android.gms.providerinstaller.dynamite found. Local version is 0 and remote version is 0.
+D/ApplicationLoaders( 3089): Returning zygote-cached class loader: /system/framework/org.apache.http.legacy.jar
+D/EGL_emulation( 3089): app_time_stats: avg=658.43ms min=194.75ms max=1548.81ms count=4
+D/nativeloader( 3089): Configuring clns-8 for other apk /system/framework/com.android.media.remotedisplay.jar. target_sdk_version=34, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+D/nativeloader( 3089): Configuring clns-9 for other apk /system/framework/com.android.location.provider.jar. target_sdk_version=34, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+D/ApplicationLoaders( 3089): Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+D/ApplicationLoaders( 3089): Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+D/nativeloader( 3089): InitLlndkLibrariesProduct: libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libRS.so:libandroid_net.so:libapexsupport.so:libbinder_ndk.so:libc.so:libcgrouprc.so:libclang_rt.asan-x86_64-android.so:libcom.android.tethering.connectivity_native.so:libdl.so:libft2.so:liblog.so:libm.so:libmediandk.so:libnativewindow.so:libneuralnetworks.so:libselinux.so:libsync.so:libvendorsupport.so:libvndksupport.so:libvulkan.so
+D/nativeloader( 3089): Configuring product-clns-10 for unbundled product apk /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk. target_sdk_version=34, uses_libraries=, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms:/product/lib64:/system/product/lib64
+D/nativeloader( 3089): InitVndkspLibrariesProduct: VNDK is deprecated with product
+D/nativeloader( 3089): Load /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64/libconscrypt_gmscore_jni.so using ns product-clns-10 from class loader (caller=/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!classes3.dex): ok
+I/id.ruma.app( 3089): Waiting for a blocking GC ClassLinker
+I/id.ruma.app( 3089): WaitForGcToComplete blocked ClassLinker on Background for 12.646ms
+V/NativeCrypto( 3089): Registering com/google/android/gms/org/conscrypt/NativeCrypto's 305 native methods...
+W/id.ruma.app( 3089): Accessing hidden method Ljava/security/spec/ECParameterSpec;->getCurveName()Ljava/lang/String; (unsupported, reflection, allowed)
+I/ProviderInstaller( 3089): Installed default security provider GmsCore_OpenSSL
+D/TrafficStats( 3089): tagSocket(170) with statsTag=0xffffffff, statsUid=-1
+D/EGL_emulation( 3089): app_time_stats: avg=115.79ms min=109.59ms max=119.27ms count=9
+D/EGL_emulation( 3089): app_time_stats: avg=116.58ms min=111.94ms max=118.80ms count=9
+VMServiceFlutterDriver: request_data message is taking a long time to complete...
+D/EGL_emulation( 3089): app_time_stats: avg=117.70ms min=114.33ms max=126.56ms count=9
+D/EGL_emulation( 3089): app_time_stats: avg=714.46ms min=105.74ms max=3050.99ms count=5
+D/EGL_emulation( 3089): app_time_stats: avg=356.05ms min=120.40ms max=502.34ms count=3
+W/WindowOnBackDispatcher( 3089): OnBackInvokedCallback is not enabled for the application.
+W/WindowOnBackDispatcher( 3089): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+W/System  ( 3089): Ignoring header X-Firebase-Locale because its value was null.
+D/TrafficStats( 3089): tagSocket(158) with statsTag=0xffffffff, statsUid=-1
+D/FirebaseAuth( 3089): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth( 3089): Notifying auth state listeners about a sign-out event.
+D/FirebaseAuth( 3089): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth( 3089): Notifying auth state listeners about a sign-out event.
+I/flutter ( 3089): ══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+I/flutter ( 3089): The following TestFailure was thrown running a test:
+I/flutter ( 3089): Expected: exactly one matching candidate
+I/flutter ( 3089):   Actual: _TypeWidgetFinder:<Found 0 widgets with type "CupertinoNavigationBarBackButton": []>
+I/flutter ( 3089):    Which: means none were found but one was expected
+I/flutter ( 3089): One back button expected on screen
+I/flutter ( 3089): 
+I/flutter ( 3089): When the exception was thrown, this was the stack:
+I/flutter ( 3089): #0      fail (package:matcher/src/expect/expect.dart:187:31)
+I/flutter ( 3089): #1      _expect (package:matcher/src/expect/expect.dart:182:3)
+I/flutter ( 3089): #2      expect (package:matcher/src/expect/expect.dart:65:3)
+I/flutter ( 3089): #3      expectSync (package:flutter_test/src/widget_tester.dart:486:18)
+I/flutter ( 3089): #4      WidgetTester.pageBack.<anonymous closure> (package:flutter_test/src/widget_tester.dart:1177:7)
+I/flutter ( 3089): #7      TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+I/flutter ( 3089): #8      WidgetTester.pageBack (package:flutter_test/src/widget_tester.dart:1171:27)
+I/flutter ( 3089): #9      main.<anonymous closure> (file:///home/ael/DATA/project%20on%20linux/mobileapp/ruma/integration_test/home_summary_test.dart:151:15)
+I/flutter ( 3089): <asynchronous suspension>
+I/flutter ( 3089): #10     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+I/flutter ( 3089): <asynchronous suspension>
+I/flutter ( 3089): #11     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+I/flutter ( 3089): <asynchronous suspension>
+I/flutter ( 3089): #12     TestWidgetsFlutterBinding._createTestCompletionHandler.<anonymous closure> (package:flutter_test/src/binding.dart:1707:12)
+I/flutter ( 3089): <asynchronous suspension>
+I/flutter ( 3089): (elided 2 frames from dart:async)
+I/flutter ( 3089): 
+I/flutter ( 3089): The test description was:
+I/flutter ( 3089):   home uses real SDK summaries, exact details and current month
+I/flutter ( 3089): ════════════════════════════════════════════════════════════════════════════════════════════════════
+I/flutter ( 3089): 00:11 +0: home uses real SDK summaries, exact details and current month [E]
+I/flutter ( 3089):   Test failed. See exception logs above.
+I/flutter ( 3089):   The test description was: home uses real SDK summaries, exact details and current month
+I/flutter ( 3089):   
+I/flutter ( 3089): 00:11 +0 -1: (tearDownAll)
+I/flutter ( 3089): 00:11 +1 -1: Some tests failed.
+Failure Details:
+Failure in method: home uses real SDK summaries, exact details and current month
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞═════════════════
+The following TestFailure was thrown running a test:
+Expected: exactly one matching candidate
+  Actual: _TypeWidgetFinder:<Found 0 widgets with type
+"CupertinoNavigationBarBackButton": []>
+   Which: means none were found but one was expected
+One back button expected on screen
+
+When the exception was thrown, this was the stack:
+#0      fail (package:matcher/src/expect/expect.dart:187:31)
+#1      _expect (package:matcher/src/expect/expect.dart:182:3)
+#2      expect (package:matcher/src/expect/expect.dart:65:3)
+#3      expectSync (package:flutter_test/src/widget_tester.dart:486:18)
+#4      WidgetTester.pageBack.<anonymous closure> (package:flutter_test/src/widget_tester.dart:1177:7)
+#7      TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#8      WidgetTester.pageBack (package:flutter_test/src/widget_tester.dart:1171:27)
+#9      main.<anonymous closure> (file:///home/ael/DATA/project%20on%20linux/mobileapp/ruma/integration_test/home_summary_test.dart:151:15)
+<asynchronous suspension>
+#10     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#11     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+#12     TestWidgetsFlutterBinding._createTestCompletionHandler.<anonymous closure> (package:flutter_test/src/binding.dart:1707:12)
+<asynchronous suspension>
+(elided 2 frames from dart:async)
+
+The test description was:
+  home uses real SDK summaries, exact details and current month
+═════════════════════════════════════════════════════════════════
+
+end of failure 1
+
+
+

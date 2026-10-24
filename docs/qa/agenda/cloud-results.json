@@ -1,0 +1,20 @@
+{
+  "project": "mobile-app-3479f",
+  "transport": "Flutter Android SDK on physical USB device",
+  "fixtureUids": [
+    "3xkQUrvHYQQZR9pwnivoX7NIwy83",
+    "Q42Hd6DTzfOQe7dGFxwVsEtUHrz1"
+  ],
+  "authFixturesDeleted": [
+    "3xkQUrvHYQQZR9pwnivoX7NIwy83",
+    "Q42Hd6DTzfOQe7dGFxwVsEtUHrz1"
+  ],
+  "modelCalls": 0,
+  "createAndRead": true,
+  "idempotentRetry": true,
+  "update": true,
+  "softDelete": true,
+  "unauthenticatedDenied": true,
+  "otherUserDenied": true,
+  "passed": true
+}

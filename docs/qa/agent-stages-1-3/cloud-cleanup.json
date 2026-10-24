@@ -1,0 +1,21 @@
+{
+  "project": "mobile-app-3479f",
+  "fixtureUids": [
+    "pLoQ78vMkUYd38qxdsofiog4mBo1",
+    "rX3OSaRuZ1a9vWu5n6fj9ae34Ef1"
+  ],
+  "deleted": [
+    "users/pLoQ78vMkUYd38qxdsofiog4mBo1/agenda/qvI0g319F9JorLjVNIg3",
+    "users/pLoQ78vMkUYd38qxdsofiog4mBo1/agenda/zXcGXXpqAL6bqLzdveqF",
+    "users/pLoQ78vMkUYd38qxdsofiog4mBo1/transactions/vXUGg0wcoX0DIjnrONtp",
+    "users/pLoQ78vMkUYd38qxdsofiog4mBo1/months/2026-10",
+    "users/pLoQ78vMkUYd38qxdsofiog4mBo1/state/core",
+    "users/pLoQ78vMkUYd38qxdsofiog4mBo1/operations/2maJDZXgYCFvF2VCPLv3",
+    "users/pLoQ78vMkUYd38qxdsofiog4mBo1/operations/NZvwh7RaOGnxwSOYfB5q",
+    "users/pLoQ78vMkUYd38qxdsofiog4mBo1/operations/aVcdujmE7GWXnWE1Zr2e",
+    "users/pLoQ78vMkUYd38qxdsofiog4mBo1/operations/uRQJF697r1RqZNgFrlPV",
+    "users/pLoQ78vMkUYd38qxdsofiog4mBo1/operations/vdACmgln7mBVR3p1jlbQ"
+  ],
+  "verifiedEmpty": true,
+  "modelCalls": 0
+}

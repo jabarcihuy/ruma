@@ -1,0 +1,1 @@
+{"project": "mobile-app-3479f", "suite": "notifications_cloud_test", "modelCalls": 0, "processAbsentBeforeDelivery": true, "nativeNotificationObserved": true, "coldTapOpensMatchingAgenda": true, "passed": true}

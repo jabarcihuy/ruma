@@ -1,0 +1,20 @@
+{
+  "project": "mobile-app-3479f",
+  "fixtureUids": [
+    "x6peUeYuRYWyUQo49ewtXvR1aK53",
+    "MR2800tg5ROh7wujWImX3gBJ5VH3"
+  ],
+  "deleted": [
+    "users/x6peUeYuRYWyUQo49ewtXvR1aK53/agenda/VNMRo8vgLCOSvY6XxaVf",
+    "users/x6peUeYuRYWyUQo49ewtXvR1aK53/state/core",
+    "users/x6peUeYuRYWyUQo49ewtXvR1aK53/operations/1WV2gmILW9dxfqEFMnf2",
+    "users/x6peUeYuRYWyUQo49ewtXvR1aK53/assistant/session",
+    "users/x6peUeYuRYWyUQo49ewtXvR1aK53/settings/personal",
+    "users/x6peUeYuRYWyUQo49ewtXvR1aK53/reminders/VNMRo8vgLCOSvY6XxaVf",
+    "users/x6peUeYuRYWyUQo49ewtXvR1aK53/notifications/VNMRo8vgLCOSvY6XxaVf_1",
+    "users/MR2800tg5ROh7wujWImX3gBJ5VH3/assistant/session",
+    "users/MR2800tg5ROh7wujWImX3gBJ5VH3/settings/personal"
+  ],
+  "verifiedEmpty": true,
+  "modelCalls": 0
+}

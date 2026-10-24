@@ -1,0 +1,19 @@
+{
+  "project": "mobile-app-3479f",
+  "fixtureUids": [
+    "j14KgPGnLdMBObscRzqLCRlcqkl1"
+  ],
+  "jobAttempts": 0,
+  "budget": 2,
+  "priorFcmCalls": 1,
+  "stoppedAtBudget": false,
+  "states": [
+    {
+      "agendaId": "Sa6oyRwqBEeOun8IuorZ",
+      "status": "cancelled",
+      "attempts": 0,
+      "error": null,
+      "results": {}
+    }
+  ]
+}

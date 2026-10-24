@@ -1,0 +1,18 @@
+{
+  "emulator": {
+    "anonymous": true,
+    "linkedUidPreserved": true,
+    "displayNamePersisted": true,
+    "logoutCancel": true,
+    "logout": true,
+    "wrongPasswordRejected": true,
+    "formPreservedAfterFailure": true,
+    "login": true,
+    "fiveTabs": true,
+    "nameUpdated": true,
+    "directRegistration": true,
+    "cpuProxyRetested": false,
+    "firebaseProject": "demo-ruma",
+    "fixtureDeleted": true
+  }
+}

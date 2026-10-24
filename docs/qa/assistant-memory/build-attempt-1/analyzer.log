@@ -1,0 +1,7 @@
+Analyzing ruma...                                               
+
+  error • The method 'dateKey' isn't defined for the type 'LocalAssistant'. Try correcting the name to the name of an existing method, or defining a method named 'dateKey' • integration_test/assistant_memory_test.dart:23:18 • undefined_method
+  error • The method 'dateKey' isn't defined for the type 'LocalAssistant'. Try correcting the name to the name of an existing method, or defining a method named 'dateKey' • integration_test/assistant_memory_test.dart:46:24 • undefined_method
+  error • The function 'dateKey' isn't defined. Try importing the library that defines 'dateKey', correcting the name to the name of an existing function, or defining a function named 'dateKey' • integration_test/assistant_memory_test.dart:141:11 • undefined_function
+
+3 issues found. (ran in 5.8s)

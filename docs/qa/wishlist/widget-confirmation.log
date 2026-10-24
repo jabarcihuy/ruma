@@ -1,0 +1,11 @@
+00:00 +0: loading /home/ael/DATA/project on linux/mobileapp/ruma/test/savings_ui_test.dart
+00:00 +0: store ignores stale load and discards a failed refreshed snapshot
+00:00 +1: confirmed save remains successful if refresh fails; duplicate presses ignored
+00:00 +2: late read does not notify or retain another session after disposal
+00:00 +3: list and detail show real progress/history and open the selected goal
+00:01 +4: goal creation validates rupiah; retry preserves same operation until input changes
+00:02 +5: withdrawal form saves correct type, captures version and protects dirty cancellation
+00:03 +6: empty/error states retry without invented balance
+00:03 +7: legacy icon defaults and icon-only edits protect dirty cancellation
+00:03 +8: all savings pages adapt to narrow/large text and keyboard
+00:04 +9: All tests passed!

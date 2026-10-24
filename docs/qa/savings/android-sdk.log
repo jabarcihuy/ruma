@@ -1,0 +1,87 @@
+Resolving dependencies...
+Downloading packages...
+  material_color_utilities 0.13.0 (0.13.1 available)
+  test_api 0.7.12 (0.7.15 available)
+  vector_graphics 1.2.3 (1.2.4 available)
+  xml 7.0.1 (7.1.0 available)
+Got dependencies!
+4 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Running Gradle task 'assembleDebug'...                          
+WARNING: Your app uses the following plugins that apply Kotlin Gradle Plugin (KGP): firebase_auth, firebase_core
+Future versions of Flutter will fail to build if your app uses plugins that apply KGP.
+
+Please check the changelogs of these plugins and upgrade to a version that supports Built-in Kotlin.
+If no such version exists, report the issue to the plugin. If necessary, here is a guide on filing
+an issue against a plugin: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-app-developers#report-incompatible-kotlin-gradle-plugin-usage-to-plugin-authors
+
+If you are a plugin author, please migrate your plugin to Built-in Kotlin using this guide: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-plugin-authors
+Running Gradle task 'assembleDebug'...                             59.0s
+✓ Built build/app/outputs/flutter-apk/app-debug.apk
+Installing build/app/outputs/flutter-apk/app-debug.apk...        1,235ms
+D/FlutterJNI( 3802): Sending viewport metrics to the engine.
+D/ProfileInstaller( 3802): Installing profile for id.ruma.app
+VMServiceFlutterDriver: Connecting to Flutter application at http://127.0.0.1:39237/5pX8uK86v3o=/
+VMServiceFlutterDriver: Isolate found with number: 1348407111782183
+VMServiceFlutterDriver: Isolate 1348407111782183 is runnable.
+VMServiceFlutterDriver: Isolate is paused at start.
+VMServiceFlutterDriver: Attempting to resume isolate
+I/flutter ( 3802): 00:00 +0: savings repository uses atomic native Firestore transactions
+VMServiceFlutterDriver: Connected to Flutter application.
+I/FirebaseApp( 3802): Device unlocked: initializing all Firebase APIs for app [DEFAULT]
+W/id.ruma.app( 3802): Verification of boolean com.google.android.gms.internal.common.zzaf.contains(java.lang.Object) took 126.591ms (55.30 bytecodes/s) (2200B approximate peak alloc)
+W/GooglePlayServicesUtil( 3802): Google Play services out of date for id.ruma.app.  Requires 261200000 but found 242335041
+W/GoogleApiManager( 3802): The service for com.google.android.gms.internal.cloudmessaging.zzd is not available: ConnectionResult{statusCode=SERVICE_VERSION_UPDATE_REQUIRED, resolution=null, message=null, clientMethodKey=null}
+D/FirebaseAuth( 3802): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth( 3802): Notifying auth state listeners about a sign-out event.
+W/id.ruma.app( 3802): Verification of j$.time.chrono.Era j$.time.chrono.ChronoLocalDate.getEra() took 379.455ms (39.53 bytecodes/s) (2440B approximate peak alloc)
+W/id.ruma.app( 3802): Verification of void j$.time.format.DateTimeFormatter.<init>(j$.time.format.DateTimeFormatterBuilder$CompositePrinterParser, java.util.Locale, j$.time.format.DecimalStyle, j$.time.format.ResolverStyle, java.util.Set, j$.time.chrono.Chronology, j$.time.ZoneId) took 254.744ms (196.28 bytecodes/s) (2968B approximate peak alloc)
+W/id.ruma.app( 3802): Long monitor contention with owner Firebase Background Thread #0 (3887) at java.lang.Void com.google.firebase.heartbeatinfo.DefaultHeartBeatController.lambda$registerHeartBeat$0$com-google-firebase-heartbeatinfo-DefaultHeartBeatController()(DefaultHeartBeatController.java:71) waiters=0 in java.lang.Void com.google.firebase.heartbeatinfo.DefaultHeartBeatController.lambda$registerHeartBeat$0$com-google-firebase-heartbeatinfo-DefaultHeartBeatController() for 1.291s
+I/FirebaseAuth( 3802): Creating user with savings-1792598292022389@ruma.test with empty reCAPTCHA token
+D/FlutterJNI( 3802): Sending viewport metrics to the engine.
+W/System  ( 3802): Ignoring header X-Firebase-Locale because its value was null.
+D/TrafficStats( 3802): tagSocket(156) with statsTag=0xffffffff, statsUid=-1
+W/System  ( 3802): Ignoring header X-Firebase-Locale because its value was null.
+D/FirebaseAuth( 3802): Notifying id token listeners about user ( wXnf0McLHqPi9FI1TTzhNPAEtOHO ).
+D/FirebaseAuth( 3802): Notifying auth state listeners about user ( wXnf0McLHqPi9FI1TTzhNPAEtOHO ).
+W/DynamiteModule( 3802): Local module descriptor class for com.google.android.gms.providerinstaller.dynamite not found.
+I/DynamiteModule( 3802): Considering local module com.google.android.gms.providerinstaller.dynamite:0 and remote module com.google.android.gms.providerinstaller.dynamite:0
+W/ProviderInstaller( 3802): Failed to load providerinstaller module: No acceptable module com.google.android.gms.providerinstaller.dynamite found. Local version is 0 and remote version is 0.
+D/ApplicationLoaders( 3802): Returning zygote-cached class loader: /system/framework/org.apache.http.legacy.jar
+D/nativeloader( 3802): Configuring clns-8 for other apk /system/framework/com.android.media.remotedisplay.jar. target_sdk_version=34, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+D/nativeloader( 3802): Configuring clns-9 for other apk /system/framework/com.android.location.provider.jar. target_sdk_version=34, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+D/ApplicationLoaders( 3802): Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+D/ApplicationLoaders( 3802): Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+D/nativeloader( 3802): InitLlndkLibrariesProduct: libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libRS.so:libandroid_net.so:libapexsupport.so:libbinder_ndk.so:libc.so:libcgrouprc.so:libclang_rt.asan-x86_64-android.so:libcom.android.tethering.connectivity_native.so:libdl.so:libft2.so:liblog.so:libm.so:libmediandk.so:libnativewindow.so:libneuralnetworks.so:libselinux.so:libsync.so:libvendorsupport.so:libvndksupport.so:libvulkan.so
+D/nativeloader( 3802): Configuring product-clns-10 for unbundled product apk /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk. target_sdk_version=34, uses_libraries=, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms:/product/lib64:/system/product/lib64
+D/nativeloader( 3802): InitVndkspLibrariesProduct: VNDK is deprecated with product
+D/nativeloader( 3802): Load /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64/libconscrypt_gmscore_jni.so using ns product-clns-10 from class loader (caller=/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!classes3.dex): ok
+V/NativeCrypto( 3802): Registering com/google/android/gms/org/conscrypt/NativeCrypto's 305 native methods...
+W/id.ruma.app( 3802): Accessing hidden method Ljava/security/spec/ECParameterSpec;->getCurveName()Ljava/lang/String; (unsupported, reflection, allowed)
+I/ProviderInstaller( 3802): Installed default security provider GmsCore_OpenSSL
+D/TrafficStats( 3802): tagSocket(167) with statsTag=0xffffffff, statsUid=-1
+D/FirebaseAuth( 3802): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth( 3802): Notifying auth state listeners about a sign-out event.
+W/System  ( 3802): Ignoring header X-Firebase-Locale because its value was null.
+W/System  ( 3802): Ignoring header X-Firebase-Locale because its value was null.
+D/FirebaseAuth( 3802): Notifying id token listeners about user ( o1PwCNBIH93YZLeEdsv21vchFEV1 ).
+D/FirebaseAuth( 3802): Notifying auth state listeners about user ( o1PwCNBIH93YZLeEdsv21vchFEV1 ).
+W/Firestore( 3802): (27.0.0) [Firestore]: Listen for QueryWrapper(query=Query(target=Query(users/wXnf0McLHqPi9FI1TTzhNPAEtOHO/savingsGoals order by __name__);limitType=LIMIT_TO_FIRST)) failed: Status{code=PERMISSION_DENIED, description=
+W/Firestore( 3802): false for 'list' @ L369, false for 'list' @ L423, cause=null}
+W/System  ( 3802): Ignoring header X-Firebase-Locale because its value was null.
+D/FirebaseAuth( 3802): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth( 3802): Notifying auth state listeners about a sign-out event.
+W/Firestore( 3802): (27.0.0) [Firestore]: Listen for QueryWrapper(query=Query(target=Query(users/wXnf0McLHqPi9FI1TTzhNPAEtOHO/savingsMovements order by __name__);limitType=LIMIT_TO_FIRST)) failed: Status{code=PERMISSION_DENIED, description=
+W/Firestore( 3802): false for 'list' @ L375, false for 'list' @ L423, cause=null}
+I/FirebaseAuth( 3802): Logging in as savings-1792598292022389@ruma.test with empty reCAPTCHA token
+W/System  ( 3802): Ignoring header X-Firebase-Locale because its value was null.
+W/System  ( 3802): Ignoring header X-Firebase-Locale because its value was null.
+D/FirebaseAuth( 3802): Notifying id token listeners about user ( wXnf0McLHqPi9FI1TTzhNPAEtOHO ).
+D/FirebaseAuth( 3802): Notifying auth state listeners about user ( wXnf0McLHqPi9FI1TTzhNPAEtOHO ).
+W/System  ( 3802): Ignoring header X-Firebase-Locale because its value was null.
+D/FirebaseAuth( 3802): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth( 3802): Notifying auth state listeners about a sign-out event.
+D/EGL_emulation( 3802): app_time_stats: avg=3789.71ms min=1775.76ms max=5803.67ms count=2
+I/flutter ( 3802): 00:08 +1: (tearDownAll)
+I/flutter ( 3802): 00:08 +2: All tests passed!
+All tests passed.

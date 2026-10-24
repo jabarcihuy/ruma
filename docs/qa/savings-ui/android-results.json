@@ -1,0 +1,13 @@
+{
+  "projectId": "demo-ruma",
+  "productionWrites": 0,
+  "passed": 6,
+  "cases": [
+    "create goal through form, zero initial savings",
+    "insufficient funds preserves input; corrected deposit saves once",
+    "edit goal preserves allocated funds",
+    "second goal reaches target; total savings 400000 and available 420000",
+    "dirty cancel retains form; withdrawal changes available without income",
+    "navbar returns to main pages; home/finance reconcile after writes; ledger unchanged"
+  ]
+}

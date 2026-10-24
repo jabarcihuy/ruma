@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-21",
+  "status": "implemented_verified_installed",
+  "flutterTestsPassed": 50,
+  "newHomeTests": 7,
+  "analyzerClean": true,
+  "androidNativeSuitePassed": true,
+  "nativeCaseGroups": 3,
+  "nativeScreenshots": 4,
+  "font130SuitePassedBeforeFinalEmptyAlignment": true,
+  "finalFont100SuitePassed": true,
+  "normalApk": {
+    "apk": "output/apk/ruma-home-summary.apk",
+    "target": "lib/main.dart",
+    "mode": "debug",
+    "abi": "x86_64",
+    "bytes": 102330071,
+    "sha256": "5984d42bdf535566749f3fb48948d8b853d315b130248302dfeda6929aa12fc2",
+    "exactServerSecretMatches": 0,
+    "privateFileMatches": 0,
+    "passed": true
+  },
+  "normalInstalledAndColdLaunched": true,
+  "fixturesCleaned": true,
+  "firebaseEmulatorsStopped": true,
+  "productionWrites": 0,
+  "modelCalls": 0,
+  "fcmSends": 0,
+  "backendChanged": false,
+  "figmaChanged": false,
+  "pdfChanged": false,
+  "sources": {
+    "lib/features/home/home_page.dart": "d208e6c3112376d7f24f68c929c9bccee32a2a7782ddb630459673b293fd191f",
+    "lib/app/main_shell.dart": "52c3f6a6c52b00840cc4ac111fe1756b886120b6d1360a7ff3509d121b7f42cc",
+    "lib/ui/components.dart": "23298a2df3e58e5d1738f8b1ee4badd0f51cef31d373216047611b7642a32c7b",
+    "test/home_summary_test.dart": "b37a4fa45c685a903c4756e33085dc10535835c9e1f8acace0e455260139f312",
+    "test/foundation_test.dart": "e196bfa9d30dc00b79d33cbaf47080b165842d180fd1f7c0c8f0ecfce7d968ea",
+    "integration_test/home_summary_test.dart": "0bd44c92812cdc2c4450f413a8ffda92d8c12f980bbc89c1783ce3775cb3d789"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "apk": "output/apk/ruma-assistant-memory-candidate.apk",
+  "bytes": 102321120,
+  "sha256": "2f6a960462bca6083ab5f986b0cc07bd97b72550e68b7db723a166db2c48c585",
+  "exactSecretMatches": 0,
+  "privateFileMatches": 0,
+  "type": "normal lib/main.dart debug x86_64; no emulator define; not installed",
+  "passed": true
+}

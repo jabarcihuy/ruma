@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-20",
+  "device": "Ruma_API35 / emulator-5554",
+  "androidApi": 35,
+  "abi": "x86_64",
+  "nativeSuitePassed": true,
+  "keyboardRecheckPassed": true,
+  "screenshots": 27,
+  "visualStatuses": {
+    "LULUS": 21,
+    "CATATAN": 5,
+    "PERLU REVISI": 1
+  },
+  "analyzerClean": true,
+  "appCodeChangedThisStage": false,
+  "normalEmulatorApk": "output/apk/ruma-emulator-preview.apk",
+  "normalEmulatorApkSha256": "8e9e0f07e3ab6eee34d93863c262e2b06482c722db10ae62f06342b7a380e6af",
+  "normalInstalledAndColdLaunched": true,
+  "reportPdf": "output/pdf/ruma-report-per-frame.pdf",
+  "pdfPages": 10,
+  "productionWrites": 0,
+  "modelCalls": 0,
+  "fixturesCleaned": true,
+  "firebaseEmulatorStopped": true,
+  "androidAvdLeftOpen": true,
+  "screenSettingRestored": 1,
+  "physicalPhonePreviewUpdated": false
+}

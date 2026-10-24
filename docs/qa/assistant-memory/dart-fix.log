@@ -1,0 +1,19 @@
+Computing fixes in lib...
+Applying fixes...
+
+app/main_shell.dart
+  curly_braces_in_flow_control_structures - 2 fixes
+
+data/assistant_snapshot.dart
+  curly_braces_in_flow_control_structures - 9 fixes
+
+data/assistant_store.dart
+  curly_braces_in_flow_control_structures - 6 fixes
+
+data/draft_repository.dart
+  curly_braces_in_flow_control_structures - 4 fixes
+
+features/assistant/assistant_page.dart
+  curly_braces_in_flow_control_structures - 3 fixes
+
+24 fixes made in 5 files.

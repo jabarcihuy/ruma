@@ -1,0 +1,35 @@
+✔ future plan cannot become an expense even if model labels it actual today (15.920331ms)
+✔ actual expense is reviewable, never reported as saved (0.5836ms)
+✔ free model text cannot make a persistence claim (0.295179ms)
+✔ reject invalid money, impossible dates, forged evidence and extra authority (1.165692ms)
+✔ verify signature, expiry, project, subject and auth time; cache certificate (222.317962ms)
+✔ JWKS rejects malformed keys and refreshes an unknown kid after cooldown (119.753092ms)
+✔ Firestore adapter decodes timestamps and encodes conditional atomic writes (33.912667ms)
+✔ OAuth cache never mixes datastore and FCM scopes (128.139753ms)
+✔ disabled cron makes no reads or sends (3.140111ms)
+✔ generic payload, stable tag and exact owner; send creates one inbox, next tick does not duplicate (39.661313ms)
+✔ two concurrent ticks have one lease winner (1.170518ms)
+✔ completed/deleted/moved and expired sources never send (2.585844ms)
+✔ partial delivery persists successes, retries only failed devices with Retry-After (6.440511ms)
+✔ invalid token disabled; old generation completion cannot overwrite a new generation (2.36925ms)
+✔ hard daily cap prevents sends and defers; no active devices fails explicitly (0.961453ms)
+✔ permanent device errors are not retried when another device needs a retry (3.839681ms)
+✔ requests without auth or with forged auth do not reach provider (41.015091ms)
+✔ reject client-selected model/URL/UID, system messages, stale time and oversized body (5.546562ms)
+✔ quota rejection fails closed and never reaches model (2.173131ms)
+✔ fixed provider/model/system and no storage claim in client response (5.039241ms)
+✔ provider failures are bounded, mapped and never retried automatically (4.185617ms)
+✔ unconfigured global quota cannot enable an unmetered proxy (1.11599ms)
+✔ Jakarta date crosses midnight at 17:00 UTC for transaction context (2.540466ms)
+✔ quota uses two calls, conditional atomic commit and bounded conflict retry (118.795936ms)
+✔ read queries and change drafts are bounded, never model-authored answers or commits (3.494018ms)
+✔ reject forged paths, malformed dates, unsafe changes and delete payload edits (4.702848ms)
+✔ transactions require old date, delete has no replacement fields (0.814748ms)
+ℹ tests 27
+ℹ suites 0
+ℹ pass 27
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 563.758955

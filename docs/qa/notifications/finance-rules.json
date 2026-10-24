@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-20",
+  "projectId": "demo-ruma",
+  "productionWrites": 0,
+  "cases": [
+    {
+      "name": "first-expense",
+      "passed": true
+    },
+    {
+      "name": "income-retry",
+      "passed": true
+    },
+    {
+      "name": "edit-cross-month-type-category",
+      "passed": true
+    },
+    {
+      "name": "soft-delete",
+      "passed": true
+    },
+    {
+      "name": "budget-first-and-edit",
+      "passed": true
+    },
+    {
+      "name": "budget-validation",
+      "passed": true
+    },
+    {
+      "name": "transaction-validation",
+      "passed": true
+    },
+    {
+      "name": "core-forgery",
+      "passed": true
+    },
+    {
+      "name": "month-forgery",
+      "passed": true
+    },
+    {
+      "name": "coupled-writes",
+      "passed": true
+    },
+    {
+      "name": "uid-isolation",
+      "passed": true
+    },
+    {
+      "name": "concurrent-money",
+      "passed": true
+    },
+    {
+      "name": "stale-version",
+      "passed": true
+    },
+    {
+      "name": "budget-cannot-forge-money",
+      "passed": true
+    },
+    {
+      "name": "default-deny",
+      "passed": true
+    },
+    {
+      "name": "all-months-required",
+      "passed": true
+    }
+  ],
+  "passed": 16,
+  "failed": 0
+}

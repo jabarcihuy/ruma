@@ -1,0 +1,13 @@
+{
+  "projectId": "demo-ruma",
+  "productionWrites": 0,
+  "passed": 6,
+  "cases": [
+    "create goal through form, zero initial savings",
+    "insufficient funds preserves input; corrected deposit saves once",
+    "edit goal preserves allocated funds",
+    "wishlist icons persist through create, edit, read, deposit; second goal reaches target",
+    "dirty cancel retains form; withdrawal changes available without income",
+    "navbar returns to main pages; home/finance reconcile after writes; ledger unchanged"
+  ]
+}

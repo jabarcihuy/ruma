@@ -1,0 +1,146 @@
+Resolving dependencies...
+Downloading packages...
+  material_color_utilities 0.13.0 (0.13.1 available)
+  test_api 0.7.12 (0.7.15 available)
+  vector_graphics 1.2.3 (1.2.4 available)
+  xml 7.0.1 (7.1.0 available)
+Got dependencies!
+4 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Running Gradle task 'assembleDebug'...                          
+WARNING: Your app uses the following plugins that apply Kotlin Gradle Plugin (KGP): firebase_auth, firebase_core
+Future versions of Flutter will fail to build if your app uses plugins that apply KGP.
+
+Please check the changelogs of these plugins and upgrade to a version that supports Built-in Kotlin.
+If no such version exists, report the issue to the plugin. If necessary, here is a guide on filing
+an issue against a plugin: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-app-developers#report-incompatible-kotlin-gradle-plugin-usage-to-plugin-authors
+
+If you are a plugin author, please migrate your plugin to Built-in Kotlin using this guide: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-plugin-authors
+Running Gradle task 'assembleDebug'...                             31.7s
+✓ Built build/app/outputs/flutter-apk/app-debug.apk
+Installing build/app/outputs/flutter-apk/app-debug.apk...        1,801ms
+I/id.ruma.app( 6631): Compiler allocated 5174KB to compile void android.view.ViewRootImpl.performTraversals()
+I/Choreographer( 6631): Skipped 51 frames!  The application may be doing too much work on its main thread.
+D/FlutterJNI( 6631): Sending viewport metrics to the engine.
+D/ProfileInstaller( 6631): Installing profile for id.ruma.app
+VMServiceFlutterDriver: Connecting to Flutter application at http://127.0.0.1:43473/BRG3Dxi0A_E=/
+VMServiceFlutterDriver: Isolate found with number: 5757189346616703
+VMServiceFlutterDriver: Isolate 5757189346616703 is runnable.
+VMServiceFlutterDriver: Isolate is paused at start.
+VMServiceFlutterDriver: Attempting to resume isolate
+I/flutter ( 6631): 00:00 +0: approved final stages cloud smoke
+VMServiceFlutterDriver: Connected to Flutter application.
+D/FirebaseAuth( 6631): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth( 6631): Notifying auth state listeners about a sign-out event.
+W/System  ( 6631): Ignoring header X-Firebase-Locale because its value was null.
+D/TrafficStats( 6631): tagSocket(156) with statsTag=0xffffffff, statsUid=-1
+W/System  ( 6631): Ignoring header X-Firebase-Locale because its value was null.
+D/FirebaseAuth( 6631): Notifying id token listeners about user ( x6peUeYuRYWyUQo49ewtXvR1aK53 ).
+D/FirebaseAuth( 6631): Notifying auth state listeners about user ( x6peUeYuRYWyUQo49ewtXvR1aK53 ).
+I/flutter ( 6631): RUMA_FINAL_SYNTHETIC_UID=x6peUeYuRYWyUQo49ewtXvR1aK53
+W/DynamiteModule( 6631): Local module descriptor class for com.google.android.gms.providerinstaller.dynamite not found.
+I/DynamiteModule( 6631): Considering local module com.google.android.gms.providerinstaller.dynamite:0 and remote module com.google.android.gms.providerinstaller.dynamite:0
+W/ProviderInstaller( 6631): Failed to load providerinstaller module: No acceptable module com.google.android.gms.providerinstaller.dynamite found. Local version is 0 and remote version is 0.
+D/ApplicationLoaders( 6631): Returning zygote-cached class loader: /system/framework/org.apache.http.legacy.jar
+D/nativeloader( 6631): Configuring clns-8 for other apk /system/framework/com.android.media.remotedisplay.jar. target_sdk_version=34, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+D/nativeloader( 6631): Configuring clns-9 for other apk /system/framework/com.android.location.provider.jar. target_sdk_version=34, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+D/ApplicationLoaders( 6631): Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+D/ApplicationLoaders( 6631): Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+D/nativeloader( 6631): InitLlndkLibrariesProduct: libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libRS.so:libandroid_net.so:libapexsupport.so:libbinder_ndk.so:libc.so:libcgrouprc.so:libclang_rt.asan-x86_64-android.so:libcom.android.tethering.connectivity_native.so:libdl.so:libft2.so:liblog.so:libm.so:libmediandk.so:libnativewindow.so:libneuralnetworks.so:libselinux.so:libsync.so:libvendorsupport.so:libvndksupport.so:libvulkan.so
+D/nativeloader( 6631): Configuring product-clns-10 for unbundled product apk /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk. target_sdk_version=34, uses_libraries=, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms:/product/lib64:/system/product/lib64
+D/nativeloader( 6631): InitVndkspLibrariesProduct: VNDK is deprecated with product
+D/nativeloader( 6631): Load /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64/libconscrypt_gmscore_jni.so using ns product-clns-10 from class loader (caller=/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!classes3.dex): ok
+V/NativeCrypto( 6631): Registering com/google/android/gms/org/conscrypt/NativeCrypto's 305 native methods...
+W/id.ruma.app( 6631): Accessing hidden method Ljava/security/spec/ECParameterSpec;->getCurveName()Ljava/lang/String; (unsupported, reflection, allowed)
+I/id.ruma.app( 6631): Waiting for a blocking GC ClassLinker
+I/id.ruma.app( 6631): WaitForGcToComplete blocked ClassLinker on Background for 16.783ms
+I/ProviderInstaller( 6631): Installed default security provider GmsCore_OpenSSL
+D/TrafficStats( 6631): tagSocket(165) with statsTag=0xffffffff, statsUid=-1
+W/id.ruma.app( 6631): Accessing hidden field Ljava/net/Socket;->impl:Ljava/net/SocketImpl; (unsupported, reflection, allowed)
+W/id.ruma.app( 6631): Accessing hidden method Ljava/security/spec/ECParameterSpec;->setCurveName(Ljava/lang/String;)V (unsupported, reflection, allowed)
+VMServiceFlutterDriver: request_data message is taking a long time to complete...
+D/TrafficStats( 6631): tagSocket(168) with statsTag=0x8001, statsUid=-1
+W/id.ruma.app( 6631): Long monitor contention with owner TAG (6754) at com.google.android.gms.tasks.Task com.google.firebase.messaging.RequestDeduplicator.getOrStartGetTokenRequest(java.lang.String, com.google.firebase.messaging.RequestDeduplicator$GetTokenRequest)(RequestDeduplicator.java:77) waiters=0 in com.google.android.gms.tasks.Task com.google.firebase.messaging.RequestDeduplicator.getOrStartGetTokenRequest(java.lang.String, com.google.firebase.messaging.RequestDeduplicator$GetTokenRequest) for 2.187s
+D/FlutterJNI( 6631): Sending viewport metrics to the engine.
+D/EGL_emulation( 6631): app_time_stats: avg=5169.67ms min=383.98ms max=12792.17ms count=3
+D/EGL_emulation( 6631): app_time_stats: avg=2284.18ms min=2284.18ms max=2284.18ms count=1
+D/EGL_emulation( 6631): app_time_stats: avg=2461.93ms min=2461.93ms max=2461.93ms count=1
+D/EGL_emulation( 6631): app_time_stats: avg=2556.33ms min=2556.33ms max=2556.33ms count=1
+D/EGL_emulation( 6631): app_time_stats: avg=2554.11ms min=2554.11ms max=2554.11ms count=1
+D/EGL_emulation( 6631): app_time_stats: avg=2530.82ms min=2530.82ms max=2530.82ms count=1
+D/EGL_emulation( 6631): app_time_stats: avg=2567.96ms min=2567.96ms max=2567.96ms count=1
+D/EGL_emulation( 6631): app_time_stats: avg=2330.33ms min=2330.33ms max=2330.33ms count=1
+D/EGL_emulation( 6631): app_time_stats: avg=2701.85ms min=2701.85ms max=2701.85ms count=1
+D/EGL_emulation( 6631): app_time_stats: avg=2482.74ms min=2482.74ms max=2482.74ms count=1
+D/EGL_emulation( 6631): app_time_stats: avg=2398.25ms min=2398.25ms max=2398.25ms count=1
+D/EGL_emulation( 6631): app_time_stats: avg=3203.27ms min=3203.27ms max=3203.27ms count=1
+D/EGL_emulation( 6631): app_time_stats: avg=2447.66ms min=2447.66ms max=2447.66ms count=1
+D/FLTFireMsgReceiver( 6631): broadcast received for message
+W/id.ruma.app( 6631): Accessing hidden method Landroid/os/WorkSource;->add(I)Z (unsupported,test-api, reflection, allowed)
+W/id.ruma.app( 6631): Accessing hidden method Landroid/os/WorkSource;->add(ILjava/lang/String;)Z (unsupported,test-api, reflection, allowed)
+W/id.ruma.app( 6631): Accessing hidden method Landroid/os/WorkSource;->get(I)I (unsupported, reflection, allowed)
+W/id.ruma.app( 6631): Accessing hidden method Landroid/os/WorkSource;->getName(I)Ljava/lang/String; (unsupported, reflection, allowed)
+W/FirebaseMessaging( 6631): Unable to log event: analytics library is missing
+W/FirebaseMessaging( 6631): Unable to log event: analytics library is missing
+D/EGL_emulation( 6631): app_time_stats: avg=22864.90ms min=22864.90ms max=22864.90ms count=1
+W/System  ( 6631): Ignoring header X-Firebase-Locale because its value was null.
+D/TrafficStats( 6631): tagSocket(141) with statsTag=0xffffffff, statsUid=-1
+D/FirebaseAuth( 6631): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth( 6631): Notifying auth state listeners about a sign-out event.
+D/FirebaseAuth( 6631): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth( 6631): Notifying auth state listeners about a sign-out event.
+I/flutter ( 6631): ══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+I/flutter ( 6631): The following TimeoutException was thrown running a test:
+I/flutter ( 6631): TimeoutException after 0:00:15.000000: Future not completed
+I/flutter ( 6631): 
+I/flutter ( 6631): When the exception was thrown, this was the stack:
+I/flutter ( 6631): <asynchronous suspension>
+I/flutter ( 6631): #1      ReminderRepository.read (package:ruma/data/reminders.dart:90:15)
+I/flutter ( 6631): <asynchronous suspension>
+I/flutter ( 6631): #2      main.<anonymous closure> (file:///home/ael/DATA/project%20on%20linux/mobileapp/ruma/integration_test/final_stages_cloud_test.dart:127:19)
+I/flutter ( 6631): <asynchronous suspension>
+I/flutter ( 6631): #3      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+I/flutter ( 6631): <asynchronous suspension>
+I/flutter ( 6631): #4      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+I/flutter ( 6631): <asynchronous suspension>
+I/flutter ( 6631): #5      TestWidgetsFlutterBinding._createTestCompletionHandler.<anonymous closure> (package:flutter_test/src/binding.dart:1707:12)
+I/flutter ( 6631): <asynchronous suspension>
+I/flutter ( 6631): (elided one frame from dart:async)
+I/flutter ( 6631): 
+I/flutter ( 6631): The test description was:
+I/flutter ( 6631):   approved final stages cloud smoke
+I/flutter ( 6631): ════════════════════════════════════════════════════════════════════════════════════════════════════
+I/flutter ( 6631): 01:11 +0: approved final stages cloud smoke [E]
+I/flutter ( 6631):   Test failed. See exception logs above.
+I/flutter ( 6631):   The test description was: approved final stages cloud smoke
+I/flutter ( 6631):   
+I/flutter ( 6631): 01:11 +0 -1: (tearDownAll)
+I/flutter ( 6631): 01:11 +1 -1: Some tests failed.
+Failure Details:
+Failure in method: approved final stages cloud smoke
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞═════════════════
+The following TimeoutException was thrown running a test:
+TimeoutException after 0:00:15.000000: Future not completed
+
+When the exception was thrown, this was the stack:
+<asynchronous suspension>
+#1      ReminderRepository.read (package:ruma/data/reminders.dart:90:15)
+<asynchronous suspension>
+#2      main.<anonymous closure> (file:///home/ael/DATA/project%20on%20linux/mobileapp/ruma/integration_test/final_stages_cloud_test.dart:127:19)
+<asynchronous suspension>
+#3      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#4      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+#5      TestWidgetsFlutterBinding._createTestCompletionHandler.<anonymous closure> (package:flutter_test/src/binding.dart:1707:12)
+<asynchronous suspension>
+(elided one frame from dart:async)
+
+The test description was:
+  approved final stages cloud smoke
+═════════════════════════════════════════════════════════════════
+
+end of failure 1
+
+
+

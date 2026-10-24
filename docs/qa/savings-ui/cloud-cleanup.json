@@ -1,0 +1,32 @@
+{
+  "project": "mobile-app-3479f",
+  "fixtureUids": [
+    "thhHH8QrqdR4bm5SoQF7eoBGZah1",
+    "sYi19Ag2IjaCuW7Bp0ZfJUk7jfZ2"
+  ],
+  "deleted": [
+    "users/thhHH8QrqdR4bm5SoQF7eoBGZah1/transactions/2OUBy7UB3RHg1NOEyMCw",
+    "users/thhHH8QrqdR4bm5SoQF7eoBGZah1/transactions/Lv25ZjArVd73Xu9FpD9u",
+    "users/thhHH8QrqdR4bm5SoQF7eoBGZah1/months/2026-01",
+    "users/thhHH8QrqdR4bm5SoQF7eoBGZah1/state/core",
+    "users/thhHH8QrqdR4bm5SoQF7eoBGZah1/state/savings",
+    "users/thhHH8QrqdR4bm5SoQF7eoBGZah1/operations/HGGSjJY1GI5N3g8qG8wz",
+    "users/thhHH8QrqdR4bm5SoQF7eoBGZah1/operations/Sh8LTG4bUs4YXQEjj62H",
+    "users/thhHH8QrqdR4bm5SoQF7eoBGZah1/operations/TMkRJy3zZdV5muQIfYGb",
+    "users/thhHH8QrqdR4bm5SoQF7eoBGZah1/operations/create-books",
+    "users/thhHH8QrqdR4bm5SoQF7eoBGZah1/operations/create-emergency",
+    "users/thhHH8QrqdR4bm5SoQF7eoBGZah1/operations/deposit-books",
+    "users/thhHH8QrqdR4bm5SoQF7eoBGZah1/operations/deposit-emergency",
+    "users/thhHH8QrqdR4bm5SoQF7eoBGZah1/operations/edit-emergency",
+    "users/thhHH8QrqdR4bm5SoQF7eoBGZah1/operations/new-empty",
+    "users/thhHH8QrqdR4bm5SoQF7eoBGZah1/operations/withdraw",
+    "users/thhHH8QrqdR4bm5SoQF7eoBGZah1/savingsGoals/books",
+    "users/thhHH8QrqdR4bm5SoQF7eoBGZah1/savingsGoals/emergency",
+    "users/thhHH8QrqdR4bm5SoQF7eoBGZah1/savingsGoals/empty",
+    "users/thhHH8QrqdR4bm5SoQF7eoBGZah1/savingsMovements/deposit-books",
+    "users/thhHH8QrqdR4bm5SoQF7eoBGZah1/savingsMovements/deposit-emergency",
+    "users/thhHH8QrqdR4bm5SoQF7eoBGZah1/savingsMovements/withdraw"
+  ],
+  "verifiedEmpty": true,
+  "modelCalls": 0
+}

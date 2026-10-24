@@ -1,0 +1,144 @@
+Resolving dependencies...
+Downloading packages...
+  material_color_utilities 0.13.0 (0.13.1 available)
+  test_api 0.7.12 (0.7.15 available)
+  xml 7.0.1 (7.1.0 available)
+Got dependencies!
+3 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Running Gradle task 'assembleDebug'...                          
+WARNING: Your app uses the following plugins that apply Kotlin Gradle Plugin (KGP): firebase_auth, firebase_core
+Future versions of Flutter will fail to build if your app uses plugins that apply KGP.
+
+Please check the changelogs of these plugins and upgrade to a version that supports Built-in Kotlin.
+If no such version exists, report the issue to the plugin. If necessary, here is a guide on filing
+an issue against a plugin: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-app-developers#report-incompatible-kotlin-gradle-plugin-usage-to-plugin-authors
+
+If you are a plugin author, please migrate your plugin to Built-in Kotlin using this guide: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-plugin-authors
+Running Gradle task 'assembleDebug'...                             10.1s
+✓ Built build/app/outputs/flutter-apk/app-debug.apk
+Installing build/app/outputs/flutter-apk/app-debug.apk...          10.0s
+I/id.ruma.app( 2135): Compiler allocated 6807KB to compile void android.view.ViewRootImpl.performTraversals()
+D/ProfileInstaller( 2135): Installing profile for id.ruma.app
+VMServiceFlutterDriver: Connecting to Flutter application at http://127.0.0.1:34247/DNssw2iJZwM=/
+VMServiceFlutterDriver: Isolate found with number: 4440693763060047
+VMServiceFlutterDriver: Isolate 4440693763060047 is runnable.
+VMServiceFlutterDriver: Isolate is paused at start.
+VMServiceFlutterDriver: Attempting to resume isolate
+I/flutter ( 2135): 00:00 +0: manual finance UI + native SDK and agenda interoperability
+VMServiceFlutterDriver: Connected to Flutter application.
+I/Choreographer( 2135): Skipped 48 frames!  The application may be doing too much work on its main thread.
+I/GrallocExtra( 2135): gralloc_extra_query:is_SW3D 0
+I/GrallocExtra( 2135): gralloc_extra_query:is_SW3D 0
+W/libc    ( 2135): Access denied finding property "ro.vendor.display.iris_x7.support"
+W/1.raster( 2135): type=1400 audit(0.0:27138): avc:  denied  { read } for  name="u:object_r:vendor_displayfeature_prop:s0" dev="tmpfs" ino=593 scontext=u:r:untrusted_app:s0:c181,c257,c512,c768 tcontext=u:object_r:vendor_displayfeature_prop:s0 tclass=file permissive=0 app=id.ruma.app
+D/BLASTBufferQueue( 2135): [5d9b7c3 SurfaceView[id.ruma.app/id.ruma.app.MainActivity]#1](f:0,a:1) acquireNextBufferLocked size=1080x2400 mFrameNumber=1 applyTransaction=true mTimestamp=23368099243700(auto) mPendingTransactions.size=0 graphicBufferId=9169755176970 transform=0
+I/Choreographer( 2135): Skipped 63 frames!  The application may be doing too much work on its main thread.
+D/VRI[MainActivity]( 2135): vri.Setup new sync=wmsSync-VRI[MainActivity]#1
+I/SKIA    ( 2135): CreateGraphicsPipeline pipeline cache hit. elpased time: 7.34 ms.
+D/BLASTBufferQueue( 2135): [VRI[MainActivity]#0](f:0,a:1) acquireNextBufferLocked size=1080x2400 mFrameNumber=1 applyTransaction=true mTimestamp=23368285144008(auto) mPendingTransactions.size=0 graphicBufferId=9169755176978 transform=0
+D/VRI[MainActivity]( 2135): vri.reportDrawFinished 0 0 Rect(0, 0 - 1080, 2400)
+I/NativeTurboSchedManager( 2135): Load libmiui_runtime
+I/HandWritingStubImpl( 2135): refreshLastKeyboardType: 1
+I/HandWritingStubImpl( 2135): getCurrentKeyboardType: 1
+D/InsetsController( 2135): hide(ime(), fromIme=false)
+I/ImeTracker( 2135): id.ruma.app:c1370e52: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+I/HandWritingStubImpl( 2135): getCurrentKeyboardType: 1
+I/FirebaseApp( 2135): Device unlocked: initializing all Firebase APIs for app [DEFAULT]
+W/InsetsSource( 2135): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource( 2135): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource( 2135): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource( 2135): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+D/FirebaseAuth( 2135): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth( 2135): Notifying auth state listeners about a sign-out event.
+W/System  ( 2135): Ignoring header X-Firebase-Locale because its value was null.
+W/System  ( 2135): Ignoring header X-Firebase-Locale because its value was null.
+W/FinalizerDaemon( 2135): type=1400 audit(0.0:27141): avc:  denied  { getopt } for  path="/dev/socket/usap_pool_primary" scontext=u:r:untrusted_app:s0:c181,c257,c512,c768 tcontext=u:r:zygote:s0 tclass=unix_stream_socket permissive=0 app=id.ruma.app
+D/FirebaseAuth( 2135): Notifying id token listeners about user ( 9dbknFjt81p5OLAkYk7cWd4LUTmd ).
+D/FirebaseAuth( 2135): Notifying auth state listeners about user ( 9dbknFjt81p5OLAkYk7cWd4LUTmd ).
+W/DynamiteModule( 2135): Local module descriptor class for com.google.android.gms.providerinstaller.dynamite not found.
+I/DynamiteModule( 2135): Considering local module com.google.android.gms.providerinstaller.dynamite:0 and remote module com.google.android.gms.providerinstaller.dynamite:0
+D/BufferQueueConsumer( 2135): [](id:85700000002,api:0,p:-1,c:2135) connect: controlledByApp=true
+W/ProviderInstaller( 2135): Failed to load providerinstaller module: No acceptable module com.google.android.gms.providerinstaller.dynamite found. Local version is 0 and remote version is 0.
+D/ApplicationLoaders( 2135): Returning zygote-cached class loader: /system/framework/org.apache.http.legacy.jar
+D/ApplicationLoaders( 2135): Returning zygote-cached class loader: /system/framework/com.android.location.provider.jar
+D/ApplicationLoaders( 2135): Returning zygote-cached class loader: /system/framework/com.android.media.remotedisplay.jar
+D/nativeloader( 2135): Configuring clns-11 for other apk /system_ext/framework/com.android.extensions.appfunctions.jar. target_sdk_version=37, uses_libraries=ALL, library_path=/data/app/~~ZCVdjtP4bqdfjtF8y0tZIQ==/com.google.android.gms-VnOrDxKRydQ2_6tvyy7JMQ==/lib/arm64:/data/app/~~ZCVdjtP4bqdfjtF8y0tZIQ==/com.google.android.gms-VnOrDxKRydQ2_6tvyy7JMQ==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+D/nativeloader( 2135): Extending system_exposed_libraries: libapuwareapusys.mtk.so:libapuwareapusys_v2.mtk.so:libapuwarexrp.mtk.so:libapuwarexrp_v2.mtk.so:libapuwareutils.mtk.so:libapuwareutils_v2.mtk.so:libapuwarehmp.mtk.so:libapuwareaiste.mtk.so:libneuron_graph_delegate.mtk.so:libneuronusdk_adapter.mtk.so:libtflite_mtk.mtk.so:libarmnn_ndk.mtk.so:libcmdl_ndk.mtk.so:libnir_neon_driver_ndk.mtk.so:libmvpu_runtime.mtk.so:libmvpu_runtime_pub.mtk.so:libmvpu_engine_pub.mtk.so:libmvpu_pattern_pub.mtk.so:libmvpuop_mtk_cv.mtk.so:libmvpuop_mtk_nn.mtk.so:libmvpu_runtime_25.mtk.so:libmvpu_runtime_25_pub.mtk.so:libmvpu_engine_25_pub.mtk.so:libmvpu_pattern_25_pub.mtk.so:libmvpuop25_mtk_cv.mtk.so:libmvpuop25_mtk_nn.mtk.so:libmvpu_config.mtk.so:libmvpu_engine_30.mtk.so:libmvpu_pattern_30.mtk.so:libmvpu_cic_ci_compiler_30.mtk.so:libmvpu_runtime_30.mtk.so:libmvpu_clc_30_mvpu_debuginfo.mtk.so:libmvpu_clc_30_mvpu_elf.mtk.so:libmvpu_clc_30_mvpu_utility.mtk.so:libneuronservice_adapter.mtk.so:libneuron_sys_util.mtk.so:libmvpuop30_mtk_nn.mtk.so:libneuron
+D/ApplicationLoaders( 2135): Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+D/ApplicationLoaders( 2135): Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+D/nativeloader( 2135): Configuring clns-12 for other apk /data/app/~~ZCVdjtP4bqdfjtF8y0tZIQ==/com.google.android.gms-VnOrDxKRydQ2_6tvyy7JMQ==/base.apk. target_sdk_version=37, uses_libraries=, library_path=/data/app/~~ZCVdjtP4bqdfjtF8y0tZIQ==/com.google.android.gms-VnOrDxKRydQ2_6tvyy7JMQ==/lib/arm64:/data/app/~~ZCVdjtP4bqdfjtF8y0tZIQ==/com.google.android.gms-VnOrDxKRydQ2_6tvyy7JMQ==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+I/id.ruma.app( 2135): AssetManager2(0xb400007ab5e4cdb8) locale list changing from [] to [en-US]
+D/VRI[MainActivity]( 2135): getMiuiFreeformStackInfo mTmpFrames.miuiFreeFormStackInfo: null
+W/InsetsSource( 2135): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource( 2135): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource( 2135): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource( 2135): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource( 2135): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource( 2135): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+D/FlutterJNI( 2135): Sending viewport metrics to the engine.
+I/id.ruma.app( 2135): hiddenapi: Accessing hidden method Ldalvik/system/VMStack;->getStackClass2()Ljava/lang/Class; (runtime_flags=0, domain=core-platform, api=unsupported) from Libva; (domain=app, TargetSdkVersion=36) using reflection: allowed
+I/ProviderInstaller( 2135): Installed default security provider AndroidOpenSSL (via CompatProvider)
+W/FlagStore( 2135): Failed to commit to updated flags for com.google.android.gms.providerinstaller#id.ruma.app
+W/FlagStore( 2135): java.lang.SecurityException: GoogleCertificatesRslt: not allowed: pkg=id.ruma.app, sha256=[d99dd897124e38aeaa87d402055a171f36e460065d1db0cdd0228b7392491fcf], atk=false, ver=264032035.true (go/gsrlt)
+W/FlagStore( 2135): 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3361)
+W/FlagStore( 2135): 	at android.os.Parcel.createException(Parcel.java:3345)
+W/FlagStore( 2135): 	at android.os.Parcel.readException(Parcel.java:3328)
+W/FlagStore( 2135): 	at android.os.Parcel.readException(Parcel.java:3270)
+W/FlagStore( 2135): 	at acni.transactAndReadExceptionReturnVoid(:com.google.android.gms@264032035@26.40.32 (260400-995630914):11)
+W/FlagStore( 2135): 	at fuzl.b(:com.google.android.gms@264032035@26.40.32 (260400-995630914):12)
+W/FlagStore( 2135): 	at fuwi.d(:com.google.android.gms@264032035@26.40.32 (260400-995630914):20)
+W/FlagStore( 2135): 	at bqdw.a(:com.google.android.gms@264032035@26.40.32 (260400-995630914):5)
+W/FlagStore( 2135): 	at bpzl.g(:com.google.android.gms@264032035@26.40.32 (260400-995630914):7)
+W/FlagStore( 2135): 	at bqcb.t(:com.google.android.gms@264032035@26.40.32 (260400-995630914):10)
+W/FlagStore( 2135): 	at bqcb.u(:com.google.android.gms@264032035@26.40.32 (260400-995630914):119)
+W/FlagStore( 2135): 	at bqcb.c(:com.google.android.gms@264032035@26.40.32 (260400-995630914):16)
+W/FlagStore( 2135): 	at bqch.handleMessage(:com.google.android.gms@264032035@26.40.32 (260400-995630914):874)
+W/FlagStore( 2135): 	at android.os.Handler.dispatchMessage(Handler.java:110)
+W/FlagStore( 2135): 	at dosw.lP(:com.google.android.gms@264032035@26.40.32 (260400-995630914):1)
+W/FlagStore( 2135): 	at dosw.dispatchMessage(:com.google.android.gms@264032035@26.40.32 (260400-995630914):5)
+W/FlagStore( 2135): 	at android.os.Looper.loopOnce(Looper.java:274)
+W/FlagStore( 2135): 	at android.os.Looper.loop(Looper.java:369)
+W/FlagStore( 2135): 	at android.os.HandlerThread.run(HandlerThread.java:85)
+D/libEGL  ( 2135): Post task 1
+D/libEGL  ( 2135): Worker thread start 525113721792
+D/libEGL  ( 2135): Run task 1
+VMServiceFlutterDriver: request_data message is taking a long time to complete...
+E/id.ruma.app( 2135): FrameInsert open fail: No such file or directory
+I/SKIA    ( 2135): CreateGraphicsPipeline pipeline cache hit. elpased time: 7.72 ms.
+I/SKIA    ( 2135): CreateGraphicsPipeline pipeline cache hit. elpased time: 6.30 ms.
+I/id.ruma.app( 2135): AssetManager2(0xb400007ab5e61f38) locale list changing from [] to [en-US]
+I/id.ruma.app( 2135): AssetManager2(0xb400007ab5e68018) locale list changing from [] to [en-US]
+I/id.ruma.app( 2135): AssetManager2(0xb400007ab5e66a38) locale list changing from [] to [en-US]
+I/id.ruma.app( 2135): AssetManager2(0xb400007ab5e68338) locale list changing from [] to [en-US]
+I/id.ruma.app( 2135): AssetManager2(0xb400007ab5e62898) locale list changing from [] to [en-US]
+I/id.ruma.app( 2135): AssetManager2(0xb400007ab5e68658) locale list changing from [] to [en-US]
+D/libEGL  ( 2135): Post task 2
+D/libEGL  ( 2135): Run task 2
+E/LB      ( 2135): fail to open file: No such file or directory
+W/1.raster( 2135): type=1400 audit(0.0:27146): avc:  denied  { getattr } for  path="/sys/module/metis/parameters/minor_window_app" dev="sysfs" ino=81117 scontext=u:r:untrusted_app:s0:c181,c257,c512,c768 tcontext=u:object_r:sysfs_migt:s0 tclass=file permissive=0 app=id.ruma.app
+I/id.ruma.app( 2135): AssetManager2(0xb400007ab5e80078) locale list changing from [] to [en-US]
+I/id.ruma.app( 2135): AssetManager2(0xb400007ab5e6d798) locale list changing from [] to [en-US]
+I/id.ruma.app( 2135): AssetManager2(0xb400007ab5e7f0d8) locale list changing from [] to [en-US]
+I/id.ruma.app( 2135): AssetManager2(0xb400007ab5e80cf8) locale list changing from [] to [en-US]
+I/id.ruma.app( 2135): AssetManager2(0xb400007ab5e7ce78) locale list changing from [] to [en-US]
+I/id.ruma.app( 2135): AssetManager2(0xb400007ab5e7b578) locale list changing from [] to [en-US]
+D/libEGL  ( 2135): Worker thread exit 525113721792
+W/WindowOnBackDispatcher( 2135): sendCancelIfRunning: isInProgress=false callback=io.flutter.embedding.android.FlutterActivity$1@d235b08
+D/FirebaseAuth( 2135): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth( 2135): Notifying auth state listeners about a sign-out event.
+W/System  ( 2135): Ignoring header X-Firebase-Locale because its value was null.
+W/System  ( 2135): Ignoring header X-Firebase-Locale because its value was null.
+D/FirebaseAuth( 2135): Notifying id token listeners about user ( 3bpT8Kj2mUhne9oVgsFNpsRVzHr7 ).
+D/FirebaseAuth( 2135): Notifying auth state listeners about user ( 3bpT8Kj2mUhne9oVgsFNpsRVzHr7 ).
+W/Firestore( 2135): (27.0.0) [Firestore]: Listen for QueryWrapper(query=Query(target=Query(users/9dbknFjt81p5OLAkYk7cWd4LUTmd/transactions order by __name__);limitType=LIMIT_TO_FIRST)) failed: Status{code=PERMISSION_DENIED, description=
+W/Firestore( 2135): false for 'list' @ L145, false for 'list' @ L198, cause=null}
+W/System  ( 2135): Ignoring header X-Firebase-Locale because its value was null.
+D/FirebaseAuth( 2135): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth( 2135): Notifying auth state listeners about a sign-out event.
+W/id.ruma.app( 2135): Binder 0xb400007a95e32f00 destroyed after setInheritRt before being parceled.
+W/id.ruma.app( 2135): Binder 0xb400007a95e4c2e0 destroyed after setInheritRt before being parceled.
+D/BufferQueueConsumer( 2135): [ImageReader-1080x2400f1m3-2135-0](id:85700000002,api:0,p:-1,c:2135) disconnect: caller 2135
+I/flutter ( 2135): 01:07 +1: (tearDownAll)
+I/flutter ( 2135): 01:07 +2: All tests passed!
+All tests passed.

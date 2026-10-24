@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-19",
+  "projectId": "mobile-app-3479f",
+  "rulesFile": "config/firebase/firestore.agenda.rules",
+  "sha256": "96f9c71fb99ca3c44fa92c8e41dc1ac4e6f0b3a35f5d56b73952b03670a1675b",
+  "published": true,
+  "publicationMethod": "Firebase Console; explicit user authorization",
+  "consoleVersionLabel": "Today • 9:21 PM",
+  "editorContentComparedWithLocalFile": true,
+  "evidence": "docs/qa/agenda/rules-published.jpg",
+  "productionSdkTest": "docs/qa/agenda/cloud-results.json",
+  "fixtureCleanup": "docs/qa/agenda/cloud-cleanup.json",
+  "billingChanged": false,
+  "iamRolesChanged": false,
+  "modelCalls": 0
+}

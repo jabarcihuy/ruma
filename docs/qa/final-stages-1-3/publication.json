@@ -1,0 +1,17 @@
+{
+  "project": "mobile-app-3479f",
+  "rulesPublishedAtLocal": "2026-10-21 08:23 WIB",
+  "previousRules": "firestore.assistant-memory.rules",
+  "activeRules": "firestore.final-stages.rules",
+  "workerActiveVersionPrefix": "774700f2",
+  "previousWorkerVersion": "c3759e9e-c2d6-4004-a2be-e6009ad04fe5",
+  "rulesExactCandidate": true,
+  "workerExactBundle": true,
+  "workerBundleSha256": "f99534154219b9d59e66958e3c591f099354d60a49217716413ad76def9a0e7e",
+  "iamChanged": false,
+  "indicesChanged": false,
+  "cronChanged": false,
+  "billingChanged": false,
+  "liveTests": "profile_isolation_and_fcm_verified_ai_http_502",
+  "workerActiveVersion": "774700f2-baa7-48c8-ada9-a417fb6d88db"
+}

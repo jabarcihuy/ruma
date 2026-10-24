@@ -1,0 +1,15 @@
+{
+  "project": "mobile-app-3479f",
+  "suite": "notifications_cloud_test",
+  "fixtureUids": [
+    "jHSPZGp9qbhF6f17756X0Q3bl9t1"
+  ],
+  "authFixturesDeleted": [
+    "jHSPZGp9qbhF6f17756X0Q3bl9t1"
+  ],
+  "cases": [
+    "production device registration"
+  ],
+  "modelCalls": 0,
+  "jobsCreated": 1
+}

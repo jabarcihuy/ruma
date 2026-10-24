@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-19",
+  "projectId": "demo-ruma",
+  "productionWrites": 0,
+  "cases": [
+    {
+      "name": "create-and-idempotent-retry",
+      "passed": true
+    },
+    {
+      "name": "account-isolation",
+      "passed": true
+    },
+    {
+      "name": "edit-complete",
+      "passed": true
+    },
+    {
+      "name": "soft-delete",
+      "passed": true
+    },
+    {
+      "name": "coupled-write",
+      "passed": true
+    },
+    {
+      "name": "field-validation",
+      "passed": true
+    },
+    {
+      "name": "unscheduled-task",
+      "passed": true
+    },
+    {
+      "name": "finance-protection",
+      "passed": true
+    },
+    {
+      "name": "immutable-metadata",
+      "passed": true
+    },
+    {
+      "name": "receipt-validation",
+      "passed": true
+    },
+    {
+      "name": "concurrent-revision",
+      "passed": true
+    },
+    {
+      "name": "default-deny",
+      "passed": true
+    }
+  ],
+  "passed": 12,
+  "failed": 0
+}

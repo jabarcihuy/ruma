@@ -1,0 +1,16 @@
+{
+  "project": "mobile-app-3479f",
+  "suite": "final_stages_cloud_test",
+  "fixtureUids": [
+    "x6peUeYuRYWyUQo49ewtXvR1aK53"
+  ],
+  "authFixturesDeleted": [
+    "x6peUeYuRYWyUQo49ewtXvR1aK53"
+  ],
+  "modelCalls": 0,
+  "jobsCreated": 1,
+  "fcmAttemptBudget": 1,
+  "cases": [
+    "production profile and preferences persist"
+  ]
+}

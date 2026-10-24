@@ -1,0 +1,21 @@
+{
+  "project": "mobile-app-3479f",
+  "fixtureUids": [
+    "tGiY2Ervd0akwlVdF7ZaBFbgVjs2",
+    "XnSZAZmNp2duCEDMvgG81UjGMJy2"
+  ],
+  "deleted": [
+    "users/tGiY2Ervd0akwlVdF7ZaBFbgVjs2/agenda/qqCBEKLml4uaOAcqPQv6",
+    "users/tGiY2Ervd0akwlVdF7ZaBFbgVjs2/state/core",
+    "users/tGiY2Ervd0akwlVdF7ZaBFbgVjs2/operations/3pwcNKFC7C8wgRiAli27",
+    "users/tGiY2Ervd0akwlVdF7ZaBFbgVjs2/reminders/qqCBEKLml4uaOAcqPQv6",
+    "users/XnSZAZmNp2duCEDMvgG81UjGMJy2/agenda/o0MlnEQUBDi3hlWZ21vF",
+    "users/XnSZAZmNp2duCEDMvgG81UjGMJy2/state/core",
+    "users/XnSZAZmNp2duCEDMvgG81UjGMJy2/operations/IwgRtdVC097AAp2tScH6",
+    "users/XnSZAZmNp2duCEDMvgG81UjGMJy2/devices/gw5XKt53sr9V4RExS5qn",
+    "users/XnSZAZmNp2duCEDMvgG81UjGMJy2/reminders/o0MlnEQUBDi3hlWZ21vF",
+    "users/XnSZAZmNp2duCEDMvgG81UjGMJy2/notifications/o0MlnEQUBDi3hlWZ21vF_1"
+  ],
+  "verifiedEmpty": true,
+  "modelCalls": 0
+}

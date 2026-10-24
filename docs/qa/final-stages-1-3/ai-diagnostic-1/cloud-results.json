@@ -1,0 +1,17 @@
+{
+  "project": "mobile-app-3479f",
+  "suite": "final_stages_cloud_test",
+  "fixtureUids": [
+    "x00tp7c1Dkf29DOA5HKFFfer31e2"
+  ],
+  "authFixturesDeleted": [
+    "x00tp7c1Dkf29DOA5HKFFfer31e2"
+  ],
+  "modelCalls": 1,
+  "additionalFcmSends": 0,
+  "cases": [
+    "production profile preferences persist"
+  ],
+  "httpStatus": 502,
+  "errorCode": "invalid_model_output"
+}

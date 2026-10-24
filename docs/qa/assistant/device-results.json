@@ -1,0 +1,18 @@
+{
+  "project": "demo-ruma",
+  "productionWrites": 0,
+  "modelCalls": 0,
+  "nativeSdkPassed": true,
+  "passed": true,
+  "cases": [
+    "3+3 atomic",
+    "retry",
+    "stale",
+    "overlap",
+    "offline",
+    "manual edit retains source",
+    "shared form draft only",
+    "exclude",
+    "save reviewed draft"
+  ]
+}

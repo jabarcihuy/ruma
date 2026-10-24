@@ -1,0 +1,98 @@
+Resolving dependencies...
+Downloading packages...
+  material_color_utilities 0.13.0 (0.13.1 available)
+  test_api 0.7.12 (0.7.15 available)
+  vector_graphics 1.2.3 (1.2.4 available)
+  xml 7.0.1 (7.1.0 available)
+Got dependencies!
+4 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Running Gradle task 'assembleDebug'...                          
+WARNING: Your app uses the following plugins that apply Kotlin Gradle Plugin (KGP): firebase_auth, firebase_core
+Future versions of Flutter will fail to build if your app uses plugins that apply KGP.
+
+Please check the changelogs of these plugins and upgrade to a version that supports Built-in Kotlin.
+If no such version exists, report the issue to the plugin. If necessary, here is a guide on filing
+an issue against a plugin: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-app-developers#report-incompatible-kotlin-gradle-plugin-usage-to-plugin-authors
+
+If you are a plugin author, please migrate your plugin to Built-in Kotlin using this guide: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-plugin-authors
+Running Gradle task 'assembleDebug'...                             25.5s
+✓ Built build/app/outputs/flutter-apk/app-debug.apk
+Installing build/app/outputs/flutter-apk/app-debug.apk...          981ms
+I/id.ruma.app( 7030): Compiler allocated 5174KB to compile void android.view.ViewRootImpl.performTraversals()
+I/Choreographer( 7030): Skipped 36 frames!  The application may be doing too much work on its main thread.
+D/FlutterJNI( 7030): Sending viewport metrics to the engine.
+VMServiceFlutterDriver: Connecting to Flutter application at http://127.0.0.1:45463/vYMR7xV9A6k=/
+VMServiceFlutterDriver: Isolate found with number: 2682986697873231
+VMServiceFlutterDriver: Isolate 2682986697873231 is runnable.
+VMServiceFlutterDriver: Isolate is paused at start.
+VMServiceFlutterDriver: Attempting to resume isolate
+I/flutter ( 7030): 00:00 +0: real FCM foreground and background tap
+VMServiceFlutterDriver: Connected to Flutter application.
+D/ProfileInstaller( 7030): Installing profile for id.ruma.app
+D/FirebaseAuth( 7030): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth( 7030): Notifying auth state listeners about a sign-out event.
+W/System  ( 7030): Ignoring header X-Firebase-Locale because its value was null.
+D/TrafficStats( 7030): tagSocket(147) with statsTag=0xffffffff, statsUid=-1
+W/System  ( 7030): Ignoring header X-Firebase-Locale because its value was null.
+D/FirebaseAuth( 7030): Notifying id token listeners about user ( j14KgPGnLdMBObscRzqLCRlcqkl1 ).
+D/FirebaseAuth( 7030): Notifying auth state listeners about user ( j14KgPGnLdMBObscRzqLCRlcqkl1 ).
+I/flutter ( 7030): RUMA_NOTIFICATION_SYNTHETIC_UID=j14KgPGnLdMBObscRzqLCRlcqkl1
+D/TrafficStats( 7030): tagSocket(155) with statsTag=0x8001, statsUid=-1
+W/id.ruma.app( 7030): Long monitor contention with owner Firebase-Messaging-Init (7077) at com.google.android.gms.tasks.Task com.google.firebase.messaging.RequestDeduplicator.getOrStartGetTokenRequest(java.lang.String, com.google.firebase.messaging.RequestDeduplicator$GetTokenRequest)(RequestDeduplicator.java:77) waiters=0 in com.google.android.gms.tasks.Task com.google.firebase.messaging.RequestDeduplicator.getOrStartGetTokenRequest(java.lang.String, com.google.firebase.messaging.RequestDeduplicator$GetTokenRequest) for 1.352s
+VMServiceFlutterDriver: request_data message is taking a long time to complete...
+W/DynamiteModule( 7030): Local module descriptor class for com.google.android.gms.providerinstaller.dynamite not found.
+I/DynamiteModule( 7030): Considering local module com.google.android.gms.providerinstaller.dynamite:0 and remote module com.google.android.gms.providerinstaller.dynamite:0
+W/ProviderInstaller( 7030): Failed to load providerinstaller module: No acceptable module com.google.android.gms.providerinstaller.dynamite found. Local version is 0 and remote version is 0.
+D/ApplicationLoaders( 7030): Returning zygote-cached class loader: /system/framework/org.apache.http.legacy.jar
+D/nativeloader( 7030): Configuring clns-8 for other apk /system/framework/com.android.media.remotedisplay.jar. target_sdk_version=34, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+D/nativeloader( 7030): Configuring clns-9 for other apk /system/framework/com.android.location.provider.jar. target_sdk_version=34, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+D/ApplicationLoaders( 7030): Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+D/ApplicationLoaders( 7030): Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+D/nativeloader( 7030): InitLlndkLibrariesProduct: libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libRS.so:libandroid_net.so:libapexsupport.so:libbinder_ndk.so:libc.so:libcgrouprc.so:libclang_rt.asan-x86_64-android.so:libcom.android.tethering.connectivity_native.so:libdl.so:libft2.so:liblog.so:libm.so:libmediandk.so:libnativewindow.so:libneuralnetworks.so:libselinux.so:libsync.so:libvendorsupport.so:libvndksupport.so:libvulkan.so
+D/nativeloader( 7030): Configuring product-clns-10 for unbundled product apk /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk. target_sdk_version=34, uses_libraries=, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms:/product/lib64:/system/product/lib64
+D/nativeloader( 7030): InitVndkspLibrariesProduct: VNDK is deprecated with product
+D/nativeloader( 7030): Load /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64/libconscrypt_gmscore_jni.so using ns product-clns-10 from class loader (caller=/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!classes3.dex): ok
+V/NativeCrypto( 7030): Registering com/google/android/gms/org/conscrypt/NativeCrypto's 305 native methods...
+W/id.ruma.app( 7030): Accessing hidden method Ljava/security/spec/ECParameterSpec;->getCurveName()Ljava/lang/String; (unsupported, reflection, allowed)
+I/ProviderInstaller( 7030): Installed default security provider GmsCore_OpenSSL
+D/TrafficStats( 7030): tagSocket(164) with statsTag=0xffffffff, statsUid=-1
+W/id.ruma.app( 7030): Accessing hidden field Ljava/net/Socket;->impl:Ljava/net/SocketImpl; (unsupported, reflection, allowed)
+W/id.ruma.app( 7030): Accessing hidden method Ljava/security/spec/ECParameterSpec;->setCurveName(Ljava/lang/String;)V (unsupported, reflection, allowed)
+D/FlutterJNI( 7030): Sending viewport metrics to the engine.
+D/VRI[MainActivity]( 7030): visibilityChanged oldVisibility=true newVisibility=false
+V/NativeCrypto( 7030): Read error: ssl=0x706c5fd05618: I/O error during system call, Software caused connection abort
+V/NativeCrypto( 7030): Write error: ssl=0x706c5fd05618: I/O error during system call, Broken pipe
+V/NativeCrypto( 7030): SSL shutdown failed: ssl=0x706c5fd05618: I/O error during system call, Success
+D/TrafficStats( 7030): tagSocket(138) with statsTag=0xffffffff, statsUid=-1
+W/Firestore( 7030): (27.0.0) [WriteStream]: (2e6acef) Stream closed with status: Status{code=UNAVAILABLE, description=End of stream or IOException, cause=null}.
+W/Firestore( 7030): (27.0.0) [WatchStream]: (50d1ce1) Stream closed with status: Status{code=UNAVAILABLE, description=End of stream or IOException, cause=null}.
+W/ManagedChannelImpl( 7030): [{0}] Failed to resolve name. status={1}
+W/ManagedChannelImpl( 7030): [{0}] Failed to resolve name. status={1}
+W/ManagedChannelImpl( 7030): [{0}] Failed to resolve name. status={1}
+W/ManagedChannelImpl( 7030): [{0}] Failed to resolve name. status={1}
+W/ManagedChannelImpl( 7030): [{0}] Failed to resolve name. status={1}
+W/ManagedChannelImpl( 7030): [{0}] Failed to resolve name. status={1}
+W/ManagedChannelImpl( 7030): [{0}] Failed to resolve name. status={1}
+D/FLTFireMsgReceiver( 7030): broadcast received for message
+D/TrafficStats( 7030): tagSocket(137) with statsTag=0xffffffff, statsUid=-1
+W/FLTFireMsgService( 7030): A background message could not be handled in Dart as no onBackgroundMessage handler has been registered.
+W/id.ruma.app( 7030): Accessing hidden method Landroid/os/WorkSource;->add(I)Z (unsupported,test-api, reflection, allowed)
+W/id.ruma.app( 7030): Accessing hidden method Landroid/os/WorkSource;->add(ILjava/lang/String;)Z (unsupported,test-api, reflection, allowed)
+W/id.ruma.app( 7030): Accessing hidden method Landroid/os/WorkSource;->get(I)I (unsupported, reflection, allowed)
+W/id.ruma.app( 7030): Accessing hidden method Landroid/os/WorkSource;->getName(I)Ljava/lang/String; (unsupported, reflection, allowed)
+W/FirebaseMessaging( 7030): Unable to log event: analytics library is missing
+W/FirebaseMessaging( 7030): Unable to log event: analytics library is missing
+W/WindowOnBackDispatcher( 7030): OnBackInvokedCallback is not enabled for the application.
+W/WindowOnBackDispatcher( 7030): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+D/EGL_emulation( 7030): app_time_stats: avg=2384.26ms min=1281.10ms max=3487.42ms count=2
+W/System  ( 7030): Ignoring header X-Firebase-Locale because its value was null.
+D/TrafficStats( 7030): tagSocket(176) with statsTag=0xffffffff, statsUid=-1
+D/FirebaseAuth( 7030): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth( 7030): Notifying auth state listeners about a sign-out event.
+D/FirebaseAuth( 7030): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth( 7030): Notifying auth state listeners about a sign-out event.
+D/EGL_emulation( 7030): app_time_stats: avg=3717.92ms min=3717.92ms max=3717.92ms count=1
+I/flutter ( 7030): 01:17 +1: (tearDownAll)
+I/flutter ( 7030): 01:17 +2: All tests passed!
+All tests passed.

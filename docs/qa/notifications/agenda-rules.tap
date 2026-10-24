@@ -1,0 +1,36 @@
+✔ first agenda initializes core atomically; same receipt does not duplicate (835.973563ms)
+✔ owner list works; cross-account and unauthenticated reads/writes are denied (256.927445ms)
+✔ edit and complete increment entity version and agenda revision (249.029804ms)
+[2026-10-20T13:18:12.687Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x2673fc27 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'delete' @ L300
+✔ soft delete is atomic and tombstones cannot be edited or hard deleted (248.576568ms)
+✔ missing receipt or missing entity rolls back the whole operation (103.797859ms)
+✔ invalid shape, duration, paired time, deadline, class and zone are rejected (468.506336ms)
+✔ unscheduled tasks are supported (90.071039ms)
+✔ agenda operations cannot forge balances or finance revisions (260.347246ms)
+[2026-10-20T13:18:13.749Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x2673fc73 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'update' @ L300
+[2026-10-20T13:18:13.763Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x2673fc74 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'delete' @ L300
+✔ created timestamps and operation receipts are immutable (151.306718ms)
+✔ wrong receipt target or version cannot authorize changes (142.72326ms)
+✔ concurrent submissions against the same revision have one winner (142.794953ms)
+[2026-10-20T13:18:14.093Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x2673fc86 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L300, false for 'update' @ L300
+[2026-10-20T13:18:14.119Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x2673fc88 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L247, false for 'create' @ L300, false for 'update' @ L249, false for 'update' @ L300
+[2026-10-20T13:18:14.148Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x2673fc89 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L225, false for 'create' @ L300, false for 'update' @ L225, false for 'update' @ L300
+[2026-10-20T13:18:14.172Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x2673fc8a error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L215, false for 'create' @ L300, false for 'update' @ L215, false for 'update' @ L300
+[2026-10-20T13:18:14.198Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x2673fc8b error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L300, false for 'update' @ L300
+✔ all unsupported feature and server paths remain closed (160.508087ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3408.837652

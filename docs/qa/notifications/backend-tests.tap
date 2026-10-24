@@ -1,0 +1,32 @@
+✔ future plan cannot become an expense even if model labels it actual today (19.000458ms)
+✔ actual expense is reviewable, never reported as saved (0.716259ms)
+✔ free model text cannot make a persistence claim (0.305814ms)
+✔ reject invalid money, impossible dates, forged evidence and extra authority (0.81188ms)
+✔ verify signature, expiry, project, subject and auth time; cache certificate (144.171633ms)
+✔ JWKS rejects malformed keys and refreshes an unknown kid after cooldown (143.632316ms)
+✔ disabled cron makes no reads or sends (2.375183ms)
+✔ generic payload, stable tag and exact owner; send creates one inbox, next tick does not duplicate (31.785852ms)
+✔ two concurrent ticks have one lease winner (1.098952ms)
+✔ completed/deleted/moved and expired sources never send (1.072185ms)
+✔ partial delivery persists successes, retries only failed devices with Retry-After (5.441712ms)
+✔ invalid token disabled; old generation completion cannot overwrite a new generation (1.28369ms)
+✔ hard daily cap prevents sends and defers; no active devices fails explicitly (0.441963ms)
+✔ requests without auth or with forged auth do not reach provider (35.091244ms)
+✔ reject client-selected model/URL/UID, system messages, stale time and oversized body (2.244084ms)
+✔ quota rejection fails closed and never reaches model (3.023977ms)
+✔ fixed provider/model/system and no storage claim in client response (3.627705ms)
+✔ provider failures are bounded, mapped and never retried automatically (3.468738ms)
+✔ unconfigured global quota cannot enable an unmetered proxy (1.091363ms)
+✔ Jakarta date crosses midnight at 17:00 UTC for transaction context (2.44027ms)
+✔ quota uses two calls, conditional atomic commit and bounded conflict retry (128.638933ms)
+✔ read queries and change drafts are bounded, never model-authored answers or commits (2.583851ms)
+✔ reject forged paths, malformed dates, unsafe changes and delete payload edits (3.211646ms)
+✔ transactions require old date, delete has no replacement fields (0.420911ms)
+ℹ tests 24
+ℹ suites 0
+ℹ pass 24
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 511.702276

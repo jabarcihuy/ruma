@@ -1,0 +1,11 @@
+{
+  "project": "demo-ruma",
+  "productionWrites": 0,
+  "cases": [
+    "settings owner and revision",
+    "settings isolation",
+    "settings limits",
+    "weekly atomic coupling",
+    "weekly bounded shape"
+  ]
+}

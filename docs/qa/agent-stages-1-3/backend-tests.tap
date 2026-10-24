@@ -1,0 +1,25 @@
+✔ future plan cannot become an expense even if model labels it actual today (9.384358ms)
+✔ actual expense is reviewable, never reported as saved (0.448628ms)
+✔ free model text cannot make a persistence claim (0.196603ms)
+✔ reject invalid money, impossible dates, forged evidence and extra authority (0.567151ms)
+✔ verify signature, expiry, project, subject and auth time; cache certificate (206.317389ms)
+✔ JWKS rejects malformed keys and refreshes an unknown kid after cooldown (28.95538ms)
+✔ requests without auth or with forged auth do not reach provider (24.577802ms)
+✔ reject client-selected model/URL/UID, system messages, stale time and oversized body (1.884671ms)
+✔ quota rejection fails closed and never reaches model (0.880902ms)
+✔ fixed provider/model/system and no storage claim in client response (4.075056ms)
+✔ provider failures are bounded, mapped and never retried automatically (2.689589ms)
+✔ unconfigured global quota cannot enable an unmetered proxy (0.83897ms)
+✔ Jakarta date crosses midnight at 17:00 UTC for transaction context (2.060206ms)
+✔ quota uses two calls, conditional atomic commit and bounded conflict retry (117.40733ms)
+✔ read queries and change drafts are bounded, never model-authored answers or commits (1.584755ms)
+✔ reject forged paths, malformed dates, unsafe changes and delete payload edits (2.356806ms)
+✔ transactions require old date, delete has no replacement fields (0.358962ms)
+ℹ tests 17
+ℹ suites 0
+ℹ pass 17
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 354.448643

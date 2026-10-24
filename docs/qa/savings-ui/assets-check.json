@@ -1,0 +1,81 @@
+{
+  "sourceFrames": [
+    "422:5127",
+    "422:5228",
+    "144:11753",
+    "422:5348",
+    "144:11489"
+  ],
+  "systemStatusBar": "native Android",
+  "assets": [
+    {
+      "path": "design/assets/ruma/icons/arrow-left.svg",
+      "bytes": 257,
+      "width": "24",
+      "height": "24",
+      "viewBox": "0 0 24 24",
+      "callsite": "RumaIcon: square 22px, BoxFit.contain"
+    },
+    {
+      "path": "design/assets/ruma/icons/wallet.svg",
+      "bytes": 771,
+      "width": "24",
+      "height": "24",
+      "viewBox": "0 0 24 24",
+      "callsite": "RumaIcon: square 22px, BoxFit.contain"
+    },
+    {
+      "path": "design/assets/ruma/icons/shield-check.svg",
+      "bytes": 410,
+      "width": "24",
+      "height": "24",
+      "viewBox": "0 0 24 24",
+      "callsite": "RumaIcon: square 22px, BoxFit.contain"
+    },
+    {
+      "path": "design/assets/ruma/icons/calendar-days.svg",
+      "bytes": 478,
+      "width": "24",
+      "height": "24",
+      "viewBox": "0 0 24 24",
+      "callsite": "RumaIcon: square 22px, BoxFit.contain"
+    },
+    {
+      "path": "design/assets/ruma/icons/chevron-right.svg",
+      "bytes": 232,
+      "width": "24",
+      "height": "24",
+      "viewBox": "0 0 24 24",
+      "callsite": "RumaIcon: square 22px, BoxFit.contain"
+    },
+    {
+      "path": "design/assets/ruma/icons/book-open.svg",
+      "bytes": 382,
+      "width": "24",
+      "height": "24",
+      "viewBox": "0 0 24 24",
+      "callsite": "RumaIcon: square 22px, BoxFit.contain"
+    },
+    {
+      "path": "design/assets/ruma/icons/refresh-cw.svg",
+      "bytes": 387,
+      "width": "24",
+      "height": "24",
+      "viewBox": "0 0 24 24",
+      "callsite": "RumaIcon: square 22px, BoxFit.contain"
+    },
+    {
+      "path": "design/assets/ruma/mascot/nav-circle.svg",
+      "bytes": 243,
+      "viewBox": "0 0 48 48",
+      "callsite": "MainShell shared navigation square 48px, BoxFit.contain"
+    },
+    {
+      "path": "design/assets/ruma/mascot/nav-face.svg",
+      "bytes": 1519,
+      "viewBox": "0 0 24 24",
+      "callsite": "MainShell shared navigation square 32px, BoxFit.contain"
+    }
+  ],
+  "staticRasterScreenAssetsUsed": false
+}

@@ -1,0 +1,23 @@
+{
+  "project": "mobile-app-3479f",
+  "suite": "wishlist_cloud_test",
+  "fixtureUids": [
+    "DZAxEyaP3dVCPht51nagTHOK8eK2",
+    "marvqabVihTAs2MXPc0w7YRRWB72"
+  ],
+  "authFixturesDeleted": [
+    "marvqabVihTAs2MXPc0w7YRRWB72",
+    "DZAxEyaP3dVCPht51nagTHOK8eK2"
+  ],
+  "modelCalls": 0,
+  "fcmCalls": 0,
+  "passed": 5,
+  "cases": [
+    "goal initializes an empty core without adding money",
+    "deposit, multiple goals, reconciliation, 100 percent and idempotent retry",
+    "overdraft, over-withdrawal, stale version, request collision rollback",
+    "goal edit and withdrawal preserve ledger, reports, budget and recorded balance",
+    "UID lifecycle, cross-account queries and signed-out isolation"
+  ],
+  "completedAt": "2026-10-22T06:58:17.443611Z"
+}

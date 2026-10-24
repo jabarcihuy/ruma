@@ -1,0 +1,88 @@
+rules_version = '2';
+// Agenda-only rollout. Finance, reminders, quota and all other paths stay denied.
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function owner(uid) { return request.auth != null && request.auth.uid == uid; }
+    function text(v,max) { return v is string && v.size() <= max; }
+    function id(v) { return v is string && v.matches('^[a-zA-Z0-9_-]{1,80}$'); }
+    function base(d) { return d.schemaVersion == 1 && d.version is int && d.version >= 1
+      && d.createdAt is timestamp && d.updatedAt == request.time; }
+    function fresh(d) { return base(d) && d.version == 1 && d.createdAt == request.time; }
+    function revised(d) { return base(d) && d.version == resource.data.version+1 && d.createdAt == resource.data.createdAt; }
+    function op(uid,value) { return getAfter(/databases/$(database)/documents/users/$(uid)/operations/$(value)).data; }
+    function coreAfter(uid) { return getAfter(/databases/$(database)/documents/users/$(uid)/state/core).data; }
+    function coreBeforeRevision(uid) { return exists(/databases/$(database)/documents/users/$(uid)/state/core)
+      ? get(/databases/$(database)/documents/users/$(uid)/state/core).data.agendaRevision : 0; }
+    function agenda(d) {
+      return d.keys().hasAll(['schemaVersion','version','createdAt','updatedAt','deletedAt','operationId','kind','title','description','startAtUtc','endAtUtc','durationMinutes','deadlineAtUtc','priority','status','timezone','recurrence'])
+        && d.keys().hasOnly(['schemaVersion','version','createdAt','updatedAt','deletedAt','operationId','kind','title','description','startAtUtc','endAtUtc','durationMinutes','deadlineAtUtc','priority','status','timezone','recurrence'])
+        && id(d.operationId) && d.kind in ['class','task'] && text(d.title,120) && d.title.matches('.*[^\\s].*') && text(d.description,1000)
+        && d.durationMinutes is int && d.durationMinutes >= 5 && d.durationMinutes <= 720
+        && ((d.kind == 'task' && d.startAtUtc == null && d.endAtUtc == null) ||
+          (d.startAtUtc is timestamp && d.endAtUtc is timestamp && d.endAtUtc-d.startAtUtc == duration.value(d.durationMinutes,'m')))
+        && (d.deadlineAtUtc == null || (d.deadlineAtUtc is timestamp && (d.endAtUtc == null || d.endAtUtc <= d.deadlineAtUtc)))
+        && d.priority in ['low','normal','high'] && d.status in ['planned','completed','cancelled']
+        && d.timezone == 'Asia/Jakarta' && (d.deletedAt == null || d.deletedAt == request.time)
+        && d.recurrence is map && d.recurrence.keys().hasOnly(['type']) && d.recurrence.type == 'none';
+    }
+    function coupled(uid,agendaId,d) {
+      let r = op(uid,d.operationId);
+      let c = coreAfter(uid);
+      return r.createdAt == request.time && r.result.agendaId == agendaId && r.result.version == d.version
+        && r.targets == ['agenda/'+agendaId] && c.lastUndoOperationId == d.operationId
+        && c.updatedAt == request.time && c.agendaRevision == coreBeforeRevision(uid)+1;
+    }
+    match /users/{uid} {
+      match /agenda/{agendaId} {
+        allow read: if owner(uid);
+        allow create: if owner(uid) && id(agendaId) && fresh(request.resource.data)
+          && agenda(request.resource.data) && request.resource.data.deletedAt == null
+          && op(uid,request.resource.data.operationId).kind == 'agenda_create'
+          && coupled(uid,agendaId,request.resource.data);
+        allow update: if owner(uid) && resource.data.deletedAt == null && revised(request.resource.data)
+          && agenda(request.resource.data) && coupled(uid,agendaId,request.resource.data)
+          && ((op(uid,request.resource.data.operationId).kind == 'agenda_update' && request.resource.data.deletedAt == null)
+            || (op(uid,request.resource.data.operationId).kind == 'agenda_delete' && request.resource.data.deletedAt == request.time
+              && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['version','updatedAt','operationId','deletedAt'])));
+      }
+      match /state/core {
+        allow read: if owner(uid);
+        allow create,update: if owner(uid) && base(request.resource.data)
+          && request.resource.data.keys().hasAll(['schemaVersion','version','createdAt','updatedAt','agendaRevision','financeRevision','balanceRupiah','lifetimeIncomeRupiah','lifetimeExpenseRupiah','lastUndoOperationId'])
+          && request.resource.data.keys().hasOnly(['schemaVersion','version','createdAt','updatedAt','agendaRevision','financeRevision','balanceRupiah','lifetimeIncomeRupiah','lifetimeExpenseRupiah','lastUndoOperationId'])
+          && request.resource.data.agendaRevision is int && id(request.resource.data.lastUndoOperationId)
+          && request.resource.data.financeRevision is int && request.resource.data.balanceRupiah is int
+          && request.resource.data.lifetimeIncomeRupiah is int && request.resource.data.lifetimeExpenseRupiah is int
+          && (resource == null ? (fresh(request.resource.data) && request.resource.data.agendaRevision == 1
+            && request.resource.data.financeRevision == 0 && request.resource.data.balanceRupiah == 0
+            && request.resource.data.lifetimeIncomeRupiah == 0 && request.resource.data.lifetimeExpenseRupiah == 0)
+            : (revised(request.resource.data) && request.resource.data.agendaRevision == resource.data.agendaRevision+1
+              && request.resource.data.financeRevision == resource.data.financeRevision && request.resource.data.balanceRupiah == resource.data.balanceRupiah
+              && request.resource.data.lifetimeIncomeRupiah == resource.data.lifetimeIncomeRupiah && request.resource.data.lifetimeExpenseRupiah == resource.data.lifetimeExpenseRupiah))
+          && op(uid,request.resource.data.lastUndoOperationId).createdAt == request.time;
+      }
+      match /operations/{operationId} {
+        allow read: if owner(uid);
+        allow create: if owner(uid) && id(operationId) && fresh(request.resource.data)
+          && request.resource.data.keys().hasAll(['schemaVersion','version','createdAt','updatedAt','draftId','approvedRevision','kind','targets','result','undoState'])
+          && request.resource.data.keys().hasOnly(['schemaVersion','version','createdAt','updatedAt','draftId','approvedRevision','kind','targets','result','undoState'])
+          && request.resource.data.draftId == 'manual' && request.resource.data.approvedRevision == 1 && request.resource.data.undoState == 'unavailable'
+          && request.resource.data.kind in ['agenda_create','agenda_update','agenda_delete']
+          && request.resource.data.result is map && request.resource.data.result.keys().hasAll(['agendaId','version','requestKey'])
+          && request.resource.data.result.keys().hasOnly(['agendaId','version','requestKey'])
+          && id(request.resource.data.result.agendaId) && text(request.resource.data.result.requestKey,4000)
+          && request.resource.data.targets == ['agenda/'+request.resource.data.result.agendaId]
+          && receiptTarget(uid,operationId,request.resource.data);
+      }
+      function receiptTarget(uid,operationId,r) {
+        let target = /databases/$(database)/documents/users/$(uid)/agenda/$(r.result.agendaId);
+        let a = getAfter(target).data;
+        return a.operationId == operationId && a.updatedAt == request.time && a.version == r.result.version
+          && coreAfter(uid).lastUndoOperationId == operationId && coreAfter(uid).updatedAt == request.time
+          && (r.kind == 'agenda_create' ? (!exists(target) && a.version == 1)
+            : (exists(target) && a.version == get(target).data.version+1));
+      }
+    }
+    match /{document=**} { allow read,write: if false; }
+  }
+}

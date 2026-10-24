@@ -1,0 +1,14 @@
+{
+  "project": "demo-ruma",
+  "productionWrites": 0,
+  "modelCalls": 0,
+  "fcmSends": 0,
+  "cases": [
+    "current agenda and canonical balance, expense and budget match real SDK"
+  ],
+  "screens": [
+    "01-home-empty",
+    "02-home-populated",
+    "03-home-money"
+  ]
+}

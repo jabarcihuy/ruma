@@ -1,0 +1,415 @@
+Resolving dependencies...
+Downloading packages...
+  material_color_utilities 0.13.0 (0.13.1 available)
+  test_api 0.7.12 (0.7.15 available)
+  xml 7.0.1 (7.1.0 available)
+Got dependencies!
+3 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Installing build/app/outputs/flutter-apk/app-debug.apk...           8.8s
+VMServiceFlutterDriver: Connecting to Flutter application at http://127.0.0.1:34565/GYJe_lPhHDw=/
+VMServiceFlutterDriver: Isolate found with number: 434440813387883
+VMServiceFlutterDriver: Isolate 434440813387883 is runnable.
+VMServiceFlutterDriver: Isolate is paused at start.
+VMServiceFlutterDriver: Attempting to resume isolate
+D/ProfileInstaller(13877): Installing profile for id.ruma.app
+I/flutter (13877): 00:00 +0: emulator Android Firebase SDK: anonymous linking, sign out, sign in, validation and navigation
+VMServiceFlutterDriver: Connected to Flutter application.
+I/Choreographer(13877): Skipped 39 frames!  The application may be doing too much work on its main thread.
+I/GrallocExtra(13877): gralloc_extra_query:is_SW3D 0
+W/1.raster(13877): type=1400 audit(0.0:24243): avc:  denied  { read } for  name="u:object_r:vendor_displayfeature_prop:s0" dev="tmpfs" ino=593 scontext=u:r:untrusted_app:s0:c170,c257,c512,c768 tcontext=u:object_r:vendor_displayfeature_prop:s0 tclass=file permissive=0 app=id.ruma.app
+I/GrallocExtra(13877): gralloc_extra_query:is_SW3D 0
+W/libc    (13877): Access denied finding property "ro.vendor.display.iris_x7.support"
+D/BLASTBufferQueue(13877): [3f6dc7d SurfaceView[id.ruma.app/id.ruma.app.MainActivity]#1](f:0,a:1) acquireNextBufferLocked size=1080x2400 mFrameNumber=1 applyTransaction=true mTimestamp=18782646164965(auto) mPendingTransactions.size=0 graphicBufferId=59601261166602 transform=0
+I/Choreographer(13877): Skipped 59 frames!  The application may be doing too much work on its main thread.
+D/VRI[MainActivity](13877): vri.Setup new sync=wmsSync-VRI[MainActivity]#1
+I/SKIA    (13877): CreateGraphicsPipeline pipeline cache hit. elpased time: 0.18 ms.
+D/BLASTBufferQueue(13877): [VRI[MainActivity]#0](f:0,a:1) acquireNextBufferLocked size=1080x2400 mFrameNumber=1 applyTransaction=true mTimestamp=18782813254119(auto) mPendingTransactions.size=0 graphicBufferId=59601261166610 transform=0
+D/VRI[MainActivity](13877): vri.reportDrawFinished 0 0 Rect(0, 0 - 1080, 2400)
+I/NativeTurboSchedManager(13877): Load libmiui_runtime
+I/HandWritingStubImpl(13877): refreshLastKeyboardType: 1
+I/HandWritingStubImpl(13877): getCurrentKeyboardType: 1
+I/FirebaseApp(13877): Device unlocked: initializing all Firebase APIs for app [DEFAULT]
+D/InsetsController(13877): hide(ime(), fromIme=false)
+I/ImeTracker(13877): id.ruma.app:9d621adb: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+I/HandWritingStubImpl(13877): getCurrentKeyboardType: 1
+W/InsetsSource(13877): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(13877): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(13877): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(13877): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+D/FirebaseAuth(13877): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth(13877): Notifying auth state listeners about a sign-out event.
+D/BufferQueueConsumer(13877): [](id:363500000002,api:0,p:-1,c:13877) connect: controlledByApp=true
+D/VRI[MainActivity](13877): getMiuiFreeformStackInfo mTmpFrames.miuiFreeFormStackInfo: null
+W/InsetsSource(13877): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(13877): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(13877): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(13877): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(13877): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(13877): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+D/FlutterJNI(13877): Sending viewport metrics to the engine.
+I/SKIA    (13877): CreateGraphicsPipeline pipeline cache hit. elpased time: 0.15 ms.
+I/SKIA    (13877): CreateGraphicsPipeline pipeline cache hit. elpased time: 5.19 ms.
+I/id.ruma.app(13877): AssetManager2(0xb400007ab5e50f58) locale list changing from [] to [en-US]
+I/id.ruma.app(13877): AssetManager2(0xb400007ab5e51ef8) locale list changing from [] to [en-US]
+I/id.ruma.app(13877): AssetManager2(0xb400007ab5e4d3f8) locale list changing from [] to [en-US]
+I/id.ruma.app(13877): AssetManager2(0xb400007ab5e4b7d8) locale list changing from [] to [en-US]
+I/id.ruma.app(13877): AssetManager2(0xb400007ab5e4a838) locale list changing from [] to [en-US]
+I/id.ruma.app(13877): AssetManager2(0xb400007ab5e4ae78) locale list changing from [] to [en-US]
+W/FinalizerDaemon(13877): type=1400 audit(0.0:24247): avc:  denied  { getopt } for  path="/dev/socket/usap_pool_primary" scontext=u:r:untrusted_app:s0:c170,c257,c512,c768 tcontext=u:r:zygote:s0 tclass=unix_stream_socket permissive=0 app=id.ruma.app
+W/WindowOnBackDispatcher(13877): sendCancelIfRunning: isInProgress=false callback=io.flutter.embedding.android.FlutterActivity$1@b041457
+VMServiceFlutterDriver: request_data message is taking a long time to complete...
+E/id.ruma.app(13877): FrameInsert open fail: No such file or directory
+W/System  (13877): Ignoring header X-Firebase-Locale because its value was null.
+W/WindowOnBackDispatcher(13877): sendCancelIfRunning: isInProgress=false callback=io.flutter.embedding.android.FlutterActivity$1@b041457
+W/System  (13877): Ignoring header X-Firebase-Locale because its value was null.
+D/FirebaseAuth(13877): Notifying id token listeners about user ( SYxJhvKCEEO15tXyI93ksV5RTWWF ).
+D/FirebaseAuth(13877): Notifying auth state listeners about user ( SYxJhvKCEEO15tXyI93ksV5RTWWF ).
+E/LB      (13877): fail to open file: No such file or directory
+W/1.raster(13877): type=1400 audit(0.0:24249): avc:  denied  { getattr } for  path="/sys/module/metis/parameters/minor_window_app" dev="sysfs" ino=81117 scontext=u:r:untrusted_app:s0:c170,c257,c512,c768 tcontext=u:object_r:sysfs_migt:s0 tclass=file permissive=0 app=id.ruma.app
+I/id.ruma.app(13877): AssetManager2(0xb400007ab5e6c4d8) locale list changing from [] to [en-US]
+I/id.ruma.app(13877): AssetManager2(0xb400007ab5e6d478) locale list changing from [] to [en-US]
+I/id.ruma.app(13877): AssetManager2(0xb400007ab5e6f9f8) locale list changing from [] to [en-US]
+I/id.ruma.app(13877): AssetManager2(0xb400007ab5e71938) locale list changing from [] to [en-US]
+I/id.ruma.app(13877): AssetManager2(0xb400007ab5e76d98) locale list changing from [] to [en-US]
+I/id.ruma.app(13877): AssetManager2(0xb400007ab5e79318) locale list changing from [] to [en-US]
+I/ImeTracker(13877): id.ruma.app:2a1908af: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false
+I/HandWritingStubImpl(13877): refreshLastKeyboardType: 1
+I/HandWritingStubImpl(13877): getCurrentKeyboardType: 1
+D/InsetsController(13877): show(ime(), fromIme=false)
+D/InsetsController(13877): id.ruma.app/id.ruma.app.MainActivity  show: ime android.view.InsetsController@4a188b android.view.InsetsController.applyAnimation:2241 android.view.InsetsController.applyAnimation:2212 android.view.InsetsController.show:1321 android.view.inputmethod.InputMethodManager.showSoftInput:2587 android.view.inputmethod.InputMethodManager.showSoftInput:2471 android.view.inputmethod.InputMethodManager.showSoftInput:2463 
+D/InsetsController(13877): Setting requestedVisibleTypes to -1 (was -9)
+I/ImeTracker(13877): id.ruma.app:94b7bd16: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false
+D/InsetsController(13877): show(ime(), fromIme=false)
+D/InsetsController(13877): id.ruma.app/id.ruma.app.MainActivity  show: ime android.view.InsetsController@4a188b android.view.InsetsController.applyAnimation:2241 android.view.InsetsController.applyAnimation:2212 android.view.InsetsController.show:1321 android.view.inputmethod.InputMethodManager.showSoftInput:2587 android.view.inputmethod.InputMethodManager.showSoftInput:2471 android.view.inputmethod.InputMethodManager.showSoftInput:2463 
+I/ImeTracker(13877): id.ruma.app:94b7bd16: onCancelled at PHASE_CLIENT_REPORT_REQUESTED_VISIBLE_TYPES
+D/ActivityThread(13877): resolveViewAutofillFlags: autofillService = com.google.android.gms/.autofill.service.AutofillService
+D/ActivityThread(13877): resolveViewAutofillFlags: autofillService = com.google.android.gms/.autofill.service.AutofillService
+I/AssistStructure(13877): Flattened final assist data: 1028 bytes, containing 1 windows, 5 views
+I/HandWritingStubImpl(13877): getCurrentKeyboardType: 1
+I/HandWritingStubImpl(13877): getCurrentKeyboardType: 1
+I/ImeTracker(13877): id.ruma.app:1b666903: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false
+D/InsetsController(13877): show(ime(), fromIme=false)
+D/InsetsController(13877): id.ruma.app/id.ruma.app.MainActivity  show: ime android.view.InsetsController@4a188b android.view.InsetsController.applyAnimation:2241 android.view.InsetsController.applyAnimation:2212 android.view.InsetsController.show:1321 android.view.inputmethod.InputMethodManager.showSoftInput:2587 android.view.inputmethod.InputMethodManager.showSoftInput:2471 android.view.inputmethod.InputMethodManager.showSoftInput:2463 
+I/ImeTracker(13877): id.ruma.app:1b666903: onCancelled at PHASE_CLIENT_REPORT_REQUESTED_VISIBLE_TYPES
+I/ImeTracker(13877): id.ruma.app:f9c33672: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false
+D/InsetsController(13877): show(ime(), fromIme=false)
+D/InsetsController(13877): id.ruma.app/id.ruma.app.MainActivity  show: ime android.view.InsetsController@4a188b android.view.InsetsController.applyAnimation:2241 android.view.InsetsController.applyAnimation:2212 android.view.InsetsController.show:1321 android.view.inputmethod.InputMethodManager.showSoftInput:2587 android.view.inputmethod.InputMethodManager.showSoftInput:2471 android.view.inputmethod.InputMethodManager.showSoftInput:2463 
+I/ImeTracker(13877): id.ruma.app:f9c33672: onCancelled at PHASE_CLIENT_REPORT_REQUESTED_VISIBLE_TYPES
+I/HandWritingStubImpl(13877): getCurrentKeyboardType: 1
+I/HandWritingStubImpl(13877): getCurrentKeyboardType: 1
+I/ImeTracker(13877): id.ruma.app:c28cd04c: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false
+D/InsetsController(13877): show(ime(), fromIme=false)
+D/InsetsController(13877): id.ruma.app/id.ruma.app.MainActivity  show: ime android.view.InsetsController@4a188b android.view.InsetsController.applyAnimation:2241 android.view.InsetsController.applyAnimation:2212 android.view.InsetsController.show:1321 android.view.inputmethod.InputMethodManager.showSoftInput:2587 android.view.inputmethod.InputMethodManager.showSoftInput:2471 android.view.inputmethod.InputMethodManager.showSoftInput:2463 
+I/ImeTracker(13877): id.ruma.app:c28cd04c: onCancelled at PHASE_CLIENT_REPORT_REQUESTED_VISIBLE_TYPES
+I/ImeTracker(13877): id.ruma.app:697a6c1b: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false
+D/InsetsController(13877): show(ime(), fromIme=false)
+D/InsetsController(13877): id.ruma.app/id.ruma.app.MainActivity  show: ime android.view.InsetsController@4a188b android.view.InsetsController.applyAnimation:2241 android.view.InsetsController.applyAnimation:2212 android.view.InsetsController.show:1321 android.view.inputmethod.InputMethodManager.showSoftInput:2587 android.view.inputmethod.InputMethodManager.showSoftInput:2471 android.view.inputmethod.InputMethodManager.showSoftInput:2463 
+I/ImeTracker(13877): id.ruma.app:697a6c1b: onCancelled at PHASE_CLIENT_REPORT_REQUESTED_VISIBLE_TYPES
+I/HandWritingStubImpl(13877): getCurrentKeyboardType: 1
+I/ImeTracker(13877): id.ruma.app:9eb1c6d5: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT fromUser false
+D/InsetsController(13877): hide(ime(), fromIme=false)
+D/InsetsController(13877): id.ruma.app/id.ruma.app.MainActivity hide: ime android.view.InsetsController@4a188b android.view.InsetsController.applyAnimation:2241 android.view.InsetsController.applyAnimation:2212 android.view.InsetsController.hide:1439 android.view.inputmethod.InputMethodManager.hideSoftInputFromWindow:2810 android.view.inputmethod.InputMethodManager.hideSoftInputFromWindow:2740 android.view.inputmethod.InputMethodManager.hideSoftInputFromWindow:2701 
+D/InsetsController(13877): Setting requestedVisibleTypes to -9 (was -1)
+D/CompatChangeReporter(13877): Compat change id reported: 395521150; UID 10426; state: ENABLED
+W/RemoteInputConnectionImpl(13877): requestCursorUpdates on inactive InputConnection
+D/ActivityThread(13877): resolveViewAutofillFlags: autofillService = com.google.android.gms/.autofill.service.AutofillService
+D/ActivityThread(13877): resolveViewAutofillFlags: autofillService = com.google.android.gms/.autofill.service.AutofillService
+I/AssistStructure(13877): Flattened final assist data: 252 bytes, containing 1 windows, 2 views
+D/ActivityThread(13877): resolveViewAutofillFlags: autofillService = com.google.android.gms/.autofill.service.AutofillService
+D/ActivityThread(13877): resolveViewAutofillFlags: autofillService = com.google.android.gms/.autofill.service.AutofillService
+I/AssistStructure(13877): Flattened final assist data: 252 bytes, containing 1 windows, 2 views
+W/RemoteInputConnectionImpl(13877): requestCursorUpdates on inactive InputConnection
+W/RemoteInputConnectionImpl(13877): getSurroundingText on inactive InputConnection
+I/FirebaseAuth(13877): Linking email account with empty reCAPTCHA token
+W/System  (13877): Ignoring header X-Firebase-Locale because its value was null.
+W/System  (13877): Ignoring header X-Firebase-Locale because its value was null.
+D/FirebaseAuth(13877): Notifying id token listeners about user ( SYxJhvKCEEO15tXyI93ksV5RTWWF ).
+W/RemoteInputConnectionImpl(13877): requestCursorUpdates on inactive InputConnection
+W/RemoteInputConnectionImpl(13877): getSurroundingText on inactive InputConnection
+W/System  (13877): Ignoring header X-Firebase-Locale because its value was null.
+W/System  (13877): Ignoring header X-Firebase-Locale because its value was null.
+W/RemoteInputConnectionImpl(13877): requestCursorUpdates on inactive InputConnection
+W/RemoteInputConnectionImpl(13877): requestCursorUpdates on inactive InputConnection
+W/System  (13877): Ignoring header X-Firebase-Locale because its value was null.
+W/WindowOnBackDispatcher(13877): sendCancelIfRunning: isInProgress=false callback=android.view.ImeBackAnimationController@fc38bd
+W/InsetsSource(13877): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(13877): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(13877): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+I/ImeTracker(13877): system_server:f4c5a5cc: onCancelled at PHASE_CLIENT_ON_CONTROLS_CHANGED
+W/InsetsSource(13877): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(13877): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(13877): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(13877): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+D/FirebaseAuth(13877): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth(13877): Notifying auth state listeners about a sign-out event.
+W/WindowOnBackDispatcher(13877): sendCancelIfRunning: isInProgress=false callback=io.flutter.embedding.android.FlutterActivity$1@b041457
+I/id.ruma.app(13877): AssetManager2(0xb400007ab5e7fd58) locale list changing from [] to [en-US]
+I/id.ruma.app(13877): AssetManager2(0xb400007ab5e77d38) locale list changing from [] to [en-US]
+I/id.ruma.app(13877): AssetManager2(0xb400007ab5e5d438) locale list changing from [] to [en-US]
+I/id.ruma.app(13877): AssetManager2(0xb400007ab5e6f6d8) locale list changing from [] to [en-US]
+I/id.ruma.app(13877): AssetManager2(0xb400007ab5e75df8) locale list changing from [] to [en-US]
+I/id.ruma.app(13877): AssetManager2(0xb400007ab5e78cd8) locale list changing from [] to [en-US]
+I/HandWritingStubImpl(13877): getCurrentKeyboardType: 1
+I/ImeTracker(13877): id.ruma.app:60e3aa0e: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false
+D/InsetsController(13877): show(ime(), fromIme=false)
+D/InsetsController(13877): id.ruma.app/id.ruma.app.MainActivity  show: ime android.view.InsetsController@4a188b android.view.InsetsController.applyAnimation:2241 android.view.InsetsController.applyAnimation:2212 android.view.InsetsController.show:1321 android.view.inputmethod.InputMethodManager.showSoftInput:2587 android.view.inputmethod.InputMethodManager.showSoftInput:2471 android.view.inputmethod.InputMethodManager.showSoftInput:2463 
+D/InsetsController(13877): Setting requestedVisibleTypes to -1 (was -9)
+I/ImeTracker(13877): id.ruma.app:840f16c0: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false
+D/InsetsController(13877): show(ime(), fromIme=false)
+D/InsetsController(13877): id.ruma.app/id.ruma.app.MainActivity  show: ime android.view.InsetsController@4a188b android.view.InsetsController.applyAnimation:2241 android.view.InsetsController.applyAnimation:2212 android.view.InsetsController.show:1321 android.view.inputmethod.InputMethodManager.showSoftInput:2587 android.view.inputmethod.InputMethodManager.showSoftInput:2471 android.view.inputmethod.InputMethodManager.showSoftInput:2463 
+I/ImeTracker(13877): id.ruma.app:840f16c0: onCancelled at PHASE_CLIENT_REPORT_REQUESTED_VISIBLE_TYPES
+I/HandWritingStubImpl(13877): getCurrentKeyboardType: 1
+I/HandWritingStubImpl(13877): getCurrentKeyboardType: 1
+I/ImeTracker(13877): id.ruma.app:6b4f9a7: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false
+D/InsetsController(13877): show(ime(), fromIme=false)
+D/InsetsController(13877): id.ruma.app/id.ruma.app.MainActivity  show: ime android.view.InsetsController@4a188b android.view.InsetsController.applyAnimation:2241 android.view.InsetsController.applyAnimation:2212 android.view.InsetsController.show:1321 android.view.inputmethod.InputMethodManager.showSoftInput:2587 android.view.inputmethod.InputMethodManager.showSoftInput:2471 android.view.inputmethod.InputMethodManager.showSoftInput:2463 
+I/ImeTracker(13877): id.ruma.app:6b4f9a7: onCancelled at PHASE_CLIENT_REPORT_REQUESTED_VISIBLE_TYPES
+I/ImeTracker(13877): id.ruma.app:78746715: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false
+D/InsetsController(13877): show(ime(), fromIme=false)
+D/InsetsController(13877): id.ruma.app/id.ruma.app.MainActivity  show: ime android.view.InsetsController@4a188b android.view.InsetsController.applyAnimation:2241 android.view.InsetsController.applyAnimation:2212 android.view.InsetsController.show:1321 android.view.inputmethod.InputMethodManager.showSoftInput:2587 android.view.inputmethod.InputMethodManager.showSoftInput:2471 android.view.inputmethod.InputMethodManager.showSoftInput:2463 
+I/ImeTracker(13877): id.ruma.app:78746715: onCancelled at PHASE_CLIENT_REPORT_REQUESTED_VISIBLE_TYPES
+W/RemoteInputConnectionImpl(13877): getSurroundingText on inactive InputConnection
+D/ActivityThread(13877): resolveViewAutofillFlags: autofillService = com.google.android.gms/.autofill.service.AutofillService
+D/ActivityThread(13877): resolveViewAutofillFlags: autofillService = com.google.android.gms/.autofill.service.AutofillService
+I/AssistStructure(13877): Flattened final assist data: 812 bytes, containing 1 windows, 4 views
+I/HandWritingStubImpl(13877): getCurrentKeyboardType: 1
+I/ImeTracker(13877): id.ruma.app:6151aa34: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT fromUser false
+D/InsetsController(13877): hide(ime(), fromIme=false)
+D/InsetsController(13877): id.ruma.app/id.ruma.app.MainActivity hide: ime android.view.InsetsController@4a188b android.view.InsetsController.applyAnimation:2241 android.view.InsetsController.applyAnimation:2212 android.view.InsetsController.hide:1439 android.view.inputmethod.InputMethodManager.hideSoftInputFromWindow:2810 android.view.inputmethod.InputMethodManager.hideSoftInputFromWindow:2740 android.view.inputmethod.InputMethodManager.hideSoftInputFromWindow:2701 
+D/InsetsController(13877): Setting requestedVisibleTypes to -9 (was -1)
+D/ActivityThread(13877): resolveViewAutofillFlags: autofillService = com.google.android.gms/.autofill.service.AutofillService
+D/ActivityThread(13877): resolveViewAutofillFlags: autofillService = com.google.android.gms/.autofill.service.AutofillService
+I/AssistStructure(13877): Flattened final assist data: 252 bytes, containing 1 windows, 2 views
+W/RemoteInputConnectionImpl(13877): requestCursorUpdates on inactive InputConnection
+W/RemoteInputConnectionImpl(13877): requestCursorUpdates on inactive InputConnection
+W/RemoteInputConnectionImpl(13877): getSurroundingText on inactive InputConnection
+W/RemoteInputConnectionImpl(13877): requestCursorUpdates on inactive InputConnection
+W/RemoteInputConnectionImpl(13877): requestCursorUpdates on inactive InputConnection
+W/WindowOnBackDispatcher(13877): sendCancelIfRunning: isInProgress=false callback=android.view.ImeBackAnimationController@fc38bd
+W/InsetsSource(13877): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(13877): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(13877): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+I/ImeTracker(13877): system_server:b4e84e9e: onCancelled at PHASE_CLIENT_ON_CONTROLS_CHANGED
+I/FirebaseAuth(13877): Logging in as ruma-foundation-1792417410039@example.invalid with empty reCAPTCHA token
+W/System  (13877): Ignoring header X-Firebase-Locale because its value was null.
+E/RecaptchaCallWrapper(13877): Initial task failed for action RecaptchaAction(action=signInWithPassword)with exception - The password is invalid or the user does not have a password.
+W/InsetsSource(13877): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(13877): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(13877): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(13877): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+I/FirebaseAuth(13877): Logging in as ruma-foundation-1792417410039@example.invalid with empty reCAPTCHA token
+W/System  (13877): Ignoring header X-Firebase-Locale because its value was null.
+W/System  (13877): Ignoring header X-Firebase-Locale because its value was null.
+D/FirebaseAuth(13877): Notifying id token listeners about user ( SYxJhvKCEEO15tXyI93ksV5RTWWF ).
+D/FirebaseAuth(13877): Notifying auth state listeners about user ( SYxJhvKCEEO15tXyI93ksV5RTWWF ).
+W/System  (13877): Ignoring header X-Firebase-Locale because its value was null.
+D/FirebaseAuth(13877): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth(13877): Notifying auth state listeners about a sign-out event.
+D/FirebaseAuth(13877): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth(13877): Notifying auth state listeners about a sign-out event.
+I/flutter (13877): ══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+I/flutter (13877): The following TestFailure was thrown running a test:
+I/flutter (13877): Expected: true
+I/flutter (13877):   Actual: <false>
+I/flutter (13877): The retry must submit the newly entered password
+I/flutter (13877): 
+I/flutter (13877): When the exception was thrown, this was the stack:
+I/flutter (13877): #4      main.<anonymous closure>.submit (file:///home/ael/DATA/project%20on%20linux/mobileapp/ruma/integration_test/auth_flow_test.dart:65:13)
+I/flutter (13877): <asynchronous suspension>
+I/flutter (13877): #5      main.<anonymous closure> (file:///home/ael/DATA/project%20on%20linux/mobileapp/ruma/integration_test/auth_flow_test.dart:155:11)
+I/flutter (13877): <asynchronous suspension>
+I/flutter (13877): #6      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+I/flutter (13877): <asynchronous suspension>
+I/flutter (13877): #7      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+I/flutter (13877): <asynchronous suspension>
+I/flutter (13877): #8      TestWidgetsFlutterBinding._createTestCompletionHandler.<anonymous closure> (package:flutter_test/src/binding.dart:1707:12)
+I/flutter (13877): <asynchronous suspension>
+I/flutter (13877): 
+I/flutter (13877): This was caught by the test expectation on the following line:
+I/flutter (13877):   file:///home/ael/DATA/project%20on%20linux/mobileapp/ruma/integration_test/auth_flow_test.dart line 65
+I/flutter (13877): The test description was:
+I/flutter (13877):   emulator Android Firebase SDK: anonymous linking, sign out, sign in, validation and navigation
+I/flutter (13877): ════════════════════════════════════════════════════════════════════════════════════════════════════
+I/flutter (13877): 00:18 +0: emulator Android Firebase SDK: anonymous linking, sign out, sign in, validation and navigation [E]
+I/flutter (13877):   Test failed. See exception logs above.
+I/flutter (13877):   The test description was: emulator Android Firebase SDK: anonymous linking, sign out, sign in, validation and navigation
+I/flutter (13877):   
+W/id.ruma.app(13877): Binder 0xb400007a95e359c0 destroyed after setInheritRt before being parceled.
+W/id.ruma.app(13877): Binder 0xb400007a95e4b6e0 destroyed after setInheritRt before being parceled.
+D/BufferQueueConsumer(13877): [ImageReader-1080x2400f1m3-13877-0](id:363500000002,api:0,p:-1,c:13877) disconnect: caller 13877
+I/flutter (13877): 00:18 +0 -1: production Android Firebase SDK: anonymous linking, sign out, sign in, validation and navigation
+I/FirebaseApp(13877): Device unlocked: initializing all Firebase APIs for app ruma-production-test
+D/FirebaseAuth(13877): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth(13877): Notifying auth state listeners about a sign-out event.
+D/BufferQueueConsumer(13877): [](id:363500000003,api:0,p:-1,c:13877) connect: controlledByApp=true
+W/System  (13877): Ignoring header X-Firebase-Locale because its value was null.
+W/System  (13877): Ignoring header X-Firebase-Locale because its value was null.
+D/FirebaseAuth(13877): Notifying id token listeners about user ( Dc9MkkRFmrZdtj4P5sl6QbuJLzm2 ).
+D/FirebaseAuth(13877): Notifying auth state listeners about user ( Dc9MkkRFmrZdtj4P5sl6QbuJLzm2 ).
+I/id.ruma.app(13877): AssetManager2(0xb400007ab5e5d438) locale list changing from [] to [en-US]
+I/id.ruma.app(13877): AssetManager2(0xb400007ab5e7cb58) locale list changing from [] to [en-US]
+I/id.ruma.app(13877): AssetManager2(0xb400007ab5e69c38) locale list changing from [] to [en-US]
+I/id.ruma.app(13877): AssetManager2(0xb400007ab5e217f8) locale list changing from [] to [en-US]
+I/id.ruma.app(13877): AssetManager2(0xb400007ab5e70038) locale list changing from [] to [en-US]
+I/id.ruma.app(13877): AssetManager2(0xb400007ab5e7bbb8) locale list changing from [] to [en-US]
+I/HandWritingStubImpl(13877): getCurrentKeyboardType: 1
+I/ImeTracker(13877): id.ruma.app:dc2722a4: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false
+D/InsetsController(13877): show(ime(), fromIme=false)
+D/InsetsController(13877): id.ruma.app/id.ruma.app.MainActivity  show: ime android.view.InsetsController@4a188b android.view.InsetsController.applyAnimation:2241 android.view.InsetsController.applyAnimation:2212 android.view.InsetsController.show:1321 android.view.inputmethod.InputMethodManager.showSoftInput:2587 android.view.inputmethod.InputMethodManager.showSoftInput:2471 android.view.inputmethod.InputMethodManager.showSoftInput:2463 
+D/InsetsController(13877): Setting requestedVisibleTypes to -1 (was -9)
+I/ImeTracker(13877): id.ruma.app:5391cd1d: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false
+D/InsetsController(13877): show(ime(), fromIme=false)
+D/InsetsController(13877): id.ruma.app/id.ruma.app.MainActivity  show: ime android.view.InsetsController@4a188b android.view.InsetsController.applyAnimation:2241 android.view.InsetsController.applyAnimation:2212 android.view.InsetsController.show:1321 android.view.inputmethod.InputMethodManager.showSoftInput:2587 android.view.inputmethod.InputMethodManager.showSoftInput:2471 android.view.inputmethod.InputMethodManager.showSoftInput:2463 
+I/ImeTracker(13877): id.ruma.app:5391cd1d: onCancelled at PHASE_CLIENT_REPORT_REQUESTED_VISIBLE_TYPES
+I/HandWritingStubImpl(13877): getCurrentKeyboardType: 1
+I/HandWritingStubImpl(13877): getCurrentKeyboardType: 1
+I/ImeTracker(13877): id.ruma.app:60cfbeb7: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false
+D/InsetsController(13877): show(ime(), fromIme=false)
+D/InsetsController(13877): id.ruma.app/id.ruma.app.MainActivity  show: ime android.view.InsetsController@4a188b android.view.InsetsController.applyAnimation:2241 android.view.InsetsController.applyAnimation:2212 android.view.InsetsController.show:1321 android.view.inputmethod.InputMethodManager.showSoftInput:2587 android.view.inputmethod.InputMethodManager.showSoftInput:2471 android.view.inputmethod.InputMethodManager.showSoftInput:2463 
+I/ImeTracker(13877): id.ruma.app:60cfbeb7: onCancelled at PHASE_CLIENT_REPORT_REQUESTED_VISIBLE_TYPES
+I/ImeTracker(13877): id.ruma.app:8dd5b160: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false
+D/InsetsController(13877): show(ime(), fromIme=false)
+D/InsetsController(13877): id.ruma.app/id.ruma.app.MainActivity  show: ime android.view.InsetsController@4a188b android.view.InsetsController.applyAnimation:2241 android.view.InsetsController.applyAnimation:2212 android.view.InsetsController.show:1321 android.view.inputmethod.InputMethodManager.showSoftInput:2587 android.view.inputmethod.InputMethodManager.showSoftInput:2471 android.view.inputmethod.InputMethodManager.showSoftInput:2463 
+I/ImeTracker(13877): id.ruma.app:8dd5b160: onCancelled at PHASE_CLIENT_REPORT_REQUESTED_VISIBLE_TYPES
+I/HandWritingStubImpl(13877): getCurrentKeyboardType: 1
+I/HandWritingStubImpl(13877): getCurrentKeyboardType: 1
+I/ImeTracker(13877): id.ruma.app:781dfec3: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false
+D/InsetsController(13877): show(ime(), fromIme=false)
+D/InsetsController(13877): id.ruma.app/id.ruma.app.MainActivity  show: ime android.view.InsetsController@4a188b android.view.InsetsController.applyAnimation:2241 android.view.InsetsController.applyAnimation:2212 android.view.InsetsController.show:1321 android.view.inputmethod.InputMethodManager.showSoftInput:2587 android.view.inputmethod.InputMethodManager.showSoftInput:2471 android.view.inputmethod.InputMethodManager.showSoftInput:2463 
+I/ImeTracker(13877): id.ruma.app:781dfec3: onCancelled at PHASE_CLIENT_REPORT_REQUESTED_VISIBLE_TYPES
+I/ImeTracker(13877): id.ruma.app:58a592e: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false
+D/InsetsController(13877): show(ime(), fromIme=false)
+D/InsetsController(13877): id.ruma.app/id.ruma.app.MainActivity  show: ime android.view.InsetsController@4a188b android.view.InsetsController.applyAnimation:2241 android.view.InsetsController.applyAnimation:2212 android.view.InsetsController.show:1321 android.view.inputmethod.InputMethodManager.showSoftInput:2587 android.view.inputmethod.InputMethodManager.showSoftInput:2471 android.view.inputmethod.InputMethodManager.showSoftInput:2463 
+I/ImeTracker(13877): id.ruma.app:58a592e: onCancelled at PHASE_CLIENT_REPORT_REQUESTED_VISIBLE_TYPES
+D/ActivityThread(13877): resolveViewAutofillFlags: autofillService = com.google.android.gms/.autofill.service.AutofillService
+D/ActivityThread(13877): resolveViewAutofillFlags: autofillService = com.google.android.gms/.autofill.service.AutofillService
+I/AssistStructure(13877): Flattened final assist data: 1076 bytes, containing 1 windows, 5 views
+W/RemoteInputConnectionImpl(13877): getSurroundingText on inactive InputConnection
+I/HandWritingStubImpl(13877): getCurrentKeyboardType: 1
+I/ImeTracker(13877): id.ruma.app:f014b13b: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT fromUser false
+D/InsetsController(13877): hide(ime(), fromIme=false)
+D/InsetsController(13877): id.ruma.app/id.ruma.app.MainActivity hide: ime android.view.InsetsController@4a188b android.view.InsetsController.applyAnimation:2241 android.view.InsetsController.applyAnimation:2212 android.view.InsetsController.hide:1439 android.view.inputmethod.InputMethodManager.hideSoftInputFromWindow:2810 android.view.inputmethod.InputMethodManager.hideSoftInputFromWindow:2740 android.view.inputmethod.InputMethodManager.hideSoftInputFromWindow:2701 
+D/InsetsController(13877): Setting requestedVisibleTypes to -9 (was -1)
+D/ActivityThread(13877): resolveViewAutofillFlags: autofillService = com.google.android.gms/.autofill.service.AutofillService
+D/ActivityThread(13877): resolveViewAutofillFlags: autofillService = com.google.android.gms/.autofill.service.AutofillService
+I/AssistStructure(13877): Flattened final assist data: 252 bytes, containing 1 windows, 2 views
+D/ActivityThread(13877): resolveViewAutofillFlags: autofillService = com.google.android.gms/.autofill.service.AutofillService
+D/ActivityThread(13877): resolveViewAutofillFlags: autofillService = com.google.android.gms/.autofill.service.AutofillService
+I/AssistStructure(13877): Flattened final assist data: 252 bytes, containing 1 windows, 2 views
+W/RemoteInputConnectionImpl(13877): requestCursorUpdates on inactive InputConnection
+W/RemoteInputConnectionImpl(13877): requestCursorUpdates on inactive InputConnection
+W/RemoteInputConnectionImpl(13877): getSurroundingText on inactive InputConnection
+W/RemoteInputConnectionImpl(13877): requestCursorUpdates on inactive InputConnection
+W/RemoteInputConnectionImpl(13877): getSurroundingText on inactive InputConnection
+W/RemoteInputConnectionImpl(13877): requestCursorUpdates on inactive InputConnection
+W/RemoteInputConnectionImpl(13877): requestCursorUpdates on inactive InputConnection
+W/WindowOnBackDispatcher(13877): sendCancelIfRunning: isInProgress=false callback=android.view.ImeBackAnimationController@fc38bd
+W/InsetsSource(13877): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(13877): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(13877): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+I/ImeTracker(13877): system_server:7ff4278e: onCancelled at PHASE_CLIENT_ON_CONTROLS_CHANGED
+I/FirebaseAuth(13877): Linking email account with empty reCAPTCHA token
+W/System  (13877): Ignoring header X-Firebase-Locale because its value was null.
+W/InsetsSource(13877): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(13877): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(13877): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(13877): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+E/RecaptchaCallWrapper(13877): Initial task failed for action RecaptchaAction(action=signUpPassword)with exception - A network error (such as timeout, interrupted connection or unreachable host) has occurred.
+W/System  (13877): Ignoring header X-Firebase-Locale because its value was null.
+D/FirebaseAuth(13877): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth(13877): Notifying auth state listeners about a sign-out event.
+I/flutter (13877): ══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+I/flutter (13877): The following FirebaseAuthException was thrown running a test:
+I/flutter (13877): [firebase_auth/user-token-expired] The user's credential is no longer valid. The user must sign in
+I/flutter (13877): again.
+I/flutter (13877): 
+I/flutter (13877): When the exception was thrown, this was the stack:
+I/flutter (13877): #0      _extractReplyValueOrThrow (package:firebase_auth_platform_interface/src/pigeon/messages.pigeon.dart:26:5)
+I/flutter (13877): #1      FirebaseAuthUserHostApi.delete (package:firebase_auth_platform_interface/src/pigeon/messages.pigeon.dart:1978:5)
+I/flutter (13877): <asynchronous suspension>
+I/flutter (13877): #2      MethodChannelUser.delete (package:firebase_auth_platform_interface/src/method_channel/method_channel_user.dart:35:7)
+I/flutter (13877): <asynchronous suspension>
+I/flutter (13877): #3      main.<anonymous closure> (file:///home/ael/DATA/project%20on%20linux/mobileapp/ruma/integration_test/auth_flow_test.dart:204:15)
+I/flutter (13877): <asynchronous suspension>
+I/flutter (13877): #4      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+I/flutter (13877): <asynchronous suspension>
+I/flutter (13877): #5      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+I/flutter (13877): <asynchronous suspension>
+I/flutter (13877): #6      TestWidgetsFlutterBinding._createTestCompletionHandler.<anonymous closure> (package:flutter_test/src/binding.dart:1707:12)
+I/flutter (13877): <asynchronous suspension>
+I/flutter (13877): 
+I/flutter (13877): The test description was:
+I/flutter (13877):   production Android Firebase SDK: anonymous linking, sign out, sign in, validation and navigation
+I/flutter (13877): ════════════════════════════════════════════════════════════════════════════════════════════════════
+I/flutter (13877): 01:31 +0 -1: production Android Firebase SDK: anonymous linking, sign out, sign in, validation and navigation [E]
+I/flutter (13877):   Test failed. See exception logs above.
+I/flutter (13877):   The test description was: production Android Firebase SDK: anonymous linking, sign out, sign in, validation and navigation
+I/flutter (13877):   
+W/id.ruma.app(13877): Binder 0xb400007a95e54980 destroyed after setInheritRt before being parceled.
+W/id.ruma.app(13877): Binder 0xb400007a95e5cd20 destroyed after setInheritRt before being parceled.
+D/BufferQueueConsumer(13877): [ImageReader-1080x2400f1m3-13877-1](id:363500000003,api:0,p:-1,c:13877) disconnect: caller 13877
+I/flutter (13877): 01:31 +0 -2: (tearDownAll)
+I/Choreographer(13877): Skipped 36 frames!  The application may be doing too much work on its main thread.
+I/flutter (13877): 01:31 +1 -2: Some tests failed.
+Failure Details:
+Failure in method: emulator Android Firebase SDK: anonymous linking, sign out, sign in, validation and navigation
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞═════════════════
+The following TestFailure was thrown running a test:
+Expected: true
+  Actual: <false>
+The retry must submit the newly entered password
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure>.submit (file:///home/ael/DATA/project%20on%20linux/mobileapp/ruma/integration_test/auth_flow_test.dart:65:13)
+<asynchronous suspension>
+#5      main.<anonymous closure> (file:///home/ael/DATA/project%20on%20linux/mobileapp/ruma/integration_test/auth_flow_test.dart:155:11)
+<asynchronous suspension>
+#6      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#7      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+#8      TestWidgetsFlutterBinding._createTestCompletionHandler.<anonymous closure> (package:flutter_test/src/binding.dart:1707:12)
+<asynchronous suspension>
+
+This was caught by the test expectation on the following line:
+  file:///home/ael/DATA/project%20on%20linux/mobileapp/ruma/integration_test/auth_flow_test.dart line 65
+The test description was:
+  emulator Android Firebase SDK: anonymous linking, sign out,
+  sign in, validation and navigation
+═════════════════════════════════════════════════════════════════
+
+end of failure 1
+
+
+Failure in method: production Android Firebase SDK: anonymous linking, sign out, sign in, validation and navigation
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞═════════════════
+The following FirebaseAuthException was thrown running a test:
+[firebase_auth/user-token-expired] The user's credential is no
+longer valid. The user must sign in again.
+
+When the exception was thrown, this was the stack:
+#0      _extractReplyValueOrThrow (package:firebase_auth_platform_interface/src/pigeon/messages.pigeon.dart:26:5)
+#1      FirebaseAuthUserHostApi.delete (package:firebase_auth_platform_interface/src/pigeon/messages.pigeon.dart:1978:5)
+<asynchronous suspension>
+#2      MethodChannelUser.delete (package:firebase_auth_platform_interface/src/method_channel/method_channel_user.dart:35:7)
+<asynchronous suspension>
+#3      main.<anonymous closure> (file:///home/ael/DATA/project%20on%20linux/mobileapp/ruma/integration_test/auth_flow_test.dart:204:15)
+<asynchronous suspension>
+#4      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#5      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._createTestCompletionHandler.<anonymous closure> (package:flutter_test/src/binding.dart:1707:12)
+<asynchronous suspension>
+
+The test description was:
+  production Android Firebase SDK: anonymous linking, sign out,
+  sign in, validation and navigation
+═════════════════════════════════════════════════════════════════
+
+end of failure 2
+
+
+
+Leaving the application running.

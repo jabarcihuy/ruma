@@ -1,0 +1,16 @@
+{
+  "project": "mobile-app-3479f",
+  "suite": "notifications_cloud_test",
+  "fixtureUids": [
+    "92CHv05w0rSDO0rEO1w7hNl7V0D3"
+  ],
+  "authFixturesDeleted": [
+    "92CHv05w0rSDO0rEO1w7hNl7V0D3"
+  ],
+  "cases": [
+    "production device registration",
+    "real FCM foreground callback displays Android notification"
+  ],
+  "modelCalls": 0,
+  "jobsCreated": 1
+}

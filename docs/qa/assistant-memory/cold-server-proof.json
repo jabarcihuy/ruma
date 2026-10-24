@@ -1,0 +1,10 @@
+{
+  "project": "demo-ruma",
+  "sameDraftAndOperation": true,
+  "operationCount": 3,
+  "balance": -18000,
+  "noAutomaticCommit": true,
+  "productionWrites": 0,
+  "modelCalls": 0,
+  "passed": true
+}

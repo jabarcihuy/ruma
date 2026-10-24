@@ -1,0 +1,11 @@
+{
+  "apk": "output/apk/ruma-home-summary.apk",
+  "target": "lib/main.dart",
+  "mode": "debug",
+  "abi": "x86_64",
+  "bytes": 102330071,
+  "sha256": "5984d42bdf535566749f3fb48948d8b853d315b130248302dfeda6929aa12fc2",
+  "exactServerSecretMatches": 0,
+  "privateFileMatches": 0,
+  "passed": true
+}

@@ -1,0 +1,11 @@
+{
+  "apk": "output/apk/ruma-final-stages-1-3.apk",
+  "sha256": "293272776d37ae720454cf0a11a684cb476f68acedd72f063407989c7481184e",
+  "matchesApprovedCandidate": true,
+  "installedSha256Matches": true,
+  "coldLaunch": "Status ok",
+  "target": "lib/main.dart",
+  "mode": "debug",
+  "abi": "x86_64",
+  "harnessReplaced": true
+}

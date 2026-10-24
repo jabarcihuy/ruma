@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-19",
+  "signupStatus": 200,
+  "modelRequests": 0,
+  "workerdStatus": 400,
+  "response": {
+    "error": "invalid_request"
+  },
+  "authPassed": true,
+  "accountDeleted": true
+}

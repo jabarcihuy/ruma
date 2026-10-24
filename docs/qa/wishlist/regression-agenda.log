@@ -1,0 +1,36 @@
+✔ first agenda initializes core atomically; same receipt does not duplicate (617.885281ms)
+✔ owner list works; cross-account and unauthenticated reads/writes are denied (155.348477ms)
+✔ edit and complete increment entity version and agenda revision (131.734289ms)
+[2026-10-21T17:38:09.068Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x69bf3830 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'delete' @ L424
+✔ soft delete is atomic and tombstones cannot be edited or hard deleted (158.251701ms)
+✔ missing receipt or missing entity rolls back the whole operation (71.624221ms)
+✔ invalid shape, duration, paired time, deadline, class and zone are rejected (296.022354ms)
+✔ unscheduled tasks are supported (71.520534ms)
+✔ agenda operations cannot forge balances or finance revisions (130.869704ms)
+[2026-10-21T17:38:09.726Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x69bf387c error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'update' @ L424
+[2026-10-21T17:38:09.731Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x69bf387d error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'delete' @ L424
+✔ created timestamps and operation receipts are immutable (90.836059ms)
+✔ wrong receipt target or version cannot authorize changes (72.012067ms)
+✔ concurrent submissions against the same revision have one winner (59.520902ms)
+[2026-10-21T17:38:09.888Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x69bf388f error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L424, false for 'update' @ L424
+[2026-10-21T17:38:09.902Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x69bf3891 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L354, false for 'create' @ L424, false for 'update' @ L356, false for 'update' @ L424
+[2026-10-21T17:38:09.915Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x69bf3892 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L332, false for 'create' @ L424, false for 'update' @ L332, false for 'update' @ L424
+[2026-10-21T17:38:09.927Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x69bf3893 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L322, false for 'create' @ L424, false for 'update' @ L322, false for 'update' @ L424
+[2026-10-21T17:38:09.942Z]  @firebase/firestore: Firestore (12.9.0): GrpcConnection RPC 'Write' stream 0x69bf3894 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L424, false for 'update' @ L424
+✔ all unsupported feature and server paths remain closed (83.390636ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2204.708653

@@ -1,0 +1,174 @@
+Resolving dependencies...
+Downloading packages...
+  material_color_utilities 0.13.0 (0.13.1 available)
+  test_api 0.7.12 (0.7.15 available)
+  xml 7.0.1 (7.1.0 available)
+Got dependencies!
+3 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Running Gradle task 'assembleDebug'...                          
+WARNING: Your app uses the following plugins that apply Kotlin Gradle Plugin (KGP): firebase_auth, firebase_core
+Future versions of Flutter will fail to build if your app uses plugins that apply KGP.
+
+Please check the changelogs of these plugins and upgrade to a version that supports Built-in Kotlin.
+If no such version exists, report the issue to the plugin. If necessary, here is a guide on filing
+an issue against a plugin: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-app-developers#report-incompatible-kotlin-gradle-plugin-usage-to-plugin-authors
+
+If you are a plugin author, please migrate your plugin to Built-in Kotlin using this guide: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-plugin-authors
+Running Gradle task 'assembleDebug'...                             40.8s
+✓ Built build/app/outputs/flutter-apk/app-debug.apk
+Installing build/app/outputs/flutter-apk/app-debug.apk...        1,067ms
+D/FlutterJNI( 3137): Sending viewport metrics to the engine.
+VMServiceFlutterDriver: Connecting to Flutter application at http://127.0.0.1:45117/Vzr-09jy8nI=/
+VMServiceFlutterDriver: Isolate found with number: 2378890132905359
+VMServiceFlutterDriver: Isolate 2378890132905359 is runnable.
+VMServiceFlutterDriver: Isolate is paused at start.
+VMServiceFlutterDriver: Attempting to resume isolate
+I/flutter ( 3137): 00:00 +0: stages 1–3 native SDK and reviewed tools, local synthetic only
+VMServiceFlutterDriver: Connected to Flutter application.
+I/FirebaseApp( 3137): Device unlocked: initializing all Firebase APIs for app [DEFAULT]
+D/FirebaseAuth( 3137): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth( 3137): Notifying auth state listeners about a sign-out event.
+W/System  ( 3137): Ignoring header X-Firebase-Locale because its value was null.
+D/TrafficStats( 3137): tagSocket(151) with statsTag=0xffffffff, statsUid=-1
+W/System  ( 3137): Ignoring header X-Firebase-Locale because its value was null.
+D/FirebaseAuth( 3137): Notifying id token listeners about user ( 4Rll5QLRBXRctlhMdocsYH7ydM1u ).
+D/FirebaseAuth( 3137): Notifying auth state listeners about user ( 4Rll5QLRBXRctlhMdocsYH7ydM1u ).
+D/ProfileInstaller( 3137): Installing profile for id.ruma.app
+W/DynamiteModule( 3137): Local module descriptor class for com.google.android.gms.providerinstaller.dynamite not found.
+I/DynamiteModule( 3137): Considering local module com.google.android.gms.providerinstaller.dynamite:0 and remote module com.google.android.gms.providerinstaller.dynamite:0
+W/ProviderInstaller( 3137): Failed to load providerinstaller module: No acceptable module com.google.android.gms.providerinstaller.dynamite found. Local version is 0 and remote version is 0.
+D/ApplicationLoaders( 3137): Returning zygote-cached class loader: /system/framework/org.apache.http.legacy.jar
+D/nativeloader( 3137): Configuring clns-8 for other apk /system/framework/com.android.media.remotedisplay.jar. target_sdk_version=34, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+D/nativeloader( 3137): Configuring clns-9 for other apk /system/framework/com.android.location.provider.jar. target_sdk_version=34, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+D/ApplicationLoaders( 3137): Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+D/ApplicationLoaders( 3137): Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+D/nativeloader( 3137): InitLlndkLibrariesProduct: libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libRS.so:libandroid_net.so:libapexsupport.so:libbinder_ndk.so:libc.so:libcgrouprc.so:libclang_rt.asan-x86_64-android.so:libcom.android.tethering.connectivity_native.so:libdl.so:libft2.so:liblog.so:libm.so:libmediandk.so:libnativewindow.so:libneuralnetworks.so:libselinux.so:libsync.so:libvendorsupport.so:libvndksupport.so:libvulkan.so
+D/nativeloader( 3137): Configuring product-clns-10 for unbundled product apk /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk. target_sdk_version=34, uses_libraries=, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms:/product/lib64:/system/product/lib64
+D/nativeloader( 3137): InitVndkspLibrariesProduct: VNDK is deprecated with product
+D/nativeloader( 3137): Load /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64/libconscrypt_gmscore_jni.so using ns product-clns-10 from class loader (caller=/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!classes3.dex): ok
+V/NativeCrypto( 3137): Registering com/google/android/gms/org/conscrypt/NativeCrypto's 305 native methods...
+W/id.ruma.app( 3137): Accessing hidden method Ljava/security/spec/ECParameterSpec;->getCurveName()Ljava/lang/String; (unsupported, reflection, allowed)
+I/ProviderInstaller( 3137): Installed default security provider GmsCore_OpenSSL
+D/TrafficStats( 3137): tagSocket(160) with statsTag=0xffffffff, statsUid=-1
+D/FlutterJNI( 3137): Sending viewport metrics to the engine.
+D/EGL_emulation( 3137): app_time_stats: avg=1095.60ms min=204.55ms max=2253.73ms count=3
+D/EGL_emulation( 3137): app_time_stats: avg=111.27ms min=45.19ms max=185.15ms count=9
+VMServiceFlutterDriver: request_data message is taking a long time to complete...
+D/EGL_emulation( 3137): app_time_stats: avg=511.99ms min=118.81ms max=905.17ms count=2
+D/EGL_emulation( 3137): app_time_stats: avg=284.15ms min=111.27ms max=629.00ms count=5
+D/EGL_emulation( 3137): app_time_stats: avg=211.51ms min=117.64ms max=367.58ms count=5
+D/EGL_emulation( 3137): app_time_stats: avg=71.95ms min=8.89ms max=131.66ms count=15
+D/EGL_emulation( 3137): app_time_stats: avg=172.46ms min=111.07ms max=456.47ms count=6
+W/id.ruma.app( 3137): ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/talkback/talkback.apk' with 1 weak references
+W/id.ruma.app( 3137): ApkAssets: Deleting an ApkAssets object '/vendor/overlay/EmulatorTalkBackOverlay/EmulatorTalkBackOverlay.apk' with 1 weak references
+D/EGL_emulation( 3137): app_time_stats: avg=121.64ms min=11.22ms max=335.26ms count=10
+D/EGL_emulation( 3137): app_time_stats: avg=147.78ms min=13.80ms max=715.73ms count=8
+D/EGL_emulation( 3137): app_time_stats: avg=532.68ms min=113.25ms max=1430.65ms count=4
+D/EGL_emulation( 3137): app_time_stats: avg=789.66ms min=118.30ms max=1461.02ms count=2
+W/System  ( 3137): Ignoring header X-Firebase-Locale because its value was null.
+D/TrafficStats( 3137): tagSocket(151) with statsTag=0xffffffff, statsUid=-1
+D/FirebaseAuth( 3137): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth( 3137): Notifying auth state listeners about a sign-out event.
+W/System  ( 3137): Ignoring header X-Firebase-Locale because its value was null.
+W/System  ( 3137): Ignoring header X-Firebase-Locale because its value was null.
+D/FirebaseAuth( 3137): Notifying id token listeners about user ( iaDic3sA9lERkrXb1CosHCOqAMH6 ).
+D/FirebaseAuth( 3137): Notifying auth state listeners about user ( iaDic3sA9lERkrXb1CosHCOqAMH6 ).
+W/Firestore( 3137): (27.0.0) [Firestore]: Listen for QueryWrapper(query=Query(target=Query(users/4Rll5QLRBXRctlhMdocsYH7ydM1u/transactions order by __name__);limitType=LIMIT_TO_FIRST)) failed: Status{code=PERMISSION_DENIED, description=
+W/Firestore( 3137): false for 'list' @ L197, false for 'list' @ L251, cause=null}
+W/WindowOnBackDispatcher( 3137): OnBackInvokedCallback is not enabled for the application.
+W/WindowOnBackDispatcher( 3137): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+D/EGL_emulation( 3137): app_time_stats: avg=126.40ms min=15.27ms max=304.20ms count=8
+I/ImeTracker( 3137): id.ruma.app:34b5b83a: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false
+D/InputMethodManager( 3137): showSoftInput() view=io.flutter.embedding.android.FlutterView{8c869a1 VFE...... .F....ID 0,0-1080,2340 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+I/AssistStructure( 3137): Flattened final assist data: 504 bytes, containing 1 windows, 3 views
+D/InputConnectionAdaptor( 3137): The input method toggled cursor monitoring on
+D/EGL_emulation( 3137): app_time_stats: avg=121.24ms min=19.98ms max=241.11ms count=10
+D/InsetsController( 3137): show(ime(), fromIme=true)
+W/InteractionJankMonitor( 3137): Initializing without READ_DEVICE_CONFIG permission. enabled=true, interval=1, missedFrameThreshold=3, frameTimeThreshold=64, package=id.ruma.app
+D/FlutterJNI( 3137): Sending viewport metrics to the engine.
+D/FlutterJNI( 3137): Sending viewport metrics to the engine.
+D/FlutterJNI( 3137): Sending viewport metrics to the engine.
+D/FlutterJNI( 3137): Sending viewport metrics to the engine.
+D/FlutterJNI( 3137): Sending viewport metrics to the engine.
+D/FlutterJNI( 3137): Sending viewport metrics to the engine.
+D/FlutterJNI( 3137): Sending viewport metrics to the engine.
+D/FlutterJNI( 3137): Sending viewport metrics to the engine.
+I/ImeTracker( 3137): id.ruma.app:34b5b83a: onShown
+D/FlutterJNI( 3137): Sending viewport metrics to the engine.
+D/FlutterJNI( 3137): Sending viewport metrics to the engine.
+D/EGL_emulation( 3137): app_time_stats: avg=1863.48ms min=1.28ms max=17538.44ms count=10
+D/EGL_emulation( 3137): app_time_stats: avg=343.73ms min=166.79ms max=529.05ms count=3
+I/ImeTracker( 3137): id.ruma.app:5054062a: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT fromUser false
+I/ImeTracker( 3137): id.ruma.app:7ab26ebd: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT fromUser false
+D/InputConnectionAdaptor( 3137): The input method toggled cursor monitoring off
+D/InsetsController( 3137): hide(ime(), fromIme=true)
+D/FlutterJNI( 3137): Sending viewport metrics to the engine.
+D/FlutterJNI( 3137): Sending viewport metrics to the engine.
+D/FlutterJNI( 3137): Sending viewport metrics to the engine.
+W/System  ( 3137): Ignoring header X-Firebase-Locale because its value was null.
+D/FlutterJNI( 3137): Sending viewport metrics to the engine.
+D/FlutterJNI( 3137): Sending viewport metrics to the engine.
+D/FlutterJNI( 3137): Sending viewport metrics to the engine.
+D/FirebaseAuth( 3137): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth( 3137): Notifying auth state listeners about a sign-out event.
+I/flutter ( 3137): ══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+I/flutter ( 3137): The following TestFailure was thrown running a test:
+I/flutter ( 3137): Expected: a value less than or equal to <548.0>
+I/flutter ( 3137):   Actual: <619.0>
+I/flutter ( 3137):    Which: is not a value less than or equal to <548.0>
+I/flutter ( 3137): 
+I/flutter ( 3137): When the exception was thrown, this was the stack:
+I/flutter ( 3137): #4      main.<anonymous closure> (file:///home/ael/DATA/project%20on%20linux/mobileapp/ruma/integration_test/agent_tools_flow_test.dart:350:7)
+I/flutter ( 3137): <asynchronous suspension>
+I/flutter ( 3137): #5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+I/flutter ( 3137): <asynchronous suspension>
+I/flutter ( 3137): #6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+I/flutter ( 3137): <asynchronous suspension>
+I/flutter ( 3137): #7      TestWidgetsFlutterBinding._createTestCompletionHandler.<anonymous closure> (package:flutter_test/src/binding.dart:1707:12)
+I/flutter ( 3137): <asynchronous suspension>
+I/flutter ( 3137): 
+I/flutter ( 3137): This was caught by the test expectation on the following line:
+I/flutter ( 3137):   file:///home/ael/DATA/project%20on%20linux/mobileapp/ruma/integration_test/agent_tools_flow_test.dart line 350
+I/flutter ( 3137): The test description was:
+I/flutter ( 3137):   stages 1–3 native SDK and reviewed tools, local synthetic only
+I/flutter ( 3137): ════════════════════════════════════════════════════════════════════════════════════════════════════
+I/flutter ( 3137): 00:19 +0: stages 1–3 native SDK and reviewed tools, local synthetic only [E]
+I/flutter ( 3137):   Test failed. See exception logs above.
+I/flutter ( 3137):   The test description was: stages 1–3 native SDK and reviewed tools, local synthetic only
+I/flutter ( 3137):   
+I/flutter ( 3137): 00:19 +0 -1: (tearDownAll)
+D/FlutterJNI( 3137): Sending viewport metrics to the engine.
+I/flutter ( 3137): 00:19 +1 -1: Some tests failed.
+D/FlutterJNI( 3137): Sending viewport metrics to the engine.
+Failure Details:
+Failure in method: stages 1–3 native SDK and reviewed tools, local synthetic only
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞═════════════════
+The following TestFailure was thrown running a test:
+Expected: a value less than or equal to <548.0>
+  Actual: <619.0>
+   Which: is not a value less than or equal to <548.0>
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///home/ael/DATA/project%20on%20linux/mobileapp/ruma/integration_test/agent_tools_flow_test.dart:350:7)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+#7      TestWidgetsFlutterBinding._createTestCompletionHandler.<anonymous closure> (package:flutter_test/src/binding.dart:1707:12)
+<asynchronous suspension>
+
+This was caught by the test expectation on the following line:
+  file:///home/ael/DATA/project%20on%20linux/mobileapp/ruma/integration_test/agent_tools_flow_test.dart line 350
+The test description was:
+  stages 1–3 native SDK and reviewed tools, local synthetic only
+═════════════════════════════════════════════════════════════════
+
+end of failure 1
+
+
+
+D/FlutterJNI( 3137): Sending viewport metrics to the engine.
+D/FlutterJNI( 3137): Sending viewport metrics to the engine.
+D/FlutterJNI( 3137): Sending viewport metrics to the engine.

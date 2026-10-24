@@ -1,0 +1,15 @@
+{
+  "project": "mobile-app-3479f",
+  "publishedVia": "Firebase Console Rules editor",
+  "publicationTimeVisible": "20 October 2026 10:33 PM WIB",
+  "previousActiveTime": "20 October 2026 8:43 PM WIB",
+  "editorExactMatchBeforePublish": true,
+  "editorExactMatchAfterPublish": true,
+  "sha256": "15e0e2b50fdb78b4d1ffb687f7135af8d0a9512e61e961e68c8b0eabd42bb0b2",
+  "backupMatchesPreviousNotificationRules": true,
+  "screenshot": "rules-published.png",
+  "workerChanged": false,
+  "iamChanged": false,
+  "indexesChanged": false,
+  "billingChanged": false
+}

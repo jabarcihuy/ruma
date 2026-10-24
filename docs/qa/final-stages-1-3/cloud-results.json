@@ -1,0 +1,20 @@
+{
+  "project": "mobile-app-3479f",
+  "suite": "final_stages_cloud_test",
+  "fixtureUids": [
+    "CjBPkZaRVmXSBuSLkap9PrjZ9Fx1"
+  ],
+  "authFixturesDeleted": [
+    "CjBPkZaRVmXSBuSLkap9PrjZ9Fx1"
+  ],
+  "modelCalls": 0,
+  "additionalFcmSends": 0,
+  "cases": [
+    "production profile preferences persist",
+    "incomplete real model output becomes clarification without agenda, money or receipt mutation",
+    "clarification restores after reload without automatic model request or commit",
+    "native clarification UI has no actionable partial draft"
+  ],
+  "usesCapturedResponseReplay": true,
+  "passed": true
+}

@@ -1,0 +1,253 @@
+rules_version = '2';
+// Manual CRUD, approved create batches, and exact tombstone restoration. Candidate changes require publication.
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function owner(uid) { return request.auth != null && request.auth.uid == uid; }
+    function text(v,max) { return v is string && v.size() <= max; }
+    function id(v) { return v is string && v.matches('^[a-zA-Z0-9_-]{1,80}$'); }
+    function base(d) { return d.schemaVersion == 1 && d.version is int && d.version >= 1
+      && d.createdAt is timestamp && d.updatedAt == request.time; }
+    function fresh(d) { return base(d) && d.version == 1 && d.createdAt == request.time; }
+    function revised(d) { return base(d) && d.version == resource.data.version+1 && d.createdAt == resource.data.createdAt; }
+    function op(uid,value) { return getAfter(/databases/$(database)/documents/users/$(uid)/operations/$(value)).data; }
+    function coreAfter(uid) { return getAfter(/databases/$(database)/documents/users/$(uid)/state/core).data; }
+    function coreBeforeRevision(uid) { return exists(/databases/$(database)/documents/users/$(uid)/state/core)
+      ? get(/databases/$(database)/documents/users/$(uid)/state/core).data.agendaRevision : 0; }
+    function agenda(d) {
+      return d.keys().hasAll(['schemaVersion','version','createdAt','updatedAt','deletedAt','operationId','kind','title','description','startAtUtc','endAtUtc','durationMinutes','deadlineAtUtc','priority','status','timezone','recurrence'])
+        && d.keys().hasOnly(['schemaVersion','version','createdAt','updatedAt','deletedAt','operationId','kind','title','description','startAtUtc','endAtUtc','durationMinutes','deadlineAtUtc','priority','status','timezone','recurrence'])
+        && id(d.operationId) && d.kind in ['class','task'] && text(d.title,120) && d.title.matches('.*[^\\s].*') && text(d.description,1000)
+        && d.durationMinutes is int && d.durationMinutes >= 5 && d.durationMinutes <= 720
+        && ((d.kind == 'task' && d.startAtUtc == null && d.endAtUtc == null) ||
+          (d.startAtUtc is timestamp && d.endAtUtc is timestamp && d.endAtUtc-d.startAtUtc == duration.value(d.durationMinutes,'m')))
+        && (d.deadlineAtUtc == null || (d.deadlineAtUtc is timestamp && (d.endAtUtc == null || d.endAtUtc <= d.deadlineAtUtc)))
+        && d.priority in ['low','normal','high'] && d.status in ['planned','completed','cancelled']
+        && d.timezone == 'Asia/Jakarta' && (d.deletedAt == null || d.deletedAt == request.time)
+        && d.recurrence is map && d.recurrence.keys().hasOnly(['type']) && d.recurrence.type == 'none';
+    }
+    function coupled(uid,agendaId,d) {
+      let r = op(uid,d.operationId);
+      let c = coreAfter(uid);
+      return r.createdAt == request.time && r.result.agendaId == agendaId && r.result.version == d.version
+        && r.targets == ['agenda/'+agendaId] && c.lastUndoOperationId == d.operationId
+        && c.updatedAt == request.time && c.agendaRevision == coreBeforeRevision(uid)+1;
+    }
+
+    function zeroCore() { return {'agendaRevision':0,'financeRevision':0,'lifetimeIncomeRupiah':0,'lifetimeExpenseRupiah':0,'balanceRupiah':0}; }
+    function emptyMonth() { return {'incomeRupiah':0,'expenseRupiah':0,'categoryExpenseRupiah':{'food':0,'transport':0,'housing':0,'other':0},'budgetTotalRupiah':null,'categoryBudgetRupiah':{'food':null,'transport':null,'housing':null,'other':null}}; }
+    function emptyMoney() { return {'type':'none','amountRupiah':0,'categoryId':'','monthKey':'','deletedAt':null}; }
+    function oldMoney(uid,value) { let p=/databases/$(database)/documents/users/$(uid)/transactions/$(value); return exists(p)?get(p).data:emptyMoney(); }
+    function afterMoney(uid,value) { return getAfter(/databases/$(database)/documents/users/$(uid)/transactions/$(value)).data; }
+    function contribution(d,type,month,category) { return d.deletedAt==null && d.type==type && (month==null || d.monthKey==month) && (category==null || d.categoryId==category) ? d.amountRupiah:0; }
+    function actualDate(value) {
+      let parts=value.split('-'); let y=int(parts[0]); let m=int(parts[1]); let d=int(parts[2]); let t=timestamp.date(y,m,d);
+      return y>=2000 && y<=2100 && t.year()==y && t.month()==m && t.day()==d && t<=(request.time+duration.value(7,'h')).date();
+    }
+    function money(d) {
+      return d.keys().hasAll(['schemaVersion','version','createdAt','updatedAt','deletedAt','operationId','type','amountRupiah','categoryId','localDate','monthKey','description','source'])
+        && d.keys().hasOnly(['schemaVersion','version','createdAt','updatedAt','deletedAt','operationId','type','amountRupiah','categoryId','localDate','monthKey','description','source'])
+        && id(d.operationId) && d.amountRupiah is int && d.amountRupiah>=1 && d.amountRupiah<=1000000000
+        && ((d.type=='expense' && d.categoryId in ['food','transport','housing','other']) || (d.type=='income' && d.categoryId in ['allowance','work','other_income']))
+        && d.localDate is string && d.monthKey is string && d.monthKey.matches('^(20[0-9]{2}|2100)-(0[1-9]|1[0-2])$')
+        && d.localDate.matches('^'+d.monthKey+'-(0[1-9]|[12][0-9]|3[01])$') && actualDate(d.localDate)
+        && text(d.description,1000) && d.source in ['manual','ai'] && (d.deletedAt==null || d.deletedAt==request.time);
+    }
+    function changedMonth(uid,key,operation) {
+      return getAfter(/databases/$(database)/documents/users/$(uid)/months/$(key)).data.operationId==operation;
+    }
+    function moneyCoupled(uid,value,d) {
+      let r=op(uid,d.operationId);
+      let old=resource==null?emptyMoney():resource.data;
+      return r.createdAt==request.time && r.result.entityId==value && r.result.version==d.version && r.targets==['transactions/'+value]
+        && coreAfter(uid).lastUndoOperationId==d.operationId
+        && changedMonth(uid,d.monthKey,d.operationId) && (old.amountRupiah==0 || old.monthKey==d.monthKey || changedMonth(uid,old.monthKey,d.operationId));
+    }
+    function financeCore(uid,d) {
+      let r=op(uid,d.lastUndoOperationId); let old=resource==null?zeroCore():resource.data;
+      return r.kind in ['transaction_create','transaction_update','transaction_delete','budget_set']
+        && d.agendaRevision==old.agendaRevision && d.financeRevision==old.financeRevision+1
+        && d.lifetimeIncomeRupiah>=0 && d.lifetimeExpenseRupiah>=0
+        && d.balanceRupiah==d.lifetimeIncomeRupiah-d.lifetimeExpenseRupiah
+        && (r.kind=='budget_set' ? (d.lifetimeIncomeRupiah==old.lifetimeIncomeRupiah && d.lifetimeExpenseRupiah==old.lifetimeExpenseRupiah)
+          : financeCoreDelta(uid,d,r,old));
+    }
+    function financeCoreDelta(uid,d,r,old) {
+      let before=oldMoney(uid,r.result.entityId); let after=afterMoney(uid,r.result.entityId);
+      return d.lifetimeIncomeRupiah==old.lifetimeIncomeRupiah+contribution(after,'income',null,null)-contribution(before,'income',null,null)
+        && d.lifetimeExpenseRupiah==old.lifetimeExpenseRupiah+contribution(after,'expense',null,null)-contribution(before,'expense',null,null);
+    }
+    function categoryMap(d) { return d is map && d.keys().hasAll(['food','transport','housing','other']) && d.keys().hasOnly(['food','transport','housing','other']); }
+    function nonnegative(v) { return v is int && v>=0; }
+    function budgetValue(v) { return v==null || (v is int && v>=0 && v<=1000000000); }
+    function n(v) { return v==null?0:v; }
+    function monthShape(d) {
+      return d.keys().hasAll(['schemaVersion','version','createdAt','updatedAt','incomeRupiah','expenseRupiah','categoryExpenseRupiah','budgetTotalRupiah','categoryBudgetRupiah','operationId'])
+        && d.keys().hasOnly(['schemaVersion','version','createdAt','updatedAt','incomeRupiah','expenseRupiah','categoryExpenseRupiah','budgetTotalRupiah','categoryBudgetRupiah','operationId'])
+        && id(d.operationId) && nonnegative(d.incomeRupiah) && nonnegative(d.expenseRupiah) && categoryMap(d.categoryExpenseRupiah)
+        && nonnegative(d.categoryExpenseRupiah.food) && nonnegative(d.categoryExpenseRupiah.transport) && nonnegative(d.categoryExpenseRupiah.housing) && nonnegative(d.categoryExpenseRupiah.other)
+        && d.expenseRupiah==d.categoryExpenseRupiah.food+d.categoryExpenseRupiah.transport+d.categoryExpenseRupiah.housing+d.categoryExpenseRupiah.other
+        && categoryMap(d.categoryBudgetRupiah) && budgetValue(d.budgetTotalRupiah) && budgetValue(d.categoryBudgetRupiah.food) && budgetValue(d.categoryBudgetRupiah.transport) && budgetValue(d.categoryBudgetRupiah.housing) && budgetValue(d.categoryBudgetRupiah.other)
+        && (d.budgetTotalRupiah==null ? (d.categoryBudgetRupiah=={'food':null,'transport':null,'housing':null,'other':null})
+          : n(d.categoryBudgetRupiah.food)+n(d.categoryBudgetRupiah.transport)+n(d.categoryBudgetRupiah.housing)+n(d.categoryBudgetRupiah.other)<=d.budgetTotalRupiah);
+    }
+    function monthlyAmounts(d,key) {
+      let amount=d.deletedAt==null && d.monthKey==key?d.amountRupiah:0;
+      let expense=d.type=='expense'?amount:0;
+      return {'income':d.type=='income'?amount:0,'expense':expense,'food':d.categoryId=='food'?expense:0,
+        'transport':d.categoryId=='transport'?expense:0,'housing':d.categoryId=='housing'?expense:0,'other':d.categoryId=='other'?expense:0};
+    }
+    function monthDelta(uid,key,d,old,r) {
+      let before=oldMoney(uid,r.result.entityId); let after=afterMoney(uid,r.result.entityId);
+      let b=monthlyAmounts(before,key); let a=monthlyAmounts(after,key);
+      return key in [before.monthKey,after.monthKey]
+        && d.budgetTotalRupiah==old.budgetTotalRupiah && d.categoryBudgetRupiah==old.categoryBudgetRupiah
+        && d.incomeRupiah==old.incomeRupiah+a.income-b.income && d.expenseRupiah==old.expenseRupiah+a.expense-b.expense
+        && d.categoryExpenseRupiah=={'food':old.categoryExpenseRupiah.food+a.food-b.food,'transport':old.categoryExpenseRupiah.transport+a.transport-b.transport,
+          'housing':old.categoryExpenseRupiah.housing+a.housing-b.housing,'other':old.categoryExpenseRupiah.other+a.other-b.other};
+    }
+    function monthChange(uid,key,d,old) {
+      let r=op(uid,d.operationId); let c=coreAfter(uid);
+      return r.createdAt==request.time && c.lastUndoOperationId==d.operationId
+        && (r.kind=='budget_set' ? (r.targets==['months/'+key] && r.result.entityId==key && r.result.version==d.version
+          && d.incomeRupiah==old.incomeRupiah && d.expenseRupiah==old.expenseRupiah && d.categoryExpenseRupiah==old.categoryExpenseRupiah)
+          : (r.kind in ['transaction_create','transaction_update','transaction_delete'] && monthDelta(uid,key,d,old,r)));
+    }
+    function financeReceipt(uid,value,r) {
+      let budget=r.kind=='budget_set'; let p=/databases/$(database)/documents/users/$(uid)/transactions/$(r.result.entityId);
+      let mp=/databases/$(database)/documents/users/$(uid)/months/$(r.result.entityId);
+      let d=budget?getAfter(mp).data:getAfter(p).data;
+      return r.result is map && r.result.keys().hasAll(['entityId','version','requestKey','monthKeys']) && r.result.keys().hasOnly(['entityId','version','requestKey','monthKeys'])
+        && id(r.result.entityId) && text(r.result.requestKey,6000) && r.result.monthKeys is list && r.result.monthKeys.size()>=1 && r.result.monthKeys.size()<=2
+        && r.targets==[(budget?'months/':'transactions/')+r.result.entityId]
+        && d.operationId==value && d.version==r.result.version
+        && coreAfter(uid).lastUndoOperationId==value && coreAfter(uid).updatedAt==request.time
+        && (budget ? r.result.monthKeys==[r.result.entityId]
+          : ((r.kind=='transaction_create' ? !exists(p) : exists(p)) && d.monthKey in r.result.monthKeys
+            && (r.result.monthKeys.size()==1 ? (!exists(p) || get(p).data.monthKey==d.monthKey)
+              : (exists(p) && get(p).data.monthKey!=d.monthKey && get(p).data.monthKey in r.result.monthKeys))));
+    }
+
+
+    function batchMember(uid,value,d,isAgenda) {
+      let r=op(uid,d.operationId); let c=coreAfter(uid);
+      return r.createdAt==request.time && value in (isAgenda?r.result.agendaIds:r.result.transactionIds)
+        && c.lastUndoOperationId==d.operationId && c.updatedAt==request.time;
+    }
+    function batchItem(uid,ids,index,isAgenda,operation) {
+      let collection=isAgenda?'agenda':'transactions';
+      let p=/databases/$(database)/documents/users/$(uid)/$(collection)/$(ids[index]);
+      let d=getAfter(p).data;
+      return id(ids[index]) && !exists(p) && d.version==1 && d.createdAt==request.time && d.operationId==operation;
+    }
+    function batchList(uid,ids,isAgenda,operation) {
+      return ids is list && ids.size()<=3 && ids.toSet().size()==ids.size()
+        && (ids.size()<1 || batchItem(uid,ids,0,isAgenda,operation))
+        && (ids.size()<2 || batchItem(uid,ids,1,isAgenda,operation))
+        && (ids.size()<3 || batchItem(uid,ids,2,isAgenda,operation));
+    }
+    function batchTargets(ids,index,prefix,targets) { return ids.size()<=index || prefix+ids[index] in targets; }
+    function batchReceipt(uid,value,r) {
+      let a=r.result.agendaIds; let t=r.result.transactionIds;
+      return id(r.draftId) && r.approvedRevision is int && r.approvedRevision>=1
+        && r.result.keys().hasAll(['agendaIds','transactionIds','requestKey']) && r.result.keys().hasOnly(['agendaIds','transactionIds','requestKey'])
+        && text(r.result.requestKey,20000) && batchList(uid,a,true,value) && batchList(uid,t,false,value)
+        && a.size()+t.size()>0 && r.targets is list && r.targets.size()==a.size()+t.size() && r.targets.toSet().size()==r.targets.size()
+        && batchTargets(a,0,'agenda/',r.targets) && batchTargets(a,1,'agenda/',r.targets) && batchTargets(a,2,'agenda/',r.targets)
+        && batchTargets(t,0,'transactions/',r.targets) && batchTargets(t,1,'transactions/',r.targets) && batchTargets(t,2,'transactions/',r.targets)
+        && coreAfter(uid).lastUndoOperationId==value && coreAfter(uid).updatedAt==request.time;
+    }
+    function batchMoney(uid,ids,index) { return ids.size()>index?afterMoney(uid,ids[index]):emptyMoney(); }
+    function batchCore(uid,d) {
+      let r=op(uid,d.lastUndoOperationId); let old=resource==null?zeroCore():resource.data;
+      let a=batchMoney(uid,r.result.transactionIds,0); let b=batchMoney(uid,r.result.transactionIds,1); let c=batchMoney(uid,r.result.transactionIds,2);
+      let income=contribution(a,'income',null,null)+contribution(b,'income',null,null)+contribution(c,'income',null,null);
+      let expense=contribution(a,'expense',null,null)+contribution(b,'expense',null,null)+contribution(c,'expense',null,null);
+      return d.agendaRevision==old.agendaRevision+(r.result.agendaIds.size()>0?1:0)
+        && d.financeRevision==old.financeRevision+(r.result.transactionIds.size()>0?1:0)
+        && d.lifetimeIncomeRupiah==old.lifetimeIncomeRupiah+income && d.lifetimeExpenseRupiah==old.lifetimeExpenseRupiah+expense
+        && d.balanceRupiah==d.lifetimeIncomeRupiah-d.lifetimeExpenseRupiah;
+    }
+    function batchMonth(uid,key,d,old) {
+      let r=op(uid,d.operationId);
+      let a=monthlyAmounts(batchMoney(uid,r.result.transactionIds,0),key);
+      let b=monthlyAmounts(batchMoney(uid,r.result.transactionIds,1),key);
+      let c=monthlyAmounts(batchMoney(uid,r.result.transactionIds,2),key);
+      return r.createdAt==request.time && coreAfter(uid).lastUndoOperationId==d.operationId && a.income+a.expense+b.income+b.expense+c.income+c.expense>0
+        && d.budgetTotalRupiah==old.budgetTotalRupiah && d.categoryBudgetRupiah==old.categoryBudgetRupiah
+        && d.incomeRupiah==old.incomeRupiah+a.income+b.income+c.income && d.expenseRupiah==old.expenseRupiah+a.expense+b.expense+c.expense
+        && d.categoryExpenseRupiah=={'food':old.categoryExpenseRupiah.food+a.food+b.food+c.food,'transport':old.categoryExpenseRupiah.transport+a.transport+b.transport+c.transport,
+          'housing':old.categoryExpenseRupiah.housing+a.housing+b.housing+c.housing,'other':old.categoryExpenseRupiah.other+a.other+b.other+c.other};
+    }
+
+    match /users/{uid} {
+      match /agenda/{agendaId} {
+        allow read: if owner(uid);
+        allow create: if owner(uid) && id(agendaId) && fresh(request.resource.data)
+          && agenda(request.resource.data) && request.resource.data.deletedAt == null
+          && (op(uid,request.resource.data.operationId).kind == 'create_batch' ? batchMember(uid,agendaId,request.resource.data,true) : (op(uid,request.resource.data.operationId).kind == 'agenda_create' && coupled(uid,agendaId,request.resource.data)));
+        allow update: if owner(uid) && revised(request.resource.data)
+          && agenda(request.resource.data) && coupled(uid,agendaId,request.resource.data)
+          && ((op(uid,request.resource.data.operationId).kind == 'agenda_update' && request.resource.data.deletedAt == null
+              && (resource.data.deletedAt == null || request.resource.data.diff(resource.data).affectedKeys().hasOnly(['version','updatedAt','operationId','deletedAt'])))
+            || (resource.data.deletedAt == null && op(uid,request.resource.data.operationId).kind == 'agenda_delete' && request.resource.data.deletedAt == request.time
+              && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['version','updatedAt','operationId','deletedAt'])));
+      }
+
+      match /transactions/{value} {
+        allow read: if owner(uid);
+        allow create: if owner(uid) && id(value) && fresh(request.resource.data) && money(request.resource.data) && request.resource.data.deletedAt==null
+          && (op(uid,request.resource.data.operationId).kind=='create_batch' ? (request.resource.data.source=='ai' && batchMember(uid,value,request.resource.data,false) && changedMonth(uid,request.resource.data.monthKey,request.resource.data.operationId)) : (request.resource.data.source=='manual' && op(uid,request.resource.data.operationId).kind=='transaction_create' && moneyCoupled(uid,value,request.resource.data)));
+        allow update: if owner(uid) && revised(request.resource.data) && money(request.resource.data) && request.resource.data.source==resource.data.source && moneyCoupled(uid,value,request.resource.data)
+          && ((op(uid,request.resource.data.operationId).kind=='transaction_update' && request.resource.data.deletedAt==null
+              && (resource.data.deletedAt==null || request.resource.data.diff(resource.data).affectedKeys().hasOnly(['version','updatedAt','operationId','deletedAt'])))
+            || (resource.data.deletedAt==null && op(uid,request.resource.data.operationId).kind=='transaction_delete' && request.resource.data.deletedAt==request.time
+              && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['version','updatedAt','operationId','deletedAt'])));
+      }
+      match /months/{month} {
+        allow read: if owner(uid);
+        allow create,update: if owner(uid) && month.matches('^(20[0-9]{2}|2100)-(0[1-9]|1[0-2])$') && base(request.resource.data)
+          && (resource==null?fresh(request.resource.data):revised(request.resource.data)) && monthShape(request.resource.data)
+          && (op(uid,request.resource.data.operationId).kind=='create_batch' ? batchMonth(uid,month,request.resource.data,resource==null?emptyMonth():resource.data) : monthChange(uid,month,request.resource.data,resource==null?emptyMonth():resource.data));
+      }
+
+      match /state/core {
+        allow read: if owner(uid);
+        allow create,update: if owner(uid) && base(request.resource.data)
+          && request.resource.data.keys().hasAll(['schemaVersion','version','createdAt','updatedAt','agendaRevision','financeRevision','balanceRupiah','lifetimeIncomeRupiah','lifetimeExpenseRupiah','lastUndoOperationId'])
+          && request.resource.data.keys().hasOnly(['schemaVersion','version','createdAt','updatedAt','agendaRevision','financeRevision','balanceRupiah','lifetimeIncomeRupiah','lifetimeExpenseRupiah','lastUndoOperationId'])
+          && request.resource.data.agendaRevision is int && id(request.resource.data.lastUndoOperationId)
+          && request.resource.data.financeRevision is int && request.resource.data.balanceRupiah is int
+          && request.resource.data.lifetimeIncomeRupiah is int && request.resource.data.lifetimeExpenseRupiah is int
+          && ((op(uid,request.resource.data.lastUndoOperationId).kind in ['agenda_create','agenda_update','agenda_delete'] && (resource == null ? (fresh(request.resource.data) && request.resource.data.agendaRevision == 1
+            && request.resource.data.financeRevision == 0 && request.resource.data.balanceRupiah == 0
+            && request.resource.data.lifetimeIncomeRupiah == 0 && request.resource.data.lifetimeExpenseRupiah == 0)
+            : (revised(request.resource.data) && request.resource.data.agendaRevision == resource.data.agendaRevision+1
+              && request.resource.data.financeRevision == resource.data.financeRevision && request.resource.data.balanceRupiah == resource.data.balanceRupiah
+              && request.resource.data.lifetimeIncomeRupiah == resource.data.lifetimeIncomeRupiah && request.resource.data.lifetimeExpenseRupiah == resource.data.lifetimeExpenseRupiah))) || ((resource==null?fresh(request.resource.data):revised(request.resource.data)) && (op(uid,request.resource.data.lastUndoOperationId).kind=='create_batch' ? batchCore(uid,request.resource.data) : financeCore(uid,request.resource.data))))
+          && op(uid,request.resource.data.lastUndoOperationId).createdAt == request.time;
+      }
+      match /operations/{operationId} {
+        allow read: if owner(uid);
+        allow create: if owner(uid) && id(operationId) && fresh(request.resource.data)
+          && request.resource.data.keys().hasAll(['schemaVersion','version','createdAt','updatedAt','draftId','approvedRevision','kind','targets','result','undoState'])
+          && request.resource.data.keys().hasOnly(['schemaVersion','version','createdAt','updatedAt','draftId','approvedRevision','kind','targets','result','undoState'])
+          && request.resource.data.undoState == 'unavailable'
+          && (request.resource.data.kind=='create_batch' ? batchReceipt(uid,operationId,request.resource.data) : (request.resource.data.draftId == 'manual' && request.resource.data.approvedRevision == 1 && ((request.resource.data.kind in ['agenda_create','agenda_update','agenda_delete']
+          && request.resource.data.result is map && request.resource.data.result.keys().hasAll(['agendaId','version','requestKey'])
+          && request.resource.data.result.keys().hasOnly(['agendaId','version','requestKey'])
+          && id(request.resource.data.result.agendaId) && text(request.resource.data.result.requestKey,4000)
+          && request.resource.data.targets == ['agenda/'+request.resource.data.result.agendaId]
+          && receiptTarget(uid,operationId,request.resource.data)) || (request.resource.data.kind in ['transaction_create','transaction_update','transaction_delete','budget_set'] && financeReceipt(uid,operationId,request.resource.data)))));
+      }
+      function receiptTarget(uid,operationId,r) {
+        let target = /databases/$(database)/documents/users/$(uid)/agenda/$(r.result.agendaId);
+        let a = getAfter(target).data;
+        return a.operationId == operationId && a.updatedAt == request.time && a.version == r.result.version
+          && coreAfter(uid).lastUndoOperationId == operationId && coreAfter(uid).updatedAt == request.time
+          && (r.kind == 'agenda_create' ? (!exists(target) && a.version == 1)
+            : (exists(target) && a.version == get(target).data.version+1));
+      }
+    }
+    match /{document=**} { allow read,write: if false; }
+  }
+}

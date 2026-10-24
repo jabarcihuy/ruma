@@ -1,0 +1,111 @@
+Resolving dependencies...
+Downloading packages...
+  material_color_utilities 0.13.0 (0.13.1 available)
+  test_api 0.7.12 (0.7.15 available)
+  xml 7.0.1 (7.1.0 available)
+Got dependencies!
+3 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Running Gradle task 'assembleDebug'...                          
+WARNING: Your app uses the following plugins that apply Kotlin Gradle Plugin (KGP): firebase_auth, firebase_core
+Future versions of Flutter will fail to build if your app uses plugins that apply KGP.
+
+Please check the changelogs of these plugins and upgrade to a version that supports Built-in Kotlin.
+If no such version exists, report the issue to the plugin. If necessary, here is a guide on filing
+an issue against a plugin: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-app-developers#report-incompatible-kotlin-gradle-plugin-usage-to-plugin-authors
+
+If you are a plugin author, please migrate your plugin to Built-in Kotlin using this guide: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-plugin-authors
+Running Gradle task 'assembleDebug'...                             20.4s
+✓ Built build/app/outputs/flutter-apk/app-debug.apk
+Installing build/app/outputs/flutter-apk/app-debug.apk...           7.3s
+D/ProfileInstaller( 6830): Installing profile for id.ruma.app
+VMServiceFlutterDriver: Connecting to Flutter application at http://127.0.0.1:36929/LhaTzNs6_jE=/
+VMServiceFlutterDriver: Isolate found with number: 8515215834323027
+VMServiceFlutterDriver: Isolate 8515215834323027 is runnable.
+VMServiceFlutterDriver: Isolate is paused at start.
+VMServiceFlutterDriver: Attempting to resume isolate
+I/flutter ( 6830): 00:00 +0: explicitly approved production AI draft and atomic commit
+I/Choreographer( 6830): Skipped 35 frames!  The application may be doing too much work on its main thread.
+VMServiceFlutterDriver: Connected to Flutter application.
+I/GrallocExtra( 6830): gralloc_extra_query:is_SW3D 0
+I/GrallocExtra( 6830): gralloc_extra_query:is_SW3D 0
+W/libc    ( 6830): Access denied finding property "ro.vendor.display.iris_x7.support"
+W/1.raster( 6830): type=1400 audit(0.0:29057): avc:  denied  { read } for  name="u:object_r:vendor_displayfeature_prop:s0" dev="tmpfs" ino=593 scontext=u:r:untrusted_app:s0:c185,c257,c512,c768 tcontext=u:object_r:vendor_displayfeature_prop:s0 tclass=file permissive=0 app=id.ruma.app
+D/BLASTBufferQueue( 6830): [5d9b7c3 SurfaceView[id.ruma.app/id.ruma.app.MainActivity]#1](f:0,a:1) acquireNextBufferLocked size=1080x2400 mFrameNumber=1 applyTransaction=true mTimestamp=26509601261118(auto) mPendingTransactions.size=0 graphicBufferId=29334626631690 transform=0
+I/Choreographer( 6830): Skipped 52 frames!  The application may be doing too much work on its main thread.
+D/VRI[MainActivity]( 6830): vri.Setup new sync=wmsSync-VRI[MainActivity]#1
+I/SKIA    ( 6830): CreateGraphicsPipeline pipeline cache hit. elpased time: 0.17 ms.
+D/BLASTBufferQueue( 6830): [VRI[MainActivity]#0](f:0,a:1) acquireNextBufferLocked size=1080x2400 mFrameNumber=1 applyTransaction=true mTimestamp=26509748583656(auto) mPendingTransactions.size=0 graphicBufferId=29334626631698 transform=0
+D/VRI[MainActivity]( 6830): vri.reportDrawFinished 0 0 Rect(0, 0 - 1080, 2400)
+I/NativeTurboSchedManager( 6830): Load libmiui_runtime
+I/FirebaseApp( 6830): Device unlocked: initializing all Firebase APIs for app [DEFAULT]
+I/HandWritingStubImpl( 6830): refreshLastKeyboardType: 1
+I/HandWritingStubImpl( 6830): getCurrentKeyboardType: 1
+D/InsetsController( 6830): hide(ime(), fromIme=false)
+I/ImeTracker( 6830): id.ruma.app:c4d08131: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+I/HandWritingStubImpl( 6830): getCurrentKeyboardType: 1
+W/InsetsSource( 6830): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource( 6830): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource( 6830): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource( 6830): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+D/FirebaseAuth( 6830): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth( 6830): Notifying auth state listeners about a sign-out event.
+W/System  ( 6830): Ignoring header X-Firebase-Locale because its value was null.
+W/System  ( 6830): Ignoring header X-Firebase-Locale because its value was null.
+D/FirebaseAuth( 6830): Notifying id token listeners about user ( oDHM5ZQ2Mbbg3l753wNR5fGGIdx1 ).
+D/FirebaseAuth( 6830): Notifying auth state listeners about user ( oDHM5ZQ2Mbbg3l753wNR5fGGIdx1 ).
+I/flutter ( 6830): RUMA_ASSISTANT_SYNTHETIC_UID=oDHM5ZQ2Mbbg3l753wNR5fGGIdx1
+I/flutter ( 6830): RUMA_ASSISTANT_ONE_MODEL_CALL_START
+W/FinalizerDaemon( 6830): type=1400 audit(0.0:29060): avc:  denied  { getopt } for  path="/dev/socket/usap_pool_primary" scontext=u:r:untrusted_app:s0:c185,c257,c512,c768 tcontext=u:r:zygote:s0 tclass=unix_stream_socket permissive=0 app=id.ruma.app
+VMServiceFlutterDriver: request_data message is taking a long time to complete...
+W/DynamiteModule( 6830): Local module descriptor class for com.google.android.gms.providerinstaller.dynamite not found.
+I/DynamiteModule( 6830): Considering local module com.google.android.gms.providerinstaller.dynamite:0 and remote module com.google.android.gms.providerinstaller.dynamite:0
+W/ProviderInstaller( 6830): Failed to load providerinstaller module: No acceptable module com.google.android.gms.providerinstaller.dynamite found. Local version is 0 and remote version is 0.
+D/ApplicationLoaders( 6830): Returning zygote-cached class loader: /system/framework/org.apache.http.legacy.jar
+D/ApplicationLoaders( 6830): Returning zygote-cached class loader: /system/framework/com.android.location.provider.jar
+D/ApplicationLoaders( 6830): Returning zygote-cached class loader: /system/framework/com.android.media.remotedisplay.jar
+D/nativeloader( 6830): Configuring clns-11 for other apk /system_ext/framework/com.android.extensions.appfunctions.jar. target_sdk_version=37, uses_libraries=ALL, library_path=/data/app/~~ZCVdjtP4bqdfjtF8y0tZIQ==/com.google.android.gms-VnOrDxKRydQ2_6tvyy7JMQ==/lib/arm64:/data/app/~~ZCVdjtP4bqdfjtF8y0tZIQ==/com.google.android.gms-VnOrDxKRydQ2_6tvyy7JMQ==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+D/nativeloader( 6830): Extending system_exposed_libraries: libapuwareapusys.mtk.so:libapuwareapusys_v2.mtk.so:libapuwarexrp.mtk.so:libapuwarexrp_v2.mtk.so:libapuwareutils.mtk.so:libapuwareutils_v2.mtk.so:libapuwarehmp.mtk.so:libapuwareaiste.mtk.so:libneuron_graph_delegate.mtk.so:libneuronusdk_adapter.mtk.so:libtflite_mtk.mtk.so:libarmnn_ndk.mtk.so:libcmdl_ndk.mtk.so:libnir_neon_driver_ndk.mtk.so:libmvpu_runtime.mtk.so:libmvpu_runtime_pub.mtk.so:libmvpu_engine_pub.mtk.so:libmvpu_pattern_pub.mtk.so:libmvpuop_mtk_cv.mtk.so:libmvpuop_mtk_nn.mtk.so:libmvpu_runtime_25.mtk.so:libmvpu_runtime_25_pub.mtk.so:libmvpu_engine_25_pub.mtk.so:libmvpu_pattern_25_pub.mtk.so:libmvpuop25_mtk_cv.mtk.so:libmvpuop25_mtk_nn.mtk.so:libmvpu_config.mtk.so:libmvpu_engine_30.mtk.so:libmvpu_pattern_30.mtk.so:libmvpu_cic_ci_compiler_30.mtk.so:libmvpu_runtime_30.mtk.so:libmvpu_clc_30_mvpu_debuginfo.mtk.so:libmvpu_clc_30_mvpu_elf.mtk.so:libmvpu_clc_30_mvpu_utility.mtk.so:libneuronservice_adapter.mtk.so:libneuron_sys_util.mtk.so:libmvpuop30_mtk_nn.mtk.so:libneuron
+D/ApplicationLoaders( 6830): Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+D/ApplicationLoaders( 6830): Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+D/nativeloader( 6830): Configuring clns-12 for other apk /data/app/~~ZCVdjtP4bqdfjtF8y0tZIQ==/com.google.android.gms-VnOrDxKRydQ2_6tvyy7JMQ==/base.apk. target_sdk_version=37, uses_libraries=, library_path=/data/app/~~ZCVdjtP4bqdfjtF8y0tZIQ==/com.google.android.gms-VnOrDxKRydQ2_6tvyy7JMQ==/lib/arm64:/data/app/~~ZCVdjtP4bqdfjtF8y0tZIQ==/com.google.android.gms-VnOrDxKRydQ2_6tvyy7JMQ==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+I/id.ruma.app( 6830): AssetManager2(0xb400007ab5e30ed8) locale list changing from [] to [en-US]
+I/id.ruma.app( 6830): hiddenapi: Accessing hidden method Ldalvik/system/VMStack;->getStackClass2()Ljava/lang/Class; (runtime_flags=0, domain=core-platform, api=unsupported) from Libva; (domain=app, TargetSdkVersion=36) using reflection: allowed
+I/ProviderInstaller( 6830): Installed default security provider AndroidOpenSSL (via CompatProvider)
+W/FlagStore( 6830): Failed to commit to updated flags for com.google.android.gms.providerinstaller#id.ruma.app
+W/FlagStore( 6830): java.lang.SecurityException: GoogleCertificatesRslt: not allowed: pkg=id.ruma.app, sha256=[d99dd897124e38aeaa87d402055a171f36e460065d1db0cdd0228b7392491fcf], atk=false, ver=264032035.true (go/gsrlt)
+W/FlagStore( 6830): 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3361)
+W/FlagStore( 6830): 	at android.os.Parcel.createException(Parcel.java:3345)
+W/FlagStore( 6830): 	at android.os.Parcel.readException(Parcel.java:3328)
+W/FlagStore( 6830): 	at android.os.Parcel.readException(Parcel.java:3270)
+W/FlagStore( 6830): 	at acni.transactAndReadExceptionReturnVoid(:com.google.android.gms@264032035@26.40.32 (260400-995630914):11)
+W/FlagStore( 6830): 	at fuzl.b(:com.google.android.gms@264032035@26.40.32 (260400-995630914):12)
+W/FlagStore( 6830): 	at fuwi.d(:com.google.android.gms@264032035@26.40.32 (260400-995630914):20)
+W/FlagStore( 6830): 	at bqdw.a(:com.google.android.gms@264032035@26.40.32 (260400-995630914):5)
+W/FlagStore( 6830): 	at bpzl.g(:com.google.android.gms@264032035@26.40.32 (260400-995630914):7)
+W/FlagStore( 6830): 	at bqcb.t(:com.google.android.gms@264032035@26.40.32 (260400-995630914):10)
+W/FlagStore( 6830): 	at bqcb.u(:com.google.android.gms@264032035@26.40.32 (260400-995630914):119)
+W/FlagStore( 6830): 	at bqcb.c(:com.google.android.gms@264032035@26.40.32 (260400-995630914):16)
+W/FlagStore( 6830): 	at bqch.handleMessage(:com.google.android.gms@264032035@26.40.32 (260400-995630914):874)
+W/FlagStore( 6830): 	at android.os.Handler.dispatchMessage(Handler.java:110)
+W/FlagStore( 6830): 	at dosw.lP(:com.google.android.gms@264032035@26.40.32 (260400-995630914):1)
+W/FlagStore( 6830): 	at dosw.dispatchMessage(:com.google.android.gms@264032035@26.40.32 (260400-995630914):5)
+W/FlagStore( 6830): 	at android.os.Looper.loopOnce(Looper.java:274)
+W/FlagStore( 6830): 	at android.os.Looper.loop(Looper.java:369)
+W/FlagStore( 6830): 	at android.os.HandlerThread.run(HandlerThread.java:85)
+W/System  ( 6830): Ignoring header X-Firebase-Locale because its value was null.
+D/FirebaseAuth( 6830): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth( 6830): Notifying auth state listeners about a sign-out event.
+W/Firestore( 6830): (27.0.0) [Firestore]: Listen for QueryWrapper(query=Query(target=Query(users/oDHM5ZQ2Mbbg3l753wNR5fGGIdx1/state/core order by __name__);limitType=LIMIT_TO_FIRST)) failed: Status{code=PERMISSION_DENIED, description=Missing or insufficient permissions., cause=null}
+W/System  ( 6830): Ignoring header X-Firebase-Locale because its value was null.
+W/System  ( 6830): Ignoring header X-Firebase-Locale because its value was null.
+D/FirebaseAuth( 6830): Notifying id token listeners about user ( YHsaSx2fgEhmezZlj02hKpiqxm03 ).
+D/FirebaseAuth( 6830): Notifying auth state listeners about user ( YHsaSx2fgEhmezZlj02hKpiqxm03 ).
+W/Firestore( 6830): (27.0.0) [Firestore]: Listen for QueryWrapper(query=Query(target=Query(users/oDHM5ZQ2Mbbg3l753wNR5fGGIdx1/operations order by __name__);limitType=LIMIT_TO_FIRST)) failed: Status{code=PERMISSION_DENIED, description=Missing or insufficient permissions., cause=null}
+W/System  ( 6830): Ignoring header X-Firebase-Locale because its value was null.
+D/FirebaseAuth( 6830): Notifying id token listeners about a sign-out event.
+D/FirebaseAuth( 6830): Notifying auth state listeners about a sign-out event.
+E/id.ruma.app( 6830): FrameInsert open fail: No such file or directory
+I/flutter ( 6830): 00:23 +1: (tearDownAll)
+I/flutter ( 6830): 00:23 +2: All tests passed!
+All tests passed.

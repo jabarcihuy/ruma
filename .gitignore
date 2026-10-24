@@ -1,0 +1,61 @@
+# Local credentials and machine-specific configuration
+.local/
+.tools/
+.env
+.env.*
+!.env.example
+**/service-account*.json
+**/*adminsdk*.json
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+key.properties
+**/.dev.vars
+**/.dev.vars.*
+**/.wrangler/
+node_modules/
+
+# Conversation backups, temporary work dirs, and local AI/agent state
+ruma-[0-9]*/
+rollout-*.jsonl
+tmp/
+.gemini/
+.codex/
+.agent/
+.agents/
+
+# Generated Flutter, Dart, Firebase, and Python files
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
+coverage/
+android/local.properties
+*-debug.log
+*-debug.*.log
+.firebase/
+**/__pycache__/
+*.pyc
+
+# IDE, Android Gradle, and OS state
+.idea/
+.vscode/
+android/.gradle/
+android/.kotlin/
+android/.cxx/
+android/captures/
+android/app/debug/
+android/app/profile/
+android/app/release/
+*.iml
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Locally built APK and R8 mapping deliverables
+output/apk/

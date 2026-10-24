@@ -1,0 +1,7 @@
+Starting: Intent { cmp=id.ruma.app/.MainActivity }
+Status: ok
+LaunchState: COLD
+Activity: id.ruma.app/.MainActivity
+TotalTime: 3060
+WaitTime: 3078
+Complete

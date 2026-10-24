@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-19",
+  "scope": "Local Firestore emulator; create-batch integration candidate only",
+  "projectId": "demo-ruma",
+  "productionWrites": 0,
+  "cases": [
+    {
+      "name": "account-isolation",
+      "passed": true
+    },
+    {
+      "name": "combined-idempotency",
+      "passed": true
+    },
+    {
+      "name": "atomic-rollback",
+      "passed": true
+    },
+    {
+      "name": "future-date-protection",
+      "passed": true
+    },
+    {
+      "name": "maximum-create-batch",
+      "passed": true
+    },
+    {
+      "name": "reminder-protection",
+      "passed": true
+    },
+    {
+      "name": "server-quota-protection",
+      "passed": true
+    },
+    {
+      "name": "inbox-protection",
+      "passed": true
+    },
+    {
+      "name": "default-deny",
+      "passed": true
+    }
+  ],
+  "overallPassed": true
+}

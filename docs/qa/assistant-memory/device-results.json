@@ -1,0 +1,24 @@
+{
+  "project": "demo-ruma",
+  "productionWrites": 0,
+  "modelCalls": 0,
+  "fixtureUids": [
+    "HFREzS4G8EBffqijcTKDn15HG7At",
+    "sDLg2UYc8BjAKP2SOUA7LuXJQdvp"
+  ],
+  "cases": [
+    "draft, selection, typed input and operation IDs restored",
+    "lost commit ack reconciled from exact receipt; retry adds no records",
+    "existing-record and undo receipts recover without replaying mutation",
+    "stale workspace rejected without overwriting new revision",
+    "corrupt workspace cannot be interpreted or silently overwritten",
+    "account switching does not expose the previous workspace"
+  ],
+  "coldDraftId": "0lDPEy4OhkcdLlo5O7MX",
+  "coldOperationId": "QLf4bpLMEQOXFn0SLBKM",
+  "coldRequestKey": "{\"id\":\"0lDPEy4OhkcdLlo5O7MX\",\"revision\":1,\"agendaRevision\":3,\"financeRevision\":1,\"items\":[{\"id\":\"P1g6WsvlXzIdEUnRhxRB\",\"agenda\":{\"title\":\"QA draf setelah restart\",\"description\":\"\",\"kind\":\"task\",\"durationMinutes\":30,\"startAtUtc\":\"2026-10-21T01:30:00.000Z\",\"deadlineAtUtc\":null,\"priority\":\"normal\",\"status\":\"planned\"},\"money\":null,\"localDate\":\"2026-10-21\"},{\"id\":\"9f5Twc7yMurOuPutDpRr\",\"agenda\":null,\"money\":{\"type\":\"expense\",\"amountRupiah\":18000,\"categoryId\":\"food\",\"localDate\":\"2026-10-20\",\"description\":\"Makan QA\"},\"localDate\":\"2026-10-20\"}]}",
+  "expectedOperations": 3,
+  "expectedBalance": -18000,
+  "passed": true,
+  "retainLocalFixtureForColdRestart": true
+}

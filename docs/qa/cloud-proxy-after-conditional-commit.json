@@ -1,0 +1,100 @@
+{
+  "date": "2026-10-19",
+  "endpoint": "https://ruma-api.abduljabarbrngkl.workers.dev/v1/agent/turn",
+  "scope": "Actual deployed Worker, Firebase anonymous JWT and Firestore quota; synthetic data only",
+  "ledgerWrites": 0,
+  "requests": [
+    {
+      "name": "no-auth",
+      "requestId": "ruma-cloud-no-auth-1792400767226",
+      "status": 401,
+      "wallTimeMs": 350,
+      "response": {
+        "error": "unauthenticated"
+      }
+    },
+    {
+      "name": "forged-auth",
+      "requestId": "ruma-cloud-forged-auth-1792400767581",
+      "status": 401,
+      "wallTimeMs": 91,
+      "response": {
+        "error": "unauthenticated"
+      }
+    },
+    {
+      "name": "first-authenticated",
+      "requestId": "ruma-cloud-first-authenticated-1792400768631",
+      "status": 200,
+      "wallTimeMs": 21077,
+      "response": {
+        "requestId": "ruma-cloud-first-authenticated-1792400768631",
+        "type": "draft_proposal",
+        "content": "Draf siap ditinjau. Data belum disimpan.",
+        "items": [
+          {
+            "action": "create_agenda",
+            "amountRupiah": null,
+            "categoryId": null,
+            "durationMinutes": 60,
+            "localDate": "2026-10-20",
+            "sourceQuote": "Besok revisi laporan satu jam",
+            "title": "Revisi laporan",
+            "transactionStatus": null,
+            "transactionType": null
+          },
+          {
+            "action": "create_agenda",
+            "amountRupiah": null,
+            "categoryId": null,
+            "durationMinutes": 30,
+            "localDate": "2026-10-20",
+            "sourceQuote": "dan baca jurnal 30 menit",
+            "title": "Baca jurnal",
+            "transactionStatus": null,
+            "transactionType": null
+          },
+          {
+            "action": "create_transaction",
+            "amountRupiah": 18000,
+            "categoryId": "food",
+            "durationMinutes": null,
+            "localDate": "2026-10-19",
+            "sourceQuote": "Tadi makan 18 ribu",
+            "title": "Makan",
+            "transactionStatus": "actual",
+            "transactionType": "expense"
+          },
+          {
+            "action": "create_transaction",
+            "amountRupiah": 15000,
+            "categoryId": "other",
+            "durationMinutes": null,
+            "localDate": "2026-10-19",
+            "sourceQuote": "dan cetak laporan 15 ribu",
+            "title": "Cetak laporan",
+            "transactionStatus": "actual",
+            "transactionType": "expense"
+          }
+        ]
+      }
+    },
+    {
+      "name": "repeat-authenticated",
+      "requestId": "ruma-cloud-repeat-authenticated-1792400789712",
+      "status": 200,
+      "wallTimeMs": 10644,
+      "response": {
+        "requestId": "ruma-cloud-repeat-authenticated-1792400789712",
+        "type": "clarification",
+        "reason": "transaction_status",
+        "content": "Uangnya sudah masuk/keluar atau masih rencana?",
+        "items": []
+      }
+    }
+  ],
+  "modelRequestsAttempted": 2,
+  "testAccountCreated": true,
+  "passed": true,
+  "testAccountDeleted": true
+}
