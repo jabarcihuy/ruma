@@ -40,7 +40,7 @@ Repository mengikat operasi ke UID. Draf dan tabungan memakai transaksi Firestor
 
 ## Temuan lingkungan saat ini
 
-- `git status` dan `git log` gagal karena `.git` yang tersedia bukan metadata repository yang dapat dipakai. Riwayat commit dan diff belum dapat dianalisis.
+- Pada 24 Oktober 2026, `.gitignore` telah dilengkapi (mengecualikan backup `ruma-[0-9]*/`, `tmp/`, state IDE/agent lokal, dan kunci privat tambahan), lalu repository Git baru diinisialisasi pada branch `main` dan di-push ke `git@github.com:jabarcihuy/ruma.git` (commit awal `a2d5918`). Riwayat commit dari mesin lama sebelum inisialisasi ini tidak tersedia.
 - `flutter` tidak ditemukan di PATH. `.local/android.env`, `android/local.properties` dan `.dart_tool/package_config.json` masih merujuk lingkungan `/home/ael` yang tidak tersedia. Tes Flutter/analyzer belum dapat diulang pada mesin ini.
 - `npm test` dijalankan dengan Node 24.22.0: kelompok `agent.test.mjs` lulus; tiga kelompok lain gagal dimuat karena file `jose/dist/webapi/jwe/compact/decrypt.js` hilang dari dependency lokal. Ini hambatan instalasi dependency; bukan bukti regresi logika pada tiga kelompok tersebut.
 - README dan beberapa bagian dokumen memuat status historis yang bertentangan dengan rollout terakhir. Gunakan bagian hasil akhir/rollout serta bukti QA terbaru, terutama `docs/ANDROID-RELEASE.md` dan `docs/qa/release/verification.json`.

@@ -1,6 +1,12 @@
 {
   "name": "Ruma",
-  "projectRoot": "/home/ael/DATA/project on linux/mobileapp/ruma",
+  "projectRoot": "/home/abdulinux/Projects/mobileApp/ruma",
+  "repository": {
+    "remote": "git@github.com:jabarcihuy/ruma.git",
+    "branch": "main",
+    "initialCommit": "a2d5918",
+    "initialPushDate": "2026-10-24"
+  },
   "platform": "Flutter Android",
   "status": "Wishlist Rules deployed and production-tested; signed release APK with latest UI built, verified and cold-launched in VM.",
   "architectureStatus": "Firestore per UID, bounded weekly recurrence, local snooze; typed incomplete-draft clarification guards partial model output; no SQLite/offline guarantee",

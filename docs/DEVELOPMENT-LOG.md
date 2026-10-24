@@ -292,3 +292,12 @@ Ringkas keterangan menu/form, samakan judul halaman utama, gabungkan grup chip A
 ## 22 Oktober 2026 — produksi wishlist dan APK release
 
 Atas instruksi pengguna, terbitkan Rules wishlist, verifikasi exact readback, jalankan lima kelompok uji SDK produksi dengan dua akun sintetis, lalu bersihkan kedua akun dan 21 dokumen fixture. Signing release khusus disiapkan secara privat; build universal 0.1.0+1 berhasil setelah memperbaiki regenerasi registrant integration_test dari --no-pub. APK 62,3 MB ditandatangani dan diverifikasi, dipasang di VM, hash instalasi cocok dan cold launch/Firebase init berhasil. 78 tes Flutter dan 64 tes Rules sebelumnya menjadi baseline. Tidak mengubah HP, IAM, billing atau Worker; nol AI/FCM. Dokumentasi: [ANDROID-RELEASE.md](ANDROID-RELEASE.md), bukti: qa/release/verification.json.
+
+## 24 Oktober 2026 — pemulihan konteks, kelengkapan .gitignore, dan publikasi GitHub
+
+- Memulihkan konteks proyek pada sesi Antigravity dari folder backup `ruma-20261022-164938-01a12a84-2e7a-70c1-8312-f658de8338a7/` dan memverifikasi integritas SHA-256 (`rollout-*.jsonl` serta `percakapan-ruma.md` cocok).
+- Melengkapi `.gitignore` untuk mengecualikan folder backup sesi (`ruma-[0-9]*/`, `rollout-*.jsonl`), direktori sementara (`tmp/`), state AI/IDE lokal (`.gemini/`, `.codex/`, `.agent/`, `.agents/`, `.idea/`, `.vscode/`), ekstensi kunci privat tambahan (`*.p12`, `*.pfx`, `*.pem`, `*.key`), serta artefak build/log Flutter dan Android.
+- Menginisialisasi repository Git lokal pada branch `main`, menghubungkan remote `origin` ke `git@github.com:jabarcihuy/ruma.git`, lalu membuat commit awal (`a2d5918`, 1.174 file) dan melakukan push ke GitHub.
+- Verifikasi: pemeriksaan file terlacak memastikan seluruh kredensial lokal (`.local/`, `android/key.properties`), artefak APK (`output/apk/`), `node_modules/`, dan arsip backup sesi berukuran besar terabaikan dengan benar; tidak ada kunci privat atau service account yang bocor ke repository.
+- Batas: riwayat commit sebelum inisialisasi baru tidak tersedia karena metadata `.git` dari mesin sebelumnya tidak ikut tersalin; toolchain Flutter/Android SDK pada `/home/abdulinux` serta dependency lokal `backend/` belum disiapkan ulang.
+- Berikutnya: penyesuaian path Flutter/Android SDK dan dependency `backend/` di lingkungan `/home/abdulinux`, dilanjutkan implementasi diagram lingkaran pengeluaran dan tools AI untuk tabungan/wishlist.
