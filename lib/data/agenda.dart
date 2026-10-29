@@ -101,10 +101,12 @@ class AgendaItem {
     required this.id,
     required this.version,
     required this.input,
+    this.importSource,
   });
   final String id;
   final int version;
   final AgendaInput input;
+  final Map<String, dynamic>? importSource;
   bool occursOn(DateTime day) {
     if (input.startAtUtc == null) return false;
     final from = agendaUtc(day, 0, 0), to = from.add(const Duration(days: 1));

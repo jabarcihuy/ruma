@@ -67,6 +67,9 @@ class AgendaRepository {
       return AgendaItem(
         id: doc.id,
         version: d['version'] as int,
+        importSource: d['importSource'] == null
+            ? null
+            : Map<String, dynamic>.from(d['importSource'] as Map),
         input: AgendaInput(
           title: d['title'] as String,
           description: d['description'] as String,
@@ -330,6 +333,8 @@ class AgendaRepository {
                   'status': input.status,
                   'timezone': 'Asia/Jakarta',
                   'recurrence': input.recurrence ?? {'type': 'none'},
+                  if (current.data()?['importSource'] != null)
+                    'importSource': current.data()!['importSource'],
                 },
         );
         if (reminder.exists) {

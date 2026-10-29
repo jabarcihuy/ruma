@@ -17,6 +17,58 @@ String? validatePassword(String? value, {required bool signup}) {
   return null;
 }
 
+Future<bool> _confirmGoogleAccount(BuildContext context) async {
+  var agreed = false;
+  return await showDialog<bool>(
+        context: context,
+        builder: (dialogContext) => StatefulBuilder(
+          builder: (context, setDialogState) => RumaDialog(
+            title: const Text('Lanjut dengan Google?'),
+            content: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                const Text(
+                  'Ruma memakai akun Google untuk masuk dan menjaga akses ke data Ruma. Izin Google Calendar tetap diminta terpisah saat kamu mengimpor jadwal.',
+                ),
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: TextButton(
+                    onPressed: () => showRumaPrivacy(context),
+                    child: const Text('Baca ketentuan & privasi Ruma'),
+                  ),
+                ),
+                CheckboxListTile(
+                  contentPadding: EdgeInsets.zero,
+                  controlAffinity: ListTileControlAffinity.leading,
+                  value: agreed,
+                  title: const Text(
+                    'Saya menyetujui ketentuan dan privasi Ruma.',
+                  ),
+                  onChanged: (value) =>
+                      setDialogState(() => agreed = value ?? false),
+                ),
+              ],
+            ),
+            actions: [
+              RumaButton(
+                label: 'Batal',
+                secondary: true,
+                onPressed: () => Navigator.pop(dialogContext, false),
+              ),
+              RumaButton(
+                label: 'Setuju & lanjut',
+                onPressed: agreed
+                    ? () => Navigator.pop(dialogContext, true)
+                    : null,
+              ),
+            ],
+          ),
+        ),
+      ) ??
+      false;
+}
+
 class AuthForm extends StatefulWidget {
   const AuthForm({super.key, required this.session, this.signup = false});
   final AuthSession session;
@@ -57,6 +109,32 @@ class _AuthFormState extends State<AuthForm> {
     } else {
       setState(
         () => _error = widget.session.error ?? 'Belum berhasil. Coba lagi.',
+      );
+    }
+  }
+
+  Future<void> _continueWithGoogle() async {
+    if (widget.signup && !_agreed) {
+      setState(() => _agreementError = true);
+      return;
+    }
+    if (!widget.signup && !await _confirmGoogleAccount(context)) return;
+    if (!mounted) return;
+    FocusScope.of(context).unfocus();
+    final linkTemporaryAccount =
+        widget.signup && widget.session.account?.anonymous == true;
+    final success = linkTemporaryAccount
+        ? await widget.session.linkGoogleAccount()
+        : await widget.session.signInWithGoogle();
+    if (!mounted) return;
+    if (success) {
+      Navigator.of(context).popUntil((route) => route.isFirst);
+    } else {
+      setState(
+        () => _error =
+            widget.session.error ??
+            widget.session.notice ??
+            'Login Google dibatalkan.',
       );
     }
   }
@@ -155,7 +233,9 @@ class _AuthFormState extends State<AuthForm> {
                     children: [
                       RumaHeading(
                         widget.signup
-                            ? 'Buat akun Ruma'
+                            ? widget.session.account?.anonymous == true
+                                  ? 'Jaga akses ke akun Ruma'
+                                  : 'Buat akun Ruma'
                             : 'Selamat datang lagi',
                         null,
                         compact: true,
@@ -245,8 +325,8 @@ class _AuthFormState extends State<AuthForm> {
                           padding: const EdgeInsets.only(top: 12),
                           child: Text(
                             widget.signup
-                                ? 'Daftar email akan mempertahankan identitas akun sementaramu.'
-                                : 'Masuk ke akun lain tidak memindahkan data akun sementara. Daftarkan email untuk mempertahankannya.',
+                                ? 'Tautkan email atau Google untuk mempertahankan akun dan datamu.'
+                                : 'Masuk ke akun lain tidak memindahkan data sementara. Tautkan email atau Google melalui Profil untuk mempertahankan akun ini.',
                             style: Theme.of(context).textTheme.bodySmall,
                           ),
                         ),
@@ -271,7 +351,23 @@ class _AuthFormState extends State<AuthForm> {
                 busy: widget.session.busy,
                 onPressed: _submit,
               ),
-              if (!widget.signup) ...[
+              if (widget.signup) ...[
+                const SizedBox(height: 8),
+                RumaButton(
+                  label: 'Daftar dengan Google',
+                  secondary: true,
+                  onPressed: widget.session.busy ? null : _continueWithGoogle,
+                ),
+              ] else ...[
+                const Padding(
+                  padding: EdgeInsets.symmetric(vertical: 12),
+                  child: Text('atau', textAlign: TextAlign.center),
+                ),
+                RumaButton(
+                  label: 'Masuk dengan Google',
+                  secondary: true,
+                  onPressed: widget.session.busy ? null : _continueWithGoogle,
+                ),
                 const SizedBox(height: 8),
                 RumaButton(
                   label: 'Buat akun',

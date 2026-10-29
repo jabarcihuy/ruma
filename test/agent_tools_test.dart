@@ -61,7 +61,7 @@ class AgendaRepo extends f.AgendaRepoFake {
 class Api extends f.ServiceFake {
   late Map<String, dynamic> response;
   @override
-  Future<Map<String, dynamic>> propose(String text, String id) async {
+  Future<Map<String, dynamic>> propose(String text, String id, {List<Map<String, String>>? messages, List<Map<String, dynamic>> activeProposal = const [], String? conversationId}) async {
     calls++;
     return response;
   }

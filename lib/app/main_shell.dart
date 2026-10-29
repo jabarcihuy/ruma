@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -26,6 +27,9 @@ import '../features/home/home_page.dart';
 import '../features/profile/profile_page.dart';
 import '../ui/components.dart';
 import 'theme.dart';
+import '../data/schedule_import_repository.dart';
+import '../data/schedule_images.dart';
+import '../features/assistant/schedule_import_page.dart';
 
 class MainShell extends StatefulWidget {
   const MainShell({
@@ -45,6 +49,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
   Future<void> Function()? _previousSignOut;
   Future<void> _beforeSignOut() async {
     await _assistant?.flush();
+    if (Platform.isAndroid) await ScheduleImages(_uid).clear();
     await _previousSignOut?.call();
   }
 
@@ -132,6 +137,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
         settings: _settings,
       );
       _assistant!.load();
+      if (Platform.isAndroid) unawaited(_recoverScheduleImages());
       _previousSignOut = widget.session.beforeSignOut;
       widget.session.beforeSignOut = _beforeSignOut;
     }
@@ -139,6 +145,41 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
     widget.session.addListener(_sessionChanged);
     widget.notifications?.addListener(_notificationTap);
     WidgetsBinding.instance.addPostFrameCallback((_) => _notificationTap());
+  }
+
+  Future<void> _recoverScheduleImages() async {
+    try {
+      final count = await ScheduleImages(_uid).recover();
+      if (mounted && count > 0) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text(
+              'Gambar jadwal dipulihkan. Buka Impor jadwal di Asisten untuk melanjutkan.',
+            ),
+          ),
+        );
+      }
+    } catch (_) {
+      /* A missing cache never triggers a model call or overwrites a draft. */
+    }
+  }
+
+  Future<void> _openScheduleImport() async {
+    if (_assistant == null || widget.firestore == null || !_assistant!.usable) {
+      return;
+    }
+    final openAgenda = await Navigator.of(context).push<bool>(
+      MaterialPageRoute(
+        builder: (_) => ScheduleImportPage(
+          assistant: _assistant!,
+          repository: ScheduleImportRepository(
+            widget.firestore!,
+            FirebaseAuth.instance,
+          ),
+        ),
+      ),
+    );
+    if (mounted && openAgenda == true) _select(1);
   }
 
   bool _openingNotification = false;
@@ -320,7 +361,11 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       ),
       1 =>
         _agenda != null
-            ? AgendaPage(key: ValueKey('agenda-$_uid'), store: _agenda!)
+            ? AgendaPage(
+                key: ValueKey('agenda-$_uid'),
+                store: _agenda!,
+                onImport: _openScheduleImport,
+              )
             : const _SectionIntro(
                 title: 'Agendamu, lebih tertata.',
                 subtitle: 'Ruang untuk jadwal kuliah, kegiatan, dan tugas.',
@@ -334,6 +379,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
                 store: _assistant!,
                 keyboardVisible: MediaQuery.viewInsetsOf(context).bottom > 0,
                 onTab: _select,
+                onImport: _openScheduleImport,
               )
             : const _SectionIntro(
                 title: 'Mau dibantu apa?',
@@ -403,26 +449,31 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
                       ? 0
                       : 180,
                 ),
-                child: SingleChildScrollView(
-                  key: ValueKey('${account.uid}-$_tab'),
-                  keyboardDismissBehavior:
-                      ScrollViewKeyboardDismissBehavior.onDrag,
-                  padding: const EdgeInsets.fromLTRB(24, 16, 24, 24),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: [
-                      if (widget.session.notice != null)
-                        Padding(
-                          padding: const EdgeInsets.only(bottom: 12),
-                          child: RumaCard(
-                            color: RumaColors.soft,
-                            child: Text(widget.session.notice!),
-                          ),
+                child: _tab == 2 && _assistant != null
+                    ? Padding(
+                        padding: const EdgeInsets.fromLTRB(24, 16, 24, 16),
+                        child: page,
+                      )
+                    : SingleChildScrollView(
+                        key: ValueKey('${account.uid}-$_tab'),
+                        keyboardDismissBehavior:
+                            ScrollViewKeyboardDismissBehavior.onDrag,
+                        padding: const EdgeInsets.fromLTRB(24, 16, 24, 24),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.stretch,
+                          children: [
+                            if (widget.session.notice != null)
+                              Padding(
+                                padding: const EdgeInsets.only(bottom: 12),
+                                child: RumaCard(
+                                  color: RumaColors.soft,
+                                  child: Text(widget.session.notice!),
+                                ),
+                              ),
+                            page,
+                          ],
                         ),
-                      page,
-                    ],
-                  ),
-                ),
+                      ),
               ),
             ),
           ),

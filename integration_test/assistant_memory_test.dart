@@ -19,7 +19,7 @@ class LocalAssistant extends AssistantService {
   LocalAssistant(super.auth);
   int calls = 0;
   @override
-  Future<Map<String, dynamic>> propose(String message, String requestId) async {
+  Future<Map<String, dynamic>> propose(String message, String requestId, {List<Map<String, String>>? messages, List<Map<String, dynamic>> activeProposal = const [], String? conversationId}) async {
     calls++;
     final date = dateKey(
       agendaLocal(DateTime.now().toUtc()).add(const Duration(days: 1)),

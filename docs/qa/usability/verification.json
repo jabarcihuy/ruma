@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-25",
+  "phase": "five core journeys and usability fixes",
+  "project": "demo-ruma",
+  "productionWrites": 0,
+  "aiCalls": 0,
+  "confirmedIssuesFixed": 5,
+  "flutterTests": 84,
+  "analyzer": "clean",
+  "android": {
+    "avd": "Ruma_Audit_API_37",
+    "api": 37,
+    "renderer": "host Mesa Intel OpenGL",
+    "status": "passed",
+    "scenarios": 8,
+    "screenshots": 9,
+    "cases": [
+      "editing agenda retains its identity and selected date",
+      "agenda creation preserves selected day and appears in that day",
+      "saving from an older month follows the actual transaction date",
+      "offline save preserves input and retry creates one transaction",
+      "setor/tarik only allocate money; cancel protects unsaved input",
+      "excluding every draft item cannot commit an empty batch",
+      "draft survives store recreation, stays uncommitted until approved, and cannot duplicate",
+      "Home reconciles recorded balance, savings and available money"
+    ],
+    "coldProcessRestartTested": false
+  },
+  "candidate": {
+    "file": "output/apk/ruma-0.1.1-usability-candidate.apk",
+    "version": "0.1.1+2",
+    "bytes": 62342342,
+    "sha256": "35f7c33d78630b65ee602851bf607b6b6b57c6c8439d738ef3302d456bed5a7d",
+    "certificateSha256": "3f4af245b0c9f64f415442a32d4c5341386337ad5015803355dba1a809879ae8",
+    "signatureV2Valid": true,
+    "debuggable": false,
+    "minSdk": 24,
+    "targetSdk": 36,
+    "abis": [
+      "arm64-v8a",
+      "armeabi-v7a",
+      "x86_64"
+    ],
+    "releaseWalkthroughOnPhysicalDevice": false
+  },
+  "cleanup": {
+    "authAccountsRemaining": 0,
+    "fixtureDocumentsDeleted": 21,
+    "allEightCollectionsEmpty": true,
+    "firebaseEmulatorsStopped": true,
+    "androidEmulatorStopped": true,
+    "gradleStopped": true,
+    "playStoreRestored": true
+  },
+  "humanParticipants": 0,
+  "scopeLimit": "Local native SDK/UI and simulated AI proposal; real-user study and production model availability not verified.",
+  "interruptedAttempts": [
+    "Immediate test tap intercepted by transient snackbar; runner now waits for its standard duration.",
+    "Android killed Ruma during automatic Google Play Services package update; Play Store temporarily disabled for confirmation and restored."
+  ]
+}

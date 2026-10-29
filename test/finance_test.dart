@@ -39,6 +39,95 @@ Widget app(Widget child) => MaterialApp(
   home: child,
 );
 void main() {
+  test('confirmed cross-month save opens its period and discards stale totals on refresh failure', () async {
+    final months = <String>[];
+    final repo = TestFinanceRepository()
+      ..onRead = (month) async {
+        months.add(month);
+        throw const FinanceFailure('offline');
+      };
+    final store = FinanceStore(repo)
+      ..month = '2026-02'
+      ..snapshot = snapshot('2026-02');
+    addTearDown(store.dispose);
+    expect(
+      await store.save(
+        const FinanceMutation(
+          operationId: 'cross-month',
+          id: 'expense',
+          input: TransactionInput(
+            type: 'expense',
+            amountRupiah: 18000,
+            categoryId: 'food',
+            localDate: '2026-01-20',
+          ),
+        ),
+      ),
+      isTrue,
+    );
+    expect(months, ['2026-01']);
+    expect(store.month, '2026-01');
+    expect(store.snapshot, isNull);
+    expect(store.error, startsWith('Tersimpan.'));
+  });
+
+  test(
+    'failed cross-month write retains the selected period and snapshot',
+    () async {
+      final repo = TestFinanceRepository()
+        ..onSave = (_) async {
+          throw const FinanceFailure('offline');
+        };
+      final before = snapshot('2026-02');
+      final store = FinanceStore(repo)
+        ..month = '2026-02'
+        ..snapshot = before;
+      addTearDown(store.dispose);
+      expect(
+        await store.save(
+          const FinanceMutation(
+            operationId: 'failed',
+            id: 'expense',
+            input: TransactionInput(
+              type: 'expense',
+              amountRupiah: 18000,
+              categoryId: 'food',
+              localDate: '2026-01-20',
+            ),
+          ),
+        ),
+        isFalse,
+      );
+      expect(store.month, '2026-02');
+      expect(store.snapshot, same(before));
+    },
+  );
+
+  testWidgets(
+    'transaction date can be changed without opening optional fields',
+    (t) async {
+      final store = FinanceStore(TestFinanceRepository());
+      addTearDown(store.dispose);
+      await t.pumpWidget(app(FinanceFormPage(store: store)));
+      await t.pumpAndSettle();
+      final date = find.byKey(const ValueKey('transaction-date'));
+      expect(date, findsOneWidget);
+      expect(
+        find.descendant(
+          of: date,
+          matching: find.textContaining(
+            '${DateTime.parse(financeToday()).year}',
+          ),
+        ),
+        findsOneWidget,
+      );
+      await t.ensureVisible(date);
+      await t.tap(date);
+      await t.pumpAndSettle();
+      expect(find.byType(DatePickerDialog), findsOneWidget);
+    },
+  );
+
   test('Indonesian rupiah accepts whole amounts and rejects decimals or ambiguous grouping', () {
     for (final text in ['22.000', '22000', 'Rp22.000', 'Rp 22.000']) {
       expect(parseRupiah(text), 22000);

@@ -33,7 +33,8 @@ class MemoryRepo extends f.DraftRepoFake {
   Future<int> writeAssistant(String value, int expected) async {
     check();
     if (failWrites) throw const SocketException('offline');
-    if (payload == value && (revision == expected || revision == expected + 1)) {
+    if (payload == value &&
+        (revision == expected || revision == expected + 1)) {
       return revision;
     }
     if (revision != expected) {
@@ -228,7 +229,7 @@ void main() {
     foreign.dispose();
   });
   testWidgets(
-    'restored input and expandable history fit 320 width and large text',
+    'restored input and chronological history fit 320 width and large text',
     (tester) async {
       tester.view.physicalSize = const Size(320, 700);
       tester.view.devicePixelRatio = 1;
@@ -254,9 +255,6 @@ void main() {
       await s.load();
       await tester.pumpAndSettle();
       expect(find.text('Pesan tersimpan'), findsOneWidget);
-      expect(find.text('Riwayat percakapan'), findsOneWidget);
-      await tester.tap(find.byKey(const ValueKey('assistant-history')));
-      await tester.pumpAndSettle();
       expect(find.text('Tadi makan'), findsOneWidget);
       expect(tester.takeException(), isNull);
       await tester.pumpWidget(const SizedBox());

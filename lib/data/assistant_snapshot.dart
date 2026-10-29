@@ -55,6 +55,7 @@ AgendaInput? _agenda(dynamic value) {
     deadlineAtUtc: time(v['deadlineAtUtc']),
     priority: _text(v['priority'], 10),
     status: _text(v['status'], 10),
+    recurrence: v['recurrence'] == null ? null : _map(v['recurrence']),
   );
   if (a.validate() != null) throw const FormatException();
   return a;
@@ -201,12 +202,17 @@ class AssistantSnapshot {
     this.record,
     this.from = 480,
     this.to = 1260,
+    this.conversationId = '',
+    this.replyKind = 'legacy',
+    this.scheduleWorkspace,
   });
   final String input, message, reply, at;
   final List<Map<String, String>> history;
   final AssistantDraft? draft;
   final RecordDraft? record;
   final int from, to;
+  final String conversationId, replyKind;
+  final Map<String, dynamic>? scheduleWorkspace;
   String encode(String uid) {
     if (input.length > 4000 || message.length > 4000 || reply.length > 25000) {
       throw const DraftFailure(
@@ -217,7 +223,7 @@ class AssistantSnapshot {
         .skip(history.length > 10 ? history.length - 10 : 0)
         .toList();
     String pack() => jsonEncode({
-      'schemaVersion': 1,
+      'schemaVersion': 2,
       'uid': uid,
       'input': input,
       'message': message,
@@ -228,6 +234,9 @@ class AssistantSnapshot {
       'record': recordSnapshot(record),
       'from': from,
       'to': to,
+      'conversationId': conversationId,
+      'replyKind': replyKind,
+      'scheduleWorkspace': scheduleWorkspace,
     });
     var data = pack();
     while (data.length > assistantPayloadLimit && rows.isNotEmpty) {
@@ -244,7 +253,7 @@ class AssistantSnapshot {
     try {
       if (data.length > assistantPayloadLimit) throw const FormatException();
       final v = _map(jsonDecode(data)), raw = v['history'] as List;
-      if (v['schemaVersion'] != 1 ||
+      if (![1, 2].contains(v['schemaVersion']) ||
           v['uid'] != uid ||
           raw.length > 10 ||
           v['draft'] != null && v['record'] != null) {
@@ -263,12 +272,18 @@ class AssistantSnapshot {
             'message': _text(r['message'], 4000),
             'reply': _text(r['reply'], 25000),
             'at': _text(r['at'], 40),
+            'kind': _text(r['kind'] ?? 'legacy', 30),
           };
         }).toList(),
         draft: restoreDraft(v['draft'], uid),
         record: restoreRecord(v['record']),
         from: from,
         to: to,
+        conversationId: _text(v['conversationId'] ?? '', 80),
+        replyKind: _text(v['replyKind'] ?? 'legacy', 30),
+        scheduleWorkspace: v['scheduleWorkspace'] == null
+            ? null
+            : _map(v['scheduleWorkspace']),
       );
     } catch (_) {
       throw const DraftFailure(

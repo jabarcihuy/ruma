@@ -57,7 +57,7 @@ class ServiceFake extends Fake implements AssistantService {
   int calls = 0;
   Completer<Map<String, dynamic>>? pending;
   @override
-  Future<Map<String, dynamic>> propose(String message, String id) async {
+  Future<Map<String, dynamic>> propose(String message, String id, {List<Map<String, String>>? messages, List<Map<String, dynamic>> activeProposal = const [], String? conversationId}) async {
     calls++;
     return pending == null
         ? {

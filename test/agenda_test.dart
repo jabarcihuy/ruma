@@ -32,6 +32,87 @@ Widget app(Widget child) => MaterialApp(
   home: child,
 );
 void main() {
+  testWidgets(
+    'a day selected in the calendar stays visible in the week strip',
+    (t) async {
+      t.view.physicalSize = const Size(320, 640);
+      t.view.devicePixelRatio = 1;
+      addTearDown(t.view.resetPhysicalSize);
+      addTearDown(t.view.resetDevicePixelRatio);
+      final store = AgendaStore(TestAgendaRepository());
+      await store.load();
+      addTearDown(store.dispose);
+      await t.pumpWidget(
+        app(
+          Scaffold(
+            body: SingleChildScrollView(
+              padding: const EdgeInsets.all(24),
+              child: AgendaPage(store: store),
+            ),
+          ),
+        ),
+      );
+      await t.pumpAndSettle();
+      final dateButton = find
+          .descendant(
+            of: find.byType(AgendaPage),
+            matching: find.byType(TextButton),
+          )
+          .last;
+      await t.tap(dateButton);
+      await t.pumpAndSettle();
+      final today = agendaDay(agendaLocal(DateTime.now().toUtc()));
+      final sunday = today.add(Duration(days: 7 - today.weekday));
+      t
+          .widget<CalendarDatePicker>(find.byType(CalendarDatePicker))
+          .onDateChanged(sunday);
+      await t.pump();
+      final ok = MaterialLocalizations.of(
+        t.element(find.byType(DatePickerDialog)),
+      ).okButtonLabel;
+      await t.tap(find.text(ok));
+      await t.pumpAndSettle();
+      expect(
+        find.byKey(const ValueKey('agenda-day-6')).hitTestable(),
+        findsOneWidget,
+      );
+    },
+  );
+
+  testWidgets('adding an agenda starts the date picker on the selected day', (
+    t,
+  ) async {
+    final selected = agendaDay(agendaLocal(DateTime.now().toUtc()))
+        .add(const Duration(days: 7));
+    final store = AgendaStore(TestAgendaRepository());
+    await store.load();
+    addTearDown(store.dispose);
+    await t.pumpWidget(
+      app(
+        Scaffold(
+          body: SingleChildScrollView(child: AgendaPage(store: store)),
+        ),
+      ),
+    );
+    await t.tap(find.byTooltip('Minggu berikutnya'));
+    await t.pumpAndSettle();
+    await t.tap(find.byKey(const ValueKey('agenda-add')));
+    await t.pumpAndSettle();
+    await t.tap(find.text('Jadwal kuliah'));
+    await t.pumpAndSettle();
+    final start = find.byKey(const ValueKey('agenda-start'));
+    await t.ensureVisible(start);
+    await t.tap(start);
+    await t.pumpAndSettle();
+    expect(
+      DateUtils.isSameDay(
+        t.widget<DatePickerDialog>(find.byType(DatePickerDialog)).initialDate,
+        selected,
+      ),
+      isTrue,
+    );
+  });
+
   test('server-bound inputs reject missing class time, invalid duration and deadline overflow', () {
     expect(
       const AgendaInput(title: 'Kuliah', kind: 'class').validate(),

@@ -7,12 +7,17 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:18934621879:android:8f7ae40b378ec1dce08f32",
+        "mobilesdk_app_id": "1:18934621879:android:8041df319968c51fe08f32",
         "android_client_info": {
-          "package_name": "id.ruma.app"
+          "package_name": "com.accela.accela"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "18934621879-0k5saf57hg1257q9998ruagdclmjlfv6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyDD6TuRjVRL8p1TYsWpsSkSwgr5jbm7NeU"
@@ -20,7 +25,91 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "18934621879-0k5saf57hg1257q9998ruagdclmjlfv6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "18934621879-arkg9d2dvsj7g0lfa8meo35d631kdf87.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.accela.accela"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:18934621879:android:f55e5c5ae15c5f6ce08f32",
+        "android_client_info": {
+          "package_name": "id.ember.ember_siaga"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "18934621879-0k5saf57hg1257q9998ruagdclmjlfv6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDD6TuRjVRL8p1TYsWpsSkSwgr5jbm7NeU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "18934621879-0k5saf57hg1257q9998ruagdclmjlfv6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "18934621879-arkg9d2dvsj7g0lfa8meo35d631kdf87.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.accela.accela"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:18934621879:android:8f7ae40b378ec1dce08f32",
+        "android_client_info": {
+          "package_name": "id.ruma.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "18934621879-0k5saf57hg1257q9998ruagdclmjlfv6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDD6TuRjVRL8p1TYsWpsSkSwgr5jbm7NeU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "18934621879-0k5saf57hg1257q9998ruagdclmjlfv6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "18934621879-arkg9d2dvsj7g0lfa8meo35d631kdf87.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.accela.accela"
+              }
+            }
+          ]
         }
       }
     }

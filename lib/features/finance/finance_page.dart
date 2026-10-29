@@ -28,6 +28,7 @@ class FinancePage extends StatefulWidget {
 
 class _FinancePageState extends State<FinancePage> {
   Future<void> _form({String type = 'expense'}) async {
+    final previousMonth = widget.store.month;
     ScaffoldMessenger.of(context).hideCurrentSnackBar();
     final ok = await Navigator.push<bool>(
       context,
@@ -36,9 +37,16 @@ class _FinancePageState extends State<FinancePage> {
       ),
     );
     if (ok == true && mounted) {
-      ScaffoldMessenger.of(
-        context,
-      ).showSnackBar(const SnackBar(content: Text('Tersimpan di keuangan.')));
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(
+            widget.store.error ??
+                (previousMonth == widget.store.month
+                    ? 'Tersimpan di keuangan.'
+                    : 'Tersimpan di ${monthLabel(context, widget.store.month)}.'),
+          ),
+        ),
+      );
     }
   }
 

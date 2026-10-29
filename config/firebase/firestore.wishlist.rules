@@ -15,7 +15,8 @@ service cloud.firestore {
       ? get(/databases/$(database)/documents/users/$(uid)/state/core).data.agendaRevision : 0; }
     function agenda(d) {
       return d.keys().hasAll(['schemaVersion','version','createdAt','updatedAt','deletedAt','operationId','kind','title','description','startAtUtc','endAtUtc','durationMinutes','deadlineAtUtc','priority','status','timezone','recurrence'])
-        && d.keys().hasOnly(['schemaVersion','version','createdAt','updatedAt','deletedAt','operationId','kind','title','description','startAtUtc','endAtUtc','durationMinutes','deadlineAtUtc','priority','status','timezone','recurrence'])
+        && d.keys().hasOnly(['schemaVersion','version','createdAt','updatedAt','deletedAt','operationId','kind','title','description','startAtUtc','endAtUtc','durationMinutes','deadlineAtUtc','priority','status','timezone','recurrence','importSource'])
+        && (!('importSource' in d) || importSourceShape(d.importSource))
         && id(d.operationId) && d.kind in ['class','task'] && text(d.title,120) && d.title.matches('.*[^\\s].*') && text(d.description,1000)
         && d.durationMinutes is int && d.durationMinutes >= 5 && d.durationMinutes <= 720
         && ((d.kind == 'task' && d.startAtUtc == null && d.endAtUtc == null) ||
@@ -31,6 +32,53 @@ service cloud.firestore {
       return r.createdAt == request.time && r.result.agendaId == agendaId && r.result.version == d.version
         && r.targets == ['agenda/'+agendaId] && c.lastUndoOperationId == d.operationId
         && c.updatedAt == request.time && c.agendaRevision == coreBeforeRevision(uid)+1;
+    }
+
+
+    function importSourceShape(s) {
+      return s is map && s.keys().hasAll(['provider','key','version','calendarKey','fingerprint','remote'])
+        && s.keys().hasOnly(['provider','key','version','calendarKey','fingerprint','remote'])
+        && s.provider in ['google','image'] && s.key is string && s.key.matches('^'+s.provider+':[a-f0-9]{64}$')
+        && text(s.version,200) && text(s.calendarKey,64) && s.fingerprint is string && s.fingerprint.matches('^[a-f0-9]{64}$')
+        && s.remote is map && (s.provider=='image' ? s.remote.size()==0
+          : (s.remote.keys().hasAll(['calendarId','eventId','account','series']) && s.remote.keys().hasOnly(['calendarId','eventId','account','series'])
+            && text(s.remote.calendarId,1000) && text(s.remote.eventId,1000) && text(s.remote.account,320) && s.remote.series is bool));
+    }
+    function preserveImportSource() {
+      return resource==null ? !('importSource' in request.resource.data)
+        : ('importSource' in resource.data ? ('importSource' in request.resource.data && request.resource.data.importSource==resource.data.importSource) : !('importSource' in request.resource.data));
+    }
+    function importMember(uid,value,d) {
+      let r=op(uid,d.operationId); let c=coreAfter(uid);
+      return r.createdAt==request.time && value in r.result.ids && 'importSource' in d
+        && c.lastUndoOperationId==d.operationId && c.updatedAt==request.time;
+    }
+    function importItem(uid,value,r,index) {
+      let key=r.result.ids[index];
+      let d=getAfter(/databases/$(database)/documents/users/$(uid)/agenda/$(key)).data;
+      return d.operationId==value && d.version==r.result.versions[index] && d.updatedAt==request.time;
+    }
+    function importReceipt(uid,value,r) {
+      let a=r.result.ids;
+      return id(r.draftId) && r.approvedRevision is int && r.approvedRevision>=1
+        && r.result.keys().hasAll(['ids','versions','requestKey']) && r.result.keys().hasOnly(['ids','versions','requestKey'])
+        && text(r.result.requestKey,130000) && a is list && a.size()>0 && a.size()<=8 && a.toSet().size()==a.size()
+        && r.result.versions is list && r.result.versions.size()==a.size()
+        && r.targets==a
+        && (a.size()<=0 || importItem(uid,value,r,0))
+        && (a.size()<=1 || importItem(uid,value,r,1))
+        && (a.size()<=2 || importItem(uid,value,r,2))
+        && (a.size()<=3 || importItem(uid,value,r,3))
+        && (a.size()<=4 || importItem(uid,value,r,4))
+        && (a.size()<=5 || importItem(uid,value,r,5))
+        && (a.size()<=6 || importItem(uid,value,r,6))
+        && (a.size()<=7 || importItem(uid,value,r,7))
+        && coreAfter(uid).lastUndoOperationId==value && coreAfter(uid).updatedAt==request.time;
+    }
+    function importCore(d,old) {
+      return d.agendaRevision==old.agendaRevision+1 && d.financeRevision==old.financeRevision
+        && d.balanceRupiah==old.balanceRupiah && d.lifetimeIncomeRupiah==old.lifetimeIncomeRupiah
+        && d.lifetimeExpenseRupiah==old.lifetimeExpenseRupiah;
     }
 
     function zeroCore() { return {'agendaRevision':0,'financeRevision':0,'lifetimeIncomeRupiah':0,'lifetimeExpenseRupiah':0,'balanceRupiah':0}; }
@@ -340,13 +388,14 @@ service cloud.firestore {
         allow read: if owner(uid);
         allow create: if owner(uid) && id(agendaId) && fresh(request.resource.data)
           && agenda(request.resource.data) && request.resource.data.deletedAt == null
-          && (op(uid,request.resource.data.operationId).kind == 'create_batch' ? batchMember(uid,agendaId,request.resource.data,true) : (op(uid,request.resource.data.operationId).kind == 'agenda_create' && coupled(uid,agendaId,request.resource.data)));
+          && (op(uid,request.resource.data.operationId).kind == 'schedule_import' ? importMember(uid,agendaId,request.resource.data) : (preserveImportSource() && (op(uid,request.resource.data.operationId).kind == 'create_batch' ? batchMember(uid,agendaId,request.resource.data,true) : (op(uid,request.resource.data.operationId).kind == 'agenda_create' && coupled(uid,agendaId,request.resource.data)))));
         allow update: if owner(uid) && revised(request.resource.data)
-          && agenda(request.resource.data) && reminderSynced(uid,agendaId,request.resource.data) && coupled(uid,agendaId,request.resource.data)
+          && agenda(request.resource.data) && reminderSynced(uid,agendaId,request.resource.data)
+          && (op(uid,request.resource.data.operationId).kind=='schedule_import' ? (resource.data.deletedAt==null && importMember(uid,agendaId,request.resource.data)) : (preserveImportSource() && coupled(uid,agendaId,request.resource.data)
           && ((op(uid,request.resource.data.operationId).kind == 'agenda_update' && request.resource.data.deletedAt == null
               && (resource.data.deletedAt == null || request.resource.data.diff(resource.data).affectedKeys().hasOnly(['version','updatedAt','operationId','deletedAt'])))
             || (resource.data.deletedAt == null && op(uid,request.resource.data.operationId).kind == 'agenda_delete' && request.resource.data.deletedAt == request.time
-              && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['version','updatedAt','operationId','deletedAt'])));
+              && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['version','updatedAt','operationId','deletedAt'])))));
       }
 
       match /transactions/{value} {
@@ -396,7 +445,7 @@ service cloud.firestore {
             && request.resource.data.lifetimeIncomeRupiah == 0 && request.resource.data.lifetimeExpenseRupiah == 0)
             : (revised(request.resource.data) && request.resource.data.agendaRevision == resource.data.agendaRevision+1
               && request.resource.data.financeRevision == resource.data.financeRevision && request.resource.data.balanceRupiah == resource.data.balanceRupiah
-              && request.resource.data.lifetimeIncomeRupiah == resource.data.lifetimeIncomeRupiah && request.resource.data.lifetimeExpenseRupiah == resource.data.lifetimeExpenseRupiah))) || ((resource==null?fresh(request.resource.data):revised(request.resource.data)) && (op(uid,request.resource.data.lastUndoOperationId).kind=='create_batch' ? batchCore(uid,request.resource.data) : financeCore(uid,request.resource.data))))
+              && request.resource.data.lifetimeIncomeRupiah == resource.data.lifetimeIncomeRupiah && request.resource.data.lifetimeExpenseRupiah == resource.data.lifetimeExpenseRupiah))) || ((resource==null?fresh(request.resource.data):revised(request.resource.data)) && (op(uid,request.resource.data.lastUndoOperationId).kind=='schedule_import' ? importCore(request.resource.data,resource==null?zeroCore():resource.data) : (op(uid,request.resource.data.lastUndoOperationId).kind=='create_batch' ? batchCore(uid,request.resource.data) : financeCore(uid,request.resource.data)))))
           && op(uid,request.resource.data.lastUndoOperationId).createdAt == request.time;
       }
       match /operations/{operationId} {
@@ -405,12 +454,12 @@ service cloud.firestore {
           && request.resource.data.keys().hasAll(['schemaVersion','version','createdAt','updatedAt','draftId','approvedRevision','kind','targets','result','undoState'])
           && request.resource.data.keys().hasOnly(['schemaVersion','version','createdAt','updatedAt','draftId','approvedRevision','kind','targets','result','undoState'])
           && request.resource.data.undoState == 'unavailable'
-          && (request.resource.data.kind=='create_batch' ? batchReceipt(uid,operationId,request.resource.data) : (request.resource.data.draftId == 'manual' && request.resource.data.approvedRevision == 1 && ((request.resource.data.kind in ['agenda_create','agenda_update','agenda_delete']
+          && (request.resource.data.kind=='schedule_import' ? importReceipt(uid,operationId,request.resource.data) : (request.resource.data.kind=='create_batch' ? batchReceipt(uid,operationId,request.resource.data) : (request.resource.data.draftId == 'manual' && request.resource.data.approvedRevision == 1 && ((request.resource.data.kind in ['agenda_create','agenda_update','agenda_delete']
           && request.resource.data.result is map && request.resource.data.result.keys().hasAll(['agendaId','version','requestKey'])
           && request.resource.data.result.keys().hasOnly(['agendaId','version','requestKey'])
           && id(request.resource.data.result.agendaId) && text(request.resource.data.result.requestKey,130000)
           && request.resource.data.targets == ['agenda/'+request.resource.data.result.agendaId]
-          && receiptTarget(uid,operationId,request.resource.data)) || (request.resource.data.kind in ['transaction_create','transaction_update','transaction_delete','budget_set'] && financeReceipt(uid,operationId,request.resource.data)) || (savingsKind(request.resource.data.kind) && savingsReceipt(uid,operationId,request.resource.data)))));
+          && receiptTarget(uid,operationId,request.resource.data)) || (request.resource.data.kind in ['transaction_create','transaction_update','transaction_delete','budget_set'] && financeReceipt(uid,operationId,request.resource.data)) || (savingsKind(request.resource.data.kind) && savingsReceipt(uid,operationId,request.resource.data))))));
       }
       function receiptTarget(uid,operationId,r) {
         let target = /databases/$(database)/documents/users/$(uid)/agenda/$(r.result.agendaId);

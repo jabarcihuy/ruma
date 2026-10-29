@@ -351,6 +351,12 @@ class FinanceStore extends ChangeNotifier {
     try {
       await repository.save(m);
       if (_disposed || generation != _generation) return false;
+      // Follow a confirmed transaction to its actual period. Failed writes keep
+      // the previous selection; stale totals must not survive a failed refresh.
+      if (m.input != null && !m.delete) {
+        month = m.input!.localDate.substring(0, 7);
+      }
+      snapshot = null;
       // The write is confirmed even if the subsequent refresh fails. Retry IDs
       // remain valid, and the UI must not describe a failed refresh as lost data.
       try {

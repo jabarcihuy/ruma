@@ -9,7 +9,8 @@ import 'agenda_form.dart';
 import 'agenda_detail.dart';
 
 class AgendaPage extends StatefulWidget {
-  const AgendaPage({super.key, required this.store});
+  const AgendaPage({super.key, required this.store, this.onImport});
+  final VoidCallback? onImport;
   final AgendaStore store;
   @override
   State<AgendaPage> createState() => _AgendaPageState();
@@ -17,6 +18,33 @@ class AgendaPage extends StatefulWidget {
 
 class _AgendaPageState extends State<AgendaPage> {
   DateTime _day = agendaDay(agendaLocal(DateTime.now().toUtc()));
+  final _selectedDayKey = GlobalKey();
+
+  @override
+  void initState() {
+    super.initState();
+    _revealSelectedDay();
+  }
+
+  void _revealSelectedDay() {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
+      final selected = _selectedDayKey.currentContext;
+      final object = selected?.findRenderObject();
+      if (selected != null && object != null) {
+        Scrollable.maybeOf(
+          selected,
+          axis: Axis.horizontal,
+        )?.position.ensureVisible(object, alignment: 0.5);
+      }
+    });
+  }
+
+  void _selectDay(DateTime day) {
+    setState(() => _day = agendaDay(day));
+    _revealSelectedDay();
+  }
+
   Future<void> _add() async {
     final kind = await showModalBottomSheet<String>(
       context: context,
@@ -52,7 +80,8 @@ class _AgendaPageState extends State<AgendaPage> {
     final saved = await Navigator.push<bool>(
       context,
       MaterialPageRoute(
-        builder: (_) => AgendaFormPage(store: widget.store, kind: kind),
+        builder: (_) =>
+            AgendaFormPage(store: widget.store, kind: kind, initialDay: _day),
       ),
     );
     if (saved == true && mounted) {
@@ -85,6 +114,17 @@ class _AgendaPageState extends State<AgendaPage> {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           const RumaHeading('Agendamu minggu ini', null, compact: true),
+          if (widget.onImport != null)
+            Align(
+              alignment: Alignment.centerLeft,
+              child: TextButton.icon(
+                onPressed: store.loading || store.saving
+                    ? null
+                    : widget.onImport,
+                icon: const Icon(Icons.download_outlined),
+                label: const Text('Impor jadwal'),
+              ),
+            ),
           const SizedBox(height: 12),
           Row(
             children: [
@@ -114,9 +154,8 @@ class _AgendaPageState extends State<AgendaPage> {
             children: [
               IconButton(
                 tooltip: 'Minggu sebelumnya',
-                onPressed: () => setState(
-                  () => _day = _day.subtract(const Duration(days: 7)),
-                ),
+                onPressed: () =>
+                    _selectDay(_day.subtract(const Duration(days: 7))),
                 icon: const RotatedBox(
                   quarterTurns: 2,
                   child: RumaIcon('chevron-right'),
@@ -132,7 +171,7 @@ class _AgendaPageState extends State<AgendaPage> {
                       lastDate: DateTime(2100),
                     );
                     if (picked != null && mounted) {
-                      setState(() => _day = agendaDay(picked));
+                      _selectDay(picked);
                     }
                   },
                   child: Text(
@@ -143,8 +182,7 @@ class _AgendaPageState extends State<AgendaPage> {
               ),
               IconButton(
                 tooltip: 'Minggu berikutnya',
-                onPressed: () =>
-                    setState(() => _day = _day.add(const Duration(days: 7))),
+                onPressed: () => _selectDay(_day.add(const Duration(days: 7))),
                 icon: const RumaIcon('chevron-right'),
               ),
             ],
@@ -159,6 +197,7 @@ class _AgendaPageState extends State<AgendaPage> {
                   return Padding(
                     padding: EdgeInsets.only(right: i == 6 ? 0 : 8),
                     child: Semantics(
+                      key: selected ? _selectedDayKey : null,
                       selected: selected,
                       child: Material(
                         color: selected
@@ -168,7 +207,7 @@ class _AgendaPageState extends State<AgendaPage> {
                         child: InkWell(
                           key: ValueKey('agenda-day-$i'),
                           borderRadius: BorderRadius.circular(12),
-                          onTap: () => setState(() => _day = date),
+                          onTap: () => _selectDay(date),
                           child: Container(
                             width: ((box.maxWidth - 48) / 7).clamp(
                               MediaQuery.textScalerOf(context).scale(12) * 4,

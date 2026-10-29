@@ -144,6 +144,7 @@ AgendaItem? weeklyMeeting(AgendaItem series, String originalDate) {
   return AgendaItem(
     id: '${series.id}__$originalDate',
     version: series.version,
+    importSource: series.importSource,
     input: projected,
   );
 }

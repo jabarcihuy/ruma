@@ -14,6 +14,7 @@ import 'assistant_draft.dart';
 import 'assistant_service.dart';
 import 'draft_repository.dart';
 import 'assistant_snapshot.dart';
+import 'conversation.dart';
 
 class AssistantStore extends ChangeNotifier {
   AssistantStore(
@@ -40,6 +41,8 @@ class AssistantStore extends ChangeNotifier {
       error = '',
       messageAt = '';
   List<Map<String, String>> history = [];
+  String conversationId = '', replyKind = 'legacy';
+  Map<String, dynamic>? scheduleWorkspace;
   int _storageRevision = 0, _dirty = 0, _saved = 0, _queued = 0;
   Timer? _autosave;
   Future<void> _writes = Future.value();
@@ -66,6 +69,9 @@ class AssistantStore extends ChangeNotifier {
     record: recordDraft,
     from: availableFrom,
     to: availableTo,
+    conversationId: conversationId,
+    replyKind: replyKind,
+    scheduleWorkspace: scheduleWorkspace,
   );
   Future<void> load() async {
     if (!persistent || loading || busy || _disposed) return;
@@ -105,6 +111,9 @@ class AssistantStore extends ChangeNotifier {
       reply = state.reply;
       messageAt = state.at;
       history = state.history;
+      conversationId = state.conversationId;
+      replyKind = state.replyKind;
+      scheduleWorkspace = state.scheduleWorkspace;
       draft = d;
       recordDraft = r;
       availableFrom = state.from;
@@ -172,13 +181,25 @@ class AssistantStore extends ChangeNotifier {
     if (message.isNotEmpty) {
       history = [
         ...history,
-        {'message': message, 'reply': reply, 'at': messageAt},
+        {
+          'message': message,
+          'reply': reply,
+          'at': messageAt,
+          'kind': replyKind,
+        },
       ];
       if (history.length > 10) history = history.sublist(history.length - 10);
     }
     message = '';
     reply = '';
     messageAt = '';
+    replyKind = 'legacy';
+  }
+
+  void updateScheduleWorkspace(Map<String, dynamic>? value) {
+    if (!usable) return;
+    scheduleWorkspace = value;
+    _notify();
   }
 
   void preferencesChanged() {
@@ -221,13 +242,7 @@ class AssistantStore extends ChangeNotifier {
   }
 
   Future<void> send(String text) async {
-    if (!usable ||
-        busy ||
-        !consent ||
-        draft != null && !draft!.applied ||
-        recordDraft != null &&
-            (!recordDraft!.applied ||
-                recordDraft!.undoAttempted && !recordDraft!.undone)) {
+    if (!usable || busy || !consent) {
       return;
     }
     text = text.trim();
@@ -244,12 +259,20 @@ class AssistantStore extends ChangeNotifier {
     }
     busy = true;
     error = '';
+    final previousDraft = draft;
+    final previousRecord = recordDraft;
+    final proposal = proposalContext(previousDraft);
+    final locked =
+        previousDraft?.attempted == true && previousDraft?.applied != true ||
+        previousRecord?.attempted == true && previousRecord?.applied != true ||
+        previousRecord?.undoAttempted == true && previousRecord?.undone != true;
     _archive();
+    final messages = conversationMessages(history, text);
+    final source = conversationSource(messages, proposal);
+    if (conversationId.isEmpty) conversationId = repository.newId();
     message = text;
     messageAt = DateTime.now().toUtc().toIso8601String();
     reply = '';
-    draft = null;
-    recordDraft = null;
     _notify();
     try {
       if (!await flush()) {
@@ -258,12 +281,33 @@ class AssistantStore extends ChangeNotifier {
         );
       }
       final response = await service
-          .propose(text, repository.newId())
+          .propose(
+            text,
+            repository.newId(),
+            messages: messages,
+            activeProposal: locked ? const [] : proposal,
+            conversationId: conversationId,
+          )
           .timeout(const Duration(seconds: 65));
       if (_disposed) return;
       repository.check();
+      replyKind = response['type'] as String;
+      if (locked && ['draft_proposal', 'change_proposal'].contains(replyKind)) {
+        throw const DraftFailure(
+          'Percakapan tetap tersedia. Periksa hasil penyimpanan usulan sebelumnya sebelum menyiapkan perubahan baru.',
+        );
+      }
       if (response['type'] == 'draft_proposal') {
-        final items = parseProposal(response['items'], text, repository.newId);
+        if (previousRecord != null && !previousRecord.applied) {
+          throw const DraftFailure(
+            'Usulan perubahan catatan sebelumnya masih tersedia. Selesaikan atau batalkan sebelum menggantinya.',
+          );
+        }
+        final items = parseProposal(
+          response['items'],
+          source,
+          repository.newId,
+        );
         for (final e in items.where((e) => e.agenda != null)) {
           final a = e.agenda!;
           final duration = preferredDuration(
@@ -323,27 +367,39 @@ class AssistantStore extends ChangeNotifier {
         }
         if (_disposed) return;
         draft = AssistantDraft(
-          id: repository.newId(),
+          id: previousDraft != null && !previousDraft.applied
+              ? previousDraft.id
+              : repository.newId(),
           operationId: repository.newId(),
           uid: repository.uid,
           items: items,
           baseAgendaRevision: rev['agenda']!,
           baseFinanceRevision: rev['finance']!,
         );
+        if (previousDraft != null && !previousDraft.applied) {
+          draft!.revision = previousDraft.revision + 1;
+        }
+        recordDraft = null;
       }
       if (response['type'] == 'read_request') {
         reply = await readRecords(
           Map<String, dynamic>.from(response['query'] as Map),
         );
       } else if (response['type'] == 'change_proposal') {
+        if (previousDraft != null && !previousDraft.applied) {
+          throw const DraftFailure(
+            'Usulan agenda/transaksi sebelumnya tetap tersedia. Selesaikan atau batalkan sebelum mengubah catatan lain.',
+          );
+        }
         await prepareChange(
           Map<String, dynamic>.from(response['change'] as Map),
-          text,
+          source,
         );
         reply = response['content'] as String;
       } else {
         reply = response['content'] as String;
       }
+      _input = '';
     } catch (e) {
       error = e is DraftFailure ? e.message : 'Koneksi Asisten terputus. Tidak ada catatan yang disimpan. Coba kirim lagi bila perlu.';
     } finally {

@@ -1,0 +1,141 @@
+{
+  "date": "2026-10-27",
+  "timezone": "Asia/Jakarta",
+  "version": "0.2.0+3",
+  "project": "mobile-app-3479f",
+  "published": {
+    "worker": {
+      "name": "ruma-api",
+      "activeVersion": "da716d11",
+      "previousVersion": "359dcc2b",
+      "stagedBundleMatchedBeforeDeploy": true,
+      "activeVersionVerifiedAfterReload": true,
+      "exactEditorReadbackAfterReload": false
+    },
+    "firestoreRules": {
+      "sha256": "ac32e6e065382ac636d1cf50a9af8f4ea9b9158e642a72b71088eb2d731ca8a8",
+      "exactReadbackAfterReload": true
+    },
+    "settingsChanged": {
+      "iam": false,
+      "billing": false,
+      "secrets": false,
+      "cron": false
+    }
+  },
+  "verification": {
+    "flutterAnalyze": "clean",
+    "flutterTests": 93,
+    "backendTests": 43,
+    "firestoreRulesEmulatorTests": 68,
+    "androidProductionSdkSmoke": {
+      "passed": true,
+      "device": "Android API 37 emulator",
+      "scenarioGroups": 6,
+      "providerCalls": 0,
+      "syntheticCalendarRows": true,
+      "authFixturesDeleted": true,
+      "firestoreFixtureDocumentsDeleted": 8,
+      "fixtureCleanupVerified": true,
+      "otherUserDataTouched": false,
+      "scenarios": [
+        "review and atomic commit of two weekly class series; eighteen Monday meetings; idempotent receipt retry",
+        "identical source refresh creates no duplicate classes",
+        "manual edits preserve source linkage; changed source requires an explicit choice",
+        "schedule import leaves finance unchanged",
+        "overlap beyond ninety days is blocked",
+        "explicit Calendar cancellation creates a tombstone and does not silently resurrect the item"
+      ]
+    },
+    "workerProductionSmoke": {
+      "passed": true,
+      "authenticatedSyntheticRequests": 3,
+      "unauthenticatedOrForgedRequestsRejected": 5,
+      "productionLedgerWrites": 0,
+      "authFixtureDeleted": true,
+      "cases": [
+        "short follow-up drafted an agenda proposal",
+        "synthetic four-class image parsed into schedule rows",
+        "correction moved only the selected course"
+      ],
+      "retest": {
+        "date": "2026-10-28",
+        "passed": true,
+        "unauthenticatedOrForgedRequestsRejected": 5,
+        "authenticatedSyntheticRequests": 3,
+        "successfulEndpoints": [
+          "/v2/agent/turn",
+          "/v2/agent/schedule",
+          "/v2/agent/schedule/correct"
+        ],
+        "ledgerWrites": 0,
+        "authFixtureDeleted": true
+      },
+      "latestRetest": {
+        "date": "2026-10-28",
+        "passed": true,
+        "synthetic": true,
+        "unauthenticatedOrForgedRequestsRejected": 5,
+        "authenticatedModelCalls": 3,
+        "ledgerWrites": 0,
+        "authFixtureDeleted": true,
+        "responses": {
+          "chatDraft": {
+            "type": "draft_proposal",
+            "title": "Belajar basis data",
+            "localStart": "2026-10-29T10:00",
+            "durationMinutes": 60,
+            "saved": false
+          },
+          "imageSchedule": {
+            "type": "schedule_extraction",
+            "rowCount": 4,
+            "titles": [
+              "Algoritma",
+              "Basis Data",
+              "Interaksi Manusia Komputer",
+              "Pemrograman Berorientasi Objek"
+            ]
+          },
+          "correction": {
+            "type": "schedule_correction",
+            "changed": "Basis Data",
+            "weekday": 4,
+            "start": "10:00"
+          }
+        }
+      }
+    },
+    "googleSignInConfig": {
+      "firebaseProviderEnabled": "reported by user",
+      "localGoogleServicesOauthClientCount": 0,
+      "realGoogleAccountTest": "not run; refreshed Android OAuth configuration is required"
+    }
+  },
+  "apk": {
+    "path": "output/apk/ruma-0.2.0-release.apk",
+    "bytes": 63725292,
+    "sha256": "6b2c7dd8f1888fd1c6da7a74a713236db465d89c11078cfce27582266a462708",
+    "package": "id.ruma.app",
+    "versionName": "0.2.0",
+    "versionCode": 3,
+    "signatureVerified": true,
+    "signatureScheme": "v2",
+    "signerSha1": "2b3e5fe6176a5414d4c6890d47141d57c7620f1d"
+  },
+  "limits": {
+    "changesPerAtomicApproval": 8,
+    "activeSeries": 30,
+    "images": 3,
+    "cloudCpuAtMaximumImageSize": "unmeasured"
+  },
+  "pending": [
+    "verify Android Google OAuth with a real account and Calendar",
+    "measure Cloudflare CPU using maximum allowed image size",
+    "Play Store upload not performed"
+  ],
+  "evidence": {
+    "cloudflareWorker": "worker-published.png",
+    "firestoreRules": "rules-published.png"
+  }
+}

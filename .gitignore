@@ -59,3 +59,6 @@ Thumbs.db
 
 # Locally built APK and R8 mapping deliverables
 output/apk/
+
+# FVM Version Cache
+.fvm/

@@ -136,6 +136,17 @@ class _AgendaDetailPageState extends State<AgendaDetailPage> {
                   const SizedBox(height: 12),
                 ],
                 RumaHeading(entry.input.title, null, compact: true),
+                if (entry.importSource != null) ...[
+                  const SizedBox(height: 12),
+                  RumaCard(
+                    color: RumaColors.sage,
+                    child: Text(
+                      entry.importSource!['provider'] == 'google'
+                          ? 'Diimpor dari Google Calendar. Suntingan hanya berlaku di Ruma. Periksa pembaruan melalui Impor jadwal di Agenda.'
+                          : 'Diimpor dari gambar jadwal. Periksa kembali rincian jika sumber berubah.',
+                    ),
+                  ),
+                ],
                 const SizedBox(height: 16),
                 RumaCard(
                   child: Column(

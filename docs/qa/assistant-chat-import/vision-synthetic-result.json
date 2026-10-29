@@ -1,0 +1,42 @@
+{
+  "type": "schedule_extraction",
+  "rows": [
+    {
+      "end": "09:40",
+      "issue": null,
+      "location": "201",
+      "sourceImage": 0,
+      "start": "08:00",
+      "title": "Algoritma",
+      "weekday": 1
+    },
+    {
+      "end": "11:40",
+      "issue": null,
+      "location": "Lab 2",
+      "sourceImage": 0,
+      "start": "10:00",
+      "title": "Basis Data",
+      "weekday": 2
+    },
+    {
+      "end": "09:40",
+      "issue": null,
+      "location": "305",
+      "sourceImage": 0,
+      "start": "08:00",
+      "title": "Interaksi Manusia Komputer",
+      "weekday": 4
+    },
+    {
+      "end": "14:40",
+      "issue": null,
+      "location": "Lab 1",
+      "sourceImage": 0,
+      "start": "13:00",
+      "title": "Pemrograman Berorientasi Objek",
+      "weekday": 5
+    }
+  ],
+  "note": "Judul: JADWAL KULIAH — CONTOH SINTETIS. Semua baris terbaca jelas. Zona waktu tidak dicantumkan pada gambar, sehingga jam tidak diasumsikan WIB. Footer gambar menyatakan data uji buatan (bukan jadwal/identitas mahasiswa nyata). Format jam pada gambar 08.00 dsb. dikonversi ke HH:mm."
+}

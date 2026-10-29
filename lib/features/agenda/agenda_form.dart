@@ -20,12 +20,14 @@ class AgendaFormPage extends StatefulWidget {
     super.key,
     required this.store,
     this.existing,
+    this.initialDay,
     this.onDraftChanged,
     this.kind = 'task',
     this.scope = 'one',
   });
   final AgendaStore store;
   final AgendaItem? existing;
+  final DateTime? initialDay;
   final String kind, scope;
   final ValueChanged<AgendaInput>? onDraftChanged;
   @override
@@ -107,7 +109,11 @@ class _AgendaFormPageState extends State<AgendaFormPage> {
   }
 
   Future<DateTime?> _pickDateTime(DateTime? original) async {
-    final initial = agendaLocal(original ?? DateTime.now().toUtc());
+    final now = agendaLocal(DateTime.now().toUtc());
+    final day = widget.initialDay ?? now;
+    final initial = original == null
+        ? DateTime(day.year, day.month, day.day, now.hour, now.minute)
+        : agendaLocal(original);
     final date = await showDatePicker(
       context: context,
       initialDate: initial,

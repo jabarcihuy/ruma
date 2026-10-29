@@ -1,0 +1,294 @@
+{
+  "method": "WCAG relative luminance / sRGB, opaque source tokens",
+  "tokens": {
+    "background": "#F6F7F3",
+    "surface": "#FFFFFF",
+    "ink": "#20241F",
+    "muted": "#56614F",
+    "accent": "#CF4924",
+    "accentInk": "#A9361C",
+    "peach": "#FFE6D6",
+    "soft": "#FFF0E7",
+    "line": "#E0E4DC",
+    "subtle": "#EBEEE7",
+    "sage": "#E5EDE1",
+    "dangerSoft": "#F7DAD6",
+    "danger": "#A62D25"
+  },
+  "contrast": [
+    {
+      "foreground": "ink",
+      "background": "surface",
+      "ratio": 15.747
+    },
+    {
+      "foreground": "muted",
+      "background": "surface",
+      "ratio": 6.525
+    },
+    {
+      "foreground": "muted",
+      "background": "background",
+      "ratio": 6.064
+    },
+    {
+      "foreground": "muted",
+      "background": "sage",
+      "ratio": 5.447
+    },
+    {
+      "foreground": "muted",
+      "background": "peach",
+      "ratio": 5.45
+    },
+    {
+      "foreground": "surface",
+      "background": "accent",
+      "ratio": 4.534
+    },
+    {
+      "foreground": "accentInk",
+      "background": "surface",
+      "ratio": 6.499
+    },
+    {
+      "foreground": "accent",
+      "background": "ink",
+      "ratio": 3.473
+    },
+    {
+      "foreground": "accent",
+      "background": "sage",
+      "ratio": 3.785
+    },
+    {
+      "foreground": "danger",
+      "background": "soft",
+      "ratio": 6.241
+    },
+    {
+      "foreground": "line",
+      "background": "surface",
+      "ratio": 1.288
+    },
+    {
+      "foreground": "line",
+      "background": "background",
+      "ratio": 1.197
+    },
+    {
+      "foreground": "surface",
+      "background": "background",
+      "ratio": 1.076
+    },
+    {
+      "foreground": "sage",
+      "background": "background",
+      "ratio": 1.113
+    },
+    {
+      "foreground": "peach",
+      "background": "background",
+      "ratio": 1.113
+    },
+    {
+      "foreground": "accent",
+      "background": "subtle",
+      "ratio": 3.868
+    }
+  ],
+  "screens": [
+    {
+      "file": ".local/usability-audit-20261025/android/09-home-reconciled.png",
+      "size": [
+        720,
+        1600
+      ],
+      "exactTokenPixelPercent": {
+        "background": 33.32,
+        "surface": 50.97,
+        "ink": 8.42,
+        "muted": 0.41,
+        "accent": 0.2,
+        "accentInk": 0.15,
+        "peach": 0.38,
+        "sage": 0.38
+      },
+      "unmatchedPercent": 5.77
+    },
+    {
+      "file": ".local/usability-audit-20261025/android/02-agenda-selected-day.png",
+      "size": [
+        720,
+        1600
+      ],
+      "exactTokenPixelPercent": {
+        "background": 61.37,
+        "surface": 14.84,
+        "ink": 1.42,
+        "muted": 0.23,
+        "accent": 1.25,
+        "accentInk": 0.11,
+        "sage": 8.34
+      },
+      "unmatchedPercent": 12.44
+    },
+    {
+      "file": ".local/usability-audit-20261025/android/03-visible-transaction-date.png",
+      "size": [
+        720,
+        1600
+      ],
+      "exactTokenPixelPercent": {
+        "background": 60.42,
+        "surface": 31.63,
+        "ink": 0.84,
+        "muted": 0.16,
+        "accent": 4.97,
+        "accentInk": 0.06,
+        "line": 0.65
+      },
+      "unmatchedPercent": 1.27
+    },
+    {
+      "file": ".local/usability-audit-20261025/android/06-savings-movements.png",
+      "size": [
+        720,
+        1600
+      ],
+      "exactTokenPixelPercent": {
+        "background": 34.76,
+        "surface": 44.38,
+        "ink": 1.46,
+        "muted": 0.43,
+        "accent": 2.53,
+        "line": 2.38,
+        "subtle": 0.71,
+        "sage": 0.56
+      },
+      "unmatchedPercent": 12.79
+    },
+    {
+      "file": ".local/usability-audit-20261025/android/08-draft-saved.png",
+      "size": [
+        720,
+        1600
+      ],
+      "exactTokenPixelPercent": {
+        "background": 59.4,
+        "surface": 16.68,
+        "ink": 1.17,
+        "muted": 0.43,
+        "accent": 5.11,
+        "soft": 6.91,
+        "line": 5.27
+      },
+      "unmatchedPercent": 5.03
+    }
+  ],
+  "auditDate": "2026-10-26",
+  "layoutVerification": {
+    "status": "passed",
+    "tests": 5,
+    "renderedWidgetPages": 25,
+    "widgetScreenshotSize": [
+      390,
+      844
+    ],
+    "testedViewports": [
+      {
+        "logicalSize": [
+          390,
+          844
+        ],
+        "textScale": 1
+      },
+      {
+        "logicalSize": [
+          320,
+          640
+        ],
+        "textScale": 2
+      },
+      {
+        "logicalSize": [
+          844,
+          390
+        ],
+        "textScale": 1
+      }
+    ],
+    "includesIMEChecks": true,
+    "pixelRegressionComparison": false,
+    "note": "Diagnostic renderer reuses ui_polish_test.dart and writes into .local; existing golden files unchanged. Native screenshots reused from 25 Oct, not a fresh Android run."
+  },
+  "scope": {
+    "uiSourceModified": false,
+    "productionAccess": false,
+    "newAndroidBuild": false,
+    "newNativeWalkthrough": false,
+    "talkBackVerified": false,
+    "darkModeVerified": false,
+    "physicalDeviceVerified": false,
+    "performanceMeasured": false,
+    "findingCount": {
+      "P0": 0,
+      "P1": 0,
+      "P2": 4,
+      "P3": 1
+    },
+    "score": null,
+    "designDecisions": {
+      "assistantNavigationEmphasis": "Intentional MVP priority, confirmed by product owner on 2026-10-26; preserve prominent mascot and dark circle.",
+      "activeTabRecognition": "Unverified user-study hypothesis, excluded from confirmed findings."
+    }
+  },
+  "evidence": [
+    {
+      "file": "home-android.png",
+      "source": ".local/usability-audit-20261025/android/09-home-reconciled.png",
+      "kind": "android-emulator-2026-10-25",
+      "sha256": "3a871deb7a17096c79d8e0d18fc46b97745a87a48ee79f6e0c92f332201e110c"
+    },
+    {
+      "file": "savings-detail-android.png",
+      "source": ".local/usability-audit-20261025/android/06-savings-movements.png",
+      "kind": "android-emulator-2026-10-25",
+      "sha256": "1685c9f0192a571c1980854a57f40246fea099e525fcfda7da49fb2de06b653c"
+    },
+    {
+      "file": "history-widget.png",
+      "source": ".local/ui-layout-palette-20261026/widget/history.png",
+      "kind": "flutter-widget-render-2026-10-26",
+      "sha256": "4c1fab5df51918e9168111786eb598e1f51fc9a9e8a81e672dce4c531a67c47d"
+    },
+    {
+      "file": "profile-widget.png",
+      "source": ".local/ui-layout-palette-20261026/widget/profile.png",
+      "kind": "flutter-widget-render-2026-10-26",
+      "sha256": "5d9932c537edbc3304a7f114ffbc6399bfec25115c782004920c386d9cd344a1"
+    },
+    {
+      "file": "savings-deposit-widget.png",
+      "source": ".local/ui-layout-palette-20261026/widget/savings-deposit.png",
+      "kind": "flutter-widget-render-2026-10-26",
+      "sha256": "91ea7415306e2f8c145beabe824a26826bfecd4672516af83481882c665ba007"
+    },
+    {
+      "file": "finance-widget.png",
+      "source": ".local/ui-layout-palette-20261026/widget/finance.png",
+      "kind": "flutter-widget-render-2026-10-26",
+      "sha256": "62b1f9b2c2aba8d1522e46ec06d526f5268189946e0b95465ac5c7abcb110cf1"
+    }
+  ],
+  "sourceSha256": {
+    "lib/app/theme.dart": "edc0ffdc0ee746c85e6a75289ddd0e9468eeccdd34ccec2521301f8ebc8e04e5",
+    "lib/app/main_shell.dart": "920b177595898af250b0d54d719e52b9f30ed04db8e259066c7c434032e5e391",
+    "lib/ui/components.dart": "9202befad4964d838ed02226e70b906e353b2a10ab87d1ae5dcd23e8558252f7",
+    "lib/features/finance/finance_page.dart": "df1a12652d9e6a11ca6c7c4b19c0ba007618996922aa6b7abd08cbbfea1be5cf",
+    "lib/features/home/home_page.dart": "9264876599830c72364f3e9c74211dcbc8215c58527c8b4431b71ad264704288",
+    "lib/features/profile/profile_page.dart": "eb26bdca391d9f387c50989783a5f05c5ed86454ef8f6ac3d939042b20f3cdc1",
+    "lib/features/savings/savings_form.dart": "096c54e703ba50a156f0308d674493a70e30decd2f125c87e6362edfd04c49f7",
+    "test/ui_polish_test.dart": "927630f416544a6dee028b46b5668ff72807d9d3691046985be7d7274b93d4d7"
+  }
+}

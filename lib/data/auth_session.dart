@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 
 @immutable
 class RumaAccount {
@@ -27,7 +28,8 @@ class RumaAccount {
 }
 
 class AuthSession extends ChangeNotifier {
-  AuthSession(this._auth) {
+  AuthSession(this._auth, {Future<String?> Function()? loadGoogleIdToken})
+    : _loadGoogleIdToken = loadGoogleIdToken ?? _requestGoogleIdToken {
     _subscription = _auth.userChanges().listen(
       (user) {
         ready = true;
@@ -42,6 +44,7 @@ class AuthSession extends ChangeNotifier {
     );
   }
   final FirebaseAuth _auth;
+  final Future<String?> Function() _loadGoogleIdToken;
   Future<void> Function()? beforeSignOut;
   late final StreamSubscription<User?> _subscription;
   RumaAccount? account;
@@ -60,6 +63,18 @@ class AuthSession extends ChangeNotifier {
     } on FirebaseAuthException catch (failure) {
       error = authErrorMessage(failure.code);
       return false;
+    } on GoogleSignInException catch (failure) {
+      if (failure.code == GoogleSignInExceptionCode.canceled) {
+        notice = 'Masuk dengan Google dibatalkan.';
+      } else if (failure.code ==
+              GoogleSignInExceptionCode.clientConfigurationError ||
+          failure.code ==
+              GoogleSignInExceptionCode.providerConfigurationError) {
+        error = 'Login Google belum dikonfigurasi untuk aplikasi ini.';
+      } else {
+        error = 'Google belum dapat digunakan. Coba lagi setelah tersambung.';
+      }
+      return false;
     } catch (_) {
       error = 'Belum dapat terhubung. Periksa internet lalu coba lagi.';
       return false;
@@ -76,6 +91,25 @@ class AuthSession extends ChangeNotifier {
       email: email.trim(),
       password: password,
     );
+  });
+  Future<AuthCredential> _googleCredential() async {
+    final idToken = await _loadGoogleIdToken();
+    if (idToken == null || idToken.isEmpty) {
+      throw const GoogleSignInException(
+        code: GoogleSignInExceptionCode.clientConfigurationError,
+        description: 'Google did not return an ID token.',
+      );
+    }
+    return GoogleAuthProvider.credential(idToken: idToken);
+  }
+
+  Future<bool> signInWithGoogle() => _perform(() async {
+    await _auth.signInWithCredential(await _googleCredential());
+  });
+  Future<bool> linkGoogleAccount() => _perform(() async {
+    final current = _auth.currentUser;
+    if (current == null) throw StateError('No current account to link.');
+    await current.linkWithCredential(await _googleCredential());
   });
   Future<bool> enterTemporarily() => _perform(() async {
     await _auth.signInAnonymously();
@@ -118,6 +152,26 @@ class AuthSession extends ChangeNotifier {
   }
 }
 
+Future<void>? _googleSignInInitialization;
+
+Future<String?> _requestGoogleIdToken() async {
+  final signIn = GoogleSignIn.instance;
+  try {
+    _googleSignInInitialization ??= signIn.initialize();
+    await _googleSignInInitialization;
+  } catch (_) {
+    _googleSignInInitialization = null;
+    rethrow;
+  }
+  if (!signIn.supportsAuthenticate()) {
+    throw const GoogleSignInException(
+      code: GoogleSignInExceptionCode.providerConfigurationError,
+    );
+  }
+  final account = await signIn.authenticate();
+  return account.authentication.idToken;
+}
+
 String authErrorMessage(String code) => switch (code) {
   'invalid-credential' ||
   'INVALID_LOGIN_CREDENTIALS' ||
@@ -125,7 +179,10 @@ String authErrorMessage(String code) => switch (code) {
   'user-not-found' ||
   'invalid-login-credentials' =>
     'Email atau kata sandi belum cocok. Periksa lalu coba lagi.',
-  'email-already-in-use' || 'credential-already-in-use' => 'Email ini sudah digunakan. Coba email lain atau masuk ke akun tersebut. Akun sementara tetap tersedia.',
+  'email-already-in-use' => 'Email ini sudah digunakan. Masuk ke akun tersebut atau gunakan email lain.',
+  'credential-already-in-use' => 'Kredensial ini sudah terhubung ke akun Ruma lain. Akun sementara tetap tersedia; masuk ke akun yang sudah terhubung.',
+  'provider-already-linked' => 'Akun Google sudah tertaut ke akun Ruma ini.',
+  'account-exists-with-different-credential' => 'Akun Google ini memakai cara masuk Ruma yang berbeda. Masuk dengan cara yang pernah digunakan sebelumnya.',
   'invalid-email' => 'Periksa kembali format emailmu.',
   'weak-password' || 'password-does-not-meet-requirements' => 'Kata sandi belum memenuhi kebijakan akun. Gunakan kata sandi yang lebih kuat.',
   'network-request-failed' => 'Tidak terhubung ke internet. Isianmu tetap ada; coba lagi setelah tersambung.',

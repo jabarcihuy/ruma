@@ -21,7 +21,7 @@ class DiagnosticService extends AssistantService {
   DiagnosticService(super.auth, this.report);
   final Map<String, dynamic> report;
   @override
-  Future<Map<String, dynamic>> propose(String message, String requestId) async {
+  Future<Map<String, dynamic>> propose(String message, String requestId, {List<Map<String, String>>? messages, List<Map<String, dynamic>> activeProposal = const [], String? conversationId}) async {
     check();
     final client = HttpClient()
       ..connectionTimeout = const Duration(seconds: 15);

@@ -226,6 +226,15 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
                     warning: savingsReady && saved.availableRupiah < 0,
                   ),
                 ),
+                if (savings?.error != null)
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: TextButton.icon(
+                      onPressed: savings!.load,
+                      icon: const RumaIcon('refresh-cw'),
+                      label: const Text('Muat ulang tabungan'),
+                    ),
+                  ),
               ],
             ),
     );

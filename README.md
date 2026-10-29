@@ -1,5 +1,11 @@
 # Ruma
 
+Release **0.2.0+3** menambahkan chat berkonteks, impor gambar jadwal semester, dan adapter Google Calendar satu arah. Worker v2 dan Firestore Rules sudah dipublikasikan. Login Google Firebase Auth dan ikon launcher bermaskot sudah ditambahkan ke source workspace; konfigurasi OAuth belum siap, dan APK release di bawah belum memuat perubahan terbaru. [Unduh APK 0.2.0+3](output/apk/ruma-0.2.0-release.apk). Status dan hasil uji: [laporan implementasi](docs/ASSISTANT-CHAT-IMPORT-IMPLEMENTATION.md), [panduan konfigurasi login Google](docs/GOOGLE-SIGN-IN-SETUP.md).
+
+**25 Oktober 2026 — audit usability lima alur:** konteks tanggal agenda, keterlihatan hari pilihan, kontrol tanggal transaksi, hasil simpan lintas bulan, dan pemulihan tabungan Beranda diperbaiki. 84 tes Flutter dan delapan skenario Android lulus. [Laporan dan batas pengujian](docs/USABILITY-AUDIT.md), [protokol uji mahasiswa](docs/USER-TEST-PROTOCOL.md), serta [APK kandidat lokal 0.1.1+2](output/apk/ruma-0.1.1-usability-candidate.apk) siap. Uji mahasiswa belum dijalankan.
+
+**25 Oktober 2026 — lingkungan pengujian dipulihkan:** Flutter/Android SDK, Firebase Emulator dan AVD khusus Ruma siap. Analyzer bersih; 78 tes Flutter, 35 tes backend, 64 tes Rules serta alur autentikasi Android lulus. [Cara menjalankan dan batas verifikasi](docs/LOCAL-TEST-SETUP.md).
+
 **21 Oktober 2026 — Beranda diperbarui:** kegiatan/deadline terdekat, saldo, pengeluaran dan sisa anggaran kini memakai dua ringkasan berpola sama. Angka mengikuti data tercatat dan bulan berjalan. 50 tes Flutter serta uji SDK/visual Android lulus; APK normal [ruma-home-summary.apk](output/apk/ruma-home-summary.apk) terpasang di VM. [Dokumentasi dan batas](docs/HOME-SUMMARY.md).
 
 **20 Oktober 2026 — riwayat dan pemulihan Asisten aktif:** input, hingga 10 percakapan sebelumnya dan tinjauan draf disimpan per akun di Firestore. Restart proses memulihkan draf tanpa commit otomatis; 116 tes lokal dan uji produksi dua akun lulus. Rules aktif, 2 akun/7 dokumen sintetis dibersihkan, APK normal terbaru dipasang di VM. [Hasil dan batas](docs/ASSISTANT-MEMORY.md).

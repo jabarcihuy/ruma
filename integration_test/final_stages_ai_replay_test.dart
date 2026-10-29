@@ -23,7 +23,7 @@ import 'package:ruma/data/draft_repository.dart';
 class ReplayService extends AssistantService {
   ReplayService(super.auth);
   @override
-  Future<Map<String, dynamic>> propose(String message, String requestId) async {
+  Future<Map<String, dynamic>> propose(String message, String requestId, {List<Map<String, String>>? messages, List<Map<String, dynamic>> activeProposal = const [], String? conversationId}) async {
     if (message != 'Besok baca jurnal. Tadi makan 18 ribu.') {
       throw StateError('fixture mismatch');
     }

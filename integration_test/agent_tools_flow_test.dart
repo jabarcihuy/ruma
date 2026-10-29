@@ -23,10 +23,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 class LocalModel extends Fake implements AssistantService {
   late Map<String, dynamic> result;
   @override
-  Future<Map<String, dynamic>> propose(
-    String message,
-    String requestId,
-  ) async => parseAssistantResponse({
+  Future<Map<String, dynamic>> propose(String message, String requestId, {List<Map<String, String>>? messages, List<Map<String, dynamic>> activeProposal = const [], String? conversationId}) async => parseAssistantResponse({
     ...result,
     'requestId': requestId,
     'content': 'Untrusted model copy',

@@ -106,6 +106,23 @@ void main() {
     await t.pumpAndSettle();
   }
 
+  testWidgets('failed savings on Home can recover without leaving the page', (
+    t,
+  ) async {
+    savings
+      ..snapshot = null
+      ..error = 'offline';
+    await t.pumpWidget(page());
+    await t.pumpAndSettle();
+    final retry = find.text('Muat ulang tabungan');
+    expect(retry, findsOneWidget);
+    await t.ensureVisible(retry);
+    await t.tap(retry);
+    await t.pumpAndSettle();
+    expect(savings.error, isNull);
+    expect(find.text('Rp400.000'), findsOneWidget);
+    expect(find.text('Tersedia Rp420.000'), findsOneWidget);
+  });
   testWidgets(
     'only planned items count; ongoing and overdue have priority; detail opens exact item',
     (t) async {

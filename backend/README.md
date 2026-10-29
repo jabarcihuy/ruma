@@ -1,5 +1,7 @@
 # Ruma — backend agent dan pengingat
 
+Release 27 Oktober 2026 mempertahankan v1 dan menambahkan `/v2/agent/turn`, `/v2/agent/schedule` (multipart gambar), serta `/v2/agent/schedule/correct`. Seluruh endpoint memakai autentikasi dan kuota yang sama; model tidak mendapat akses tulis database. Worker produksi `ruma-api` aktif pada versi `da716d11`; tiga probe model live dengan data sintetis lulus dan lima request tanpa autentikasi/credential palsu ditolak. `npm test` mencakup 43 tes offline. Hasil publish dan batas verifikasi: [laporan implementasi](../docs/ASSISTANT-CHAT-IMPORT-IMPLEMENTATION.md).
+
 > Pengingat produksi: Rules, indeks, NOTIFICATIONS_ENABLED=true dan cron setiap menit sudah aktif. Versi Worker aktif c3759e9e-c2d6-4004-a2be-e6009ad04fe5; kode pengingat37c46502. FCM foreground serta background/tap terbukti di AVD. [Status dan batas terbaru](../docs/NOTIFICATION-IMPLEMENTATION.md).
 
 > Riwayat agent sebelum publikasi pengingat, 20 Oktober 2026: allowlist `prepare_draft`, `read_records`, `prepare_change`, `ask_clarification` aktif pada Worker `f0bc9c39`. Empat panggilan model produksi beserta edit/hapus/undo SDK Android lulus. Rules pemulihan persis sudah dipublikasikan. [Bukti dan batas](../docs/AGENT-STAGES-1-3.md). Bagian status lama di bawah merupakan riwayat persiapan awal.

@@ -79,7 +79,7 @@ class ProfilePage extends StatelessWidget {
         title: const Text('Keluar dari akun?'),
         content: Text(
           temporary
-              ? 'Akun sementara tidak bisa dipulihkan setelah keluar. Daftarkan email melalui Profil untuk mempertahankan akses.'
+              ? 'Akun sementara tidak bisa dipulihkan setelah keluar. Tautkan email atau Google melalui Profil untuk mempertahankan akses.'
               : 'Data akun tetap tersimpan. Masuk kembali untuk mengaksesnya.',
         ),
         actions: [
@@ -239,12 +239,12 @@ class ProfilePage extends StatelessWidget {
                 ),
                 const SizedBox(height: 8),
                 Text(
-                  'Tautkan email agar akun dapat dipakai kembali di perangkat lain.',
+                  'Tautkan email atau Google agar akun dan datamu dapat dipakai kembali di perangkat lain.',
                   style: Theme.of(context).textTheme.bodySmall,
                 ),
                 const SizedBox(height: 12),
                 RumaButton(
-                  label: 'Daftarkan email',
+                  label: 'Tautkan email atau Google',
                   onPressed: session.busy
                       ? null
                       : () => Navigator.push(

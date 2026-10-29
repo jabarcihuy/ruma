@@ -320,9 +320,28 @@ class _FinanceFormPageState extends State<FinanceFormPage> {
                         },
                       ),
                       const SizedBox(height: 12),
-                      Text(
-                        'Tanggal: $_date · WIB',
-                        style: Theme.of(context).textTheme.bodySmall,
+                      RumaCard(
+                        padding: 0,
+                        child: ListTile(
+                          key: const ValueKey('transaction-date'),
+                          title: const Text('Tanggal transaksi'),
+                          subtitle: Text(
+                            '${MaterialLocalizations.of(context).formatShortDate(DateTime.parse(_date))} · WIB',
+                          ),
+                          trailing: const RumaIcon('calendar-days'),
+                          onTap: () async {
+                            final picked = await showDatePicker(
+                              context: context,
+                              initialDate: DateTime.parse(_date),
+                              firstDate: DateTime(2000),
+                              lastDate: DateTime.parse(financeToday()),
+                            );
+                            if (picked != null && mounted) {
+                              setState(() => _date = dateKey(picked));
+                              _changed();
+                            }
+                          },
+                        ),
                       ),
                       const SizedBox(height: 12),
                       RumaCard(
@@ -331,25 +350,6 @@ class _FinanceFormPageState extends State<FinanceFormPage> {
                           title: const Text('Opsi lainnya'),
                           childrenPadding: const EdgeInsets.all(16),
                           children: [
-                            ListTile(
-                              key: const ValueKey('transaction-date'),
-                              contentPadding: EdgeInsets.zero,
-                              title: const Text('Tanggal transaksi'),
-                              subtitle: Text(_date),
-                              trailing: const RumaIcon('calendar-days'),
-                              onTap: () async {
-                                final picked = await showDatePicker(
-                                  context: context,
-                                  initialDate: DateTime.parse(_date),
-                                  firstDate: DateTime(2000),
-                                  lastDate: DateTime.parse(financeToday()),
-                                );
-                                if (picked != null && mounted) {
-                                  setState(() => _date = dateKey(picked));
-                                  _changed();
-                                }
-                              },
-                            ),
                             TextFormField(
                               key: const ValueKey('transaction-description'),
                               controller: _description,

@@ -17,16 +17,19 @@ class AssistantPage extends StatefulWidget {
     required this.store,
     required this.onTab,
     this.keyboardVisible = false,
+    this.onImport,
   });
   final AssistantStore store;
   final ValueChanged<int> onTab;
   final bool keyboardVisible;
+  final VoidCallback? onImport;
   @override
   State<AssistantPage> createState() => _AssistantPageState();
 }
 
 class _AssistantPageState extends State<AssistantPage> {
   late final TextEditingController _text;
+  final _scroll = ScrollController();
   @override
   void initState() {
     super.initState();
@@ -39,6 +42,7 @@ class _AssistantPageState extends State<AssistantPage> {
   void dispose() {
     widget.store.removeListener(_syncText);
     _text.dispose();
+    _scroll.dispose();
     super.dispose();
   }
 
@@ -97,35 +101,8 @@ class _AssistantPageState extends State<AssistantPage> {
             child: Text('Menyimpan…'),
           ),
       ],
-      if (s.history.isNotEmpty) ...[
-        RumaCard(
-          child: ExpansionTile(
-            key: const ValueKey('assistant-history'),
-            tilePadding: EdgeInsets.zero,
-            title: const Text('Riwayat percakapan'),
-            children: [
-              for (final turn in s.history.reversed)
-                Padding(
-                  padding: const EdgeInsets.only(bottom: 16),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: [
-                      Text(
-                        turn['message']!,
-                        style: Theme.of(context).textTheme.titleSmall,
-                      ),
-                      if (turn['reply']!.isNotEmpty) ...[
-                        const SizedBox(height: 6),
-                        Text(turn['reply']!),
-                      ],
-                    ],
-                  ),
-                ),
-            ],
-          ),
-        ),
-        const SizedBox(height: 16),
-      ],
+      for (final turn in s.history) _turn(turn['message']!, turn['reply']!),
+      if (s.message.isNotEmpty) _turn(s.message, s.reply),
       child,
     ],
   );
@@ -138,7 +115,7 @@ class _AssistantPageState extends State<AssistantPage> {
         builder: (c) => RumaDialog(
           title: const Text('Izinkan Asisten memproses pesan?'),
           content: const Text(
-            'Pesan yang kamu ketik dikirim melalui proxy Ruma ke NaraRouter. Pembacaan agenda dan uang dilakukan aplikasi; hasilnya tidak dikirim kembali ke model. AI memilih tool baca atau menyiapkan draf; penyimpanan tetap menunggu persetujuanmu.',
+            'Pesan, hingga delapan giliran percakapan terakhir, dan usulan yang sedang dibahas dikirim melalui proxy Ruma ke NaraRouter agar kamu bisa melanjutkan jawaban singkat. Seluruh ledger dan hasil hitungan uang tidak otomatis dikirim ke model. Perubahan data tetap menunggu persetujuanmu.',
           ),
           actions: [
             RumaButton(
@@ -159,214 +136,258 @@ class _AssistantPageState extends State<AssistantPage> {
     }
     FocusManager.instance.primaryFocus?.unfocus();
     await s.send(_text.text);
+    if (!mounted) return;
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted && _scroll.hasClients) {
+        _scroll.animateTo(
+          _scroll.position.maxScrollExtent,
+          duration: const Duration(milliseconds: 200),
+          curve: Curves.easeOut,
+        );
+      }
+    });
   }
+
+  Widget _turn(String message, String reply) => Padding(
+    padding: const EdgeInsets.only(bottom: 16),
+    child: Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Align(
+          alignment: Alignment.centerRight,
+          child: RumaCard(
+            color: RumaColors.peach,
+            child: Semantics(label: 'Pesanmu', child: Text(message)),
+          ),
+        ),
+        if (reply.isNotEmpty) ...[
+          const SizedBox(height: 10),
+          Semantics(label: 'Ruma', child: Text(reply)),
+        ],
+      ],
+    ),
+  );
+
+  Widget _intro(AssistantStore s) => Column(
+    crossAxisAlignment: CrossAxisAlignment.stretch,
+    children: [
+      Row(
+        children: [
+          const Expanded(
+            child: RumaHeading('Mau dibantu apa?', null, compact: true),
+          ),
+          IconButton(
+            tooltip: 'Tentang Asisten',
+            icon: const Icon(Icons.info_outline),
+            onPressed: () => showDialog<void>(
+              context: context,
+              builder: (c) => RumaDialog(
+                title: const Text('Tentang Asisten'),
+                content: const Text(
+                  'Ceritakan kebutuhanmu dengan bahasa sehari-hari. Kamu bisa menjawab pertanyaan lanjutan atau memperbaiki usulan lewat chat. Agenda dan transaksi baru disimpan setelah kamu menyetujui tinjauannya. Impor jadwal tersedia dari gambar dan Google Calendar.',
+                ),
+                actions: [
+                  RumaButton(
+                    label: 'Mengerti',
+                    onPressed: () => Navigator.pop(c),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+      const SizedBox(height: 16),
+      RumaCard(
+        child: Row(
+          children: [
+            const Expanded(
+              child: Text('Ceritakan atau kirim jadwalmu. Kita susun bersama.'),
+            ),
+            const SizedBox(width: 12),
+            ExcludeSemantics(
+              child: SvgPicture.asset(
+                'design/assets/ruma/mascot/abstract-friend.svg',
+                width: 64,
+                height: 64,
+              ),
+            ),
+          ],
+        ),
+      ),
+      const SizedBox(height: 12),
+      Wrap(
+        spacing: 8,
+        runSpacing: 8,
+        children: [
+          ActionChip(
+            label: const Text('Kegiatan & pengeluaran'),
+            onPressed: s.busy
+                ? null
+                : () => _text.text =
+                      'Besok baca jurnal 30 menit. Tadi makan 18 ribu.',
+          ),
+          ActionChip(
+            label: const Text('Pemasukan'),
+            onPressed: s.busy
+                ? null
+                : () => _text.text = 'Tadi menerima uang saku 500 ribu.',
+          ),
+          ActionChip(
+            label: const Text('Agenda hari ini'),
+            onPressed: s.busy
+                ? null
+                : () => _text.text = 'Apa agenda saya hari ini?',
+          ),
+          ActionChip(
+            label: const Text('Laporan bulan ini'),
+            onPressed: s.busy
+                ? null
+                : () => _text.text = 'Tampilkan laporan uang bulan ini.',
+          ),
+        ],
+      ),
+      const SizedBox(height: 16),
+    ],
+  );
+
+  Widget _composer(AssistantStore s) => Column(
+    crossAxisAlignment: CrossAxisAlignment.stretch,
+    children: [
+      if (s.error.isNotEmpty) ...[
+        ErrorNotice(s.error),
+        const SizedBox(height: 8),
+      ],
+      ExpansionTile(
+        tilePadding: EdgeInsets.zero,
+        title: const Text('Jam saran kegiatan (WIB)'),
+        children: [
+          Wrap(
+            crossAxisAlignment: WrapCrossAlignment.center,
+            spacing: 8,
+            children: [
+              TextButton(
+                onPressed: s.busy ? null : () => _window(true),
+                child: Text(_minute(s.availableFrom)),
+              ),
+              const Text('–'),
+              TextButton(
+                onPressed: s.busy ? null : () => _window(false),
+                child: Text(_minute(s.availableTo)),
+              ),
+            ],
+          ),
+        ],
+      ),
+      TextField(
+        key: const ValueKey('assistant-message'),
+        controller: _text,
+        enabled: !s.busy && s.usable,
+        minLines: 1,
+        maxLines: 4,
+        maxLength: 4000,
+        decoration: const InputDecoration(
+          labelText: 'Pesan untuk Ruma',
+          hintText: 'Ceritakan atau koreksi usulan…',
+          counterText: '',
+        ),
+      ),
+      const SizedBox(height: 8),
+      RumaActionPair(
+        first: RumaButton(
+          label: 'Impor jadwal',
+          secondary: true,
+          onPressed: s.usable && !s.busy ? widget.onImport : null,
+        ),
+        second: RumaButton(
+          key: const ValueKey('assistant-send'),
+          label: s.busy ? 'Menjawab…' : 'Kirim ke Asisten',
+          busy: s.busy,
+          onPressed: s.usable ? _send : null,
+        ),
+      ),
+    ],
+  );
 
   @override
   Widget build(BuildContext context) => ListenableBuilder(
     listenable: widget.store,
-    builder: (c, _) {
-      final s = widget.store, d = s.draft;
+    builder: (context, _) {
+      final s = widget.store;
       if (!s.ready) {
         return Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
+            const RumaHeading(
+              'Asisten',
+              'Menyambungkan percakapan…',
+              compact: true,
+            ),
             if (s.loading)
-              const RumaCard(child: Text('Memuat Asisten…'))
+              const Padding(
+                padding: EdgeInsets.all(24),
+                child: Center(child: CircularProgressIndicator()),
+              )
             else ...[
               ErrorNotice(s.storageError),
-              const SizedBox(height: 12),
               RumaButton(label: 'Coba muat lagi', onPressed: _reloadHistory),
             ],
           ],
         );
       }
-      if (s.recordDraft != null) {
-        return _workspace(s, _recordReview(s, s.recordDraft!));
-      }
-      if (d != null) return _workspace(s, _review(s, d));
-      final keyboard =
-          widget.keyboardVisible || MediaQuery.viewInsetsOf(context).bottom > 0;
-      return _workspace(
+      final content = _workspace(
         s,
         Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Row(
-              children: [
-                const Expanded(
-                  child: RumaHeading('Mau dibantu apa?', null, compact: true),
-                ),
-                IconButton(
-                  tooltip: 'Tentang Asisten',
-                  onPressed: () => showDialog<void>(
-                    context: context,
-                    builder: (c) => RumaDialog(
-                      title: const Text('Tentang Asisten'),
-                      content: const Text(
-                        'Tambahkan hingga 3 agenda dan 3 transaksi per pesan. Jam disarankan dalam rentang pilihanmu; durasi bisa diubah.\n\nTanyakan agenda, laporan, atau riwayat satu periode. Edit/hapus satu catatan lama per draf memakai nama persis dan tanggal. Draf dan hingga 10 percakapan terakhir disimpan di akunmu. Urungkan tersedia pada tinjauan terakhir selama catatan belum berubah lagi. Pesan baru tetap dikirim sendiri, tanpa mengirim seluruh riwayat ke model.',
-                      ),
-                      actions: [
-                        RumaButton(
-                          label: 'Mengerti',
-                          onPressed: () => Navigator.pop(c),
-                        ),
-                      ],
-                    ),
-                  ),
-                  icon: const Icon(
-                    Icons.info_outline,
-                    size: 22,
-                    color: RumaColors.muted,
-                  ),
-                ),
-              ],
-            ),
-            const SizedBox(height: 16),
-            if (s.busy) ...[
-              const RumaCard(
-                color: RumaColors.sage,
-                child: Text('Sedang menyiapkan draf…'),
+            if (s.recordDraft != null)
+              _recordReview(s, s.recordDraft!)
+            else if (s.draft != null)
+              _review(s, s.draft!)
+            else if (s.message.isEmpty && s.history.isEmpty)
+              _intro(s),
+            if (s.busy)
+              const Padding(
+                padding: EdgeInsets.symmetric(vertical: 12),
+                child: Text('Ruma sedang menyiapkan jawaban…'),
               ),
-              const SizedBox(height: 12),
-            ],
-            if (!keyboard) ...[
-              RumaCard(
-                padding: 20,
-                child: LayoutBuilder(
-                  builder: (context, size) {
-                    final mascot = ExcludeSemantics(
-                      child: SvgPicture.asset(
-                        'design/assets/ruma/mascot/abstract-friend.svg',
-                        width: 64,
-                        height: 64,
-                        fit: BoxFit.contain,
-                      ),
-                    );
-                    final copy = Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          'Waktu & uang, tertata.',
-                          style: Theme.of(context).textTheme.titleMedium,
-                        ),
-                        const SizedBox(height: 6),
-                        const Text('Ceritakan, lalu tinjau sebelum disimpan.'),
-                      ],
-                    );
-                    if (size.maxWidth < 280 ||
-                        MediaQuery.textScalerOf(context).scale(13) > 18) {
-                      return Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [mascot, const SizedBox(height: 12), copy],
-                      );
-                    }
-                    return Row(
-                      children: [
-                        Expanded(child: copy),
-                        const SizedBox(width: 16),
-                        mascot,
-                      ],
-                    );
-                  },
-                ),
-              ),
-              const SizedBox(height: 12),
-              Wrap(
-                spacing: 8,
-                runSpacing: 8,
-                children: [
-                  ActionChip(
-                    avatar: const RumaIcon('calendar-days'),
-                    label: const Text('Kegiatan & pengeluaran', softWrap: true),
-                    onPressed: (s.busy || !s.usable) ? null : () => _text.text = 'Besok revisi laporan satu jam dan baca jurnal 30 menit. Tadi makan 18 ribu dan cetak laporan 15 ribu.',
-                  ),
-                  ActionChip(
-                    avatar: const RumaIcon('wallet'),
-                    label: const Text('Pemasukan'),
-                    onPressed: (s.busy || !s.usable)
-                        ? null
-                        : () =>
-                              _text.text = 'Tadi menerima uang saku 500 ribu.',
-                  ),
-                  ActionChip(
-                    label: const Text('Agenda hari ini'),
-                    onPressed: (s.busy || !s.usable)
-                        ? null
-                        : () => _text.text = 'Apa agenda saya hari ini?',
-                  ),
-                  ActionChip(
-                    label: const Text('Laporan bulan ini'),
-                    onPressed: (s.busy || !s.usable)
-                        ? null
-                        : () =>
-                              _text.text = 'Tampilkan laporan uang bulan ini.',
-                  ),
-                ],
-              ),
-              const SizedBox(height: 12),
-            ],
-            Wrap(
-              crossAxisAlignment: WrapCrossAlignment.center,
-              spacing: 8,
-              children: [
-                const Text('Jam tersedia (WIB)'),
-                TextButton(
-                  onPressed: (s.busy || !s.usable) ? null : () => _window(true),
-                  child: Text(_minute(s.availableFrom)),
-                ),
-                const Text('–'),
-                TextButton(
-                  onPressed: (s.busy || !s.usable)
-                      ? null
-                      : () => _window(false),
-                  child: Text(_minute(s.availableTo)),
-                ),
-              ],
-            ),
-            const SizedBox(height: 8),
-            TextField(
-              key: const ValueKey('assistant-message'),
-              controller: _text,
-              enabled: !s.busy && s.usable,
-              minLines: 2,
-              maxLines: 5,
-              maxLength: 4000,
-              decoration: const InputDecoration(
-                labelText: 'Ceritakan di sini',
-                hintText: 'Contoh: tadi makan 18 ribu…',
-              ),
-            ),
-            RumaButton(
-              key: const ValueKey('assistant-send'),
-              label: s.busy ? 'Menyiapkan draf…' : 'Kirim ke Asisten',
-              busy: s.busy,
-              onPressed: s.usable ? _send : null,
-            ),
-            if (s.error.isNotEmpty) ...[
-              const SizedBox(height: 12),
-              ErrorNotice(s.error),
-            ],
-            if (s.reply.isNotEmpty) ...[
-              const SizedBox(height: 12),
-              RumaCard(color: RumaColors.soft, child: Text(s.reply)),
-            ],
-            const SizedBox(height: 16),
-            const Text('Atau isi sendiri', textAlign: TextAlign.center),
-            const SizedBox(height: 8),
-            RumaActionPair(
-              first: RumaButton(
-                label: 'Agenda',
-                secondary: true,
-                onPressed: () => widget.onTab(1),
-              ),
-              second: RumaButton(
-                label: 'Transaksi',
-                secondary: true,
-                onPressed: () => widget.onTab(3),
-              ),
-            ),
           ],
         ),
+      );
+      return LayoutBuilder(
+        builder: (context, constraints) {
+          if (constraints.hasBoundedHeight &&
+              constraints.maxHeight >= 300 &&
+              MediaQuery.textScalerOf(context).scale(14) < 21) {
+            return Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Expanded(
+                  child: SingleChildScrollView(
+                    key: const ValueKey('assistant-conversation'),
+                    controller: _scroll,
+                    keyboardDismissBehavior:
+                        ScrollViewKeyboardDismissBehavior.onDrag,
+                    child: content,
+                  ),
+                ),
+                const SizedBox(height: 8),
+                _composer(s),
+              ],
+            );
+          }
+          final all = Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [content, const SizedBox(height: 12), _composer(s)],
+          );
+          return constraints.hasBoundedHeight
+              ? SingleChildScrollView(
+                  key: const ValueKey('assistant-conversation'),
+                  controller: _scroll,
+                  child: all,
+                )
+              : all;
+        },
       );
     },
   );

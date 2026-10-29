@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-26",
+  "kind": "design-prototype-only",
+  "weeklySemesterConfirmedByUser": true,
+  "prototypePath": "/home/abdulinux/.codex/visualizations/2026/10/22/01a164c1-669a-7ae1-9cfc-8de7cb579b77/ruma-asisten-jadwal.html",
+  "prototypeSha256": "9b8f1566b1459d172f16e174d2f6a32072b10a882e3fdd41bb5c6aa28a108f3c",
+  "prototypeBytes": 247596,
+  "syntheticData": true,
+  "modelCalls": 0,
+  "productionWrites": 0,
+  "appSourceChanged": false,
+  "apkRebuilt": false,
+  "browserScenariosVerified": [
+    "period confirmation produces four weekly schedule rows",
+    "chat correction updates Basis Data from Tuesday to Thursday and increments proposal revision",
+    "approval produces simulated success and Agenda view",
+    "conflict disables approval",
+    "excluding conflicting IMK enables three selected schedules and reports excluded item",
+    "chat clarification: tomorrow study one hour -> at 10 -> change to 11"
+  ],
+  "syntheticOccurrenceCounts": {
+    "1": 8,
+    "2": 8,
+    "4": 8,
+    "5": 8
+  },
+  "limitations": [
+    "scripted chat and extraction, no real OCR/vision",
+    "does not reproduce Android IME or native widgets",
+    "vision provider compatibility and cost not verified",
+    "remaining production requirements are specified in design document"
+  ],
+  "browserCompactLayout": {
+    "viewportWidth": 360,
+    "rootWidth": 313,
+    "rootScrollWidth": 313,
+    "horizontalOverflow": false,
+    "fontEmbedded": true,
+    "mascotAssetsLoaded": true
+  },
+  "browserConsoleErrorsObserved": 0
+}

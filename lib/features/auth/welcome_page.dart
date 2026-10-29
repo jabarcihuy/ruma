@@ -23,7 +23,7 @@ class _WelcomePageState extends State<WelcomePage> {
       builder: (context) => RumaDialog(
         title: const Text('Mulai tanpa daftar email?'),
         content: const Text(
-          'Ruma membuat akun sementara di cloud. Pertama kali perlu internet. Akun ini tidak dapat dipulihkan jika sesi atau instalasi hilang. Kamu bisa menautkan email nanti melalui Profil.',
+          'Ruma membuat akun sementara di cloud. Pertama kali perlu internet. Akun ini tidak dapat dipulihkan jika sesi atau instalasi hilang. Tautkan email atau Google nanti melalui Profil untuk mempertahankan akses.',
         ),
         actions: [
           RumaButton(

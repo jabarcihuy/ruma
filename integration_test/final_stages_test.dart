@@ -26,7 +26,7 @@ import 'package:ruma/features/agenda/agenda_detail.dart';
 class LocalApi extends Fake implements AssistantService {
   late Map<String, dynamic> response;
   @override
-  Future<Map<String, dynamic>> propose(String message, String id) async =>
+  Future<Map<String, dynamic>> propose(String message, String id, {List<Map<String, String>>? messages, List<Map<String, dynamic>> activeProposal = const [], String? conversationId}) async =>
       response;
   @override
   void dispose() {}
